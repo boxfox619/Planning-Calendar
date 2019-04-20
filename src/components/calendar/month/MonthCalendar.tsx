@@ -1,10 +1,11 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { Task } from '../../../models/Task';
-import { Moment } from 'moment';
-import { getFirstDayOfWeek, getLastDayOfWeek, getPrevMonthDays } from '../../../libs/calendarUtil';
+import * as moment from 'moment';
+import { getFirstDayOfWeek, getLastDayOfWeek, getPrevMonthDays,  calMoment, isMatchDate } from '../../../libs/calendarUtil';
 import { range, chunk } from 'lodash';
-import { CalendarDay } from './CalendarDay';
+import { DayBox } from './DayBox';
+import { CalendarMode } from '../../../models/CalendarMode';
 
 const Container = styled.div`
     position: relative;
@@ -25,16 +26,10 @@ const Row = styled.div`
         border-right: 1px solid gray;
     }
 `
-
-const Day = styled.div`
-    text-align: left;
-    padding: 10px;
-`
 Row.displayName = 'Row';
-Day.displayName = 'Day';
 
 interface OwnProps {
-    currentMoment: Moment
+    currentMoment: moment.Moment
     tasks: Task[]
 }
 
@@ -42,14 +37,20 @@ type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
 
 export const MonthCalendar: React.FC<Props> = (props: Props) => {
     const {currentMoment, tasks, ...divProps} = props;
+    const prevMoment = calMoment(currentMoment, CalendarMode.Month, -1);
+    const nextMoment = calMoment(currentMoment, CalendarMode.Month, 1);
     const firstDayOfWeek = getFirstDayOfWeek(currentMoment);
     const lastDayOfWeek = getLastDayOfWeek(currentMoment);
     const prevMonthOfDays = getPrevMonthDays(currentMoment);
     const currentMonthOfDays = currentMoment.daysInMonth();
     const startPrevMonthDay = prevMonthOfDays - firstDayOfWeek + 1;
-    const prevMonthDays = range(startPrevMonthDay, prevMonthOfDays + 1).map(d => <Day key={`prev-${d}`}>{d}</Day>);
-    const currentMonthDays = range(1, currentMonthOfDays + 1).map(d => <Day key={`current-${d}`}>{d}</Day>);
-    const nextMonthDays = range(1, 7 - lastDayOfWeek).map(d => <Day key={`next-${d}`}>{d}</Day>);
+    const createDay = (dayMoment: moment.Moment) => {
+        const filteredTasks = tasks.filter(task => isMatchDate(moment(task.date), dayMoment));
+        return (<DayBox key={`${dayMoment.month()}-${dayMoment.date()}`} day={dayMoment.date()} tasks={filteredTasks}/>)
+    };
+    const prevMonthDays = range(startPrevMonthDay, prevMonthOfDays + 1).map(day => createDay(prevMoment.clone().date(day)));
+    const currentMonthDays = range(1, currentMonthOfDays + 1).map(day => createDay(currentMoment.clone().date(day)));
+    const nextMonthDays = range(1, 7 - lastDayOfWeek).map(day => createDay(nextMoment.clone().date(day)));
     const days = Array.prototype.concat(prevMonthDays, currentMonthDays, nextMonthDays);
     return (
         <Container {...divProps}>

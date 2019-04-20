@@ -5,6 +5,7 @@ import { CalendarMode } from '../models/CalendarMode';
 import * as moment from 'moment';
 import { Calendar } from './Calendar';
 import styled from 'styled-components';
+import { Task } from '../models/Task';
 
 const Container = styled.div`
   text-align: center;
@@ -15,7 +16,8 @@ const Container = styled.div`
 
 interface State {
   currentMoment: moment.Moment,
-  mode: CalendarMode
+  mode: CalendarMode,
+  tasks: Task[]
 }
 
 class App extends React.Component<any, State> {
@@ -24,7 +26,8 @@ class App extends React.Component<any, State> {
 
     this.state = {
       currentMoment: moment(),
-      mode: CalendarMode.Month
+      mode: CalendarMode.Month,
+      tasks: []
     }
   }
   render() {
@@ -39,7 +42,7 @@ class App extends React.Component<any, State> {
           style={{flex: 1}}
           currentMoment={this.state.currentMoment}
           mode={this.state.mode}
-          tasks={[]}
+          tasks={this.state.tasks}
         />
       </Container>
     );

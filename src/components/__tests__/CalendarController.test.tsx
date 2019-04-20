@@ -27,7 +27,7 @@ describe('<CalendarController />', () => {
         buttons.at(0).simulate('click');
         buttons.at(1).simulate('click');
         expect(changeMoment.mock.calls.length).toBe(2);
-        expect(changeMoment.mock.calls[0][0].month()).toBe(1);
-        expect(changeMoment.mock.calls[1][0].month()).toBe(1);
+        expect(changeMoment.mock.calls[0][0].toISOString()).toBe('2014-01-27T10:00:00.000Z');
+        expect(changeMoment.mock.calls[1][0].toISOString()).toBe('2014-03-27T10:00:00.000Z');
     });
 });
