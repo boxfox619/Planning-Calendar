@@ -1,7 +1,8 @@
-interface Task {
-    id: number
-    startDate: string,
-    endDate: string,
-    startTime: number,
-    durationTime: number
+export class Task {
+    constructor(
+        public id: number,
+        public name: string,
+        public date: string,
+        public durationTime: number
+    ){}
 }

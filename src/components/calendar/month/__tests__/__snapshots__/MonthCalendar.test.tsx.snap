@@ -1,0 +1,2333 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MonthCalendar /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    currentMoment={"2014-02-27T10:00:00.000Z"}
+    tasks={
+        Array [
+            Task {
+              "date": "2014-02-10T10:00:00.000Z",
+              "durationTime": 1,
+              "id": 1,
+              "name": "귤 까기10",
+            },
+            Task {
+              "date": "2014-02-27T10:00:00.000Z",
+              "durationTime": 1,
+              "id": 2,
+              "name": "귤 까기27",
+            },
+            Task {
+              "date": "2014-02-28T10:00:00.000Z",
+              "durationTime": 1,
+              "id": 3,
+              "name": "귤 까기28",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <Unknown>
+          <Unknown
+                    date={26}
+                    month={0}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={27}
+                    month={0}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={28}
+                    month={0}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={29}
+                    month={0}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={30}
+                    month={0}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={31}
+                    month={0}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={1}
+                    month={1}
+                    tasks={Array []}
+          />
+</Unknown>,
+        <Unknown>
+          <Unknown
+                    date={2}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={3}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={4}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={5}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={6}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={7}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={8}
+                    month={1}
+                    tasks={Array []}
+          />
+</Unknown>,
+        <Unknown>
+          <Unknown
+                    date={9}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={10}
+                    month={1}
+                    tasks={
+                              Array [
+                                        Task {
+                                          "date": "2014-02-10T10:00:00.000Z",
+                                          "durationTime": 1,
+                                          "id": 1,
+                                          "name": "귤 까기10",
+                                        },
+                                      ]
+                    }
+          />
+          <Unknown
+                    date={11}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={12}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={13}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={14}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={15}
+                    month={1}
+                    tasks={Array []}
+          />
+</Unknown>,
+        <Unknown>
+          <Unknown
+                    date={16}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={17}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={18}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={19}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={20}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={21}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={22}
+                    month={1}
+                    tasks={Array []}
+          />
+</Unknown>,
+        <Unknown>
+          <Unknown
+                    date={23}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={24}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={25}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={26}
+                    month={1}
+                    tasks={Array []}
+          />
+          <Unknown
+                    date={27}
+                    month={1}
+                    tasks={
+                              Array [
+                                        Task {
+                                          "date": "2014-02-27T10:00:00.000Z",
+                                          "durationTime": 1,
+                                          "id": 2,
+                                          "name": "귤 까기27",
+                                        },
+                                      ]
+                    }
+          />
+          <Unknown
+                    date={28}
+                    month={1}
+                    tasks={
+                              Array [
+                                        Task {
+                                          "date": "2014-02-28T10:00:00.000Z",
+                                          "durationTime": 1,
+                                          "id": 3,
+                                          "name": "귤 까기28",
+                                        },
+                                      ]
+                    }
+          />
+          <Unknown
+                    date={1}
+                    month={2}
+                    tasks={Array []}
+          />
+</Unknown>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Unknown
+              date={26}
+              month={0}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={27}
+              month={0}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={28}
+              month={0}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={29}
+              month={0}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={30}
+              month={0}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={31}
+              month={0}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={1}
+              month={1}
+              tasks={Array []}
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0-26",
+            "nodeType": "function",
+            "props": Object {
+              "date": 26,
+              "month": 0,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "0-27",
+            "nodeType": "function",
+            "props": Object {
+              "date": 27,
+              "month": 0,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "0-28",
+            "nodeType": "function",
+            "props": Object {
+              "date": 28,
+              "month": 0,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "0-29",
+            "nodeType": "function",
+            "props": Object {
+              "date": 29,
+              "month": 0,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "0-30",
+            "nodeType": "function",
+            "props": Object {
+              "date": 30,
+              "month": 0,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "0-31",
+            "nodeType": "function",
+            "props": Object {
+              "date": 31,
+              "month": 0,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-1",
+            "nodeType": "function",
+            "props": Object {
+              "date": 1,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bxivhb",
+            "isStatic": true,
+            "rules": Array [
+              "
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid gray;
+    & > * {
+        flex: 1;
+    }
+    & > *:not(:last-child) {
+        border-right: 1px solid gray;
+    }
+",
+            ],
+          },
+          "displayName": "Row",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bxivhb",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Unknown
+              date={2}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={3}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={4}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={5}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={6}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={7}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={8}
+              month={1}
+              tasks={Array []}
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1-2",
+            "nodeType": "function",
+            "props": Object {
+              "date": 2,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-3",
+            "nodeType": "function",
+            "props": Object {
+              "date": 3,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-4",
+            "nodeType": "function",
+            "props": Object {
+              "date": 4,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-5",
+            "nodeType": "function",
+            "props": Object {
+              "date": 5,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-6",
+            "nodeType": "function",
+            "props": Object {
+              "date": 6,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-7",
+            "nodeType": "function",
+            "props": Object {
+              "date": 7,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-8",
+            "nodeType": "function",
+            "props": Object {
+              "date": 8,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bxivhb",
+            "isStatic": true,
+            "rules": Array [
+              "
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid gray;
+    & > * {
+        flex: 1;
+    }
+    & > *:not(:last-child) {
+        border-right: 1px solid gray;
+    }
+",
+            ],
+          },
+          "displayName": "Row",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bxivhb",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Unknown
+              date={9}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={10}
+              month={1}
+              tasks={
+                            Array [
+                                          Task {
+                                            "date": "2014-02-10T10:00:00.000Z",
+                                            "durationTime": 1,
+                                            "id": 1,
+                                            "name": "귤 까기10",
+                                          },
+                                        ]
+              }
+/>,
+            <Unknown
+              date={11}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={12}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={13}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={14}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={15}
+              month={1}
+              tasks={Array []}
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1-9",
+            "nodeType": "function",
+            "props": Object {
+              "date": 9,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-10",
+            "nodeType": "function",
+            "props": Object {
+              "date": 10,
+              "month": 1,
+              "tasks": Array [
+                Task {
+                  "date": "2014-02-10T10:00:00.000Z",
+                  "durationTime": 1,
+                  "id": 1,
+                  "name": "귤 까기10",
+                },
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-11",
+            "nodeType": "function",
+            "props": Object {
+              "date": 11,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-12",
+            "nodeType": "function",
+            "props": Object {
+              "date": 12,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-13",
+            "nodeType": "function",
+            "props": Object {
+              "date": 13,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-14",
+            "nodeType": "function",
+            "props": Object {
+              "date": 14,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-15",
+            "nodeType": "function",
+            "props": Object {
+              "date": 15,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bxivhb",
+            "isStatic": true,
+            "rules": Array [
+              "
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid gray;
+    & > * {
+        flex: 1;
+    }
+    & > *:not(:last-child) {
+        border-right: 1px solid gray;
+    }
+",
+            ],
+          },
+          "displayName": "Row",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bxivhb",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Unknown
+              date={16}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={17}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={18}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={19}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={20}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={21}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={22}
+              month={1}
+              tasks={Array []}
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1-16",
+            "nodeType": "function",
+            "props": Object {
+              "date": 16,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-17",
+            "nodeType": "function",
+            "props": Object {
+              "date": 17,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-18",
+            "nodeType": "function",
+            "props": Object {
+              "date": 18,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-19",
+            "nodeType": "function",
+            "props": Object {
+              "date": 19,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-20",
+            "nodeType": "function",
+            "props": Object {
+              "date": 20,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-21",
+            "nodeType": "function",
+            "props": Object {
+              "date": 21,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-22",
+            "nodeType": "function",
+            "props": Object {
+              "date": 22,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bxivhb",
+            "isStatic": true,
+            "rules": Array [
+              "
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid gray;
+    & > * {
+        flex: 1;
+    }
+    & > *:not(:last-child) {
+        border-right: 1px solid gray;
+    }
+",
+            ],
+          },
+          "displayName": "Row",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bxivhb",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": "4",
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Unknown
+              date={23}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={24}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={25}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={26}
+              month={1}
+              tasks={Array []}
+/>,
+            <Unknown
+              date={27}
+              month={1}
+              tasks={
+                            Array [
+                                          Task {
+                                            "date": "2014-02-27T10:00:00.000Z",
+                                            "durationTime": 1,
+                                            "id": 2,
+                                            "name": "귤 까기27",
+                                          },
+                                        ]
+              }
+/>,
+            <Unknown
+              date={28}
+              month={1}
+              tasks={
+                            Array [
+                                          Task {
+                                            "date": "2014-02-28T10:00:00.000Z",
+                                            "durationTime": 1,
+                                            "id": 3,
+                                            "name": "귤 까기28",
+                                          },
+                                        ]
+              }
+/>,
+            <Unknown
+              date={1}
+              month={2}
+              tasks={Array []}
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1-23",
+            "nodeType": "function",
+            "props": Object {
+              "date": 23,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-24",
+            "nodeType": "function",
+            "props": Object {
+              "date": 24,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-25",
+            "nodeType": "function",
+            "props": Object {
+              "date": 25,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-26",
+            "nodeType": "function",
+            "props": Object {
+              "date": 26,
+              "month": 1,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-27",
+            "nodeType": "function",
+            "props": Object {
+              "date": 27,
+              "month": 1,
+              "tasks": Array [
+                Task {
+                  "date": "2014-02-27T10:00:00.000Z",
+                  "durationTime": 1,
+                  "id": 2,
+                  "name": "귤 까기27",
+                },
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1-28",
+            "nodeType": "function",
+            "props": Object {
+              "date": 28,
+              "month": 1,
+              "tasks": Array [
+                Task {
+                  "date": "2014-02-28T10:00:00.000Z",
+                  "durationTime": 1,
+                  "id": 3,
+                  "name": "귤 까기28",
+                },
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "2-1",
+            "nodeType": "function",
+            "props": Object {
+              "date": 1,
+              "month": 2,
+              "tasks": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bxivhb",
+            "isStatic": true,
+            "rules": Array [
+              "
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid gray;
+    & > * {
+        flex: 1;
+    }
+    & > *:not(:last-child) {
+        border-right: 1px solid gray;
+    }
+",
+            ],
+          },
+          "displayName": "Row",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bxivhb",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-htpNat",
+        "isStatic": true,
+        "rules": Array [
+          "
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    & > * {
+        flex: 1;
+    }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-htpNat",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Unknown>
+            <Unknown
+                        date={26}
+                        month={0}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={27}
+                        month={0}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={28}
+                        month={0}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={29}
+                        month={0}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={30}
+                        month={0}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={31}
+                        month={0}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={1}
+                        month={1}
+                        tasks={Array []}
+            />
+</Unknown>,
+          <Unknown>
+            <Unknown
+                        date={2}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={3}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={4}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={5}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={6}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={7}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={8}
+                        month={1}
+                        tasks={Array []}
+            />
+</Unknown>,
+          <Unknown>
+            <Unknown
+                        date={9}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={10}
+                        month={1}
+                        tasks={
+                                    Array [
+                                                Task {
+                                                  "date": "2014-02-10T10:00:00.000Z",
+                                                  "durationTime": 1,
+                                                  "id": 1,
+                                                  "name": "귤 까기10",
+                                                },
+                                              ]
+                        }
+            />
+            <Unknown
+                        date={11}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={12}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={13}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={14}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={15}
+                        month={1}
+                        tasks={Array []}
+            />
+</Unknown>,
+          <Unknown>
+            <Unknown
+                        date={16}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={17}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={18}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={19}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={20}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={21}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={22}
+                        month={1}
+                        tasks={Array []}
+            />
+</Unknown>,
+          <Unknown>
+            <Unknown
+                        date={23}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={24}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={25}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={26}
+                        month={1}
+                        tasks={Array []}
+            />
+            <Unknown
+                        date={27}
+                        month={1}
+                        tasks={
+                                    Array [
+                                                Task {
+                                                  "date": "2014-02-27T10:00:00.000Z",
+                                                  "durationTime": 1,
+                                                  "id": 2,
+                                                  "name": "귤 까기27",
+                                                },
+                                              ]
+                        }
+            />
+            <Unknown
+                        date={28}
+                        month={1}
+                        tasks={
+                                    Array [
+                                                Task {
+                                                  "date": "2014-02-28T10:00:00.000Z",
+                                                  "durationTime": 1,
+                                                  "id": 3,
+                                                  "name": "귤 까기28",
+                                                },
+                                              ]
+                        }
+            />
+            <Unknown
+                        date={1}
+                        month={2}
+                        tasks={Array []}
+            />
+</Unknown>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Unknown
+                date={26}
+                month={0}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={27}
+                month={0}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={28}
+                month={0}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={29}
+                month={0}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={30}
+                month={0}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={31}
+                month={0}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={1}
+                month={1}
+                tasks={Array []}
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0-26",
+              "nodeType": "function",
+              "props": Object {
+                "date": 26,
+                "month": 0,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "0-27",
+              "nodeType": "function",
+              "props": Object {
+                "date": 27,
+                "month": 0,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "0-28",
+              "nodeType": "function",
+              "props": Object {
+                "date": 28,
+                "month": 0,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "0-29",
+              "nodeType": "function",
+              "props": Object {
+                "date": 29,
+                "month": 0,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "0-30",
+              "nodeType": "function",
+              "props": Object {
+                "date": 30,
+                "month": 0,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "0-31",
+              "nodeType": "function",
+              "props": Object {
+                "date": 31,
+                "month": 0,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-1",
+              "nodeType": "function",
+              "props": Object {
+                "date": 1,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": true,
+              "rules": Array [
+                "
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid gray;
+    & > * {
+        flex: 1;
+    }
+    & > *:not(:last-child) {
+        border-right: 1px solid gray;
+    }
+",
+              ],
+            },
+            "displayName": "Row",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Unknown
+                date={2}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={3}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={4}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={5}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={6}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={7}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={8}
+                month={1}
+                tasks={Array []}
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1-2",
+              "nodeType": "function",
+              "props": Object {
+                "date": 2,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-3",
+              "nodeType": "function",
+              "props": Object {
+                "date": 3,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-4",
+              "nodeType": "function",
+              "props": Object {
+                "date": 4,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-5",
+              "nodeType": "function",
+              "props": Object {
+                "date": 5,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-6",
+              "nodeType": "function",
+              "props": Object {
+                "date": 6,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-7",
+              "nodeType": "function",
+              "props": Object {
+                "date": 7,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-8",
+              "nodeType": "function",
+              "props": Object {
+                "date": 8,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": true,
+              "rules": Array [
+                "
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid gray;
+    & > * {
+        flex: 1;
+    }
+    & > *:not(:last-child) {
+        border-right: 1px solid gray;
+    }
+",
+              ],
+            },
+            "displayName": "Row",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Unknown
+                date={9}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={10}
+                month={1}
+                tasks={
+                                Array [
+                                                Task {
+                                                  "date": "2014-02-10T10:00:00.000Z",
+                                                  "durationTime": 1,
+                                                  "id": 1,
+                                                  "name": "귤 까기10",
+                                                },
+                                              ]
+                }
+/>,
+              <Unknown
+                date={11}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={12}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={13}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={14}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={15}
+                month={1}
+                tasks={Array []}
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1-9",
+              "nodeType": "function",
+              "props": Object {
+                "date": 9,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-10",
+              "nodeType": "function",
+              "props": Object {
+                "date": 10,
+                "month": 1,
+                "tasks": Array [
+                  Task {
+                    "date": "2014-02-10T10:00:00.000Z",
+                    "durationTime": 1,
+                    "id": 1,
+                    "name": "귤 까기10",
+                  },
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-11",
+              "nodeType": "function",
+              "props": Object {
+                "date": 11,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-12",
+              "nodeType": "function",
+              "props": Object {
+                "date": 12,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-13",
+              "nodeType": "function",
+              "props": Object {
+                "date": 13,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-14",
+              "nodeType": "function",
+              "props": Object {
+                "date": 14,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-15",
+              "nodeType": "function",
+              "props": Object {
+                "date": 15,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": true,
+              "rules": Array [
+                "
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid gray;
+    & > * {
+        flex: 1;
+    }
+    & > *:not(:last-child) {
+        border-right: 1px solid gray;
+    }
+",
+              ],
+            },
+            "displayName": "Row",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Unknown
+                date={16}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={17}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={18}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={19}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={20}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={21}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={22}
+                month={1}
+                tasks={Array []}
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1-16",
+              "nodeType": "function",
+              "props": Object {
+                "date": 16,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-17",
+              "nodeType": "function",
+              "props": Object {
+                "date": 17,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-18",
+              "nodeType": "function",
+              "props": Object {
+                "date": 18,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-19",
+              "nodeType": "function",
+              "props": Object {
+                "date": 19,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-20",
+              "nodeType": "function",
+              "props": Object {
+                "date": 20,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-21",
+              "nodeType": "function",
+              "props": Object {
+                "date": 21,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-22",
+              "nodeType": "function",
+              "props": Object {
+                "date": 22,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": true,
+              "rules": Array [
+                "
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid gray;
+    & > * {
+        flex: 1;
+    }
+    & > *:not(:last-child) {
+        border-right: 1px solid gray;
+    }
+",
+              ],
+            },
+            "displayName": "Row",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": "4",
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Unknown
+                date={23}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={24}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={25}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={26}
+                month={1}
+                tasks={Array []}
+/>,
+              <Unknown
+                date={27}
+                month={1}
+                tasks={
+                                Array [
+                                                Task {
+                                                  "date": "2014-02-27T10:00:00.000Z",
+                                                  "durationTime": 1,
+                                                  "id": 2,
+                                                  "name": "귤 까기27",
+                                                },
+                                              ]
+                }
+/>,
+              <Unknown
+                date={28}
+                month={1}
+                tasks={
+                                Array [
+                                                Task {
+                                                  "date": "2014-02-28T10:00:00.000Z",
+                                                  "durationTime": 1,
+                                                  "id": 3,
+                                                  "name": "귤 까기28",
+                                                },
+                                              ]
+                }
+/>,
+              <Unknown
+                date={1}
+                month={2}
+                tasks={Array []}
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1-23",
+              "nodeType": "function",
+              "props": Object {
+                "date": 23,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-24",
+              "nodeType": "function",
+              "props": Object {
+                "date": 24,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-25",
+              "nodeType": "function",
+              "props": Object {
+                "date": 25,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-26",
+              "nodeType": "function",
+              "props": Object {
+                "date": 26,
+                "month": 1,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-27",
+              "nodeType": "function",
+              "props": Object {
+                "date": 27,
+                "month": 1,
+                "tasks": Array [
+                  Task {
+                    "date": "2014-02-27T10:00:00.000Z",
+                    "durationTime": 1,
+                    "id": 2,
+                    "name": "귤 까기27",
+                  },
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1-28",
+              "nodeType": "function",
+              "props": Object {
+                "date": 28,
+                "month": 1,
+                "tasks": Array [
+                  Task {
+                    "date": "2014-02-28T10:00:00.000Z",
+                    "durationTime": 1,
+                    "id": 3,
+                    "name": "귤 까기28",
+                  },
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "2-1",
+              "nodeType": "function",
+              "props": Object {
+                "date": 1,
+                "month": 2,
+                "tasks": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": true,
+              "rules": Array [
+                "
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid gray;
+    & > * {
+        flex: 1;
+    }
+    & > *:not(:last-child) {
+        border-right: 1px solid gray;
+    }
+",
+              ],
+            },
+            "displayName": "Row",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": true,
+          "rules": Array [
+            "
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    & > * {
+        flex: 1;
+    }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
