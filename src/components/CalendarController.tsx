@@ -1,20 +1,24 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { CalendarMode } from 'src/models/CalendarMode';
+import { CalendarMode } from '../models/CalendarMode';
 import { Moment } from 'moment';
+import { weekOfMonth } from '../libs/weekOfMount';
+import { Button } from 'antd';
+import { CalendarModeDropdown } from './CalendarModeDropdown';
+import 'antd/lib/button/style/css';
 
 const Container = styled.div`
     padding: 20px;
 `
-const Button = styled.span`
-    margin: 0 10px;
-    font-size: 2em;
-    cursor: pointer;
+const Label = styled.h3`
+    display: inline;
 `
+Label.displayName = 'Label';
 
 interface OwnProps {
-    currentDate: Moment,
+    currentMoment: Moment,
     mode: CalendarMode,
+    onChangeMode: (mode: CalendarMode) => void,
     onNext: () => void,
     onPrev: () => void
 }
@@ -22,12 +26,19 @@ interface OwnProps {
 type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
 
 export const CalendarController: React.FC<Props> = (props: Props) => {
-    const { currentDate, mode, onNext, onPrev, ...divProps } = props;
+    const { currentMoment, mode, onChangeMode, onNext, onPrev, ...divProps } = props;
+
+    let label = `${currentMoment.year()}년 / ${currentMoment.month() + 1}월`;
+    if (mode === CalendarMode.Week) {
+        label = `${label} / ${weekOfMonth(currentMoment)}주`;
+    }
+
     return (
         <Container {...divProps}>
-            <Button onClick={onPrev}>{'<'}</Button>
-            <Button onClick={onNext}>{'>'}</Button>
-            <h3>{currentDate.year()}년 / {currentDate.month()+1}월</h3>
+            <Button onClick={onPrev} shape="circle" icon="left" />
+            <Button onClick={onNext} shape="circle" icon="right" />
+            <Label>{label}</Label>
+            <CalendarModeDropdown onChangeMode={onChangeMode} currentMode={mode} />
         </Container>
     )
 }

@@ -4,8 +4,9 @@ exports[`<CalendarController /> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
-    currentDate={"2014-02-27T01:00:00.000Z"}
+    currentMoment={"2014-02-27T10:00:00.000Z"}
     mode="월"
+    onChangeMode={[Function]}
     onNext={[Function]}
     onPrev={[Function]}
 />,
@@ -24,22 +25,31 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <Unknown
+        <Button
+          block={false}
+          ghost={false}
+          htmlType="button"
+          icon="left"
+          loading={false}
           onClick={[Function]}
->
-          &lt;
+          shape="circle"
+/>,
+        <Button
+          block={false}
+          ghost={false}
+          htmlType="button"
+          icon="right"
+          loading={false}
+          onClick={[Function]}
+          shape="circle"
+/>,
+        <Unknown>
+          2014년 / 2월
 </Unknown>,
         <Unknown
-          onClick={[Function]}
->
-          &gt;
-</Unknown>,
-        <h3>
-          2014
-          년 / 
-          2
-          월
-</h3>,
+          currentMode="월"
+          onChangeMode={[Function]}
+/>,
       ],
     },
     "ref": null,
@@ -47,13 +57,46 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
-          "children": "<",
+          "block": false,
+          "ghost": false,
+          "htmlType": "button",
+          "icon": "left",
+          "loading": false,
           "onClick": [Function],
+          "shape": "circle",
         },
         "ref": null,
-        "rendered": "<",
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "block": false,
+          "ghost": false,
+          "htmlType": "button",
+          "icon": "right",
+          "loading": false,
+          "onClick": [Function],
+          "shape": "circle",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "2014년 / 2월",
+        },
+        "ref": null,
+        "rendered": "2014년 / 2월",
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
@@ -62,17 +105,15 @@ ShallowWrapper {
             "isStatic": true,
             "rules": Array [
               "
-    margin: 0 10px;
-    font-size: 2em;
-    cursor: pointer;
+    display: inline;
 ",
             ],
           },
-          "displayName": "styled.span",
+          "displayName": "Label",
           "foldedComponentIds": Array [],
           "render": [Function],
           "styledComponentId": "sc-bwzfXH",
-          "target": "span",
+          "target": "h3",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
@@ -83,55 +124,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "children": ">",
-          "onClick": [Function],
+          "currentMode": "월",
+          "onChangeMode": [Function],
         },
         "ref": null,
-        "rendered": ">",
-        "type": Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": true,
-            "rules": Array [
-              "
-    margin: 0 10px;
-    font-size: 2em;
-    cursor: pointer;
-",
-            ],
-          },
-          "displayName": "styled.span",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "span",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        },
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            2014,
-            "년 / ",
-            2,
-            "월",
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          2014,
-          "년 / ",
-          2,
-          "월",
-        ],
-        "type": "h3",
+        "rendered": null,
+        "type": [Function],
       },
     ],
     "type": Object {
@@ -163,22 +161,31 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <Unknown
+          <Button
+            block={false}
+            ghost={false}
+            htmlType="button"
+            icon="left"
+            loading={false}
             onClick={[Function]}
->
-            &lt;
+            shape="circle"
+/>,
+          <Button
+            block={false}
+            ghost={false}
+            htmlType="button"
+            icon="right"
+            loading={false}
+            onClick={[Function]}
+            shape="circle"
+/>,
+          <Unknown>
+            2014년 / 2월
 </Unknown>,
           <Unknown
-            onClick={[Function]}
->
-            &gt;
-</Unknown>,
-          <h3>
-            2014
-            년 / 
-            2
-            월
-</h3>,
+            currentMode="월"
+            onChangeMode={[Function]}
+/>,
         ],
       },
       "ref": null,
@@ -186,13 +193,46 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
-            "children": "<",
+            "block": false,
+            "ghost": false,
+            "htmlType": "button",
+            "icon": "left",
+            "loading": false,
             "onClick": [Function],
+            "shape": "circle",
           },
           "ref": null,
-          "rendered": "<",
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "block": false,
+            "ghost": false,
+            "htmlType": "button",
+            "icon": "right",
+            "loading": false,
+            "onClick": [Function],
+            "shape": "circle",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "2014년 / 2월",
+          },
+          "ref": null,
+          "rendered": "2014년 / 2월",
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
@@ -201,17 +241,15 @@ ShallowWrapper {
               "isStatic": true,
               "rules": Array [
                 "
-    margin: 0 10px;
-    font-size: 2em;
-    cursor: pointer;
+    display: inline;
 ",
               ],
             },
-            "displayName": "styled.span",
+            "displayName": "Label",
             "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "sc-bwzfXH",
-            "target": "span",
+            "target": "h3",
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
@@ -222,55 +260,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": ">",
-            "onClick": [Function],
+            "currentMode": "월",
+            "onChangeMode": [Function],
           },
           "ref": null,
-          "rendered": ">",
-          "type": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
-              "isStatic": true,
-              "rules": Array [
-                "
-    margin: 0 10px;
-    font-size: 2em;
-    cursor: pointer;
-",
-              ],
-            },
-            "displayName": "styled.span",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
-            "target": "span",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              2014,
-              "년 / ",
-              2,
-              "월",
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            2014,
-            "년 / ",
-            2,
-            "월",
-          ],
-          "type": "h3",
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": Object {

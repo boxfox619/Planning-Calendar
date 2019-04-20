@@ -1,11 +1,11 @@
 import * as React from 'react';
 import './App.css';
-import { CalendarController } from 'src/components/CalendarController';
-import { CalendarMode } from 'src/models/CalendarMode';
+import { CalendarController } from '../components/CalendarController';
+import { CalendarMode } from '../models/CalendarMode';
 import * as moment from 'moment';
 
 interface State {
-  now: moment.Moment,
+  currentMoment: moment.Moment,
   mode: CalendarMode
 }
 
@@ -14,7 +14,7 @@ class App extends React.Component<any, State> {
     super(props);
 
     this.state = {
-      now: moment(),
+      currentMoment: moment(),
       mode: CalendarMode.Month
     }
   }
@@ -22,13 +22,16 @@ class App extends React.Component<any, State> {
     return (
       <div className="App">
         <CalendarController
-          currentDate={this.state.now}
+          currentMoment={this.state.currentMoment}
           mode={this.state.mode}
+          onChangeMode={this.handleChangeMode}
           onNext={this.handleNext}
           onPrev={this.handlePrev} />
       </div>
     );
   }
+
+  handleChangeMode = (mode: CalendarMode) => this.setState({ mode })
 
   handleNext = () => {
     alert('next');
