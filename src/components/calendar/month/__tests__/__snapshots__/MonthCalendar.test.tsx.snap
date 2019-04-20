@@ -5,8 +5,6 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
     currentMoment={"2014-02-27T10:00:00.000Z"}
-    onClickDate={[Function]}
-    onClickTask={[Function]}
     tasks={
         Array [
             Task {
@@ -14,21 +12,18 @@ ShallowWrapper {
               "durationTime": 1,
               "id": 1,
               "name": "귤 까기10",
-              "startTime": 1,
             },
             Task {
               "date": "2014-02-27T10:00:00.000Z",
               "durationTime": 1,
               "id": 2,
               "name": "귤 까기27",
-              "startTime": 1,
             },
             Task {
               "date": "2014-02-28T10:00:00.000Z",
               "durationTime": 1,
               "id": 3,
               "name": "귤 까기28",
-              "startTime": 1,
             },
           ]
     }
@@ -138,7 +133,6 @@ ShallowWrapper {
                                           "durationTime": 1,
                                           "id": 1,
                                           "name": "귤 까기10",
-                                          "startTime": 1,
                                         },
                                       ]
                     }
@@ -237,7 +231,6 @@ ShallowWrapper {
                                           "durationTime": 1,
                                           "id": 2,
                                           "name": "귤 까기27",
-                                          "startTime": 1,
                                         },
                                       ]
                     }
@@ -252,7 +245,6 @@ ShallowWrapper {
                                           "durationTime": 1,
                                           "id": 3,
                                           "name": "귤 까기28",
-                                          "startTime": 1,
                                         },
                                       ]
                     }
@@ -264,8 +256,6 @@ ShallowWrapper {
           />
 </Unknown>,
       ],
-      "onClickDate": [Function],
-      "onClickTask": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -624,7 +614,6 @@ ShallowWrapper {
                                             "durationTime": 1,
                                             "id": 1,
                                             "name": "귤 까기10",
-                                            "startTime": 1,
                                           },
                                         ]
               }
@@ -684,7 +673,6 @@ ShallowWrapper {
                   "durationTime": 1,
                   "id": 1,
                   "name": "귤 까기10",
-                  "startTime": 1,
                 },
               ],
             },
@@ -991,7 +979,6 @@ ShallowWrapper {
                                             "durationTime": 1,
                                             "id": 2,
                                             "name": "귤 까기27",
-                                            "startTime": 1,
                                           },
                                         ]
               }
@@ -1006,7 +993,6 @@ ShallowWrapper {
                                             "durationTime": 1,
                                             "id": 3,
                                             "name": "귤 까기28",
-                                            "startTime": 1,
                                           },
                                         ]
               }
@@ -1085,7 +1071,6 @@ ShallowWrapper {
                   "durationTime": 1,
                   "id": 2,
                   "name": "귤 까기27",
-                  "startTime": 1,
                 },
               ],
             },
@@ -1106,7 +1091,6 @@ ShallowWrapper {
                   "durationTime": 1,
                   "id": 3,
                   "name": "귤 까기28",
-                  "startTime": 1,
                 },
               ],
             },
@@ -1283,7 +1267,6 @@ ShallowWrapper {
                                                   "durationTime": 1,
                                                   "id": 1,
                                                   "name": "귤 까기10",
-                                                  "startTime": 1,
                                                 },
                                               ]
                         }
@@ -1382,7 +1365,6 @@ ShallowWrapper {
                                                   "durationTime": 1,
                                                   "id": 2,
                                                   "name": "귤 까기27",
-                                                  "startTime": 1,
                                                 },
                                               ]
                         }
@@ -1397,7 +1379,6 @@ ShallowWrapper {
                                                   "durationTime": 1,
                                                   "id": 3,
                                                   "name": "귤 까기28",
-                                                  "startTime": 1,
                                                 },
                                               ]
                         }
@@ -1409,8 +1390,6 @@ ShallowWrapper {
             />
 </Unknown>,
         ],
-        "onClickDate": [Function],
-        "onClickTask": [Function],
       },
       "ref": null,
       "rendered": Array [
@@ -1769,7 +1748,6 @@ ShallowWrapper {
                                                   "durationTime": 1,
                                                   "id": 1,
                                                   "name": "귤 까기10",
-                                                  "startTime": 1,
                                                 },
                                               ]
                 }
@@ -1829,7 +1807,6 @@ ShallowWrapper {
                     "durationTime": 1,
                     "id": 1,
                     "name": "귤 까기10",
-                    "startTime": 1,
                   },
                 ],
               },
@@ -2136,7 +2113,6 @@ ShallowWrapper {
                                                   "durationTime": 1,
                                                   "id": 2,
                                                   "name": "귤 까기27",
-                                                  "startTime": 1,
                                                 },
                                               ]
                 }
@@ -2151,7 +2127,6 @@ ShallowWrapper {
                                                   "durationTime": 1,
                                                   "id": 3,
                                                   "name": "귤 까기28",
-                                                  "startTime": 1,
                                                 },
                                               ]
                 }
@@ -2230,7 +2205,6 @@ ShallowWrapper {
                     "durationTime": 1,
                     "id": 2,
                     "name": "귤 까기27",
-                    "startTime": 1,
                   },
                 ],
               },
@@ -2251,7 +2225,6 @@ ShallowWrapper {
                     "durationTime": 1,
                     "id": 3,
                     "name": "귤 까기28",
-                    "startTime": 1,
                   },
                 ],
               },
