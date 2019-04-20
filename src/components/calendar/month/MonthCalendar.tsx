@@ -25,11 +25,13 @@ const Row = styled.div`
         border-right: 1px solid gray;
     }
 `
+
 const Day = styled.div`
     text-align: left;
     padding: 10px;
 `
-Day.displayName = 'Day'
+Row.displayName = 'Row';
+Day.displayName = 'Day';
 
 interface OwnProps {
     currentMoment: Moment

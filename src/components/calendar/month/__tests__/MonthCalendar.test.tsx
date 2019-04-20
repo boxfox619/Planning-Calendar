@@ -15,6 +15,10 @@ describe('<MonthCalendar />', () => {
         expect(component).toMatchSnapshot();
     });
 
+    it('should row exists 5', () => {
+        expect(component.find('Row').length).toBe(5);
+    });
+
     it('should day box exists 30', () => {
         expect(component.find('Day').length).toBe(35);
     });
