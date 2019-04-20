@@ -1,21 +1,41 @@
 import * as React from 'react';
 import './App.css';
+import { CalendarController } from 'src/components/CalendarController';
+import { CalendarMode } from 'src/models/CalendarMode';
+import * as moment from 'moment';
 
-import logo from '../assets/logo.svg';
+interface State {
+  now: moment.Moment,
+  mode: CalendarMode
+}
 
-class App extends React.Component {
-  public render() {
+class App extends React.Component<any, State> {
+  constructor(props: any) {
+    super(props);
+
+    this.state = {
+      now: moment(),
+      mode: CalendarMode.Month
+    }
+  }
+  render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <CalendarController
+          currentDate={this.state.now}
+          mode={this.state.mode}
+          onNext={this.handleNext}
+          onPrev={this.handlePrev} />
       </div>
     );
+  }
+
+  handleNext = () => {
+    alert('next');
+  }
+
+  handlePrev = () => {
+    alert('prev');
   }
 }
 
