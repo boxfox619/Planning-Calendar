@@ -46,7 +46,9 @@ export const MonthCalendar: React.FC<Props> = (props: Props) => {
     const startPrevMonthDay = prevMonthOfDays - firstDayOfWeek + 1;
     const createDay = (dayMoment: moment.Moment) => {
         const filteredTasks = tasks.filter(task => isMatchDate(moment(task.date), dayMoment));
-        return (<DayBox key={`${dayMoment.month()}-${dayMoment.date()}`} day={dayMoment.date()} tasks={filteredTasks}/>)
+        const month = dayMoment.month();
+        const date = dayMoment.date();
+        return (<DayBox key={`${month}-${date}`} month={month} date={dayMoment.date()} tasks={filteredTasks}/>)
     };
     const prevMonthDays = range(startPrevMonthDay, prevMonthOfDays + 1).map(day => createDay(prevMoment.clone().date(day)));
     const currentMonthDays = range(1, currentMonthOfDays + 1).map(day => createDay(currentMoment.clone().date(day)));

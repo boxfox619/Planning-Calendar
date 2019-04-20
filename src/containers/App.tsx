@@ -43,12 +43,16 @@ class App extends React.Component<any, State> {
           currentMoment={this.state.currentMoment}
           mode={this.state.mode}
           tasks={this.state.tasks}
+          onClickTask={this.handleClickTask}
+          onClickDate={this.handleClickDate}
         />
       </Container>
     );
   }
   handleChangeMoment = (newMoment: moment.Moment) => this.setState({ currentMoment: newMoment });
-  handleChangeMode = (mode: CalendarMode) => this.setState({ mode })
+  handleChangeMode = (mode: CalendarMode) => this.setState({ mode });
+  handleClickTask = (taskId: number) => {alert(taskId)}; 
+  handleClickDate = (month: number, date: number) => {alert(date)};
 }
 
 export default App;

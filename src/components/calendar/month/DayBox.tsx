@@ -13,19 +13,21 @@ const TaskItem = styled(Button)`
     height: auto;
 `
 Day.displayName = 'Day';
+TaskItem.displayName = 'Task';
 
 interface Props {
-    day: number,
+    month: number,
+    date: number,
     tasks: Task[]
 }
 
 export const DayBox: React.FC<Props> = (props: Props) => {
-    const {day, tasks} = props;
+    const {date, month, tasks} = props;
     return (
-        <Day>
-            {day}
+        <Day data-date={date} data-month={month}>
+            {date}
             <div>
-                {tasks.map(task => <TaskItem key={task.id} data-task-id={task.id}>{task.name}</TaskItem>)}
+                {tasks.map(task => <TaskItem key={task.id} data-taskId={task.id}>{task.name}</TaskItem>)}
             </div>
         </Day>
     )
