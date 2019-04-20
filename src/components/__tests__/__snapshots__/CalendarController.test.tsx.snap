@@ -7,8 +7,7 @@ ShallowWrapper {
     currentMoment={"2014-02-27T10:00:00.000Z"}
     mode="월"
     onChangeMode={[Function]}
-    onNext={[Function]}
-    onPrev={[Function]}
+    onChangeMoment={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

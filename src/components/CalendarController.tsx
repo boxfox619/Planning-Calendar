@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { CalendarMode } from '../models/CalendarMode';
 import { Moment } from 'moment';
-import { weekOfMonth } from '../libs/weekOfMount';
+import { weekOfMonth, calMoment } from '../libs/calendarUtil';
 import { Button } from 'antd';
 import { CalendarModeDropdown } from './CalendarModeDropdown';
 import 'antd/lib/button/style/css';
@@ -19,24 +19,26 @@ interface OwnProps {
     currentMoment: Moment,
     mode: CalendarMode,
     onChangeMode: (mode: CalendarMode) => void,
-    onNext: () => void,
-    onPrev: () => void
+    onChangeMoment: (newMoment: Moment) => void,
 }
 
 type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
 
 export const CalendarController: React.FC<Props> = (props: Props) => {
-    const { currentMoment, mode, onChangeMode, onNext, onPrev, ...divProps } = props;
+    const { currentMoment, mode, onChangeMode, onChangeMoment, ...divProps } = props;
 
     let label = `${currentMoment.year()}년 / ${currentMoment.month() + 1}월`;
     if (mode === CalendarMode.Week) {
         label = `${label} / ${weekOfMonth(currentMoment)}주`;
     }
 
+    const handleNext = () => onChangeMoment(calMoment(currentMoment, mode, 1));
+    const handlePrev = () => onChangeMoment(calMoment(currentMoment, mode, -1));
+
     return (
         <Container {...divProps}>
-            <Button onClick={onPrev} shape="circle" icon="left" />
-            <Button onClick={onNext} shape="circle" icon="right" />
+            <Button onClick={handlePrev} shape="circle" icon="left" />
+            <Button onClick={handleNext} shape="circle" icon="right" />
             <Label>{label}</Label>
             <CalendarModeDropdown onChangeMode={onChangeMode} currentMode={mode} />
         </Container>
