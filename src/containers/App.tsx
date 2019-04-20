@@ -34,11 +34,29 @@ class App extends React.Component<any, State> {
   handleChangeMode = (mode: CalendarMode) => this.setState({ mode })
 
   handleNext = () => {
-    alert('next');
+    const { currentMoment } = this.state;
+    switch(this.state.mode){
+      case CalendarMode.Month:
+        currentMoment.add(1, 'M');
+        break;
+      case CalendarMode.Week:
+        currentMoment.add(1, 'w');
+        break;
+    }
+    this.setState({ currentMoment });
   }
 
   handlePrev = () => {
-    alert('prev');
+    const { currentMoment } = this.state;
+    switch(this.state.mode){
+      case CalendarMode.Month:
+        currentMoment.subtract(1, 'M');
+        break;
+      case CalendarMode.Week:
+        currentMoment.subtract(1, 'w');
+        break;
+    }
+    this.setState({ currentMoment });
   }
 }
 
