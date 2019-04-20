@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CalendarModeDropdown /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    currentMode="월"
+    onChangeMode={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <Button
+        block={false}
+        ghost={false}
+        htmlType="button"
+        loading={false}
+        style={
+                Object {
+                        "marginLeft": 8,
+                      }
+        }
+>
+        <span>
+                월
+        </span>
+         
+        <Icon
+                type="down"
+        />
+</Button>,
+      "mouseEnterDelay": 0.15,
+      "mouseLeaveDelay": 0.1,
+      "overlay": <Menu
+        onClick={[Function]}
+>
+        <MenuItem>
+                월
+        </MenuItem>
+        <MenuItem>
+                주
+        </MenuItem>
+</Menu>,
+      "placement": "bottomLeft",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "block": false,
+        "children": Array [
+          <span>
+            월
+</span>,
+          " ",
+          <Icon
+            type="down"
+/>,
+        ],
+        "ghost": false,
+        "htmlType": "button",
+        "loading": false,
+        "style": Object {
+          "marginLeft": 8,
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "월",
+          },
+          "ref": null,
+          "rendered": "월",
+          "type": "span",
+        },
+        " ",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "type": "down",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Button
+          block={false}
+          ghost={false}
+          htmlType="button"
+          loading={false}
+          style={
+                    Object {
+                              "marginLeft": 8,
+                            }
+          }
+>
+          <span>
+                    월
+          </span>
+           
+          <Icon
+                    type="down"
+          />
+</Button>,
+        "mouseEnterDelay": 0.15,
+        "mouseLeaveDelay": 0.1,
+        "overlay": <Menu
+          onClick={[Function]}
+>
+          <MenuItem>
+                    월
+          </MenuItem>
+          <MenuItem>
+                    주
+          </MenuItem>
+</Menu>,
+        "placement": "bottomLeft",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "block": false,
+          "children": Array [
+            <span>
+              월
+</span>,
+            " ",
+            <Icon
+              type="down"
+/>,
+          ],
+          "ghost": false,
+          "htmlType": "button",
+          "loading": false,
+          "style": Object {
+            "marginLeft": 8,
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "월",
+            },
+            "ref": null,
+            "rendered": "월",
+            "type": "span",
+          },
+          " ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "type": "down",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
