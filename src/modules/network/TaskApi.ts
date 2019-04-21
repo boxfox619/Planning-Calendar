@@ -1,4 +1,4 @@
-import { Task } from 'src/models/Task';
+import { Task } from '../../models/Task';
 
 export const loadTasks = async () => {
     return await [

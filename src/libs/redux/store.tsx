@@ -1,5 +1,5 @@
 import { applyMiddleware, createStore } from 'redux';
-import { rootReducer, rootEpic } from '../modules/reducers';
+import { rootReducer, rootEpic } from '../../modules/reducers';
 import { createEpicMiddleware } from 'redux-observable';
 
 export const createReduxStore = (initialState = {}) => {
