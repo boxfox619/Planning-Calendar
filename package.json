@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "@types/antd": "^1.0.0",
+    "@types/immutability-helper": "^2.6.3",
     "@types/lodash": "^4.14.123",
     "@types/moment": "^2.13.0",
     "@types/styled-components": "^4.1.14",
     "antd": "^3.16.3",
+    "immutability-helper": "^3.0.0",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
     "react": "^16.8.6",

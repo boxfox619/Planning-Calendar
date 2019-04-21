@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { BORDER_COLOR } from '../../libs/Constrains';
+import { BORDER_COLOR } from '../../libs/constrains';
 
 const Header = styled.div`
     display: flex;

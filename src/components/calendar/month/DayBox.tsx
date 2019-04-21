@@ -18,17 +18,16 @@ Day.displayName = 'Day';
 TaskItem.displayName = 'Task';
 
 interface Props {
-    month: number,
-    date: number,
+    dateMoment: moment.Moment,
     tasks: Task[]
 }
 
 export const DayBox: React.FC<Props> = (props: Props) => {
-    const {date, month, tasks} = props;
+    const {dateMoment, tasks} = props;
     const sortedTask = tasks.sort((task1: Task, task2: Task) => compareMoment(moment(task1.date), moment(task2.date)));
     return (
-        <Day data-date={date} data-month={month}>
-            {date}
+        <Day data-datetime={dateMoment.toISOString()}>
+            {dateMoment.date()}
             <div>
                 {sortedTask.map(task => <TaskItem key={task.id} data-taskid={task.id}>{task.name}</TaskItem>)}
             </div>
