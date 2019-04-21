@@ -1,5 +1,6 @@
 import * as React from 'react';
-import './App.css';
+import { Provider } from 'react-redux';
+import { Store } from 'redux';
 import { CalendarController } from '../components/CalendarController';
 import { CalendarMode } from '../models/CalendarMode';
 import * as moment from 'moment';
@@ -13,38 +14,30 @@ const Container = styled.div`
   flex-flow: column;
 `
 
-interface State {
-  currentMoment: moment.Moment,
-  mode: CalendarMode
+interface Props {
+  store: Store
 }
 
-class App extends React.Component<any, State> {
-  constructor(props: any) {
-    super(props);
+export const App: React.FC<Props> = (props: Props) => {
+  const {store} = props;
 
-    this.state = {
-      currentMoment: moment(),
-      mode: CalendarMode.Month
-    }
-  }
-  render() {
-    return (
+  const [currentMoment, setCurrentMoment] = React.useState(moment());
+  const [calendarMode, setCalendarMode] = React.useState(CalendarMode.Month);
+
+  return (
+    <Provider store={store}>
       <Container>
         <CalendarController
-          currentMoment={this.state.currentMoment}
-          mode={this.state.mode}
-          onChangeMode={this.handleChangeMode}
-          onChangeMoment={this.handleChangeMoment} />
+          currentMoment={currentMoment}
+          mode={calendarMode}
+          onChangeMode={setCalendarMode}
+          onChangeMoment={setCurrentMoment} />
         <Calendar
           style={{ flex: 1 }}
-          currentMoment={this.state.currentMoment}
-          mode={this.state.mode}
+          currentMoment={currentMoment}
+          mode={calendarMode}
         />
       </Container>
-    );
-  }
-  handleChangeMoment = (newMoment: moment.Moment) => this.setState({ currentMoment: newMoment });
-  handleChangeMode = (mode: CalendarMode) => this.setState({ mode });
-}
-
-export default App;
+    </Provider>
+  )
+};
