@@ -1,17 +1,13 @@
-import update from 'immutability-helper';
 import { ACTION_HANDLERS } from './handler';
 import { Task } from '../../../models/Task';
-
-export const reducer = (state: TaskStoreModel = new TaskStoreModel(), action: any) => {
-    const handler = ACTION_HANDLERS[action.type];
-    return handler ? update(state, handler(state, action)) : state
-}
-
+import { handleActions } from '../../../libs/redux/immutableReducer';
 
 export class TaskStoreModel {
     constructor(
-        public promotions: Task[] = [],
+        public tasks: Task[] = [],
         public isTaskLoading: boolean = false,
         public isTaskLoaded: boolean = false,
     ) { }
 }
+
+export const reducer = handleActions<TaskStoreModel>(new TaskStoreModel(), ACTION_HANDLERS);
