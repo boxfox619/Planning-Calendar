@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { CalendarMode } from '../models/CalendarMode';
 import { Task } from '../models/Task';
 import { Moment } from 'moment';
+import { WeeklyCalendar } from '../components/calendar/week/WeeklyCalenldar';
 import { MonthCalendar } from '../components/calendar/month/MonthCalendar';
 
 const Container = styled.div`
@@ -11,24 +12,13 @@ const Container = styled.div`
     padding: 0 10px;
 `;
 
-const Header = styled.div`
-    display: flex;
-    flex-flow: row;
-    border-bottom: 1px solid gray;
-    & > * {
-        flex: 1;
-    }
-`
-
 interface OwnProps {
     currentMoment: Moment,
     mode: CalendarMode,
     tasks: Task[],
-    onClickDate: (month: number, date: number) => void,
+    onClickDate: (month: number, date: number, time?: number) => void,
     onClickTask: (taskId: number) => void
 }
-
-const weekLabels = ['일', '월', '화', '수', '목', '금', '토'];
 
 type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
 
@@ -38,23 +28,30 @@ export const Calendar: React.FC<Props> = (props: Props) => {
     const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const date = (e.target as HTMLElement).dataset.date;
         const month = (e.target as HTMLElement).dataset.month;
-        const taskId = (e.target as HTMLElement).dataset.taskId;
-        if(date && month){
-            onClickDate(Number(month), Number(date));
-        } else if(taskId){
+        const time = (e.target as HTMLElement).dataset.time;
+        const taskId = (e.target as HTMLElement).dataset.taskid;
+        if (date && month) {
+            onClickDate(Number(month), Number(date), time ? Number(time) : undefined);
+        } else if (taskId) {
             onClickTask(Number(taskId));
         }
-    } 
+    }
     return (
         <Container {...divProps} onClick={handleClick}>
-            <Header>
-                {weekLabels.map(name => (<div key={name}>{name}</div>))}
-            </Header>
-            <MonthCalendar
-                style={{ flex: 1 }}
-                currentMoment={props.currentMoment}
-                tasks={props.tasks}
+            {mode === CalendarMode.Month && (
+                <MonthCalendar
+                    style={{ flex: 1 }}
+                    currentMoment={props.currentMoment}
+                    tasks={props.tasks}
                 />
+            )}
+            {mode === CalendarMode.Week && (
+                <WeeklyCalendar
+                    style={{ flex: 1 }}
+                    currentMoment={props.currentMoment}
+                    tasks={props.tasks}
+                />
+            )}
         </Container>
     )
 }

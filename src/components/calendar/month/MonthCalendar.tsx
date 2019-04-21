@@ -2,12 +2,19 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { Task } from '../../../models/Task';
 import * as moment from 'moment';
-import { getFirstDayOfWeek, getLastDayOfWeek, getPrevMonthDays,  calMoment, isMatchDate } from '../../../libs/calendarUtil';
+import { getFirstDayOfMonth, getLastDayOfMonth, getPrevMonthDays, calMoment, isMatchDate, getDaysInWeek } from '../../../libs/calendarUtil';
 import { range, chunk } from 'lodash';
 import { DayBox } from './DayBox';
 import { CalendarMode } from '../../../models/CalendarMode';
+import { DayOfWeekHeader } from '../DayOfWeekHeader';
 
 const Container = styled.div`
+    display: flex;
+    flex-flow: column;
+`
+
+const RowContainer = styled.div`
+    flex: 1;
     position: relative;
     display: flex;
     flex-flow: column;
@@ -37,30 +44,37 @@ type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
 
 export const MonthCalendar: React.FC<Props> = (props: Props) => {
     const {currentMoment, tasks, ...divProps} = props;
-    const prevMoment = calMoment(currentMoment, CalendarMode.Month, -1);
-    const nextMoment = calMoment(currentMoment, CalendarMode.Month, 1);
-    const firstDayOfWeek = getFirstDayOfWeek(currentMoment);
-    const lastDayOfWeek = getLastDayOfWeek(currentMoment);
-    const prevMonthOfDays = getPrevMonthDays(currentMoment);
-    const currentMonthOfDays = currentMoment.daysInMonth();
-    const startPrevMonthDay = prevMonthOfDays - firstDayOfWeek + 1;
-    const createDay = (dayMoment: moment.Moment) => {
+
+    const createDayBox = (dayMoment: moment.Moment) => {
         const filteredTasks = tasks.filter(task => isMatchDate(moment(task.date), dayMoment));
         const month = dayMoment.month();
         const date = dayMoment.date();
         return (<DayBox key={`${month}-${date}`} month={month} date={dayMoment.date()} tasks={filteredTasks}/>)
     };
-    const prevMonthDays = range(startPrevMonthDay, prevMonthOfDays + 1).map(day => createDay(prevMoment.clone().date(day)));
-    const currentMonthDays = range(1, currentMonthOfDays + 1).map(day => createDay(currentMoment.clone().date(day)));
-    const nextMonthDays = range(1, 7 - lastDayOfWeek).map(day => createDay(nextMoment.clone().date(day)));
-    const days = Array.prototype.concat(prevMonthDays, currentMonthDays, nextMonthDays);
+
+    const prevMoment = calMoment(currentMoment, CalendarMode.Month, -1);
+    const nextMoment = calMoment(currentMoment, CalendarMode.Month, 1);
+    const firstDayOfMonth = getFirstDayOfMonth(currentMoment);
+    const lastDayOfMonth = getLastDayOfMonth(currentMoment);
+    const prevMonthOfDays = getPrevMonthDays(currentMoment) + 1;
+    const currentMonthOfDays = currentMoment.daysInMonth();
+    const startPrevMonthDay = prevMonthOfDays - firstDayOfMonth;
+    const daysInWeek = getDaysInWeek(currentMoment);
+    const prevMonthDays = range(startPrevMonthDay, prevMonthOfDays).map(day => createDayBox(prevMoment.clone().date(day)));
+    const currentMonthDays = range(1, currentMonthOfDays + 1).map(day => createDayBox(currentMoment.clone().date(day)));
+    const nextMonthDays = range(1, daysInWeek - lastDayOfMonth).map(day => createDayBox(nextMoment.clone().date(day)));
+    const days = [...prevMonthDays, ...currentMonthDays, ...nextMonthDays];
     return (
         <Container {...divProps}>
-            {chunk(days, 7).map((weekDays, idx) => (
-                <Row key={idx}>
-                    {weekDays}
-                </Row>
-            ))}
+            <DayOfWeekHeader />
+            <RowContainer>
+                {chunk(days, daysInWeek).map((weekDays, idx) => (
+                    <Row key={idx}>
+                        {weekDays}
+                    </Row>
+                ))}
+            </RowContainer>
         </Container>
+
     )
 }
