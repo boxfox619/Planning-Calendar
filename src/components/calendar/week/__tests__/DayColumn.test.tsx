@@ -5,8 +5,8 @@ import { DayColumn } from '../DayColumn';
 import * as moment from 'moment';
 
 describe('<DayColumn />', () => {
-    const currentMoment = moment('2014-02-27T10:00:00.000Z');
-    const hours = currentMoment.clone().endOf('day').hour() +1;
+    const dateMoment = moment('2014-02-27T10:00:00.000Z');
+    const hours = dateMoment.clone().endOf('day').hour() +1;
     const tasks = [
         new Task(1, '귤 까기01', '2014-02-10T01:00:00.000Z', 1),
         new Task(1, '귤 까기24', '2014-02-10T24:00:00.000Z', 10),
@@ -18,7 +18,7 @@ describe('<DayColumn />', () => {
 
 
     it('renders correctly', () => {
-        component = Enzyme.shallow(<DayColumn currentMoment={currentMoment} tasks={tasks}/>);
+        component = Enzyme.shallow(<DayColumn dateMoment={dateMoment} tasks={tasks}/>);
     });
 
     it('should match snapshot', () => {

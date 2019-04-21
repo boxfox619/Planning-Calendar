@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import * as moment from 'moment';
 import { range } from 'lodash';
-import { BORDER_COLOR } from '../../../libs/Constrains';
+import { BORDER_COLOR } from '../../../libs/constrains';
 import { Task } from '../../../models/Task';
 import { Button } from 'antd';
 import 'antd/lib/button/style/css';
@@ -33,20 +33,17 @@ TaskItem.displayName = 'Task';
 Cell.displayName = 'Cell';
 
 interface Props {
-    currentMoment: moment.Moment,
+    dateMoment: moment.Moment,
     tasks: Task[]
 }
 
 export const DayColumn: React.FC<Props> = (props: Props) => {
-    const { currentMoment, tasks } = props;
-    const hours = currentMoment.clone().endOf('day').hour();
+    const { dateMoment, tasks } = props;
+    const hours = dateMoment.clone().endOf('day').hour();
     return (
         <DayColumnContainer>
-            {range(1, hours + 2).map(time => (
-                <Cell key={`${time}-cell`}
-                    data-date={currentMoment.date()}
-                    data-month={currentMoment.month()}
-                    data-time={time} />)
+            {range(0, hours + 1).map(time => (
+                <Cell key={`${time}-cell`} data-datetime={dateMoment.clone().hour(time).toISOString()} />)
             )}
             {tasks.map(task => (
                 <TaskItem key={task.id}

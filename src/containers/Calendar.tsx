@@ -1,10 +1,13 @@
 import * as React from 'react';
+import * as moment from 'moment';
+import { useState } from 'react'; 
 import styled from 'styled-components';
 import { CalendarMode } from '../models/CalendarMode';
 import { Task } from '../models/Task';
-import { Moment } from 'moment';
+import update from 'immutability-helper';
 import { WeeklyCalendar } from '../components/calendar/week/WeeklyCalenldar';
 import { MonthCalendar } from '../components/calendar/month/MonthCalendar';
+import { TaskModal } from '../components/TaskModal';
 
 const Container = styled.div`
     display: flex;
@@ -13,28 +16,45 @@ const Container = styled.div`
 `;
 
 interface OwnProps {
-    currentMoment: Moment,
-    mode: CalendarMode,
-    tasks: Task[],
-    onClickDate: (month: number, date: number, time?: number) => void,
-    onClickTask: (taskId: number) => void
+    currentMoment: moment.Moment,
+    mode: CalendarMode
 }
 
 type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
 
 export const Calendar: React.FC<Props> = (props: Props) => {
-    const { currentMoment, mode, tasks, onClickDate, onClickTask, ...divProps } = props;
+    const { currentMoment, mode, ...divProps } = props;
+    const [tasks, setTasks] = useState(new Array<Task>());
+    const [selectedMoment, setSelectedMoment] = useState();
+    const [selectedTask, setSelectedTask] = useState();
 
     const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-        const date = (e.target as HTMLElement).dataset.date;
-        const month = (e.target as HTMLElement).dataset.month;
-        const time = (e.target as HTMLElement).dataset.time;
+        const datetime = (e.target as HTMLElement).dataset.datetime;
         const taskId = (e.target as HTMLElement).dataset.taskid;
-        if (date && month) {
-            onClickDate(Number(month), Number(date), time ? Number(time) : undefined);
+        if (datetime) {
+            setSelectedMoment(moment(datetime));
         } else if (taskId) {
-            onClickTask(Number(taskId));
+            setSelectedTask(tasks.find(task => task.id === Number(taskId)));
         }
+    }
+    const handleDismissModal = () => {
+        setSelectedMoment(null);
+        setSelectedTask(null);
+    }
+    const handleUpdateTask = (task: Task) => {
+        if(task.id){
+            const idx = tasks.findIndex(t => t.id === task.id);
+            setTasks(update(tasks, {$splice: [[idx, 1, task]]}));
+        }else{
+            task.id = tasks.length;
+            setTasks(update(tasks, {$push: [task]}));
+        }
+        handleDismissModal();
+    }
+    const handleDeleteTask = () => {
+        const idx = tasks.findIndex(t => t.id === selectedTask.id);
+        setTasks(update(tasks, {$splice: [[idx, 1]]}));
+        handleDismissModal();
     }
     return (
         <Container {...divProps} onClick={handleClick}>
@@ -42,15 +62,23 @@ export const Calendar: React.FC<Props> = (props: Props) => {
                 <MonthCalendar
                     style={{ flex: 1 }}
                     currentMoment={props.currentMoment}
-                    tasks={props.tasks}
+                    tasks={tasks}
                 />
             )}
             {mode === CalendarMode.Week && (
                 <WeeklyCalendar
                     style={{ flex: 1 }}
                     currentMoment={props.currentMoment}
-                    tasks={props.tasks}
+                    tasks={tasks}
                 />
+            )}
+            {(selectedTask || selectedMoment) && (
+                <TaskModal
+                    task={selectedTask}
+                    time={selectedMoment}
+                    onOk={handleUpdateTask}
+                    onCancel={handleDismissModal}
+                    onDelete={handleDeleteTask} />
             )}
         </Container>
     )

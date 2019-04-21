@@ -5,7 +5,6 @@ import { CalendarMode } from '../models/CalendarMode';
 import * as moment from 'moment';
 import { Calendar } from './Calendar';
 import styled from 'styled-components';
-import { Task } from '../models/Task';
 
 const Container = styled.div`
   text-align: center;
@@ -16,8 +15,7 @@ const Container = styled.div`
 
 interface State {
   currentMoment: moment.Moment,
-  mode: CalendarMode,
-  tasks: Task[]
+  mode: CalendarMode
 }
 
 class App extends React.Component<any, State> {
@@ -26,8 +24,7 @@ class App extends React.Component<any, State> {
 
     this.state = {
       currentMoment: moment(),
-      mode: CalendarMode.Month,
-      tasks: []
+      mode: CalendarMode.Month
     }
   }
   render() {
@@ -39,20 +36,15 @@ class App extends React.Component<any, State> {
           onChangeMode={this.handleChangeMode}
           onChangeMoment={this.handleChangeMoment} />
         <Calendar
-          style={{flex: 1}}
+          style={{ flex: 1 }}
           currentMoment={this.state.currentMoment}
           mode={this.state.mode}
-          tasks={this.state.tasks}
-          onClickTask={this.handleClickTask}
-          onClickDate={this.handleClickDate}
         />
       </Container>
     );
   }
   handleChangeMoment = (newMoment: moment.Moment) => this.setState({ currentMoment: newMoment });
   handleChangeMode = (mode: CalendarMode) => this.setState({ mode });
-  handleClickTask = (taskId: number) => {alert(taskId)}; 
-  handleClickDate = (month: number, date: number) => {alert(date)};
 }
 
 export default App;
