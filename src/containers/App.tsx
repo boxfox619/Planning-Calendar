@@ -18,40 +18,26 @@ interface Props {
   store: Store
 }
 
-interface State {
-  currentMoment: moment.Moment,
-  mode: CalendarMode
-}
+export const App: React.FC<Props> = (props: Props) => {
+  const {store} = props;
 
-class App extends React.Component<Props, State> {
-  constructor(props: Props) {
-    super(props);
+  const [currentMoment, setCurrentMoment] = React.useState(moment());
+  const [calendarMode, setCalendarMode] = React.useState(CalendarMode.Month);
 
-    this.state = {
-      currentMoment: moment(),
-      mode: CalendarMode.Month
-    }
-  }
-  render() {
-    return (
-      <Provider store={this.props.store}>
-        <Container>
-          <CalendarController
-            currentMoment={this.state.currentMoment}
-            mode={this.state.mode}
-            onChangeMode={this.handleChangeMode}
-            onChangeMoment={this.handleChangeMoment} />
-          <Calendar
-            style={{ flex: 1 }}
-            currentMoment={this.state.currentMoment}
-            mode={this.state.mode}
-          />
-        </Container>
-      </Provider>
-    );
-  }
-  handleChangeMoment = (newMoment: moment.Moment) => this.setState({ currentMoment: newMoment });
-  handleChangeMode = (mode: CalendarMode) => this.setState({ mode });
-}
-
-export default App;
+  return (
+    <Provider store={store}>
+      <Container>
+        <CalendarController
+          currentMoment={currentMoment}
+          mode={calendarMode}
+          onChangeMode={setCalendarMode}
+          onChangeMoment={setCurrentMoment} />
+        <Calendar
+          style={{ flex: 1 }}
+          currentMoment={currentMoment}
+          mode={calendarMode}
+        />
+      </Container>
+    </Provider>
+  )
+};
