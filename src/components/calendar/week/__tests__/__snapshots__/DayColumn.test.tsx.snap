@@ -4,7 +4,7 @@ exports[`<DayColumn /> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
-    currentMoment={"2014-02-27T10:00:00.000Z"}
+    dateMoment={"2014-02-27T10:00:00.000Z"}
     tasks={
         Array [
             Task {
@@ -57,124 +57,76 @@ ShallowWrapper {
       "children": Array [
         Array [
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={1}
+            data-datetime="2014-02-26T15:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={2}
+            data-datetime="2014-02-26T16:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={3}
+            data-datetime="2014-02-26T17:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={4}
+            data-datetime="2014-02-26T18:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={5}
+            data-datetime="2014-02-26T19:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={6}
+            data-datetime="2014-02-26T20:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={7}
+            data-datetime="2014-02-26T21:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={8}
+            data-datetime="2014-02-26T22:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={9}
+            data-datetime="2014-02-26T23:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={10}
+            data-datetime="2014-02-27T00:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={11}
+            data-datetime="2014-02-27T01:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={12}
+            data-datetime="2014-02-27T02:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={13}
+            data-datetime="2014-02-27T03:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={14}
+            data-datetime="2014-02-27T04:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={15}
+            data-datetime="2014-02-27T05:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={16}
+            data-datetime="2014-02-27T06:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={17}
+            data-datetime="2014-02-27T07:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={18}
+            data-datetime="2014-02-27T08:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={19}
+            data-datetime="2014-02-27T09:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={20}
+            data-datetime="2014-02-27T10:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={21}
+            data-datetime="2014-02-27T11:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={22}
+            data-datetime="2014-02-27T12:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={23}
+            data-datetime="2014-02-27T13:00:00.000Z"
 />,
           <Unknown
-            data-date={27}
-            data-month={1}
-            data-time={24}
+            data-datetime="2014-02-27T14:00:00.000Z"
 />,
         ],
         Array [
@@ -250,12 +202,51 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
+        "key": "0-cell",
+        "nodeType": "function",
+        "props": Object {
+          "data-datetime": "2014-02-26T15:00:00.000Z",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": true,
+            "rules": Array [
+              "
+    height: 40px;
+    cursor: pointer;
+    transition-duration: 1s;
+    border-bottom: 1px solid ",
+              "#DADCDF",
+              ";
+    &:hover {
+        background-color: ",
+              "#DADCDF",
+              ";
+    }
+",
+            ],
+          },
+          "displayName": "Cell",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
         "key": "1-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 1,
+          "data-datetime": "2014-02-26T16:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -296,9 +287,7 @@ ShallowWrapper {
         "key": "2-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 2,
+          "data-datetime": "2014-02-26T17:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -339,9 +328,7 @@ ShallowWrapper {
         "key": "3-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 3,
+          "data-datetime": "2014-02-26T18:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -382,9 +369,7 @@ ShallowWrapper {
         "key": "4-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 4,
+          "data-datetime": "2014-02-26T19:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -425,9 +410,7 @@ ShallowWrapper {
         "key": "5-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 5,
+          "data-datetime": "2014-02-26T20:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -468,9 +451,7 @@ ShallowWrapper {
         "key": "6-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 6,
+          "data-datetime": "2014-02-26T21:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -511,9 +492,7 @@ ShallowWrapper {
         "key": "7-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 7,
+          "data-datetime": "2014-02-26T22:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -554,9 +533,7 @@ ShallowWrapper {
         "key": "8-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 8,
+          "data-datetime": "2014-02-26T23:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -597,9 +574,7 @@ ShallowWrapper {
         "key": "9-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 9,
+          "data-datetime": "2014-02-27T00:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -640,9 +615,7 @@ ShallowWrapper {
         "key": "10-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 10,
+          "data-datetime": "2014-02-27T01:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -683,9 +656,7 @@ ShallowWrapper {
         "key": "11-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 11,
+          "data-datetime": "2014-02-27T02:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -726,9 +697,7 @@ ShallowWrapper {
         "key": "12-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 12,
+          "data-datetime": "2014-02-27T03:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -769,9 +738,7 @@ ShallowWrapper {
         "key": "13-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 13,
+          "data-datetime": "2014-02-27T04:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -812,9 +779,7 @@ ShallowWrapper {
         "key": "14-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 14,
+          "data-datetime": "2014-02-27T05:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -855,9 +820,7 @@ ShallowWrapper {
         "key": "15-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 15,
+          "data-datetime": "2014-02-27T06:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -898,9 +861,7 @@ ShallowWrapper {
         "key": "16-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 16,
+          "data-datetime": "2014-02-27T07:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -941,9 +902,7 @@ ShallowWrapper {
         "key": "17-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 17,
+          "data-datetime": "2014-02-27T08:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -984,9 +943,7 @@ ShallowWrapper {
         "key": "18-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 18,
+          "data-datetime": "2014-02-27T09:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -1027,9 +984,7 @@ ShallowWrapper {
         "key": "19-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 19,
+          "data-datetime": "2014-02-27T10:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -1070,9 +1025,7 @@ ShallowWrapper {
         "key": "20-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 20,
+          "data-datetime": "2014-02-27T11:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -1113,9 +1066,7 @@ ShallowWrapper {
         "key": "21-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 21,
+          "data-datetime": "2014-02-27T12:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -1156,9 +1107,7 @@ ShallowWrapper {
         "key": "22-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 22,
+          "data-datetime": "2014-02-27T13:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -1199,52 +1148,7 @@ ShallowWrapper {
         "key": "23-cell",
         "nodeType": "function",
         "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 23,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": true,
-            "rules": Array [
-              "
-    height: 40px;
-    cursor: pointer;
-    transition-duration: 1s;
-    border-bottom: 1px solid ",
-              "#DADCDF",
-              ";
-    &:hover {
-        background-color: ",
-              "#DADCDF",
-              ";
-    }
-",
-            ],
-          },
-          "displayName": "Cell",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        },
-      },
-      Object {
-        "instance": null,
-        "key": "24-cell",
-        "nodeType": "function",
-        "props": Object {
-          "data-date": 27,
-          "data-month": 1,
-          "data-time": 24,
+          "data-datetime": "2014-02-27T14:00:00.000Z",
         },
         "ref": null,
         "rendered": null,
@@ -1568,124 +1472,76 @@ ShallowWrapper {
         "children": Array [
           Array [
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={1}
+              data-datetime="2014-02-26T15:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={2}
+              data-datetime="2014-02-26T16:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={3}
+              data-datetime="2014-02-26T17:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={4}
+              data-datetime="2014-02-26T18:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={5}
+              data-datetime="2014-02-26T19:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={6}
+              data-datetime="2014-02-26T20:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={7}
+              data-datetime="2014-02-26T21:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={8}
+              data-datetime="2014-02-26T22:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={9}
+              data-datetime="2014-02-26T23:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={10}
+              data-datetime="2014-02-27T00:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={11}
+              data-datetime="2014-02-27T01:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={12}
+              data-datetime="2014-02-27T02:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={13}
+              data-datetime="2014-02-27T03:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={14}
+              data-datetime="2014-02-27T04:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={15}
+              data-datetime="2014-02-27T05:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={16}
+              data-datetime="2014-02-27T06:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={17}
+              data-datetime="2014-02-27T07:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={18}
+              data-datetime="2014-02-27T08:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={19}
+              data-datetime="2014-02-27T09:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={20}
+              data-datetime="2014-02-27T10:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={21}
+              data-datetime="2014-02-27T11:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={22}
+              data-datetime="2014-02-27T12:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={23}
+              data-datetime="2014-02-27T13:00:00.000Z"
 />,
             <Unknown
-              data-date={27}
-              data-month={1}
-              data-time={24}
+              data-datetime="2014-02-27T14:00:00.000Z"
 />,
           ],
           Array [
@@ -1761,12 +1617,51 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
+          "key": "0-cell",
+          "nodeType": "function",
+          "props": Object {
+            "data-datetime": "2014-02-26T15:00:00.000Z",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bwzfXH",
+              "isStatic": true,
+              "rules": Array [
+                "
+    height: 40px;
+    cursor: pointer;
+    transition-duration: 1s;
+    border-bottom: 1px solid ",
+                "#DADCDF",
+                ";
+    &:hover {
+        background-color: ",
+                "#DADCDF",
+                ";
+    }
+",
+              ],
+            },
+            "displayName": "Cell",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bwzfXH",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
           "key": "1-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 1,
+            "data-datetime": "2014-02-26T16:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -1807,9 +1702,7 @@ ShallowWrapper {
           "key": "2-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 2,
+            "data-datetime": "2014-02-26T17:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -1850,9 +1743,7 @@ ShallowWrapper {
           "key": "3-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 3,
+            "data-datetime": "2014-02-26T18:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -1893,9 +1784,7 @@ ShallowWrapper {
           "key": "4-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 4,
+            "data-datetime": "2014-02-26T19:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -1936,9 +1825,7 @@ ShallowWrapper {
           "key": "5-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 5,
+            "data-datetime": "2014-02-26T20:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -1979,9 +1866,7 @@ ShallowWrapper {
           "key": "6-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 6,
+            "data-datetime": "2014-02-26T21:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2022,9 +1907,7 @@ ShallowWrapper {
           "key": "7-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 7,
+            "data-datetime": "2014-02-26T22:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2065,9 +1948,7 @@ ShallowWrapper {
           "key": "8-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 8,
+            "data-datetime": "2014-02-26T23:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2108,9 +1989,7 @@ ShallowWrapper {
           "key": "9-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 9,
+            "data-datetime": "2014-02-27T00:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2151,9 +2030,7 @@ ShallowWrapper {
           "key": "10-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 10,
+            "data-datetime": "2014-02-27T01:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2194,9 +2071,7 @@ ShallowWrapper {
           "key": "11-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 11,
+            "data-datetime": "2014-02-27T02:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2237,9 +2112,7 @@ ShallowWrapper {
           "key": "12-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 12,
+            "data-datetime": "2014-02-27T03:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2280,9 +2153,7 @@ ShallowWrapper {
           "key": "13-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 13,
+            "data-datetime": "2014-02-27T04:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2323,9 +2194,7 @@ ShallowWrapper {
           "key": "14-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 14,
+            "data-datetime": "2014-02-27T05:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2366,9 +2235,7 @@ ShallowWrapper {
           "key": "15-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 15,
+            "data-datetime": "2014-02-27T06:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2409,9 +2276,7 @@ ShallowWrapper {
           "key": "16-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 16,
+            "data-datetime": "2014-02-27T07:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2452,9 +2317,7 @@ ShallowWrapper {
           "key": "17-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 17,
+            "data-datetime": "2014-02-27T08:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2495,9 +2358,7 @@ ShallowWrapper {
           "key": "18-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 18,
+            "data-datetime": "2014-02-27T09:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2538,9 +2399,7 @@ ShallowWrapper {
           "key": "19-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 19,
+            "data-datetime": "2014-02-27T10:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2581,9 +2440,7 @@ ShallowWrapper {
           "key": "20-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 20,
+            "data-datetime": "2014-02-27T11:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2624,9 +2481,7 @@ ShallowWrapper {
           "key": "21-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 21,
+            "data-datetime": "2014-02-27T12:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2667,9 +2522,7 @@ ShallowWrapper {
           "key": "22-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 22,
+            "data-datetime": "2014-02-27T13:00:00.000Z",
           },
           "ref": null,
           "rendered": null,
@@ -2710,52 +2563,7 @@ ShallowWrapper {
           "key": "23-cell",
           "nodeType": "function",
           "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 23,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
-              "isStatic": true,
-              "rules": Array [
-                "
-    height: 40px;
-    cursor: pointer;
-    transition-duration: 1s;
-    border-bottom: 1px solid ",
-                "#DADCDF",
-                ";
-    &:hover {
-        background-color: ",
-                "#DADCDF",
-                ";
-    }
-",
-              ],
-            },
-            "displayName": "Cell",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
-        },
-        Object {
-          "instance": null,
-          "key": "24-cell",
-          "nodeType": "function",
-          "props": Object {
-            "data-date": 27,
-            "data-month": 1,
-            "data-time": 24,
+            "data-datetime": "2014-02-27T14:00:00.000Z",
           },
           "ref": null,
           "rendered": null,

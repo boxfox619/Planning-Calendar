@@ -49,7 +49,7 @@ export const TaskModal: React.FC<Props> = (props: Props) => {
             visible={true}>
             <Form id="task-form" {...formItemLayout} onSubmit={handleSubmit}>
                 <Form.Item label="Task Name" >
-                    <Input name="name" required={true} />
+                    <Input name="name" defaultValue={task ? task.name : ''} required={true} />
                 </Form.Item>
                 <Form.Item label="Start Date Time" >
                     <DatePicker
@@ -62,7 +62,7 @@ export const TaskModal: React.FC<Props> = (props: Props) => {
                     <InputNumber
                         required={true}
                         name="durationTime"
-                        min={1} max={24} defaultValue={1} />
+                        min={1} max={24} defaultValue={task ? task.durationTime : 1} />
                 </Form.Item>
             </Form>
         </Modal>
