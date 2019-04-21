@@ -1,0 +1,319 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DayOfWeekHeader /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <div>
+          일
+</div>,
+        <div>
+          월
+</div>,
+        <div>
+          화
+</div>,
+        <div>
+          수
+</div>,
+        <div>
+          목
+</div>,
+        <div>
+          금
+</div>,
+        <div>
+          토
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "일",
+        "nodeType": "host",
+        "props": Object {
+          "children": "일",
+        },
+        "ref": null,
+        "rendered": "일",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "월",
+        "nodeType": "host",
+        "props": Object {
+          "children": "월",
+        },
+        "ref": null,
+        "rendered": "월",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "화",
+        "nodeType": "host",
+        "props": Object {
+          "children": "화",
+        },
+        "ref": null,
+        "rendered": "화",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "수",
+        "nodeType": "host",
+        "props": Object {
+          "children": "수",
+        },
+        "ref": null,
+        "rendered": "수",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "목",
+        "nodeType": "host",
+        "props": Object {
+          "children": "목",
+        },
+        "ref": null,
+        "rendered": "목",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "금",
+        "nodeType": "host",
+        "props": Object {
+          "children": "금",
+        },
+        "ref": null,
+        "rendered": "금",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "토",
+        "nodeType": "host",
+        "props": Object {
+          "children": "토",
+        },
+        "ref": null,
+        "rendered": "토",
+        "type": "div",
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": true,
+        "rules": Array [
+          "
+    display: flex;
+    flex-flow: row;
+    border-bottom: 1px solid ",
+          "#DADCDF",
+          ";
+    & > * {
+        flex: 1;
+    }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <div>
+            일
+</div>,
+          <div>
+            월
+</div>,
+          <div>
+            화
+</div>,
+          <div>
+            수
+</div>,
+          <div>
+            목
+</div>,
+          <div>
+            금
+</div>,
+          <div>
+            토
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "일",
+          "nodeType": "host",
+          "props": Object {
+            "children": "일",
+          },
+          "ref": null,
+          "rendered": "일",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "월",
+          "nodeType": "host",
+          "props": Object {
+            "children": "월",
+          },
+          "ref": null,
+          "rendered": "월",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "화",
+          "nodeType": "host",
+          "props": Object {
+            "children": "화",
+          },
+          "ref": null,
+          "rendered": "화",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "수",
+          "nodeType": "host",
+          "props": Object {
+            "children": "수",
+          },
+          "ref": null,
+          "rendered": "수",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "목",
+          "nodeType": "host",
+          "props": Object {
+            "children": "목",
+          },
+          "ref": null,
+          "rendered": "목",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "금",
+          "nodeType": "host",
+          "props": Object {
+            "children": "금",
+          },
+          "ref": null,
+          "rendered": "금",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "토",
+          "nodeType": "host",
+          "props": Object {
+            "children": "토",
+          },
+          "ref": null,
+          "rendered": "토",
+          "type": "div",
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "rules": Array [
+            "
+    display: flex;
+    flex-flow: row;
+    border-bottom: 1px solid ",
+            "#DADCDF",
+            ";
+    & > * {
+        flex: 1;
+    }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
