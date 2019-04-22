@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import * as moment from 'moment';
 import { range } from 'lodash';
-import { BORDER_COLOR } from '../../common/constrains';
+import { BORDER_COLOR } from '../../common/constants';
 import { Task } from '../../models/Task';
 import { Button } from 'antd';
 import 'antd/lib/button/style/css';
