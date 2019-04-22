@@ -1,5 +1,5 @@
 import { Moment, unitOfTime } from 'moment';
-import { CalendarMode } from '../models/CalendarMode';
+import { CalendarMode } from '../models';
 
 const momentUnit = {
     [CalendarMode.Week]: 'w',

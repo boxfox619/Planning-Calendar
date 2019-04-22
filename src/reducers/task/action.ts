@@ -1,5 +1,5 @@
 import { createAction } from 'redux-actions';
-import { Task } from '../../models/Task';
+import { Task } from '../../models';
 
 export const LOAD = 'TASK.LOAD';
 export const LOAD_STARTED = 'TASK.LOAD_STARTED';
