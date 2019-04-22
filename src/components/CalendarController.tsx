@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { CalendarMode } from '../models/CalendarMode';
 import { Moment } from 'moment';
-import { weekOfMonth, calMoment } from '../libs/calendarUtil';
+import { weekOfMonth, calMoment } from '../utils/calendarUtil';
 import { Button } from 'antd';
 import { CalendarModeDropdown } from './CalendarModeDropdown';
 import 'antd/lib/button/style/css';

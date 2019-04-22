@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as moment from 'moment';
-import { getFormData } from '../libs/formUtil';
+import { getFormData } from '../utils/formUtil';
 import { DatePicker, Input, Button, Modal, Form, InputNumber } from 'antd';
 import 'antd/lib/input/style/css';
 import 'antd/lib/input-number/style/css';
