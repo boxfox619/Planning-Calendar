@@ -3,7 +3,7 @@ import * as moment from 'moment';
 import { useState } from 'react'; 
 import styled from 'styled-components';
 import { CalendarMode } from '../models/CalendarMode';
-import { Task } from '../models/Task';
+import { Task, TaskCreateRequest } from '../models/Task';
 import update from 'immutability-helper';
 import { WeeklyCalendar } from './weekCalendar/WeeklyCalenldar';
 import { MonthCalendar } from './monthCalendar/MonthCalendar';
@@ -41,11 +41,11 @@ export const Calendar: React.FC<Props> = (props: Props) => {
         setSelectedMoment(null);
         setSelectedTask(null);
     }
-    const handleUpdateTask = (task: Task) => {
-        if(task.id){
-            const idx = tasks.findIndex(t => t.id === task.id);
-            setTasks(update(tasks, {$splice: [[idx, 1, task]]}));
-        }else{
+    const handleUpdateTask = (task: TaskCreateRequest) => {
+        if (selectedTask) {
+            const idx = tasks.findIndex(t => t.id === selectedTask.id);
+            setTasks(update(tasks, { $splice: [[idx, 1, { id: selectedTask.id, ...task }]] }));
+        } else {
             task.id = tasks.length;
             setTasks(update(tasks, {$push: [task]}));
         }
