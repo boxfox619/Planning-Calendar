@@ -4,8 +4,7 @@ import * as moment from 'moment';
 import { range } from 'lodash';
 import { BORDER_COLOR } from '../../common/constants';
 import { Task } from '../../models/Task';
-import { Button } from 'antd';
-import 'antd/lib/button/style/css';
+import {TaskItem} from '../TaskItem';
 
 const DayColumnContainer = styled.div`
     position: relative;
@@ -23,13 +22,10 @@ const Cell = styled.div`
         background-color: ${BORDER_COLOR};
     }
 `
-const TaskItem = styled(Button)`
+const WeekTaskItem = styled(TaskItem)`
     position: absolute;
-    width: 100%;
-    height: auto;
     left: 0;
 `
-TaskItem.displayName = 'Task';
 Cell.displayName = 'Cell';
 
 interface Props {
@@ -48,11 +44,7 @@ export const DayColumn: React.FC<Props> = (props: Props) => {
             {tasks.map(task => {
                 const top = `${ 40 * task.startHour }px`;
                 const height = `${ 40 * (task.endHour - task.startHour) }px`;
-                return (<TaskItem key={task.id}
-                            data-taskid={task.id}
-                            style={{ top, height }}>
-                            {task.name}
-                        </TaskItem>)
+                return (<WeekTaskItem key={task.id} taskId={task.id} style={{ top, height }} name={task.name}/>)
             })}
         </DayColumnContainer>
     )

@@ -1,20 +1,15 @@
 import * as React from 'react';
 import * as moment from 'moment';
 import styled from 'styled-components';
-import { Task } from '../../models/Task';
-import { Button } from 'antd';
+import {TaskItem} from '../TaskItem';
+import { Task } from '../../models';
 import 'antd/lib/button/style/css';
 
 const Day = styled.div`
     text-align: left;
     padding: 10px;
 `
-const TaskItem = styled(Button)`
-    width: 100%;
-    height: auto;
-`
 Day.displayName = 'Day';
-TaskItem.displayName = 'Task';
 
 interface Props {
     dateMoment: moment.Moment,
@@ -22,13 +17,13 @@ interface Props {
 }
 
 export const DayBox: React.FC<Props> = (props: Props) => {
-    const {dateMoment, tasks} = props;
-    const sortedTask = tasks.sort((task1: Task, task2: Task) => (task1.startHour >= task2.startHour)? 1 : -1);
+    const { dateMoment, tasks } = props;
+    const sortedTask = tasks.sort((task1: Task, task2: Task) => (task1.startHour >= task2.startHour) ? 1 : -1);
     return (
         <Day data-datetime={dateMoment.toISOString()}>
             {dateMoment.date()}
             <div>
-                {sortedTask.map(task => <TaskItem key={task.id} data-taskId={task.id}>{task.name}</TaskItem>)}
+                {sortedTask.map(task => ( <TaskItem key={task.id} taskId={task.id} name={task.name}/> ))}
             </div>
         </Day>
     )

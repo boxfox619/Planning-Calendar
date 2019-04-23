@@ -42,7 +42,6 @@ const updateTaskEpic = (
     action: Observable<BaseAction>
 ): Observable<any> => action.pipe(
     ofType(TaskAction.EDIT),
-    throttleTime(3000),
     concatMap(($action: Action<Task>) => concat(
         of(TaskAction.startedUpdateTask()),
         from(TaskApi.updateTask($action.payload)).pipe(
@@ -57,7 +56,6 @@ const deleteTaskEpic = (
     action: Observable<BaseAction>
 ): Observable<any> => action.pipe(
     ofType(TaskAction.DELETE),
-    throttleTime(3000),
     concatMap(($action: Action<number>) => concat(
         of(TaskAction.startedUpdateTask()),
         from(TaskApi.deleteTask($action.payload)).pipe(

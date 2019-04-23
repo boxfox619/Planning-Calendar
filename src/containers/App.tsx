@@ -42,7 +42,7 @@ const App: React.FC<Props> = ({ store, taskStore, ...action }) => {
   const [currentMoment, setCurrentMoment] = React.useState(moment());
   const [calendarMode, setCalendarMode] = React.useState(CalendarMode.Month);
   const [selectedTarget, setSelectedTarget] = React.useState();
-  const prevIsUpdating = React.useRef();
+  const prevIsUpdating = React.useRef<boolean>();
 
   const handleDismissModal = () => setSelectedTarget(null);
   const handleUpdateTask = (newTask: Task) => {
@@ -59,6 +59,7 @@ const App: React.FC<Props> = ({ store, taskStore, ...action }) => {
     if (prevIsUpdating && !isTaskUpdating && isTaskUpdated) {
       handleDismissModal();
     }
+    prevIsUpdating.current = isTaskUpdating;
   }, [isTaskUpdating, isTaskUpdated]);
 
   React.useEffect(() => {
@@ -80,6 +81,7 @@ const App: React.FC<Props> = ({ store, taskStore, ...action }) => {
           mode={calendarMode}
           tasks={tasks}
           onSelect={setSelectedTarget}
+          onUpdate={action.editTask}
         />
         {(selectedTarget) && (
           <TaskModal
