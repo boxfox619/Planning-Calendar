@@ -26,6 +26,7 @@ const WeekTaskItem = styled(TaskItem)`
     position: absolute;
     left: 0;
 `
+WeekTaskItem.displayName = 'TaskItem';
 Cell.displayName = 'Cell';
 
 interface Props {

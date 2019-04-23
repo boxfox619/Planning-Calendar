@@ -136,60 +136,55 @@ ShallowWrapper {
         ],
         Array [
           <Unknown
-            data-taskid={1}
+            name="귤 까기01"
             style={
                         Object {
                                     "height": "40px",
                                     "top": "40px",
                                   }
             }
->
-            귤 까기01
-</Unknown>,
+            taskId={1}
+/>,
           <Unknown
-            data-taskid={1}
+            name="귤 까기24"
             style={
                         Object {
                                     "height": "40px",
                                     "top": "880px",
                                   }
             }
->
-            귤 까기24
-</Unknown>,
+            taskId={1}
+/>,
           <Unknown
-            data-taskid={1}
+            name="귤 까기10"
             style={
                         Object {
                                     "height": "80px",
                                     "top": "80px",
                                   }
             }
->
-            귤 까기10
-</Unknown>,
+            taskId={1}
+/>,
           <Unknown
-            data-taskid={1}
+            name="귤 까기09"
             style={
                         Object {
                                     "height": "80px",
                                     "top": "320px",
                                   }
             }
->
-            귤 까기09
-</Unknown>,
+            taskId={1}
+/>,
           <Unknown
-            data-taskid={1}
+            name="귤 까기12"
             style={
                         Object {
                                     "height": "80px",
                                     "top": "520px",
                                   }
             }
->
-            귤 까기12
-</Unknown>,
+            taskId={1}
+/>,
         ],
       ],
     },
@@ -208,7 +203,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -229,7 +224,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -249,7 +244,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -270,7 +265,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -290,7 +285,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -311,7 +306,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -331,7 +326,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -352,7 +347,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -372,7 +367,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -393,7 +388,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -413,7 +408,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -434,7 +429,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -454,7 +449,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -475,7 +470,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -495,7 +490,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -516,7 +511,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -536,7 +531,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -557,7 +552,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -577,7 +572,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -598,7 +593,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -618,7 +613,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -639,7 +634,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -659,7 +654,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -680,7 +675,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -700,7 +695,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -721,7 +716,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -741,7 +736,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -762,7 +757,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -782,7 +777,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -803,7 +798,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -823,7 +818,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -844,7 +839,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -864,7 +859,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -885,7 +880,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -905,7 +900,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -926,7 +921,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -946,7 +941,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -967,7 +962,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -987,7 +982,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -1008,7 +1003,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1028,7 +1023,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -1049,7 +1044,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1069,7 +1064,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -1090,7 +1085,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1110,7 +1105,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -1131,7 +1126,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1151,7 +1146,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "rules": Array [
               "
@@ -1172,7 +1167,7 @@ ShallowWrapper {
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1184,36 +1179,32 @@ ShallowWrapper {
         "key": "1",
         "nodeType": "function",
         "props": Object {
-          "children": "귤 까기01",
-          "data-taskid": 1,
+          "name": "귤 까기01",
           "style": Object {
             "height": "40px",
             "top": "40px",
           },
+          "taskId": 1,
         },
         "ref": null,
-        "rendered": "귤 까기01",
+        "rendered": null,
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
-          "Group": [Function],
-          "__ANT_BUTTON": true,
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
+            "componentId": "sc-bxivhb",
             "isStatic": true,
             "rules": Array [
               "
     position: absolute;
-    width: 100%;
-    height: auto;
     left: 0;
 ",
             ],
           },
-          "displayName": "Task",
+          "displayName": "TaskItem",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-htpNat",
+          "styledComponentId": "sc-bxivhb",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1226,36 +1217,32 @@ ShallowWrapper {
         "key": "1",
         "nodeType": "function",
         "props": Object {
-          "children": "귤 까기24",
-          "data-taskid": 1,
+          "name": "귤 까기24",
           "style": Object {
             "height": "40px",
             "top": "880px",
           },
+          "taskId": 1,
         },
         "ref": null,
-        "rendered": "귤 까기24",
+        "rendered": null,
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
-          "Group": [Function],
-          "__ANT_BUTTON": true,
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
+            "componentId": "sc-bxivhb",
             "isStatic": true,
             "rules": Array [
               "
     position: absolute;
-    width: 100%;
-    height: auto;
     left: 0;
 ",
             ],
           },
-          "displayName": "Task",
+          "displayName": "TaskItem",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-htpNat",
+          "styledComponentId": "sc-bxivhb",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1268,36 +1255,32 @@ ShallowWrapper {
         "key": "1",
         "nodeType": "function",
         "props": Object {
-          "children": "귤 까기10",
-          "data-taskid": 1,
+          "name": "귤 까기10",
           "style": Object {
             "height": "80px",
             "top": "80px",
           },
+          "taskId": 1,
         },
         "ref": null,
-        "rendered": "귤 까기10",
+        "rendered": null,
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
-          "Group": [Function],
-          "__ANT_BUTTON": true,
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
+            "componentId": "sc-bxivhb",
             "isStatic": true,
             "rules": Array [
               "
     position: absolute;
-    width: 100%;
-    height: auto;
     left: 0;
 ",
             ],
           },
-          "displayName": "Task",
+          "displayName": "TaskItem",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-htpNat",
+          "styledComponentId": "sc-bxivhb",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1310,36 +1293,32 @@ ShallowWrapper {
         "key": "1",
         "nodeType": "function",
         "props": Object {
-          "children": "귤 까기09",
-          "data-taskid": 1,
+          "name": "귤 까기09",
           "style": Object {
             "height": "80px",
             "top": "320px",
           },
+          "taskId": 1,
         },
         "ref": null,
-        "rendered": "귤 까기09",
+        "rendered": null,
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
-          "Group": [Function],
-          "__ANT_BUTTON": true,
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
+            "componentId": "sc-bxivhb",
             "isStatic": true,
             "rules": Array [
               "
     position: absolute;
-    width: 100%;
-    height: auto;
     left: 0;
 ",
             ],
           },
-          "displayName": "Task",
+          "displayName": "TaskItem",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-htpNat",
+          "styledComponentId": "sc-bxivhb",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1352,36 +1331,32 @@ ShallowWrapper {
         "key": "1",
         "nodeType": "function",
         "props": Object {
-          "children": "귤 까기12",
-          "data-taskid": 1,
+          "name": "귤 까기12",
           "style": Object {
             "height": "80px",
             "top": "520px",
           },
+          "taskId": 1,
         },
         "ref": null,
-        "rendered": "귤 까기12",
+        "rendered": null,
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
-          "Group": [Function],
-          "__ANT_BUTTON": true,
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
+            "componentId": "sc-bxivhb",
             "isStatic": true,
             "rules": Array [
               "
     position: absolute;
-    width: 100%;
-    height: auto;
     left: 0;
 ",
             ],
           },
-          "displayName": "Task",
+          "displayName": "TaskItem",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-htpNat",
+          "styledComponentId": "sc-bxivhb",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1394,7 +1369,7 @@ ShallowWrapper {
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "sc-bdVaJa",
+        "componentId": "sc-bwzfXH",
         "isStatic": true,
         "rules": Array [
           "
@@ -1411,7 +1386,7 @@ ShallowWrapper {
       "displayName": "styled.div",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "sc-bdVaJa",
+      "styledComponentId": "sc-bwzfXH",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -1501,60 +1476,55 @@ ShallowWrapper {
           ],
           Array [
             <Unknown
-              data-taskid={1}
+              name="귤 까기01"
               style={
                             Object {
                                           "height": "40px",
                                           "top": "40px",
                                         }
               }
->
-              귤 까기01
-</Unknown>,
+              taskId={1}
+/>,
             <Unknown
-              data-taskid={1}
+              name="귤 까기24"
               style={
                             Object {
                                           "height": "40px",
                                           "top": "880px",
                                         }
               }
->
-              귤 까기24
-</Unknown>,
+              taskId={1}
+/>,
             <Unknown
-              data-taskid={1}
+              name="귤 까기10"
               style={
                             Object {
                                           "height": "80px",
                                           "top": "80px",
                                         }
               }
->
-              귤 까기10
-</Unknown>,
+              taskId={1}
+/>,
             <Unknown
-              data-taskid={1}
+              name="귤 까기09"
               style={
                             Object {
                                           "height": "80px",
                                           "top": "320px",
                                         }
               }
->
-              귤 까기09
-</Unknown>,
+              taskId={1}
+/>,
             <Unknown
-              data-taskid={1}
+              name="귤 까기12"
               style={
                             Object {
                                           "height": "80px",
                                           "top": "520px",
                                         }
               }
->
-              귤 까기12
-</Unknown>,
+              taskId={1}
+/>,
           ],
         ],
       },
@@ -1573,7 +1543,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -1594,7 +1564,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -1614,7 +1584,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -1635,7 +1605,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -1655,7 +1625,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -1676,7 +1646,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -1696,7 +1666,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -1717,7 +1687,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -1737,7 +1707,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -1758,7 +1728,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -1778,7 +1748,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -1799,7 +1769,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -1819,7 +1789,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -1840,7 +1810,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -1860,7 +1830,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -1881,7 +1851,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -1901,7 +1871,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -1922,7 +1892,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -1942,7 +1912,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -1963,7 +1933,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -1983,7 +1953,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2004,7 +1974,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2024,7 +1994,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2045,7 +2015,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2065,7 +2035,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2086,7 +2056,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2106,7 +2076,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2127,7 +2097,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2147,7 +2117,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2168,7 +2138,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2188,7 +2158,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2209,7 +2179,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2229,7 +2199,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2250,7 +2220,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2270,7 +2240,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2291,7 +2261,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2311,7 +2281,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2332,7 +2302,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2352,7 +2322,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2373,7 +2343,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2393,7 +2363,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2414,7 +2384,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2434,7 +2404,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2455,7 +2425,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2475,7 +2445,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2496,7 +2466,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2516,7 +2486,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2537,7 +2507,7 @@ ShallowWrapper {
             "displayName": "Cell",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2549,36 +2519,32 @@ ShallowWrapper {
           "key": "1",
           "nodeType": "function",
           "props": Object {
-            "children": "귤 까기01",
-            "data-taskid": 1,
+            "name": "귤 까기01",
             "style": Object {
               "height": "40px",
               "top": "40px",
             },
+            "taskId": 1,
           },
           "ref": null,
-          "rendered": "귤 까기01",
+          "rendered": null,
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
-            "Group": [Function],
-            "__ANT_BUTTON": true,
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-htpNat",
+              "componentId": "sc-bxivhb",
               "isStatic": true,
               "rules": Array [
                 "
     position: absolute;
-    width: 100%;
-    height: auto;
     left: 0;
 ",
               ],
             },
-            "displayName": "Task",
+            "displayName": "TaskItem",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-htpNat",
+            "styledComponentId": "sc-bxivhb",
             "target": [Function],
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2591,36 +2557,32 @@ ShallowWrapper {
           "key": "1",
           "nodeType": "function",
           "props": Object {
-            "children": "귤 까기24",
-            "data-taskid": 1,
+            "name": "귤 까기24",
             "style": Object {
               "height": "40px",
               "top": "880px",
             },
+            "taskId": 1,
           },
           "ref": null,
-          "rendered": "귤 까기24",
+          "rendered": null,
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
-            "Group": [Function],
-            "__ANT_BUTTON": true,
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-htpNat",
+              "componentId": "sc-bxivhb",
               "isStatic": true,
               "rules": Array [
                 "
     position: absolute;
-    width: 100%;
-    height: auto;
     left: 0;
 ",
               ],
             },
-            "displayName": "Task",
+            "displayName": "TaskItem",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-htpNat",
+            "styledComponentId": "sc-bxivhb",
             "target": [Function],
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2633,36 +2595,32 @@ ShallowWrapper {
           "key": "1",
           "nodeType": "function",
           "props": Object {
-            "children": "귤 까기10",
-            "data-taskid": 1,
+            "name": "귤 까기10",
             "style": Object {
               "height": "80px",
               "top": "80px",
             },
+            "taskId": 1,
           },
           "ref": null,
-          "rendered": "귤 까기10",
+          "rendered": null,
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
-            "Group": [Function],
-            "__ANT_BUTTON": true,
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-htpNat",
+              "componentId": "sc-bxivhb",
               "isStatic": true,
               "rules": Array [
                 "
     position: absolute;
-    width: 100%;
-    height: auto;
     left: 0;
 ",
               ],
             },
-            "displayName": "Task",
+            "displayName": "TaskItem",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-htpNat",
+            "styledComponentId": "sc-bxivhb",
             "target": [Function],
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2675,36 +2633,32 @@ ShallowWrapper {
           "key": "1",
           "nodeType": "function",
           "props": Object {
-            "children": "귤 까기09",
-            "data-taskid": 1,
+            "name": "귤 까기09",
             "style": Object {
               "height": "80px",
               "top": "320px",
             },
+            "taskId": 1,
           },
           "ref": null,
-          "rendered": "귤 까기09",
+          "rendered": null,
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
-            "Group": [Function],
-            "__ANT_BUTTON": true,
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-htpNat",
+              "componentId": "sc-bxivhb",
               "isStatic": true,
               "rules": Array [
                 "
     position: absolute;
-    width: 100%;
-    height: auto;
     left: 0;
 ",
               ],
             },
-            "displayName": "Task",
+            "displayName": "TaskItem",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-htpNat",
+            "styledComponentId": "sc-bxivhb",
             "target": [Function],
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2717,36 +2671,32 @@ ShallowWrapper {
           "key": "1",
           "nodeType": "function",
           "props": Object {
-            "children": "귤 까기12",
-            "data-taskid": 1,
+            "name": "귤 까기12",
             "style": Object {
               "height": "80px",
               "top": "520px",
             },
+            "taskId": 1,
           },
           "ref": null,
-          "rendered": "귤 까기12",
+          "rendered": null,
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
-            "Group": [Function],
-            "__ANT_BUTTON": true,
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-htpNat",
+              "componentId": "sc-bxivhb",
               "isStatic": true,
               "rules": Array [
                 "
     position: absolute;
-    width: 100%;
-    height: auto;
     left: 0;
 ",
               ],
             },
-            "displayName": "Task",
+            "displayName": "TaskItem",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-htpNat",
+            "styledComponentId": "sc-bxivhb",
             "target": [Function],
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2759,7 +2709,7 @@ ShallowWrapper {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-bdVaJa",
+          "componentId": "sc-bwzfXH",
           "isStatic": true,
           "rules": Array [
             "
@@ -2776,7 +2726,7 @@ ShallowWrapper {
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-bdVaJa",
+        "styledComponentId": "sc-bwzfXH",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
