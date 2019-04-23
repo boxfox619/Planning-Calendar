@@ -4,7 +4,7 @@ import { Store } from 'redux';
 import { CalendarController } from '../components/CalendarController';
 import { CalendarMode } from '../models/CalendarMode';
 import * as moment from 'moment';
-import { Calendar } from './Calendar';
+import { Calendar } from '../components/Calendar';
 import styled from 'styled-components';
 
 const Container = styled.div`

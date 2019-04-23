@@ -68,29 +68,47 @@ ShallowWrapper {
                 label="Start Date Time"
         >
                 <PickerWrapper
-                        defaultValue={"2014-02-27T10:00:00.000Z"}
+                        allowClear={false}
                         locale={Object {}}
                         name="date"
                         onChange={[Function]}
                         onOk={[Function]}
                         onOpenChange={[Function]}
-                        placeholder="Select Time"
                         popupStyle={Object {}}
-                        showTime={true}
                         transitionName="slide-up"
+                        value={"2014-02-27T10:00:00.000Z"}
+                />
+                <Unknown
+                        allowClear={false}
+                        defaultValue={"2014-02-27T10:00:00.000Z"}
+                        format="HH"
+                        name="startHour"
+                        onChange={[Function]}
                 />
         </FormItem>
         <FormItem
                 hasFeedback={false}
-                label="Duration Time"
+                label="End Date Time"
         >
-                <InputNumber
-                        defaultValue={1}
-                        max={24}
-                        min={1}
-                        name="durationTime"
-                        required={true}
-                        step={1}
+                <PickerWrapper
+                        allowClear={false}
+                        locale={Object {}}
+                        name="date"
+                        onChange={[Function]}
+                        onOk={[Function]}
+                        onOpenChange={[Function]}
+                        open={false}
+                        popupStyle={Object {}}
+                        transitionName="slide-up"
+                        value={"2014-02-27T10:00:00.000Z"}
+                />
+                <Unknown
+                        allowClear={false}
+                        defaultValue={"2014-02-27T11:00:00.000Z"}
+                        disabledHours={[Function]}
+                        format="HH"
+                        name="endHour"
+                        onChange={[Function]}
                 />
         </FormItem>
 </Form>,
@@ -147,29 +165,47 @@ ShallowWrapper {
             label="Start Date Time"
 >
             <PickerWrapper
-                        defaultValue={"2014-02-27T10:00:00.000Z"}
+                        allowClear={false}
                         locale={Object {}}
                         name="date"
                         onChange={[Function]}
                         onOk={[Function]}
                         onOpenChange={[Function]}
-                        placeholder="Select Time"
                         popupStyle={Object {}}
-                        showTime={true}
                         transitionName="slide-up"
+                        value={"2014-02-27T10:00:00.000Z"}
+            />
+            <Unknown
+                        allowClear={false}
+                        defaultValue={"2014-02-27T10:00:00.000Z"}
+                        format="HH"
+                        name="startHour"
+                        onChange={[Function]}
             />
 </FormItem>,
           <FormItem
             hasFeedback={false}
-            label="Duration Time"
+            label="End Date Time"
 >
-            <InputNumber
-                        defaultValue={1}
-                        max={24}
-                        min={1}
-                        name="durationTime"
-                        required={true}
-                        step={1}
+            <PickerWrapper
+                        allowClear={false}
+                        locale={Object {}}
+                        name="date"
+                        onChange={[Function]}
+                        onOk={[Function]}
+                        onOpenChange={[Function]}
+                        open={false}
+                        popupStyle={Object {}}
+                        transitionName="slide-up"
+                        value={"2014-02-27T10:00:00.000Z"}
+            />
+            <Unknown
+                        allowClear={false}
+                        defaultValue={"2014-02-27T11:00:00.000Z"}
+                        disabledHours={[Function]}
+                        format="HH"
+                        name="endHour"
+                        onChange={[Function]}
             />
 </FormItem>,
         ],
@@ -235,42 +271,66 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <PickerWrapper
-              defaultValue={"2014-02-27T10:00:00.000Z"}
-              locale={Object {}}
-              name="date"
-              onChange={[Function]}
-              onOk={[Function]}
-              onOpenChange={[Function]}
-              placeholder="Select Time"
-              popupStyle={Object {}}
-              showTime={true}
-              transitionName="slide-up"
+            "children": Array [
+              <PickerWrapper
+                allowClear={false}
+                locale={Object {}}
+                name="date"
+                onChange={[Function]}
+                onOk={[Function]}
+                onOpenChange={[Function]}
+                popupStyle={Object {}}
+                transitionName="slide-up"
+                value={"2014-02-27T10:00:00.000Z"}
 />,
+              <Unknown
+                allowClear={false}
+                defaultValue={"2014-02-27T10:00:00.000Z"}
+                format="HH"
+                name="startHour"
+                onChange={[Function]}
+/>,
+            ],
             "hasFeedback": false,
             "label": "Start Date Time",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "defaultValue": "2014-02-27T10:00:00.000Z",
-              "locale": Object {},
-              "name": "date",
-              "onChange": [Function],
-              "onOk": [Function],
-              "onOpenChange": [Function],
-              "placeholder": "Select Time",
-              "popupStyle": Object {},
-              "showTime": true,
-              "transitionName": "slide-up",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "allowClear": false,
+                "locale": Object {},
+                "name": "date",
+                "onChange": [Function],
+                "onOk": [Function],
+                "onOpenChange": [Function],
+                "popupStyle": Object {},
+                "transitionName": "slide-up",
+                "value": "2014-02-27T10:00:00.000Z",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "allowClear": false,
+                "defaultValue": "2014-02-27T10:00:00.000Z",
+                "format": "HH",
+                "name": "startHour",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {
@@ -278,34 +338,70 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <InputNumber
-              defaultValue={1}
-              max={24}
-              min={1}
-              name="durationTime"
-              required={true}
-              step={1}
+            "children": Array [
+              <PickerWrapper
+                allowClear={false}
+                locale={Object {}}
+                name="date"
+                onChange={[Function]}
+                onOk={[Function]}
+                onOpenChange={[Function]}
+                open={false}
+                popupStyle={Object {}}
+                transitionName="slide-up"
+                value={"2014-02-27T10:00:00.000Z"}
 />,
+              <Unknown
+                allowClear={false}
+                defaultValue={"2014-02-27T11:00:00.000Z"}
+                disabledHours={[Function]}
+                format="HH"
+                name="endHour"
+                onChange={[Function]}
+/>,
+            ],
             "hasFeedback": false,
-            "label": "Duration Time",
+            "label": "End Date Time",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "defaultValue": 1,
-              "max": 24,
-              "min": 1,
-              "name": "durationTime",
-              "required": true,
-              "step": 1,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "allowClear": false,
+                "locale": Object {},
+                "name": "date",
+                "onChange": [Function],
+                "onOk": [Function],
+                "onOpenChange": [Function],
+                "open": false,
+                "popupStyle": Object {},
+                "transitionName": "slide-up",
+                "value": "2014-02-27T10:00:00.000Z",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "allowClear": false,
+                "defaultValue": "2014-02-27T11:00:00.000Z",
+                "disabledHours": [Function],
+                "format": "HH",
+                "name": "endHour",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
       ],
@@ -364,29 +460,47 @@ ShallowWrapper {
                     label="Start Date Time"
           >
                     <PickerWrapper
-                              defaultValue={"2014-02-27T10:00:00.000Z"}
+                              allowClear={false}
                               locale={Object {}}
                               name="date"
                               onChange={[Function]}
                               onOk={[Function]}
                               onOpenChange={[Function]}
-                              placeholder="Select Time"
                               popupStyle={Object {}}
-                              showTime={true}
                               transitionName="slide-up"
+                              value={"2014-02-27T10:00:00.000Z"}
+                    />
+                    <Unknown
+                              allowClear={false}
+                              defaultValue={"2014-02-27T10:00:00.000Z"}
+                              format="HH"
+                              name="startHour"
+                              onChange={[Function]}
                     />
           </FormItem>
           <FormItem
                     hasFeedback={false}
-                    label="Duration Time"
+                    label="End Date Time"
           >
-                    <InputNumber
-                              defaultValue={1}
-                              max={24}
-                              min={1}
-                              name="durationTime"
-                              required={true}
-                              step={1}
+                    <PickerWrapper
+                              allowClear={false}
+                              locale={Object {}}
+                              name="date"
+                              onChange={[Function]}
+                              onOk={[Function]}
+                              onOpenChange={[Function]}
+                              open={false}
+                              popupStyle={Object {}}
+                              transitionName="slide-up"
+                              value={"2014-02-27T10:00:00.000Z"}
+                    />
+                    <Unknown
+                              allowClear={false}
+                              defaultValue={"2014-02-27T11:00:00.000Z"}
+                              disabledHours={[Function]}
+                              format="HH"
+                              name="endHour"
+                              onChange={[Function]}
                     />
           </FormItem>
 </Form>,
@@ -443,29 +557,47 @@ ShallowWrapper {
               label="Start Date Time"
 >
               <PickerWrapper
-                            defaultValue={"2014-02-27T10:00:00.000Z"}
+                            allowClear={false}
                             locale={Object {}}
                             name="date"
                             onChange={[Function]}
                             onOk={[Function]}
                             onOpenChange={[Function]}
-                            placeholder="Select Time"
                             popupStyle={Object {}}
-                            showTime={true}
                             transitionName="slide-up"
+                            value={"2014-02-27T10:00:00.000Z"}
+              />
+              <Unknown
+                            allowClear={false}
+                            defaultValue={"2014-02-27T10:00:00.000Z"}
+                            format="HH"
+                            name="startHour"
+                            onChange={[Function]}
               />
 </FormItem>,
             <FormItem
               hasFeedback={false}
-              label="Duration Time"
+              label="End Date Time"
 >
-              <InputNumber
-                            defaultValue={1}
-                            max={24}
-                            min={1}
-                            name="durationTime"
-                            required={true}
-                            step={1}
+              <PickerWrapper
+                            allowClear={false}
+                            locale={Object {}}
+                            name="date"
+                            onChange={[Function]}
+                            onOk={[Function]}
+                            onOpenChange={[Function]}
+                            open={false}
+                            popupStyle={Object {}}
+                            transitionName="slide-up"
+                            value={"2014-02-27T10:00:00.000Z"}
+              />
+              <Unknown
+                            allowClear={false}
+                            defaultValue={"2014-02-27T11:00:00.000Z"}
+                            disabledHours={[Function]}
+                            format="HH"
+                            name="endHour"
+                            onChange={[Function]}
               />
 </FormItem>,
           ],
@@ -531,42 +663,66 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <PickerWrapper
-                defaultValue={"2014-02-27T10:00:00.000Z"}
-                locale={Object {}}
-                name="date"
-                onChange={[Function]}
-                onOk={[Function]}
-                onOpenChange={[Function]}
-                placeholder="Select Time"
-                popupStyle={Object {}}
-                showTime={true}
-                transitionName="slide-up"
+              "children": Array [
+                <PickerWrapper
+                  allowClear={false}
+                  locale={Object {}}
+                  name="date"
+                  onChange={[Function]}
+                  onOk={[Function]}
+                  onOpenChange={[Function]}
+                  popupStyle={Object {}}
+                  transitionName="slide-up"
+                  value={"2014-02-27T10:00:00.000Z"}
 />,
+                <Unknown
+                  allowClear={false}
+                  defaultValue={"2014-02-27T10:00:00.000Z"}
+                  format="HH"
+                  name="startHour"
+                  onChange={[Function]}
+/>,
+              ],
               "hasFeedback": false,
               "label": "Start Date Time",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "defaultValue": "2014-02-27T10:00:00.000Z",
-                "locale": Object {},
-                "name": "date",
-                "onChange": [Function],
-                "onOk": [Function],
-                "onOpenChange": [Function],
-                "placeholder": "Select Time",
-                "popupStyle": Object {},
-                "showTime": true,
-                "transitionName": "slide-up",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "allowClear": false,
+                  "locale": Object {},
+                  "name": "date",
+                  "onChange": [Function],
+                  "onOk": [Function],
+                  "onOpenChange": [Function],
+                  "popupStyle": Object {},
+                  "transitionName": "slide-up",
+                  "value": "2014-02-27T10:00:00.000Z",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
               },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "allowClear": false,
+                  "defaultValue": "2014-02-27T10:00:00.000Z",
+                  "format": "HH",
+                  "name": "startHour",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
           Object {
@@ -574,34 +730,70 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <InputNumber
-                defaultValue={1}
-                max={24}
-                min={1}
-                name="durationTime"
-                required={true}
-                step={1}
+              "children": Array [
+                <PickerWrapper
+                  allowClear={false}
+                  locale={Object {}}
+                  name="date"
+                  onChange={[Function]}
+                  onOk={[Function]}
+                  onOpenChange={[Function]}
+                  open={false}
+                  popupStyle={Object {}}
+                  transitionName="slide-up"
+                  value={"2014-02-27T10:00:00.000Z"}
 />,
+                <Unknown
+                  allowClear={false}
+                  defaultValue={"2014-02-27T11:00:00.000Z"}
+                  disabledHours={[Function]}
+                  format="HH"
+                  name="endHour"
+                  onChange={[Function]}
+/>,
+              ],
               "hasFeedback": false,
-              "label": "Duration Time",
+              "label": "End Date Time",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "defaultValue": 1,
-                "max": 24,
-                "min": 1,
-                "name": "durationTime",
-                "required": true,
-                "step": 1,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "allowClear": false,
+                  "locale": Object {},
+                  "name": "date",
+                  "onChange": [Function],
+                  "onOk": [Function],
+                  "onOpenChange": [Function],
+                  "open": false,
+                  "popupStyle": Object {},
+                  "transitionName": "slide-up",
+                  "value": "2014-02-27T10:00:00.000Z",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
               },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "allowClear": false,
+                  "defaultValue": "2014-02-27T11:00:00.000Z",
+                  "disabledHours": [Function],
+                  "format": "HH",
+                  "name": "endHour",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
         ],
@@ -647,9 +839,10 @@ ShallowWrapper {
     task={
         Task {
             "date": "2014-02-10T01:00:00.000Z",
-            "durationTime": 1,
+            "endHour": undefined,
             "id": 1,
             "name": "귤 까기01",
+            "startHour": 1,
           }
     }
     time={"2014-02-27T10:00:00.000Z"}
@@ -713,29 +906,47 @@ ShallowWrapper {
                 label="Start Date Time"
         >
                 <PickerWrapper
-                        defaultValue={"2014-02-10T01:00:00.000Z"}
+                        allowClear={false}
                         locale={Object {}}
                         name="date"
                         onChange={[Function]}
                         onOk={[Function]}
                         onOpenChange={[Function]}
-                        placeholder="Select Time"
                         popupStyle={Object {}}
-                        showTime={true}
                         transitionName="slide-up"
+                        value={"2014-02-10T01:00:00.000Z"}
+                />
+                <Unknown
+                        allowClear={false}
+                        defaultValue={"2014-02-10T01:00:00.000Z"}
+                        format="HH"
+                        name="startHour"
+                        onChange={[Function]}
                 />
         </FormItem>
         <FormItem
                 hasFeedback={false}
-                label="Duration Time"
+                label="End Date Time"
         >
-                <InputNumber
-                        defaultValue={1}
-                        max={24}
-                        min={1}
-                        name="durationTime"
-                        required={true}
-                        step={1}
+                <PickerWrapper
+                        allowClear={false}
+                        locale={Object {}}
+                        name="date"
+                        onChange={[Function]}
+                        onOk={[Function]}
+                        onOpenChange={[Function]}
+                        open={false}
+                        popupStyle={Object {}}
+                        transitionName="slide-up"
+                        value={"2014-02-10T01:00:00.000Z"}
+                />
+                <Unknown
+                        allowClear={false}
+                        defaultValue={"2014-02-10T02:00:00.000Z"}
+                        disabledHours={[Function]}
+                        format="HH"
+                        name="endHour"
+                        onChange={[Function]}
                 />
         </FormItem>
 </Form>,
@@ -801,29 +1012,47 @@ ShallowWrapper {
             label="Start Date Time"
 >
             <PickerWrapper
-                        defaultValue={"2014-02-10T01:00:00.000Z"}
+                        allowClear={false}
                         locale={Object {}}
                         name="date"
                         onChange={[Function]}
                         onOk={[Function]}
                         onOpenChange={[Function]}
-                        placeholder="Select Time"
                         popupStyle={Object {}}
-                        showTime={true}
                         transitionName="slide-up"
+                        value={"2014-02-10T01:00:00.000Z"}
+            />
+            <Unknown
+                        allowClear={false}
+                        defaultValue={"2014-02-10T01:00:00.000Z"}
+                        format="HH"
+                        name="startHour"
+                        onChange={[Function]}
             />
 </FormItem>,
           <FormItem
             hasFeedback={false}
-            label="Duration Time"
+            label="End Date Time"
 >
-            <InputNumber
-                        defaultValue={1}
-                        max={24}
-                        min={1}
-                        name="durationTime"
-                        required={true}
-                        step={1}
+            <PickerWrapper
+                        allowClear={false}
+                        locale={Object {}}
+                        name="date"
+                        onChange={[Function]}
+                        onOk={[Function]}
+                        onOpenChange={[Function]}
+                        open={false}
+                        popupStyle={Object {}}
+                        transitionName="slide-up"
+                        value={"2014-02-10T01:00:00.000Z"}
+            />
+            <Unknown
+                        allowClear={false}
+                        defaultValue={"2014-02-10T02:00:00.000Z"}
+                        disabledHours={[Function]}
+                        format="HH"
+                        name="endHour"
+                        onChange={[Function]}
             />
 </FormItem>,
         ],
@@ -889,42 +1118,66 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <PickerWrapper
-              defaultValue={"2014-02-10T01:00:00.000Z"}
-              locale={Object {}}
-              name="date"
-              onChange={[Function]}
-              onOk={[Function]}
-              onOpenChange={[Function]}
-              placeholder="Select Time"
-              popupStyle={Object {}}
-              showTime={true}
-              transitionName="slide-up"
+            "children": Array [
+              <PickerWrapper
+                allowClear={false}
+                locale={Object {}}
+                name="date"
+                onChange={[Function]}
+                onOk={[Function]}
+                onOpenChange={[Function]}
+                popupStyle={Object {}}
+                transitionName="slide-up"
+                value={"2014-02-10T01:00:00.000Z"}
 />,
+              <Unknown
+                allowClear={false}
+                defaultValue={"2014-02-10T01:00:00.000Z"}
+                format="HH"
+                name="startHour"
+                onChange={[Function]}
+/>,
+            ],
             "hasFeedback": false,
             "label": "Start Date Time",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "defaultValue": "2014-02-10T01:00:00.000Z",
-              "locale": Object {},
-              "name": "date",
-              "onChange": [Function],
-              "onOk": [Function],
-              "onOpenChange": [Function],
-              "placeholder": "Select Time",
-              "popupStyle": Object {},
-              "showTime": true,
-              "transitionName": "slide-up",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "allowClear": false,
+                "locale": Object {},
+                "name": "date",
+                "onChange": [Function],
+                "onOk": [Function],
+                "onOpenChange": [Function],
+                "popupStyle": Object {},
+                "transitionName": "slide-up",
+                "value": "2014-02-10T01:00:00.000Z",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "allowClear": false,
+                "defaultValue": "2014-02-10T01:00:00.000Z",
+                "format": "HH",
+                "name": "startHour",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {
@@ -932,34 +1185,70 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <InputNumber
-              defaultValue={1}
-              max={24}
-              min={1}
-              name="durationTime"
-              required={true}
-              step={1}
+            "children": Array [
+              <PickerWrapper
+                allowClear={false}
+                locale={Object {}}
+                name="date"
+                onChange={[Function]}
+                onOk={[Function]}
+                onOpenChange={[Function]}
+                open={false}
+                popupStyle={Object {}}
+                transitionName="slide-up"
+                value={"2014-02-10T01:00:00.000Z"}
 />,
+              <Unknown
+                allowClear={false}
+                defaultValue={"2014-02-10T02:00:00.000Z"}
+                disabledHours={[Function]}
+                format="HH"
+                name="endHour"
+                onChange={[Function]}
+/>,
+            ],
             "hasFeedback": false,
-            "label": "Duration Time",
+            "label": "End Date Time",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "defaultValue": 1,
-              "max": 24,
-              "min": 1,
-              "name": "durationTime",
-              "required": true,
-              "step": 1,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "allowClear": false,
+                "locale": Object {},
+                "name": "date",
+                "onChange": [Function],
+                "onOk": [Function],
+                "onOpenChange": [Function],
+                "open": false,
+                "popupStyle": Object {},
+                "transitionName": "slide-up",
+                "value": "2014-02-10T01:00:00.000Z",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "allowClear": false,
+                "defaultValue": "2014-02-10T02:00:00.000Z",
+                "disabledHours": [Function],
+                "format": "HH",
+                "name": "endHour",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
       ],
@@ -1018,29 +1307,47 @@ ShallowWrapper {
                     label="Start Date Time"
           >
                     <PickerWrapper
-                              defaultValue={"2014-02-10T01:00:00.000Z"}
+                              allowClear={false}
                               locale={Object {}}
                               name="date"
                               onChange={[Function]}
                               onOk={[Function]}
                               onOpenChange={[Function]}
-                              placeholder="Select Time"
                               popupStyle={Object {}}
-                              showTime={true}
                               transitionName="slide-up"
+                              value={"2014-02-10T01:00:00.000Z"}
+                    />
+                    <Unknown
+                              allowClear={false}
+                              defaultValue={"2014-02-10T01:00:00.000Z"}
+                              format="HH"
+                              name="startHour"
+                              onChange={[Function]}
                     />
           </FormItem>
           <FormItem
                     hasFeedback={false}
-                    label="Duration Time"
+                    label="End Date Time"
           >
-                    <InputNumber
-                              defaultValue={1}
-                              max={24}
-                              min={1}
-                              name="durationTime"
-                              required={true}
-                              step={1}
+                    <PickerWrapper
+                              allowClear={false}
+                              locale={Object {}}
+                              name="date"
+                              onChange={[Function]}
+                              onOk={[Function]}
+                              onOpenChange={[Function]}
+                              open={false}
+                              popupStyle={Object {}}
+                              transitionName="slide-up"
+                              value={"2014-02-10T01:00:00.000Z"}
+                    />
+                    <Unknown
+                              allowClear={false}
+                              defaultValue={"2014-02-10T02:00:00.000Z"}
+                              disabledHours={[Function]}
+                              format="HH"
+                              name="endHour"
+                              onChange={[Function]}
                     />
           </FormItem>
 </Form>,
@@ -1106,29 +1413,47 @@ ShallowWrapper {
               label="Start Date Time"
 >
               <PickerWrapper
-                            defaultValue={"2014-02-10T01:00:00.000Z"}
+                            allowClear={false}
                             locale={Object {}}
                             name="date"
                             onChange={[Function]}
                             onOk={[Function]}
                             onOpenChange={[Function]}
-                            placeholder="Select Time"
                             popupStyle={Object {}}
-                            showTime={true}
                             transitionName="slide-up"
+                            value={"2014-02-10T01:00:00.000Z"}
+              />
+              <Unknown
+                            allowClear={false}
+                            defaultValue={"2014-02-10T01:00:00.000Z"}
+                            format="HH"
+                            name="startHour"
+                            onChange={[Function]}
               />
 </FormItem>,
             <FormItem
               hasFeedback={false}
-              label="Duration Time"
+              label="End Date Time"
 >
-              <InputNumber
-                            defaultValue={1}
-                            max={24}
-                            min={1}
-                            name="durationTime"
-                            required={true}
-                            step={1}
+              <PickerWrapper
+                            allowClear={false}
+                            locale={Object {}}
+                            name="date"
+                            onChange={[Function]}
+                            onOk={[Function]}
+                            onOpenChange={[Function]}
+                            open={false}
+                            popupStyle={Object {}}
+                            transitionName="slide-up"
+                            value={"2014-02-10T01:00:00.000Z"}
+              />
+              <Unknown
+                            allowClear={false}
+                            defaultValue={"2014-02-10T02:00:00.000Z"}
+                            disabledHours={[Function]}
+                            format="HH"
+                            name="endHour"
+                            onChange={[Function]}
               />
 </FormItem>,
           ],
@@ -1194,42 +1519,66 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <PickerWrapper
-                defaultValue={"2014-02-10T01:00:00.000Z"}
-                locale={Object {}}
-                name="date"
-                onChange={[Function]}
-                onOk={[Function]}
-                onOpenChange={[Function]}
-                placeholder="Select Time"
-                popupStyle={Object {}}
-                showTime={true}
-                transitionName="slide-up"
+              "children": Array [
+                <PickerWrapper
+                  allowClear={false}
+                  locale={Object {}}
+                  name="date"
+                  onChange={[Function]}
+                  onOk={[Function]}
+                  onOpenChange={[Function]}
+                  popupStyle={Object {}}
+                  transitionName="slide-up"
+                  value={"2014-02-10T01:00:00.000Z"}
 />,
+                <Unknown
+                  allowClear={false}
+                  defaultValue={"2014-02-10T01:00:00.000Z"}
+                  format="HH"
+                  name="startHour"
+                  onChange={[Function]}
+/>,
+              ],
               "hasFeedback": false,
               "label": "Start Date Time",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "defaultValue": "2014-02-10T01:00:00.000Z",
-                "locale": Object {},
-                "name": "date",
-                "onChange": [Function],
-                "onOk": [Function],
-                "onOpenChange": [Function],
-                "placeholder": "Select Time",
-                "popupStyle": Object {},
-                "showTime": true,
-                "transitionName": "slide-up",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "allowClear": false,
+                  "locale": Object {},
+                  "name": "date",
+                  "onChange": [Function],
+                  "onOk": [Function],
+                  "onOpenChange": [Function],
+                  "popupStyle": Object {},
+                  "transitionName": "slide-up",
+                  "value": "2014-02-10T01:00:00.000Z",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
               },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "allowClear": false,
+                  "defaultValue": "2014-02-10T01:00:00.000Z",
+                  "format": "HH",
+                  "name": "startHour",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
           Object {
@@ -1237,34 +1586,70 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <InputNumber
-                defaultValue={1}
-                max={24}
-                min={1}
-                name="durationTime"
-                required={true}
-                step={1}
+              "children": Array [
+                <PickerWrapper
+                  allowClear={false}
+                  locale={Object {}}
+                  name="date"
+                  onChange={[Function]}
+                  onOk={[Function]}
+                  onOpenChange={[Function]}
+                  open={false}
+                  popupStyle={Object {}}
+                  transitionName="slide-up"
+                  value={"2014-02-10T01:00:00.000Z"}
 />,
+                <Unknown
+                  allowClear={false}
+                  defaultValue={"2014-02-10T02:00:00.000Z"}
+                  disabledHours={[Function]}
+                  format="HH"
+                  name="endHour"
+                  onChange={[Function]}
+/>,
+              ],
               "hasFeedback": false,
-              "label": "Duration Time",
+              "label": "End Date Time",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "defaultValue": 1,
-                "max": 24,
-                "min": 1,
-                "name": "durationTime",
-                "required": true,
-                "step": 1,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "allowClear": false,
+                  "locale": Object {},
+                  "name": "date",
+                  "onChange": [Function],
+                  "onOk": [Function],
+                  "onOpenChange": [Function],
+                  "open": false,
+                  "popupStyle": Object {},
+                  "transitionName": "slide-up",
+                  "value": "2014-02-10T01:00:00.000Z",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
               },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "allowClear": false,
+                  "defaultValue": "2014-02-10T02:00:00.000Z",
+                  "disabledHours": [Function],
+                  "format": "HH",
+                  "name": "endHour",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
         ],

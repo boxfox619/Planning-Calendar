@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { createReduxStore } from '../../libs/redux/store';
+import { createReduxStore } from '../../common/store';
 import {App} from '../App';
 
 describe('<App />', () => {

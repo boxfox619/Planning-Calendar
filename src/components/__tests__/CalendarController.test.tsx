@@ -5,7 +5,7 @@ import { CalendarMode } from '../../models/CalendarMode';
 import * as moment from 'moment';
 
 describe('<CalendarController />', () => {
-    let currentMoment = moment('2014-02-27T10:00:00.000Z');
+    const currentMoment = moment('2014-02-27T10:00:00.000Z');
     let component = null;
     const changeMode = jest.fn();
     const changeMoment = jest.fn();

@@ -1,5 +1,5 @@
-import { TaskStoreModel } from '../modules/reducers/task';
+import { TaskStore } from '.';
 
 export interface StoreModel {
-    task: TaskStoreModel
+    task: TaskStore
 }
