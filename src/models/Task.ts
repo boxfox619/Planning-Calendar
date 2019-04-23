@@ -3,6 +3,7 @@ export class Task {
         public id: number,
         public name: string,
         public date: string,
-        public durationTime: number
+        public startHour: number,
+        public endHour: number
     ){}
 }

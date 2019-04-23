@@ -1,5 +1,6 @@
 import { createAction } from 'redux-actions';
 import { Task } from '../../models';
+import { TaskLookupRequest } from '../../models/request';
 
 export const LOAD = 'TASK.LOAD';
 export const LOAD_STARTED = 'TASK.LOAD_STARTED';
@@ -14,9 +15,9 @@ export const DELETE_SUCCESSED = 'TASK.DELETE_SUCCESSED';
 export const EDIT_SUCCESSED = 'TASK.EDIT_SUCCESSED';
 export const CREATE_SUCCESSED = 'TASK.CREATE_SUCCESSED';
 
-export const loadTasks = createAction(LOAD);
+export const loadTasks = createAction<TaskLookupRequest>(LOAD);
 export const startedLoadTasks = createAction(LOAD_STARTED);
-export const successdLoadTasks = createAction<Task[]>(LOAD_SUCCESSED);
+export const successedLoadTasks = createAction<Task[]>(LOAD_SUCCESSED);
 export const failedLoadTasks = createAction(LOAD_FAILED);
 export const createTask = createAction<Task>(CREATE);
 export const editTask = createAction<Task>(EDIT);

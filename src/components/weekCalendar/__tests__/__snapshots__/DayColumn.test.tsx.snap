@@ -8,34 +8,39 @@ ShallowWrapper {
     tasks={
         Array [
             Task {
-              "date": "2014-02-10T01:00:00.000Z",
-              "durationTime": 1,
+              "date": "2014-02-10",
+              "endHour": 2,
               "id": 1,
               "name": "귤 까기01",
+              "startHour": 1,
             },
             Task {
-              "date": "2014-02-10T24:00:00.000Z",
-              "durationTime": 10,
+              "date": "2014-02-10",
+              "endHour": 23,
               "id": 1,
               "name": "귤 까기24",
+              "startHour": 22,
             },
             Task {
-              "date": "2014-02-10T10:00:00.000Z",
-              "durationTime": 2,
+              "date": "2014-02-10",
+              "endHour": 4,
               "id": 1,
               "name": "귤 까기10",
+              "startHour": 2,
             },
             Task {
-              "date": "2014-02-10T09:00:00.000Z",
-              "durationTime": 3,
+              "date": "2014-02-10",
+              "endHour": 10,
               "id": 1,
               "name": "귤 까기09",
+              "startHour": 8,
             },
             Task {
-              "date": "2014-02-10T12:00:00.000Z",
-              "durationTime": 4,
+              "date": "2014-02-10",
+              "endHour": 15,
               "id": 1,
               "name": "귤 까기12",
+              "startHour": 13,
             },
           ]
     }
@@ -135,65 +140,55 @@ ShallowWrapper {
             style={
                         Object {
                                     "height": "40px",
-                                    "top": "400px",
+                                    "top": "0px",
                                   }
             }
 >
             귤 까기01
-             
-            10
 </Unknown>,
           <Unknown
             data-taskid={1}
             style={
                         Object {
-                                    "height": "400px",
-                                    "top": "360px",
+                                    "height": "40px",
+                                    "top": "0px",
                                   }
             }
 >
             귤 까기24
-             
-            9
 </Unknown>,
           <Unknown
             data-taskid={1}
             style={
                         Object {
                                     "height": "80px",
-                                    "top": "760px",
+                                    "top": "0px",
                                   }
             }
 >
             귤 까기10
-             
-            19
 </Unknown>,
           <Unknown
             data-taskid={1}
             style={
                         Object {
-                                    "height": "120px",
-                                    "top": "720px",
+                                    "height": "80px",
+                                    "top": "0px",
                                   }
             }
 >
             귤 까기09
-             
-            18
 </Unknown>,
           <Unknown
             data-taskid={1}
             style={
                         Object {
-                                    "height": "160px",
-                                    "top": "840px",
+                                    "height": "80px",
+                                    "top": "0px",
                                   }
             }
 >
             귤 까기12
-             
-            21
 </Unknown>,
         ],
       ],
@@ -1189,23 +1184,15 @@ ShallowWrapper {
         "key": "1",
         "nodeType": "function",
         "props": Object {
-          "children": Array [
-            "귤 까기01",
-            " ",
-            10,
-          ],
+          "children": "귤 까기01",
           "data-taskid": 1,
           "style": Object {
             "height": "40px",
-            "top": "400px",
+            "top": "0px",
           },
         },
         "ref": null,
-        "rendered": Array [
-          "귤 까기01",
-          " ",
-          10,
-        ],
+        "rendered": "귤 까기01",
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
           "Group": [Function],
@@ -1239,23 +1226,15 @@ ShallowWrapper {
         "key": "1",
         "nodeType": "function",
         "props": Object {
-          "children": Array [
-            "귤 까기24",
-            " ",
-            9,
-          ],
+          "children": "귤 까기24",
           "data-taskid": 1,
           "style": Object {
-            "height": "400px",
-            "top": "360px",
+            "height": "40px",
+            "top": "0px",
           },
         },
         "ref": null,
-        "rendered": Array [
-          "귤 까기24",
-          " ",
-          9,
-        ],
+        "rendered": "귤 까기24",
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
           "Group": [Function],
@@ -1289,23 +1268,15 @@ ShallowWrapper {
         "key": "1",
         "nodeType": "function",
         "props": Object {
-          "children": Array [
-            "귤 까기10",
-            " ",
-            19,
-          ],
+          "children": "귤 까기10",
           "data-taskid": 1,
           "style": Object {
             "height": "80px",
-            "top": "760px",
+            "top": "0px",
           },
         },
         "ref": null,
-        "rendered": Array [
-          "귤 까기10",
-          " ",
-          19,
-        ],
+        "rendered": "귤 까기10",
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
           "Group": [Function],
@@ -1339,23 +1310,15 @@ ShallowWrapper {
         "key": "1",
         "nodeType": "function",
         "props": Object {
-          "children": Array [
-            "귤 까기09",
-            " ",
-            18,
-          ],
+          "children": "귤 까기09",
           "data-taskid": 1,
           "style": Object {
-            "height": "120px",
-            "top": "720px",
+            "height": "80px",
+            "top": "0px",
           },
         },
         "ref": null,
-        "rendered": Array [
-          "귤 까기09",
-          " ",
-          18,
-        ],
+        "rendered": "귤 까기09",
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
           "Group": [Function],
@@ -1389,23 +1352,15 @@ ShallowWrapper {
         "key": "1",
         "nodeType": "function",
         "props": Object {
-          "children": Array [
-            "귤 까기12",
-            " ",
-            21,
-          ],
+          "children": "귤 까기12",
           "data-taskid": 1,
           "style": Object {
-            "height": "160px",
-            "top": "840px",
+            "height": "80px",
+            "top": "0px",
           },
         },
         "ref": null,
-        "rendered": Array [
-          "귤 까기12",
-          " ",
-          21,
-        ],
+        "rendered": "귤 까기12",
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
           "Group": [Function],
@@ -1550,65 +1505,55 @@ ShallowWrapper {
               style={
                             Object {
                                           "height": "40px",
-                                          "top": "400px",
+                                          "top": "0px",
                                         }
               }
 >
               귤 까기01
-               
-              10
 </Unknown>,
             <Unknown
               data-taskid={1}
               style={
                             Object {
-                                          "height": "400px",
-                                          "top": "360px",
+                                          "height": "40px",
+                                          "top": "0px",
                                         }
               }
 >
               귤 까기24
-               
-              9
 </Unknown>,
             <Unknown
               data-taskid={1}
               style={
                             Object {
                                           "height": "80px",
-                                          "top": "760px",
+                                          "top": "0px",
                                         }
               }
 >
               귤 까기10
-               
-              19
 </Unknown>,
             <Unknown
               data-taskid={1}
               style={
                             Object {
-                                          "height": "120px",
-                                          "top": "720px",
+                                          "height": "80px",
+                                          "top": "0px",
                                         }
               }
 >
               귤 까기09
-               
-              18
 </Unknown>,
             <Unknown
               data-taskid={1}
               style={
                             Object {
-                                          "height": "160px",
-                                          "top": "840px",
+                                          "height": "80px",
+                                          "top": "0px",
                                         }
               }
 >
               귤 까기12
-               
-              21
 </Unknown>,
           ],
         ],
@@ -2604,23 +2549,15 @@ ShallowWrapper {
           "key": "1",
           "nodeType": "function",
           "props": Object {
-            "children": Array [
-              "귤 까기01",
-              " ",
-              10,
-            ],
+            "children": "귤 까기01",
             "data-taskid": 1,
             "style": Object {
               "height": "40px",
-              "top": "400px",
+              "top": "0px",
             },
           },
           "ref": null,
-          "rendered": Array [
-            "귤 까기01",
-            " ",
-            10,
-          ],
+          "rendered": "귤 까기01",
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
             "Group": [Function],
@@ -2654,23 +2591,15 @@ ShallowWrapper {
           "key": "1",
           "nodeType": "function",
           "props": Object {
-            "children": Array [
-              "귤 까기24",
-              " ",
-              9,
-            ],
+            "children": "귤 까기24",
             "data-taskid": 1,
             "style": Object {
-              "height": "400px",
-              "top": "360px",
+              "height": "40px",
+              "top": "0px",
             },
           },
           "ref": null,
-          "rendered": Array [
-            "귤 까기24",
-            " ",
-            9,
-          ],
+          "rendered": "귤 까기24",
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
             "Group": [Function],
@@ -2704,23 +2633,15 @@ ShallowWrapper {
           "key": "1",
           "nodeType": "function",
           "props": Object {
-            "children": Array [
-              "귤 까기10",
-              " ",
-              19,
-            ],
+            "children": "귤 까기10",
             "data-taskid": 1,
             "style": Object {
               "height": "80px",
-              "top": "760px",
+              "top": "0px",
             },
           },
           "ref": null,
-          "rendered": Array [
-            "귤 까기10",
-            " ",
-            19,
-          ],
+          "rendered": "귤 까기10",
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
             "Group": [Function],
@@ -2754,23 +2675,15 @@ ShallowWrapper {
           "key": "1",
           "nodeType": "function",
           "props": Object {
-            "children": Array [
-              "귤 까기09",
-              " ",
-              18,
-            ],
+            "children": "귤 까기09",
             "data-taskid": 1,
             "style": Object {
-              "height": "120px",
-              "top": "720px",
+              "height": "80px",
+              "top": "0px",
             },
           },
           "ref": null,
-          "rendered": Array [
-            "귤 까기09",
-            " ",
-            18,
-          ],
+          "rendered": "귤 까기09",
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
             "Group": [Function],
@@ -2804,23 +2717,15 @@ ShallowWrapper {
           "key": "1",
           "nodeType": "function",
           "props": Object {
-            "children": Array [
-              "귤 까기12",
-              " ",
-              21,
-            ],
+            "children": "귤 까기12",
             "data-taskid": 1,
             "style": Object {
-              "height": "160px",
-              "top": "840px",
+              "height": "80px",
+              "top": "0px",
             },
           },
           "ref": null,
-          "rendered": Array [
-            "귤 까기12",
-            " ",
-            21,
-          ],
+          "rendered": "귤 까기12",
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
             "Group": [Function],

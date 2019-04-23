@@ -24,7 +24,7 @@ interface Props {
 
 export const DayBox: React.FC<Props> = (props: Props) => {
     const {dateMoment, tasks} = props;
-    const sortedTask = tasks.sort((task1: Task, task2: Task) => compareMoment(moment(task1.date), moment(task2.date)));
+    const sortedTask = tasks.sort((task1: Task, task2: Task) => (task1.startHour >= task2.startHour)? 1 : -1);
     return (
         <Day data-datetime={dateMoment.toISOString()}>
             {dateMoment.date()}

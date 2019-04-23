@@ -10,9 +10,9 @@ describe('<WeeklyCalendar />', () => {
     const currentMoment = moment('2014-02-27T10:00:00.000Z');
     const daysInWeek = getDaysInWeek(currentMoment);
     const tasks = [
-        new Task(1, '귤 까기10', '2014-02-10T10:00:00.000Z', 1),
-        new Task(2, '귤 까기27', '2014-02-27T10:00:00.000Z', 1),
-        new Task(3, '귤 까기28', '2014-02-28T10:00:00.000Z', 1)
+        new Task(1, '귤 까기10', '2014-02-10', 2, 4),
+        new Task(2, '귤 까기27', '2014-02-27', 5, 3),
+        new Task(3, '귤 까기28', '2014-02-28', 1, 2)
     ];
     let component = null;
 
