@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormTimePicker /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    defaultValue={"2014-02-27T10:00:00.000Z"}
+    name="form-name"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <input
+          hidden={true}
+          name="form-name"
+          type="number"
+          value="Thu Feb 27 2014 19:00:00 GMT+0900"
+/>,
+        <TimePicker
+          align={
+                    Object {
+                              "offset": Array [
+                                0,
+                                -2,
+                              ],
+                            }
+          }
+          disabled={false}
+          disabledHours={undefined}
+          disabledMinutes={undefined}
+          disabledSeconds={undefined}
+          focusOnOpen={true}
+          hideDisabledOptions={false}
+          onChange={[Function]}
+          onOpenChange={[Function]}
+          open={false}
+          placement="bottomLeft"
+          transitionName="slide-up"
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "hidden": true,
+          "name": "form-name",
+          "type": "number",
+          "value": "Thu Feb 27 2014 19:00:00 GMT+0900",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "align": Object {
+            "offset": Array [
+              0,
+              -2,
+            ],
+          },
+          "disabled": false,
+          "disabledHours": undefined,
+          "disabledMinutes": undefined,
+          "disabledSeconds": undefined,
+          "focusOnOpen": true,
+          "hideDisabledOptions": false,
+          "onChange": [Function],
+          "onOpenChange": [Function],
+          "open": false,
+          "placement": "bottomLeft",
+          "transitionName": "slide-up",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <input
+            hidden={true}
+            name="form-name"
+            type="number"
+            value="Thu Feb 27 2014 19:00:00 GMT+0900"
+/>,
+          <TimePicker
+            align={
+                        Object {
+                                    "offset": Array [
+                                      0,
+                                      -2,
+                                    ],
+                                  }
+            }
+            disabled={false}
+            disabledHours={undefined}
+            disabledMinutes={undefined}
+            disabledSeconds={undefined}
+            focusOnOpen={true}
+            hideDisabledOptions={false}
+            onChange={[Function]}
+            onOpenChange={[Function]}
+            open={false}
+            placement="bottomLeft"
+            transitionName="slide-up"
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "hidden": true,
+            "name": "form-name",
+            "type": "number",
+            "value": "Thu Feb 27 2014 19:00:00 GMT+0900",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "align": Object {
+              "offset": Array [
+                0,
+                -2,
+              ],
+            },
+            "disabled": false,
+            "disabledHours": undefined,
+            "disabledMinutes": undefined,
+            "disabledSeconds": undefined,
+            "focusOnOpen": true,
+            "hideDisabledOptions": false,
+            "onChange": [Function],
+            "onOpenChange": [Function],
+            "open": false,
+            "placement": "bottomLeft",
+            "transitionName": "slide-up",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

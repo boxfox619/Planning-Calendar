@@ -5,7 +5,7 @@ import * as moment from 'moment';
 import { Task } from '../../models/Task';
 
 describe('<TaskModal />', () => {
-    let currentMoment = moment('2014-02-27T10:00:00.000Z');
+    const currentMoment = moment('2014-02-27T10:00:00.000Z');
     let component = null;
     const okMock = jest.fn();
     const cancelMock = jest.fn();

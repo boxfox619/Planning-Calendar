@@ -3,12 +3,13 @@ import {reducer} from '../task';
 import { Task } from '../../models/Task';
 
 describe('counter', () => {
-  const task = new Task(1, 'name', 'date', 1);
-  const newTask = new Task(1, 'name2', 'date2', 1);
+  const task = new Task(1, 'name', '2019-12-12', 1, 2);
+  const newTask = new Task(1, 'name2', '2019-12-13', 1, 3);
+  const loadTaskReq = {year: 2019, month: 12};
     describe('actions', () => {
       it('should create actions', () => {
         const expectedActions =[
-          { type: Action.LOAD },
+          { type: Action.LOAD, payload: {year: 2019, month: 12} },
           { type: Action.LOAD_STARTED },
           { type: Action.LOAD_FAILED },
           { type: Action.LOAD_SUCCESSED, payload: [task] },
@@ -22,10 +23,10 @@ describe('counter', () => {
           { type: Action.DELETE_SUCCESSED, payload: task.id },
         ];
         const actions = [
-          Action.loadTasks(),
+          Action.loadTasks(loadTaskReq),
           Action.startedLoadTasks(),
           Action.failedLoadTasks(),
-          Action.successdLoadTasks([task]),
+          Action.successedLoadTasks([task]),
           Action.createTask(newTask),
           Action.editTask(newTask),
           Action.deleteTask(task.id),
@@ -39,7 +40,7 @@ describe('counter', () => {
       });
     });
     describe('reducer', () => {
-      let state = reducer(undefined, Action.loadTasks());
+      let state = reducer(undefined, Action.loadTasks(loadTaskReq));
       it('should return the initialState', () => {
         expect(state).toHaveProperty('tasks', []);
       });
@@ -57,7 +58,7 @@ describe('counter', () => {
       });
   
       it('should loading = false, lodaed = true, tasks = [Task]', () => {
-        state = reducer(state, Action.successdLoadTasks([task]));
+        state = reducer(state, Action.successedLoadTasks([task]));
         expect(state).toHaveProperty('isTaskLoading', false);
         expect(state).toHaveProperty('isTaskLoaded', true);
         expect(state).toHaveProperty('tasks', [task]);
