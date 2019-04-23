@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 import { TaskModal } from '../components/modal/TaskModal';
 import * as TaskAction from './../reducers/task/action';
 import * as moment from 'moment';
-import Calendar from './Calendar';
+import { Calendar } from './Calendar';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -31,33 +31,40 @@ const mapDispatchToProps = {
 
 const mapStateToProps = (state: StoreModel) => {
   return {
-      taskStore: state.task
+    taskStore: state.task
   }
 };
 
 type Props = ReturnType<typeof mapStateToProps> & typeof mapDispatchToProps & OwnProps;
 
-const App: React.FC<Props> = ({store, taskStore, ...action}) => {
-  const {tasks, isTaskUpdating, isTaskUpdated} = taskStore;
-
+const App: React.FC<Props> = ({ store, taskStore, ...action }) => {
+  const { tasks, isTaskUpdating, isTaskUpdated } = taskStore;
   const [currentMoment, setCurrentMoment] = React.useState(moment());
   const [calendarMode, setCalendarMode] = React.useState(CalendarMode.Month);
   const [selectedTarget, setSelectedTarget] = React.useState();
   const prevIsUpdating = React.useRef();
 
   const handleDismissModal = () => setSelectedTarget(null);
-  const handleUpdateTask = (newTask: Task) => (selectedTask) ? action.editTask({ id: selectedTask.id, ...newTask }) : action.createTask(newTask);
+  const handleUpdateTask = (newTask: Task) => {
+    if (!selectedTarget) {
+      return;
+    } else if (moment.isMoment(selectedTarget)) {
+      action.createTask(newTask);
+    } else {
+      action.editTask({ id: selectedTarget.id, ...newTask });
+    }
+  }
 
-    React.useEffect(() => {
-        if(prevIsUpdating && !isTaskUpdating && isTaskUpdated) {
-            handleDismissModal();
-        }
-    }, [isTaskUpdating, isTaskUpdated]);
-    
-    React.useEffect(() => { 
-        const req = {year: currentMoment.year(), month: currentMoment.month()+1};
-        action.loadTasks(req);
-     }, [currentMoment]);
+  React.useEffect(() => {
+    if (prevIsUpdating && !isTaskUpdating && isTaskUpdated) {
+      handleDismissModal();
+    }
+  }, [isTaskUpdating, isTaskUpdated]);
+
+  React.useEffect(() => {
+    const req = { year: currentMoment.year(), month: currentMoment.month() + 1 };
+    action.loadTasks(req);
+  }, [currentMoment.month()]);
 
   return (
     <Provider store={store}>
@@ -75,13 +82,13 @@ const App: React.FC<Props> = ({store, taskStore, ...action}) => {
           onSelect={setSelectedTarget}
         />
         {(selectedTarget) && (
-            <TaskModal
-                target={selectedTarget}
-                isLoading={isTaskUpdating}
-                onOk={handleUpdateTask}
-                onCancel={handleDismissModal}
-                onDelete={action.deleteTask} />
-            )}
+          <TaskModal
+            target={selectedTarget}
+            isLoading={isTaskUpdating}
+            onOk={handleUpdateTask}
+            onCancel={handleDismissModal}
+            onDelete={action.deleteTask} />
+        )}
       </Container>
     </Provider>
   )

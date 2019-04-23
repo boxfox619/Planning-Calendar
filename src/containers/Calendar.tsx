@@ -25,10 +25,12 @@ export const Calendar: React.FC<Props> = ({currentMoment, mode, tasks, onSelect,
 
     const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const target = e.target as HTMLElement;
-        if(target.dataset.datetime) {
-            onSelect(moment(target.dataset.datetime))
-        } else if(target.dataset.taskid) {
+        if(target.dataset.taskid) {
+            e.preventDefault();
             onSelect(tasks.find(task => task.id === Number(target.dataset.taskid)));
+        }else if(target.dataset.datetime) {
+            e.preventDefault();
+            onSelect(moment(target.dataset.datetime))
         }
     }
 

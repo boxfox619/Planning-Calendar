@@ -13,11 +13,11 @@ import { range } from 'lodash';
 import { FormTimePicker } from './FormTimePicker';
 
 interface Props {
-    target?: Task | moment.Moment,
+    target: Task | moment.Moment,
     isLoading: boolean,
-    onOk: (task: Task) => void
-    onCancel: () => void,
-    onDelete: (id: number) => void
+    onOk: (task: Task) => void,
+    onDelete: (id: number) => void,
+    onCancel: () => void
 }
 
 const formItemLayout = {
@@ -33,6 +33,8 @@ const formItemLayout = {
 
 export const TaskModal: React.FC<Props> = (props: Props) => {
     const { target, isLoading, onOk, onCancel, onDelete } = props;
+    const time = (moment.isMoment(target)) ? target : undefined;
+    const task = (!time) ? target as Task : undefined; 
     const defaultDate = task ? moment(task.date) : (time ? time : moment());
     const defaultStartTime = defaultDate.clone().hour(task ? task.startHour : defaultDate.hour());
     const defaultEndTime = task ? defaultStartTime.clone().hour(task.endHour) : defaultStartTime.clone().add(1, 'h');
