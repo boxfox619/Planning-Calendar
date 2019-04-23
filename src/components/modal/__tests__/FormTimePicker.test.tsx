@@ -5,11 +5,11 @@ import { TimePicker } from 'antd';
 import { FormTimePicker } from '../FormTimePicker';
 
 describe('<FormTimePicker />', () => {
-    const currentMoment = moment('2014-02-27T10:00:00.000Z');
+    const testMoment = moment('2014-02-27T10:00:00.000Z');
     let component = null;
 
     it('renders correctly', () => {
-        component = Enzyme.shallow(<FormTimePicker name="form-name" defaultValue={currentMoment}/>);
+        component = Enzyme.shallow(<FormTimePicker name="form-name" defaultValue={testMoment}/>);
     });
 
     it('should match snapshot', () => {

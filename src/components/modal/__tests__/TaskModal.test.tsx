@@ -6,14 +6,14 @@ import { Task } from '../../../models/Task';
 import { Button } from 'antd';
 
 describe('<TaskModal />', () => {
-    const currentMoment = moment('2014-02-27T10:00:00.000Z');
+    const testMoment = moment('2014-02-27T10:00:00.000Z');
     let component = null;
     const okMock = jest.fn();
     const cancelMock = jest.fn();
     const deleteMock = jest.fn();
 
     it('renders correctly', () => {
-        component = Enzyme.shallow(<TaskModal target={currentMoment} onOk={okMock} onCancel={cancelMock} onDelete={deleteMock} isLoading={false}/>);
+        component = Enzyme.shallow(<TaskModal target={testMoment} onOk={okMock} onCancel={cancelMock} onDelete={deleteMock} isLoading={false}/>);
     });
 
     it('should match snapshot', () => {

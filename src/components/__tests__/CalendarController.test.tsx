@@ -5,13 +5,13 @@ import { CalendarMode } from '../../models/CalendarMode';
 import * as moment from 'moment';
 
 describe('<CalendarController />', () => {
-    const currentMoment = moment('2014-02-27T10:00:00.000Z');
+    const testMoment = moment('2014-02-27T10:00:00.000Z');
     let component = null;
     const changeMode = jest.fn();
     const changeMoment = jest.fn();
 
     it('renders correctly', () => {
-        component = Enzyme.shallow(<CalendarController currentMoment={currentMoment} mode={CalendarMode.Month} onChangeMode={changeMode} onChangeMoment={changeMoment} />);
+        component = Enzyme.shallow(<CalendarController currentMoment={testMoment} mode={CalendarMode.Month} onChangeMode={changeMode} onChangeMoment={changeMoment} />);
     });
 
     it('should match snapshot', () => {
