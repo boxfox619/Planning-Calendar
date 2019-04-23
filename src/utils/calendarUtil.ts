@@ -17,15 +17,6 @@ export const calMoment = (moment: Moment, mode: CalendarMode, amount: number) =>
     }
     return newMoment;
 }
-export const compareMoment = (moment1: Moment, moment2: Moment) => {
-    if (moment1 > moment2) {
-        return 1;
-    } else if (moment1 < moment2) {
-        return -1;
-    } else {
-        return 0;
-    }
-}
 export const getDaysInWeek = (moment: Moment) => moment.clone().endOf('week').day() + 1;
 export const getFirstDayOfMonth = (moment: Moment) => moment.clone().startOf('M').day();
 export const getLastDayOfMonth = (moment: Moment) => moment.clone().endOf('M').day();

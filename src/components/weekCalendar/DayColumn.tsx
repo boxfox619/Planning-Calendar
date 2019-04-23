@@ -46,8 +46,8 @@ export const DayColumn: React.FC<Props> = (props: Props) => {
                 <Cell key={`${time}-cell`} data-datetime={dateMoment.clone().hour(time).toISOString()} />)
             )}
             {tasks.map(task => {
-                const top = `${40 * moment(task.date).hour()}px`;
-                const height = `${40 * (task.endHour - task.startHour)}px`;
+                const top = `${ 40 * task.startHour }px`;
+                const height = `${ 40 * (task.endHour - task.startHour) }px`;
                 return (<TaskItem key={task.id}
                             data-taskid={task.id}
                             style={{ top, height }}>

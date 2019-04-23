@@ -3,8 +3,12 @@ import { Provider } from 'react-redux';
 import { Store } from 'redux';
 import { CalendarController } from '../components/CalendarController';
 import { CalendarMode } from '../models/CalendarMode';
+import { Task, StoreModel } from '../models';
+import { connect } from 'react-redux';
+import { TaskModal } from '../components/modal/TaskModal';
+import * as TaskAction from './../reducers/task/action';
 import * as moment from 'moment';
-import { Calendar } from '../components/Calendar';
+import Calendar from './Calendar';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -14,15 +18,46 @@ const Container = styled.div`
   flex-flow: column;
 `
 
-interface Props {
+interface OwnProps {
   store: Store
 }
 
-export const App: React.FC<Props> = (props: Props) => {
-  const {store} = props;
+const mapDispatchToProps = {
+  loadTasks: TaskAction.loadTasks,
+  createTask: TaskAction.createTask,
+  editTask: TaskAction.editTask,
+  deleteTask: TaskAction.deleteTask
+};
+
+const mapStateToProps = (state: StoreModel) => {
+  return {
+      taskStore: state.task
+  }
+};
+
+type Props = ReturnType<typeof mapStateToProps> & typeof mapDispatchToProps & OwnProps;
+
+const App: React.FC<Props> = ({store, taskStore, ...action}) => {
+  const {tasks, isTaskUpdating, isTaskUpdated} = taskStore;
 
   const [currentMoment, setCurrentMoment] = React.useState(moment());
   const [calendarMode, setCalendarMode] = React.useState(CalendarMode.Month);
+  const [selectedTarget, setSelectedTarget] = React.useState();
+  const prevIsUpdating = React.useRef();
+
+  const handleDismissModal = () => setSelectedTarget(null);
+  const handleUpdateTask = (newTask: Task) => (selectedTask) ? action.editTask({ id: selectedTask.id, ...newTask }) : action.createTask(newTask);
+
+    React.useEffect(() => {
+        if(prevIsUpdating && !isTaskUpdating && isTaskUpdated) {
+            handleDismissModal();
+        }
+    }, [isTaskUpdating, isTaskUpdated]);
+    
+    React.useEffect(() => { 
+        const req = {year: currentMoment.year(), month: currentMoment.month()+1};
+        action.loadTasks(req);
+     }, [currentMoment]);
 
   return (
     <Provider store={store}>
@@ -36,8 +71,20 @@ export const App: React.FC<Props> = (props: Props) => {
           style={{ flex: 1 }}
           currentMoment={currentMoment}
           mode={calendarMode}
+          tasks={tasks}
+          onSelect={setSelectedTarget}
         />
+        {(selectedTarget) && (
+            <TaskModal
+                target={selectedTarget}
+                isLoading={isTaskUpdating}
+                onOk={handleUpdateTask}
+                onCancel={handleDismissModal}
+                onDelete={action.deleteTask} />
+            )}
       </Container>
     </Provider>
   )
 };
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

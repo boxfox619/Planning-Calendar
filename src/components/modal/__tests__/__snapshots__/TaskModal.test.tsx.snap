@@ -80,10 +80,10 @@ ShallowWrapper {
                 />
                 <Unknown
                         allowClear={false}
-                        defaultValue={"2014-02-27T10:00:00.000Z"}
                         format="HH"
                         name="startHour"
                         onChange={[Function]}
+                        value={"2014-02-27T10:00:00.000Z"}
                 />
         </FormItem>
         <FormItem
@@ -93,7 +93,6 @@ ShallowWrapper {
                 <PickerWrapper
                         allowClear={false}
                         locale={Object {}}
-                        name="date"
                         onChange={[Function]}
                         onOk={[Function]}
                         onOpenChange={[Function]}
@@ -104,11 +103,11 @@ ShallowWrapper {
                 />
                 <Unknown
                         allowClear={false}
-                        defaultValue={"2014-02-27T11:00:00.000Z"}
                         disabledHours={[Function]}
                         format="HH"
                         name="endHour"
                         onChange={[Function]}
+                        value={"2014-02-27T11:00:00.000Z"}
                 />
         </FormItem>
 </Form>,
@@ -136,6 +135,7 @@ ShallowWrapper {
       "maskTransitionName": "fade",
       "okButtonDisabled": false,
       "okType": "primary",
+      "onCancel": [Function],
       "title": "일정 추가",
       "transitionName": "zoom",
       "visible": true,
@@ -177,10 +177,10 @@ ShallowWrapper {
             />
             <Unknown
                         allowClear={false}
-                        defaultValue={"2014-02-27T10:00:00.000Z"}
                         format="HH"
                         name="startHour"
                         onChange={[Function]}
+                        value={"2014-02-27T10:00:00.000Z"}
             />
 </FormItem>,
           <FormItem
@@ -190,7 +190,6 @@ ShallowWrapper {
             <PickerWrapper
                         allowClear={false}
                         locale={Object {}}
-                        name="date"
                         onChange={[Function]}
                         onOk={[Function]}
                         onOpenChange={[Function]}
@@ -201,11 +200,11 @@ ShallowWrapper {
             />
             <Unknown
                         allowClear={false}
-                        defaultValue={"2014-02-27T11:00:00.000Z"}
                         disabledHours={[Function]}
                         format="HH"
                         name="endHour"
                         onChange={[Function]}
+                        value={"2014-02-27T11:00:00.000Z"}
             />
 </FormItem>,
         ],
@@ -285,10 +284,10 @@ ShallowWrapper {
 />,
               <Unknown
                 allowClear={false}
-                defaultValue={"2014-02-27T10:00:00.000Z"}
                 format="HH"
                 name="startHour"
                 onChange={[Function]}
+                value={"2014-02-27T10:00:00.000Z"}
 />,
             ],
             "hasFeedback": false,
@@ -321,10 +320,10 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "allowClear": false,
-                "defaultValue": "2014-02-27T10:00:00.000Z",
                 "format": "HH",
                 "name": "startHour",
                 "onChange": [Function],
+                "value": "2014-02-27T10:00:00.000Z",
               },
               "ref": null,
               "rendered": null,
@@ -342,7 +341,6 @@ ShallowWrapper {
               <PickerWrapper
                 allowClear={false}
                 locale={Object {}}
-                name="date"
                 onChange={[Function]}
                 onOk={[Function]}
                 onOpenChange={[Function]}
@@ -353,11 +351,11 @@ ShallowWrapper {
 />,
               <Unknown
                 allowClear={false}
-                defaultValue={"2014-02-27T11:00:00.000Z"}
                 disabledHours={[Function]}
                 format="HH"
                 name="endHour"
                 onChange={[Function]}
+                value={"2014-02-27T11:00:00.000Z"}
 />,
             ],
             "hasFeedback": false,
@@ -372,7 +370,6 @@ ShallowWrapper {
               "props": Object {
                 "allowClear": false,
                 "locale": Object {},
-                "name": "date",
                 "onChange": [Function],
                 "onOk": [Function],
                 "onOpenChange": [Function],
@@ -391,11 +388,11 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "allowClear": false,
-                "defaultValue": "2014-02-27T11:00:00.000Z",
                 "disabledHours": [Function],
                 "format": "HH",
                 "name": "endHour",
                 "onChange": [Function],
+                "value": "2014-02-27T11:00:00.000Z",
               },
               "ref": null,
               "rendered": null,
@@ -472,10 +469,10 @@ ShallowWrapper {
                     />
                     <Unknown
                               allowClear={false}
-                              defaultValue={"2014-02-27T10:00:00.000Z"}
                               format="HH"
                               name="startHour"
                               onChange={[Function]}
+                              value={"2014-02-27T10:00:00.000Z"}
                     />
           </FormItem>
           <FormItem
@@ -485,7 +482,6 @@ ShallowWrapper {
                     <PickerWrapper
                               allowClear={false}
                               locale={Object {}}
-                              name="date"
                               onChange={[Function]}
                               onOk={[Function]}
                               onOpenChange={[Function]}
@@ -496,11 +492,11 @@ ShallowWrapper {
                     />
                     <Unknown
                               allowClear={false}
-                              defaultValue={"2014-02-27T11:00:00.000Z"}
                               disabledHours={[Function]}
                               format="HH"
                               name="endHour"
                               onChange={[Function]}
+                              value={"2014-02-27T11:00:00.000Z"}
                     />
           </FormItem>
 </Form>,
@@ -528,6 +524,7 @@ ShallowWrapper {
         "maskTransitionName": "fade",
         "okButtonDisabled": false,
         "okType": "primary",
+        "onCancel": [Function],
         "title": "일정 추가",
         "transitionName": "zoom",
         "visible": true,
@@ -569,10 +566,10 @@ ShallowWrapper {
               />
               <Unknown
                             allowClear={false}
-                            defaultValue={"2014-02-27T10:00:00.000Z"}
                             format="HH"
                             name="startHour"
                             onChange={[Function]}
+                            value={"2014-02-27T10:00:00.000Z"}
               />
 </FormItem>,
             <FormItem
@@ -582,7 +579,6 @@ ShallowWrapper {
               <PickerWrapper
                             allowClear={false}
                             locale={Object {}}
-                            name="date"
                             onChange={[Function]}
                             onOk={[Function]}
                             onOpenChange={[Function]}
@@ -593,11 +589,11 @@ ShallowWrapper {
               />
               <Unknown
                             allowClear={false}
-                            defaultValue={"2014-02-27T11:00:00.000Z"}
                             disabledHours={[Function]}
                             format="HH"
                             name="endHour"
                             onChange={[Function]}
+                            value={"2014-02-27T11:00:00.000Z"}
               />
 </FormItem>,
           ],
@@ -677,10 +673,10 @@ ShallowWrapper {
 />,
                 <Unknown
                   allowClear={false}
-                  defaultValue={"2014-02-27T10:00:00.000Z"}
                   format="HH"
                   name="startHour"
                   onChange={[Function]}
+                  value={"2014-02-27T10:00:00.000Z"}
 />,
               ],
               "hasFeedback": false,
@@ -713,10 +709,10 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "allowClear": false,
-                  "defaultValue": "2014-02-27T10:00:00.000Z",
                   "format": "HH",
                   "name": "startHour",
                   "onChange": [Function],
+                  "value": "2014-02-27T10:00:00.000Z",
                 },
                 "ref": null,
                 "rendered": null,
@@ -734,7 +730,6 @@ ShallowWrapper {
                 <PickerWrapper
                   allowClear={false}
                   locale={Object {}}
-                  name="date"
                   onChange={[Function]}
                   onOk={[Function]}
                   onOpenChange={[Function]}
@@ -745,11 +740,11 @@ ShallowWrapper {
 />,
                 <Unknown
                   allowClear={false}
-                  defaultValue={"2014-02-27T11:00:00.000Z"}
                   disabledHours={[Function]}
                   format="HH"
                   name="endHour"
                   onChange={[Function]}
+                  value={"2014-02-27T11:00:00.000Z"}
 />,
               ],
               "hasFeedback": false,
@@ -764,7 +759,6 @@ ShallowWrapper {
                 "props": Object {
                   "allowClear": false,
                   "locale": Object {},
-                  "name": "date",
                   "onChange": [Function],
                   "onOk": [Function],
                   "onOpenChange": [Function],
@@ -783,11 +777,11 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "allowClear": false,
-                  "defaultValue": "2014-02-27T11:00:00.000Z",
                   "disabledHours": [Function],
                   "format": "HH",
                   "name": "endHour",
                   "onChange": [Function],
+                  "value": "2014-02-27T11:00:00.000Z",
                 },
                 "ref": null,
                 "rendered": null,
@@ -918,10 +912,10 @@ ShallowWrapper {
                 />
                 <Unknown
                         allowClear={false}
-                        defaultValue={"2014-02-10T01:00:00.000Z"}
                         format="HH"
                         name="startHour"
                         onChange={[Function]}
+                        value={"2014-02-09T16:00:00.000Z"}
                 />
         </FormItem>
         <FormItem
@@ -931,7 +925,6 @@ ShallowWrapper {
                 <PickerWrapper
                         allowClear={false}
                         locale={Object {}}
-                        name="date"
                         onChange={[Function]}
                         onOk={[Function]}
                         onOpenChange={[Function]}
@@ -942,11 +935,11 @@ ShallowWrapper {
                 />
                 <Unknown
                         allowClear={false}
-                        defaultValue={"2014-02-10T02:00:00.000Z"}
                         disabledHours={[Function]}
                         format="HH"
                         name="endHour"
                         onChange={[Function]}
+                        value={1}
                 />
         </FormItem>
 </Form>,
@@ -983,6 +976,7 @@ ShallowWrapper {
       "maskTransitionName": "fade",
       "okButtonDisabled": false,
       "okType": "primary",
+      "onCancel": [Function],
       "title": "일정 수정",
       "transitionName": "zoom",
       "visible": true,
@@ -1024,10 +1018,10 @@ ShallowWrapper {
             />
             <Unknown
                         allowClear={false}
-                        defaultValue={"2014-02-10T01:00:00.000Z"}
                         format="HH"
                         name="startHour"
                         onChange={[Function]}
+                        value={"2014-02-09T16:00:00.000Z"}
             />
 </FormItem>,
           <FormItem
@@ -1037,7 +1031,6 @@ ShallowWrapper {
             <PickerWrapper
                         allowClear={false}
                         locale={Object {}}
-                        name="date"
                         onChange={[Function]}
                         onOk={[Function]}
                         onOpenChange={[Function]}
@@ -1048,11 +1041,11 @@ ShallowWrapper {
             />
             <Unknown
                         allowClear={false}
-                        defaultValue={"2014-02-10T02:00:00.000Z"}
                         disabledHours={[Function]}
                         format="HH"
                         name="endHour"
                         onChange={[Function]}
+                        value={1}
             />
 </FormItem>,
         ],
@@ -1132,10 +1125,10 @@ ShallowWrapper {
 />,
               <Unknown
                 allowClear={false}
-                defaultValue={"2014-02-10T01:00:00.000Z"}
                 format="HH"
                 name="startHour"
                 onChange={[Function]}
+                value={"2014-02-09T16:00:00.000Z"}
 />,
             ],
             "hasFeedback": false,
@@ -1168,10 +1161,10 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "allowClear": false,
-                "defaultValue": "2014-02-10T01:00:00.000Z",
                 "format": "HH",
                 "name": "startHour",
                 "onChange": [Function],
+                "value": "2014-02-09T16:00:00.000Z",
               },
               "ref": null,
               "rendered": null,
@@ -1189,7 +1182,6 @@ ShallowWrapper {
               <PickerWrapper
                 allowClear={false}
                 locale={Object {}}
-                name="date"
                 onChange={[Function]}
                 onOk={[Function]}
                 onOpenChange={[Function]}
@@ -1200,11 +1192,11 @@ ShallowWrapper {
 />,
               <Unknown
                 allowClear={false}
-                defaultValue={"2014-02-10T02:00:00.000Z"}
                 disabledHours={[Function]}
                 format="HH"
                 name="endHour"
                 onChange={[Function]}
+                value={1}
 />,
             ],
             "hasFeedback": false,
@@ -1219,7 +1211,6 @@ ShallowWrapper {
               "props": Object {
                 "allowClear": false,
                 "locale": Object {},
-                "name": "date",
                 "onChange": [Function],
                 "onOk": [Function],
                 "onOpenChange": [Function],
@@ -1238,11 +1229,11 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "allowClear": false,
-                "defaultValue": "2014-02-10T02:00:00.000Z",
                 "disabledHours": [Function],
                 "format": "HH",
                 "name": "endHour",
                 "onChange": [Function],
+                "value": 1,
               },
               "ref": null,
               "rendered": null,
@@ -1319,10 +1310,10 @@ ShallowWrapper {
                     />
                     <Unknown
                               allowClear={false}
-                              defaultValue={"2014-02-10T01:00:00.000Z"}
                               format="HH"
                               name="startHour"
                               onChange={[Function]}
+                              value={"2014-02-09T16:00:00.000Z"}
                     />
           </FormItem>
           <FormItem
@@ -1332,7 +1323,6 @@ ShallowWrapper {
                     <PickerWrapper
                               allowClear={false}
                               locale={Object {}}
-                              name="date"
                               onChange={[Function]}
                               onOk={[Function]}
                               onOpenChange={[Function]}
@@ -1343,11 +1333,11 @@ ShallowWrapper {
                     />
                     <Unknown
                               allowClear={false}
-                              defaultValue={"2014-02-10T02:00:00.000Z"}
                               disabledHours={[Function]}
                               format="HH"
                               name="endHour"
                               onChange={[Function]}
+                              value={1}
                     />
           </FormItem>
 </Form>,
@@ -1384,6 +1374,7 @@ ShallowWrapper {
         "maskTransitionName": "fade",
         "okButtonDisabled": false,
         "okType": "primary",
+        "onCancel": [Function],
         "title": "일정 수정",
         "transitionName": "zoom",
         "visible": true,
@@ -1425,10 +1416,10 @@ ShallowWrapper {
               />
               <Unknown
                             allowClear={false}
-                            defaultValue={"2014-02-10T01:00:00.000Z"}
                             format="HH"
                             name="startHour"
                             onChange={[Function]}
+                            value={"2014-02-09T16:00:00.000Z"}
               />
 </FormItem>,
             <FormItem
@@ -1438,7 +1429,6 @@ ShallowWrapper {
               <PickerWrapper
                             allowClear={false}
                             locale={Object {}}
-                            name="date"
                             onChange={[Function]}
                             onOk={[Function]}
                             onOpenChange={[Function]}
@@ -1449,11 +1439,11 @@ ShallowWrapper {
               />
               <Unknown
                             allowClear={false}
-                            defaultValue={"2014-02-10T02:00:00.000Z"}
                             disabledHours={[Function]}
                             format="HH"
                             name="endHour"
                             onChange={[Function]}
+                            value={1}
               />
 </FormItem>,
           ],
@@ -1533,10 +1523,10 @@ ShallowWrapper {
 />,
                 <Unknown
                   allowClear={false}
-                  defaultValue={"2014-02-10T01:00:00.000Z"}
                   format="HH"
                   name="startHour"
                   onChange={[Function]}
+                  value={"2014-02-09T16:00:00.000Z"}
 />,
               ],
               "hasFeedback": false,
@@ -1569,10 +1559,10 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "allowClear": false,
-                  "defaultValue": "2014-02-10T01:00:00.000Z",
                   "format": "HH",
                   "name": "startHour",
                   "onChange": [Function],
+                  "value": "2014-02-09T16:00:00.000Z",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1590,7 +1580,6 @@ ShallowWrapper {
                 <PickerWrapper
                   allowClear={false}
                   locale={Object {}}
-                  name="date"
                   onChange={[Function]}
                   onOk={[Function]}
                   onOpenChange={[Function]}
@@ -1601,11 +1590,11 @@ ShallowWrapper {
 />,
                 <Unknown
                   allowClear={false}
-                  defaultValue={"2014-02-10T02:00:00.000Z"}
                   disabledHours={[Function]}
                   format="HH"
                   name="endHour"
                   onChange={[Function]}
+                  value={1}
 />,
               ],
               "hasFeedback": false,
@@ -1620,7 +1609,6 @@ ShallowWrapper {
                 "props": Object {
                   "allowClear": false,
                   "locale": Object {},
-                  "name": "date",
                   "onChange": [Function],
                   "onOk": [Function],
                   "onOpenChange": [Function],
@@ -1639,11 +1627,11 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "allowClear": false,
-                  "defaultValue": "2014-02-10T02:00:00.000Z",
                   "disabledHours": [Function],
                   "format": "HH",
                   "name": "endHour",
                   "onChange": [Function],
+                  "value": 1,
                 },
                 "ref": null,
                 "rendered": null,

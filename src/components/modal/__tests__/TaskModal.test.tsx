@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as Enzyme from 'enzyme';
 import { TaskModal } from '../TaskModal';
 import * as moment from 'moment';
-import { Task } from '../../models/Task';
+import { Task } from '../../../models/Task';
 
 describe('<TaskModal />', () => {
     const currentMoment = moment('2014-02-27T10:00:00.000Z');
@@ -12,7 +12,7 @@ describe('<TaskModal />', () => {
     const deleteMock = jest.fn();
 
     it('renders correctly', () => {
-        component = Enzyme.shallow(<TaskModal time={currentMoment} onOk={okMock} onCancel={cancelMock} onDelete={deleteMock} />);
+        component = Enzyme.shallow(<TaskModal time={currentMoment} onOk={okMock} onCancel={cancelMock} onDelete={deleteMock} isLoading={false}/>);
     });
 
     it('should match snapshot', () => {

@@ -11,16 +11,16 @@ const loadTaskEpic = (
     action: Observable<BaseAction>
 ): Observable<any> => action.pipe(
     ofType(TaskAction.LOAD),
-    throttleTime(3000),
-    map(($action: Action<TaskLookupRequest>) => concat(
-        of({ type: TaskAction.LOAD_STARTED }),
+    concatMap(($action: Action<TaskLookupRequest>) => concat(
+        of(TaskAction.startedLoadTasks()),
         from(TaskApi.loadTasks($action.payload.year, $action.payload.month)).pipe(
             timeout(15000),
             map((tasks: Task[]) => TaskAction.successedLoadTasks(tasks)),
-            catchError(error => of(TaskAction.failedLoadTasks())),
+            catchError((err: Error) => of(TaskAction.failedLoadTasks())),
             takeUntil(action.pipe(ofType(TaskAction.LOAD)))
+            )
         )
-    ))
+    )
 );
 
 const createTaskEpic = (
@@ -29,7 +29,7 @@ const createTaskEpic = (
     ofType(TaskAction.CREATE),
     throttleTime(3000),
     concatMap(($action: Action<Task>) => concat(
-        of({ type: TaskAction.UPDATE_STARTED }),
+        of(TaskAction.startedUpdateTask()),
         from(TaskApi.createTask($action.payload)).pipe(
             timeout(15000),
             map((task: Task) => TaskAction.successedCreateTask(task)),
@@ -44,7 +44,7 @@ const updateTaskEpic = (
     ofType(TaskAction.EDIT),
     throttleTime(3000),
     concatMap(($action: Action<Task>) => concat(
-        of({ type: TaskAction.UPDATE_STARTED }),
+        of(TaskAction.startedUpdateTask()),
         from(TaskApi.updateTask($action.payload)).pipe(
             timeout(15000),
             map(() => TaskAction.successedEditTask($action.payload)),
@@ -59,7 +59,7 @@ const deleteTaskEpic = (
     ofType(TaskAction.DELETE),
     throttleTime(3000),
     concatMap(($action: Action<number>) => concat(
-        of({ type: TaskAction.UPDATE_STARTED }),
+        of(TaskAction.startedUpdateTask()),
         from(TaskApi.deleteTask($action.payload)).pipe(
             timeout(15000),
             map(() => TaskAction.successedDeleteTask($action.payload)),

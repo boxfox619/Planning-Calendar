@@ -25,8 +25,9 @@ ShallowWrapper {
         <input
           hidden={true}
           name="form-name"
-          type="number"
-          value="Thu Feb 27 2014 19:00:00 GMT+0900"
+          onChange={[Function]}
+          type="string"
+          value=""
 />,
         <TimePicker
           align={
@@ -37,6 +38,7 @@ ShallowWrapper {
                               ],
                             }
           }
+          defaultValue={"2014-02-27T10:00:00.000Z"}
           disabled={false}
           disabledHours={undefined}
           disabledMinutes={undefined}
@@ -60,8 +62,9 @@ ShallowWrapper {
         "props": Object {
           "hidden": true,
           "name": "form-name",
-          "type": "number",
-          "value": "Thu Feb 27 2014 19:00:00 GMT+0900",
+          "onChange": [Function],
+          "type": "string",
+          "value": "",
         },
         "ref": null,
         "rendered": null,
@@ -78,6 +81,7 @@ ShallowWrapper {
               -2,
             ],
           },
+          "defaultValue": "2014-02-27T10:00:00.000Z",
           "disabled": false,
           "disabledHours": undefined,
           "disabledMinutes": undefined,
@@ -107,8 +111,9 @@ ShallowWrapper {
           <input
             hidden={true}
             name="form-name"
-            type="number"
-            value="Thu Feb 27 2014 19:00:00 GMT+0900"
+            onChange={[Function]}
+            type="string"
+            value=""
 />,
           <TimePicker
             align={
@@ -119,6 +124,7 @@ ShallowWrapper {
                                     ],
                                   }
             }
+            defaultValue={"2014-02-27T10:00:00.000Z"}
             disabled={false}
             disabledHours={undefined}
             disabledMinutes={undefined}
@@ -142,8 +148,9 @@ ShallowWrapper {
           "props": Object {
             "hidden": true,
             "name": "form-name",
-            "type": "number",
-            "value": "Thu Feb 27 2014 19:00:00 GMT+0900",
+            "onChange": [Function],
+            "type": "string",
+            "value": "",
           },
           "ref": null,
           "rendered": null,
@@ -160,6 +167,7 @@ ShallowWrapper {
                 -2,
               ],
             },
+            "defaultValue": "2014-02-27T10:00:00.000Z",
             "disabled": false,
             "disabledHours": undefined,
             "disabledMinutes": undefined,

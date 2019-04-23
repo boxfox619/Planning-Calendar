@@ -2,7 +2,7 @@ import { Task } from '../models/Task';
 import axios from 'axios';
 
 export const loadTasks = async (year: number, month: number) => {
-    const res = await axios.get<Task[]>(`/task?year${year}&month=${month}`);
+    const res = await axios.get<Task[]>(`/task?year=${year}&month=${month}`);
     if(res.status !== 200){
         throw new Error(res.statusText);
     }

@@ -140,7 +140,7 @@ ShallowWrapper {
             style={
                         Object {
                                     "height": "40px",
-                                    "top": "0px",
+                                    "top": "40px",
                                   }
             }
 >
@@ -151,7 +151,7 @@ ShallowWrapper {
             style={
                         Object {
                                     "height": "40px",
-                                    "top": "0px",
+                                    "top": "880px",
                                   }
             }
 >
@@ -162,7 +162,7 @@ ShallowWrapper {
             style={
                         Object {
                                     "height": "80px",
-                                    "top": "0px",
+                                    "top": "80px",
                                   }
             }
 >
@@ -173,7 +173,7 @@ ShallowWrapper {
             style={
                         Object {
                                     "height": "80px",
-                                    "top": "0px",
+                                    "top": "320px",
                                   }
             }
 >
@@ -184,7 +184,7 @@ ShallowWrapper {
             style={
                         Object {
                                     "height": "80px",
-                                    "top": "0px",
+                                    "top": "520px",
                                   }
             }
 >
@@ -1188,7 +1188,7 @@ ShallowWrapper {
           "data-taskid": 1,
           "style": Object {
             "height": "40px",
-            "top": "0px",
+            "top": "40px",
           },
         },
         "ref": null,
@@ -1230,7 +1230,7 @@ ShallowWrapper {
           "data-taskid": 1,
           "style": Object {
             "height": "40px",
-            "top": "0px",
+            "top": "880px",
           },
         },
         "ref": null,
@@ -1272,7 +1272,7 @@ ShallowWrapper {
           "data-taskid": 1,
           "style": Object {
             "height": "80px",
-            "top": "0px",
+            "top": "80px",
           },
         },
         "ref": null,
@@ -1314,7 +1314,7 @@ ShallowWrapper {
           "data-taskid": 1,
           "style": Object {
             "height": "80px",
-            "top": "0px",
+            "top": "320px",
           },
         },
         "ref": null,
@@ -1356,7 +1356,7 @@ ShallowWrapper {
           "data-taskid": 1,
           "style": Object {
             "height": "80px",
-            "top": "0px",
+            "top": "520px",
           },
         },
         "ref": null,
@@ -1505,7 +1505,7 @@ ShallowWrapper {
               style={
                             Object {
                                           "height": "40px",
-                                          "top": "0px",
+                                          "top": "40px",
                                         }
               }
 >
@@ -1516,7 +1516,7 @@ ShallowWrapper {
               style={
                             Object {
                                           "height": "40px",
-                                          "top": "0px",
+                                          "top": "880px",
                                         }
               }
 >
@@ -1527,7 +1527,7 @@ ShallowWrapper {
               style={
                             Object {
                                           "height": "80px",
-                                          "top": "0px",
+                                          "top": "80px",
                                         }
               }
 >
@@ -1538,7 +1538,7 @@ ShallowWrapper {
               style={
                             Object {
                                           "height": "80px",
-                                          "top": "0px",
+                                          "top": "320px",
                                         }
               }
 >
@@ -1549,7 +1549,7 @@ ShallowWrapper {
               style={
                             Object {
                                           "height": "80px",
-                                          "top": "0px",
+                                          "top": "520px",
                                         }
               }
 >
@@ -2553,7 +2553,7 @@ ShallowWrapper {
             "data-taskid": 1,
             "style": Object {
               "height": "40px",
-              "top": "0px",
+              "top": "40px",
             },
           },
           "ref": null,
@@ -2595,7 +2595,7 @@ ShallowWrapper {
             "data-taskid": 1,
             "style": Object {
               "height": "40px",
-              "top": "0px",
+              "top": "880px",
             },
           },
           "ref": null,
@@ -2637,7 +2637,7 @@ ShallowWrapper {
             "data-taskid": 1,
             "style": Object {
               "height": "80px",
-              "top": "0px",
+              "top": "80px",
             },
           },
           "ref": null,
@@ -2679,7 +2679,7 @@ ShallowWrapper {
             "data-taskid": 1,
             "style": Object {
               "height": "80px",
-              "top": "0px",
+              "top": "320px",
             },
           },
           "ref": null,
@@ -2721,7 +2721,7 @@ ShallowWrapper {
             "data-taskid": 1,
             "style": Object {
               "height": "80px",
-              "top": "0px",
+              "top": "520px",
             },
           },
           "ref": null,

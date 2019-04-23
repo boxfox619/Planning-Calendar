@@ -44,5 +44,6 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "typescript": "^3.4.4"
-  }
+  },
+  "proxy": "https://8y7lkefwd2.execute-api.ap-northeast-2.amazonaws.com/kakao-calendar"
 }
