@@ -56,6 +56,12 @@ const App: React.FC<Props> = ({ store, taskStore, ...action }) => {
   }
 
   React.useEffect(() => {
+    if(taskStore.error){
+      alert(taskStore.error);
+    }
+  }, [taskStore.error]);
+
+  React.useEffect(() => {
     if (prevIsUpdating && !isTaskUpdating && isTaskUpdated) {
       handleDismissModal();
     }

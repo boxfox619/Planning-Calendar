@@ -5,6 +5,7 @@ export class TaskStore {
         public isTaskLoading: boolean = false,
         public isTaskLoaded: boolean = false,
         public isTaskUpdating: boolean = false,
-        public isTaskUpdated: boolean = false
+        public isTaskUpdated: boolean = false,
+        public error: string = ''
     ) { }
 }
