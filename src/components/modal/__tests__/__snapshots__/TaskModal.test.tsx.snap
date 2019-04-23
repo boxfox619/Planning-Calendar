@@ -4,10 +4,11 @@ exports[`<TaskModal /> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
+    isLoading={false}
     onCancel={[Function]}
     onDelete={[Function]}
     onOk={[Function]}
-    time={"2014-02-27T10:00:00.000Z"}
+    target={"2014-02-27T10:00:00.000Z"}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -24,114 +25,122 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "cancelButtonDisabled": false,
-      "children": <Form
-        colon={true}
-        hideRequiredMark={false}
-        id="task-form"
-        labelCol={
-                Object {
-                        "sm": Object {
-                          "span": 8,
-                        },
-                        "xs": Object {
-                          "span": 24,
-                        },
-                      }
-        }
-        layout="horizontal"
-        onSubmit={[Function]}
-        wrapperCol={
-                Object {
-                        "sm": Object {
-                          "span": 16,
-                        },
-                        "xs": Object {
-                          "span": 24,
-                        },
-                      }
-        }
+      "children": <Spin
+        size="default"
+        spinning={false}
+        wrapperClassName=""
 >
-        <FormItem
-                hasFeedback={false}
-                label="Task Name"
+        <Form
+                colon={true}
+                hideRequiredMark={false}
+                id="task-form"
+                labelCol={
+                        Object {
+                                "sm": Object {
+                                  "span": 8,
+                                },
+                                "xs": Object {
+                                  "span": 24,
+                                },
+                              }
+                }
+                layout="horizontal"
+                onSubmit={[Function]}
+                wrapperCol={
+                        Object {
+                                "sm": Object {
+                                  "span": 16,
+                                },
+                                "xs": Object {
+                                  "span": 24,
+                                },
+                              }
+                }
         >
-                <Input
-                        defaultValue=""
-                        disabled={false}
-                        name="name"
-                        required={true}
-                        type="text"
-                />
-        </FormItem>
-        <FormItem
-                hasFeedback={false}
-                label="Start Date Time"
-        >
-                <PickerWrapper
-                        allowClear={false}
-                        locale={Object {}}
-                        name="date"
-                        onChange={[Function]}
-                        onOk={[Function]}
-                        onOpenChange={[Function]}
-                        popupStyle={Object {}}
-                        transitionName="slide-up"
-                        value={"2014-02-27T10:00:00.000Z"}
-                />
-                <Unknown
-                        allowClear={false}
-                        format="HH"
-                        name="startHour"
-                        onChange={[Function]}
-                        value={"2014-02-27T10:00:00.000Z"}
-                />
-        </FormItem>
-        <FormItem
-                hasFeedback={false}
-                label="End Date Time"
-        >
-                <PickerWrapper
-                        allowClear={false}
-                        locale={Object {}}
-                        onChange={[Function]}
-                        onOk={[Function]}
-                        onOpenChange={[Function]}
-                        open={false}
-                        popupStyle={Object {}}
-                        transitionName="slide-up"
-                        value={"2014-02-27T10:00:00.000Z"}
-                />
-                <Unknown
-                        allowClear={false}
-                        disabledHours={[Function]}
-                        format="HH"
-                        name="endHour"
-                        onChange={[Function]}
-                        value={"2014-02-27T11:00:00.000Z"}
-                />
-        </FormItem>
-</Form>,
+                <FormItem
+                        hasFeedback={false}
+                        label="Task Name"
+                >
+                        <Input
+                                defaultValue=""
+                                disabled={false}
+                                name="name"
+                                required={true}
+                                type="text"
+                        />
+                </FormItem>
+                <FormItem
+                        hasFeedback={false}
+                        label="Start Date Time"
+                >
+                        <PickerWrapper
+                                allowClear={false}
+                                locale={Object {}}
+                                name="date"
+                                onChange={[Function]}
+                                onOk={[Function]}
+                                onOpenChange={[Function]}
+                                popupStyle={Object {}}
+                                transitionName="slide-up"
+                                value={"2014-02-27T10:00:00.000Z"}
+                        />
+                        <Unknown
+                                allowClear={false}
+                                format="HH"
+                                name="startHour"
+                                onChange={[Function]}
+                                value={"2014-02-27T10:00:00.000Z"}
+                        />
+                </FormItem>
+                <FormItem
+                        hasFeedback={false}
+                        label="End Date Time"
+                >
+                        <PickerWrapper
+                                allowClear={false}
+                                locale={Object {}}
+                                onChange={[Function]}
+                                onOk={[Function]}
+                                onOpenChange={[Function]}
+                                open={false}
+                                popupStyle={Object {}}
+                                transitionName="slide-up"
+                                value={"2014-02-27T10:00:00.000Z"}
+                        />
+                        <Unknown
+                                allowClear={false}
+                                disabledHours={[Function]}
+                                format="HH"
+                                name="endHour"
+                                onChange={[Function]}
+                                value={"2014-02-27T11:00:00.000Z"}
+                        />
+                </FormItem>
+        </Form>
+</Spin>,
       "confirmLoading": false,
-      "footer": Array [
+      "footer": <Unknown>
         <Button
-          block={false}
-          form="task-form"
-          ghost={false}
-          htmlType="submit"
-          loading={false}
->
-          확인
-</Button>,
+                block={false}
+                disabled={false}
+                form="task-form"
+                ghost={false}
+                htmlType="submit"
+                loading={false}
+        >
+                확인
+        </Button>
         <Button
-          block={false}
-          ghost={false}
-          htmlType="button"
-          loading={false}
-          onClick={[Function]}
->
-          취소
-</Button>,
-      ],
+                block={false}
+                disabled={false}
+                ghost={false}
+                htmlType="button"
+                loading={false}
+                onClick={[Function]}
+        >
+                취소
+        </Button>
+</Unknown>,
       "maskTransitionName": "fade",
       "okButtonDisabled": false,
       "okType": "primary",
@@ -147,272 +156,6 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": Array [
-          <FormItem
-            hasFeedback={false}
-            label="Task Name"
->
-            <Input
-                        defaultValue=""
-                        disabled={false}
-                        name="name"
-                        required={true}
-                        type="text"
-            />
-</FormItem>,
-          <FormItem
-            hasFeedback={false}
-            label="Start Date Time"
->
-            <PickerWrapper
-                        allowClear={false}
-                        locale={Object {}}
-                        name="date"
-                        onChange={[Function]}
-                        onOk={[Function]}
-                        onOpenChange={[Function]}
-                        popupStyle={Object {}}
-                        transitionName="slide-up"
-                        value={"2014-02-27T10:00:00.000Z"}
-            />
-            <Unknown
-                        allowClear={false}
-                        format="HH"
-                        name="startHour"
-                        onChange={[Function]}
-                        value={"2014-02-27T10:00:00.000Z"}
-            />
-</FormItem>,
-          <FormItem
-            hasFeedback={false}
-            label="End Date Time"
->
-            <PickerWrapper
-                        allowClear={false}
-                        locale={Object {}}
-                        onChange={[Function]}
-                        onOk={[Function]}
-                        onOpenChange={[Function]}
-                        open={false}
-                        popupStyle={Object {}}
-                        transitionName="slide-up"
-                        value={"2014-02-27T10:00:00.000Z"}
-            />
-            <Unknown
-                        allowClear={false}
-                        disabledHours={[Function]}
-                        format="HH"
-                        name="endHour"
-                        onChange={[Function]}
-                        value={"2014-02-27T11:00:00.000Z"}
-            />
-</FormItem>,
-        ],
-        "colon": true,
-        "hideRequiredMark": false,
-        "id": "task-form",
-        "labelCol": Object {
-          "sm": Object {
-            "span": 8,
-          },
-          "xs": Object {
-            "span": 24,
-          },
-        },
-        "layout": "horizontal",
-        "onSubmit": [Function],
-        "wrapperCol": Object {
-          "sm": Object {
-            "span": 16,
-          },
-          "xs": Object {
-            "span": 24,
-          },
-        },
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <Input
-              defaultValue=""
-              disabled={false}
-              name="name"
-              required={true}
-              type="text"
-/>,
-            "hasFeedback": false,
-            "label": "Task Name",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "defaultValue": "",
-              "disabled": false,
-              "name": "name",
-              "required": true,
-              "type": "text",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <PickerWrapper
-                allowClear={false}
-                locale={Object {}}
-                name="date"
-                onChange={[Function]}
-                onOk={[Function]}
-                onOpenChange={[Function]}
-                popupStyle={Object {}}
-                transitionName="slide-up"
-                value={"2014-02-27T10:00:00.000Z"}
-/>,
-              <Unknown
-                allowClear={false}
-                format="HH"
-                name="startHour"
-                onChange={[Function]}
-                value={"2014-02-27T10:00:00.000Z"}
-/>,
-            ],
-            "hasFeedback": false,
-            "label": "Start Date Time",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "allowClear": false,
-                "locale": Object {},
-                "name": "date",
-                "onChange": [Function],
-                "onOk": [Function],
-                "onOpenChange": [Function],
-                "popupStyle": Object {},
-                "transitionName": "slide-up",
-                "value": "2014-02-27T10:00:00.000Z",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "allowClear": false,
-                "format": "HH",
-                "name": "startHour",
-                "onChange": [Function],
-                "value": "2014-02-27T10:00:00.000Z",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <PickerWrapper
-                allowClear={false}
-                locale={Object {}}
-                onChange={[Function]}
-                onOk={[Function]}
-                onOpenChange={[Function]}
-                open={false}
-                popupStyle={Object {}}
-                transitionName="slide-up"
-                value={"2014-02-27T10:00:00.000Z"}
-/>,
-              <Unknown
-                allowClear={false}
-                disabledHours={[Function]}
-                format="HH"
-                name="endHour"
-                onChange={[Function]}
-                value={"2014-02-27T11:00:00.000Z"}
-/>,
-            ],
-            "hasFeedback": false,
-            "label": "End Date Time",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "allowClear": false,
-                "locale": Object {},
-                "onChange": [Function],
-                "onOk": [Function],
-                "onOpenChange": [Function],
-                "open": false,
-                "popupStyle": Object {},
-                "transitionName": "slide-up",
-                "value": "2014-02-27T10:00:00.000Z",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "allowClear": false,
-                "disabledHours": [Function],
-                "format": "HH",
-                "name": "endHour",
-                "onChange": [Function],
-                "value": "2014-02-27T11:00:00.000Z",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "cancelButtonDisabled": false,
         "children": <Form
           colon={true}
           hideRequiredMark={false}
@@ -500,35 +243,9 @@ ShallowWrapper {
                     />
           </FormItem>
 </Form>,
-        "confirmLoading": false,
-        "footer": Array [
-          <Button
-            block={false}
-            form="task-form"
-            ghost={false}
-            htmlType="submit"
-            loading={false}
->
-            확인
-</Button>,
-          <Button
-            block={false}
-            ghost={false}
-            htmlType="button"
-            loading={false}
-            onClick={[Function]}
->
-            취소
-</Button>,
-        ],
-        "maskTransitionName": "fade",
-        "okButtonDisabled": false,
-        "okType": "primary",
-        "onCancel": [Function],
-        "title": "일정 추가",
-        "transitionName": "zoom",
-        "visible": true,
-        "width": 520,
+        "size": "default",
+        "spinning": false,
+        "wrapperClassName": "",
       },
       "ref": null,
       "rendered": Object {
@@ -795,6 +512,504 @@ ShallowWrapper {
       },
       "type": [Function],
     },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "cancelButtonDisabled": false,
+        "children": <Spin
+          size="default"
+          spinning={false}
+          wrapperClassName=""
+>
+          <Form
+                    colon={true}
+                    hideRequiredMark={false}
+                    id="task-form"
+                    labelCol={
+                              Object {
+                                        "sm": Object {
+                                          "span": 8,
+                                        },
+                                        "xs": Object {
+                                          "span": 24,
+                                        },
+                                      }
+                    }
+                    layout="horizontal"
+                    onSubmit={[Function]}
+                    wrapperCol={
+                              Object {
+                                        "sm": Object {
+                                          "span": 16,
+                                        },
+                                        "xs": Object {
+                                          "span": 24,
+                                        },
+                                      }
+                    }
+          >
+                    <FormItem
+                              hasFeedback={false}
+                              label="Task Name"
+                    >
+                              <Input
+                                        defaultValue=""
+                                        disabled={false}
+                                        name="name"
+                                        required={true}
+                                        type="text"
+                              />
+                    </FormItem>
+                    <FormItem
+                              hasFeedback={false}
+                              label="Start Date Time"
+                    >
+                              <PickerWrapper
+                                        allowClear={false}
+                                        locale={Object {}}
+                                        name="date"
+                                        onChange={[Function]}
+                                        onOk={[Function]}
+                                        onOpenChange={[Function]}
+                                        popupStyle={Object {}}
+                                        transitionName="slide-up"
+                                        value={"2014-02-27T10:00:00.000Z"}
+                              />
+                              <Unknown
+                                        allowClear={false}
+                                        format="HH"
+                                        name="startHour"
+                                        onChange={[Function]}
+                                        value={"2014-02-27T10:00:00.000Z"}
+                              />
+                    </FormItem>
+                    <FormItem
+                              hasFeedback={false}
+                              label="End Date Time"
+                    >
+                              <PickerWrapper
+                                        allowClear={false}
+                                        locale={Object {}}
+                                        onChange={[Function]}
+                                        onOk={[Function]}
+                                        onOpenChange={[Function]}
+                                        open={false}
+                                        popupStyle={Object {}}
+                                        transitionName="slide-up"
+                                        value={"2014-02-27T10:00:00.000Z"}
+                              />
+                              <Unknown
+                                        allowClear={false}
+                                        disabledHours={[Function]}
+                                        format="HH"
+                                        name="endHour"
+                                        onChange={[Function]}
+                                        value={"2014-02-27T11:00:00.000Z"}
+                              />
+                    </FormItem>
+          </Form>
+</Spin>,
+        "confirmLoading": false,
+        "footer": <Unknown>
+          <Button
+                    block={false}
+                    disabled={false}
+                    form="task-form"
+                    ghost={false}
+                    htmlType="submit"
+                    loading={false}
+          >
+                    확인
+          </Button>
+          <Button
+                    block={false}
+                    disabled={false}
+                    ghost={false}
+                    htmlType="button"
+                    loading={false}
+                    onClick={[Function]}
+          >
+                    취소
+          </Button>
+</Unknown>,
+        "maskTransitionName": "fade",
+        "okButtonDisabled": false,
+        "okType": "primary",
+        "onCancel": [Function],
+        "title": "일정 추가",
+        "transitionName": "zoom",
+        "visible": true,
+        "width": 520,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Form
+            colon={true}
+            hideRequiredMark={false}
+            id="task-form"
+            labelCol={
+                        Object {
+                                    "sm": Object {
+                                      "span": 8,
+                                    },
+                                    "xs": Object {
+                                      "span": 24,
+                                    },
+                                  }
+            }
+            layout="horizontal"
+            onSubmit={[Function]}
+            wrapperCol={
+                        Object {
+                                    "sm": Object {
+                                      "span": 16,
+                                    },
+                                    "xs": Object {
+                                      "span": 24,
+                                    },
+                                  }
+            }
+>
+            <FormItem
+                        hasFeedback={false}
+                        label="Task Name"
+            >
+                        <Input
+                                    defaultValue=""
+                                    disabled={false}
+                                    name="name"
+                                    required={true}
+                                    type="text"
+                        />
+            </FormItem>
+            <FormItem
+                        hasFeedback={false}
+                        label="Start Date Time"
+            >
+                        <PickerWrapper
+                                    allowClear={false}
+                                    locale={Object {}}
+                                    name="date"
+                                    onChange={[Function]}
+                                    onOk={[Function]}
+                                    onOpenChange={[Function]}
+                                    popupStyle={Object {}}
+                                    transitionName="slide-up"
+                                    value={"2014-02-27T10:00:00.000Z"}
+                        />
+                        <Unknown
+                                    allowClear={false}
+                                    format="HH"
+                                    name="startHour"
+                                    onChange={[Function]}
+                                    value={"2014-02-27T10:00:00.000Z"}
+                        />
+            </FormItem>
+            <FormItem
+                        hasFeedback={false}
+                        label="End Date Time"
+            >
+                        <PickerWrapper
+                                    allowClear={false}
+                                    locale={Object {}}
+                                    onChange={[Function]}
+                                    onOk={[Function]}
+                                    onOpenChange={[Function]}
+                                    open={false}
+                                    popupStyle={Object {}}
+                                    transitionName="slide-up"
+                                    value={"2014-02-27T10:00:00.000Z"}
+                        />
+                        <Unknown
+                                    allowClear={false}
+                                    disabledHours={[Function]}
+                                    format="HH"
+                                    name="endHour"
+                                    onChange={[Function]}
+                                    value={"2014-02-27T11:00:00.000Z"}
+                        />
+            </FormItem>
+</Form>,
+          "size": "default",
+          "spinning": false,
+          "wrapperClassName": "",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <FormItem
+                hasFeedback={false}
+                label="Task Name"
+>
+                <Input
+                                defaultValue=""
+                                disabled={false}
+                                name="name"
+                                required={true}
+                                type="text"
+                />
+</FormItem>,
+              <FormItem
+                hasFeedback={false}
+                label="Start Date Time"
+>
+                <PickerWrapper
+                                allowClear={false}
+                                locale={Object {}}
+                                name="date"
+                                onChange={[Function]}
+                                onOk={[Function]}
+                                onOpenChange={[Function]}
+                                popupStyle={Object {}}
+                                transitionName="slide-up"
+                                value={"2014-02-27T10:00:00.000Z"}
+                />
+                <Unknown
+                                allowClear={false}
+                                format="HH"
+                                name="startHour"
+                                onChange={[Function]}
+                                value={"2014-02-27T10:00:00.000Z"}
+                />
+</FormItem>,
+              <FormItem
+                hasFeedback={false}
+                label="End Date Time"
+>
+                <PickerWrapper
+                                allowClear={false}
+                                locale={Object {}}
+                                onChange={[Function]}
+                                onOk={[Function]}
+                                onOpenChange={[Function]}
+                                open={false}
+                                popupStyle={Object {}}
+                                transitionName="slide-up"
+                                value={"2014-02-27T10:00:00.000Z"}
+                />
+                <Unknown
+                                allowClear={false}
+                                disabledHours={[Function]}
+                                format="HH"
+                                name="endHour"
+                                onChange={[Function]}
+                                value={"2014-02-27T11:00:00.000Z"}
+                />
+</FormItem>,
+            ],
+            "colon": true,
+            "hideRequiredMark": false,
+            "id": "task-form",
+            "labelCol": Object {
+              "sm": Object {
+                "span": 8,
+              },
+              "xs": Object {
+                "span": 24,
+              },
+            },
+            "layout": "horizontal",
+            "onSubmit": [Function],
+            "wrapperCol": Object {
+              "sm": Object {
+                "span": 16,
+              },
+              "xs": Object {
+                "span": 24,
+              },
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Input
+                  defaultValue=""
+                  disabled={false}
+                  name="name"
+                  required={true}
+                  type="text"
+/>,
+                "hasFeedback": false,
+                "label": "Task Name",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "defaultValue": "",
+                  "disabled": false,
+                  "name": "name",
+                  "required": true,
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <PickerWrapper
+                    allowClear={false}
+                    locale={Object {}}
+                    name="date"
+                    onChange={[Function]}
+                    onOk={[Function]}
+                    onOpenChange={[Function]}
+                    popupStyle={Object {}}
+                    transitionName="slide-up"
+                    value={"2014-02-27T10:00:00.000Z"}
+/>,
+                  <Unknown
+                    allowClear={false}
+                    format="HH"
+                    name="startHour"
+                    onChange={[Function]}
+                    value={"2014-02-27T10:00:00.000Z"}
+/>,
+                ],
+                "hasFeedback": false,
+                "label": "Start Date Time",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "allowClear": false,
+                    "locale": Object {},
+                    "name": "date",
+                    "onChange": [Function],
+                    "onOk": [Function],
+                    "onOpenChange": [Function],
+                    "popupStyle": Object {},
+                    "transitionName": "slide-up",
+                    "value": "2014-02-27T10:00:00.000Z",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "allowClear": false,
+                    "format": "HH",
+                    "name": "startHour",
+                    "onChange": [Function],
+                    "value": "2014-02-27T10:00:00.000Z",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <PickerWrapper
+                    allowClear={false}
+                    locale={Object {}}
+                    onChange={[Function]}
+                    onOk={[Function]}
+                    onOpenChange={[Function]}
+                    open={false}
+                    popupStyle={Object {}}
+                    transitionName="slide-up"
+                    value={"2014-02-27T10:00:00.000Z"}
+/>,
+                  <Unknown
+                    allowClear={false}
+                    disabledHours={[Function]}
+                    format="HH"
+                    name="endHour"
+                    onChange={[Function]}
+                    value={"2014-02-27T11:00:00.000Z"}
+/>,
+                ],
+                "hasFeedback": false,
+                "label": "End Date Time",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "allowClear": false,
+                    "locale": Object {},
+                    "onChange": [Function],
+                    "onOk": [Function],
+                    "onOpenChange": [Function],
+                    "open": false,
+                    "popupStyle": Object {},
+                    "transitionName": "slide-up",
+                    "value": "2014-02-27T10:00:00.000Z",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "allowClear": false,
+                    "disabledHours": [Function],
+                    "format": "HH",
+                    "name": "endHour",
+                    "onChange": [Function],
+                    "value": "2014-02-27T11:00:00.000Z",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": [Function],
+    },
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {
@@ -827,19 +1042,19 @@ exports[`<TaskModal task={task}/> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
+    isLoading={false}
     onCancel={[Function]}
     onDelete={[Function]}
     onOk={[Function]}
-    task={
+    target={
         Task {
-            "date": "2014-02-10T01:00:00.000Z",
-            "endHour": undefined,
+            "date": "2014-02-10",
+            "endHour": 3,
             "id": 1,
             "name": "귤 까기01",
             "startHour": 1,
           }
     }
-    time={"2014-02-27T10:00:00.000Z"}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -856,123 +1071,132 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "cancelButtonDisabled": false,
-      "children": <Form
-        colon={true}
-        hideRequiredMark={false}
-        id="task-form"
-        labelCol={
-                Object {
-                        "sm": Object {
-                          "span": 8,
-                        },
-                        "xs": Object {
-                          "span": 24,
-                        },
-                      }
-        }
-        layout="horizontal"
-        onSubmit={[Function]}
-        wrapperCol={
-                Object {
-                        "sm": Object {
-                          "span": 16,
-                        },
-                        "xs": Object {
-                          "span": 24,
-                        },
-                      }
-        }
+      "children": <Spin
+        size="default"
+        spinning={false}
+        wrapperClassName=""
 >
-        <FormItem
-                hasFeedback={false}
-                label="Task Name"
+        <Form
+                colon={true}
+                hideRequiredMark={false}
+                id="task-form"
+                labelCol={
+                        Object {
+                                "sm": Object {
+                                  "span": 8,
+                                },
+                                "xs": Object {
+                                  "span": 24,
+                                },
+                              }
+                }
+                layout="horizontal"
+                onSubmit={[Function]}
+                wrapperCol={
+                        Object {
+                                "sm": Object {
+                                  "span": 16,
+                                },
+                                "xs": Object {
+                                  "span": 24,
+                                },
+                              }
+                }
         >
-                <Input
-                        defaultValue="귤 까기01"
-                        disabled={false}
-                        name="name"
-                        required={true}
-                        type="text"
-                />
-        </FormItem>
-        <FormItem
-                hasFeedback={false}
-                label="Start Date Time"
-        >
-                <PickerWrapper
-                        allowClear={false}
-                        locale={Object {}}
-                        name="date"
-                        onChange={[Function]}
-                        onOk={[Function]}
-                        onOpenChange={[Function]}
-                        popupStyle={Object {}}
-                        transitionName="slide-up"
-                        value={"2014-02-10T01:00:00.000Z"}
-                />
-                <Unknown
-                        allowClear={false}
-                        format="HH"
-                        name="startHour"
-                        onChange={[Function]}
-                        value={"2014-02-09T16:00:00.000Z"}
-                />
-        </FormItem>
-        <FormItem
-                hasFeedback={false}
-                label="End Date Time"
-        >
-                <PickerWrapper
-                        allowClear={false}
-                        locale={Object {}}
-                        onChange={[Function]}
-                        onOk={[Function]}
-                        onOpenChange={[Function]}
-                        open={false}
-                        popupStyle={Object {}}
-                        transitionName="slide-up"
-                        value={"2014-02-10T01:00:00.000Z"}
-                />
-                <Unknown
-                        allowClear={false}
-                        disabledHours={[Function]}
-                        format="HH"
-                        name="endHour"
-                        onChange={[Function]}
-                        value={1}
-                />
-        </FormItem>
-</Form>,
+                <FormItem
+                        hasFeedback={false}
+                        label="Task Name"
+                >
+                        <Input
+                                defaultValue="귤 까기01"
+                                disabled={false}
+                                name="name"
+                                required={true}
+                                type="text"
+                        />
+                </FormItem>
+                <FormItem
+                        hasFeedback={false}
+                        label="Start Date Time"
+                >
+                        <PickerWrapper
+                                allowClear={false}
+                                locale={Object {}}
+                                name="date"
+                                onChange={[Function]}
+                                onOk={[Function]}
+                                onOpenChange={[Function]}
+                                popupStyle={Object {}}
+                                transitionName="slide-up"
+                                value={"2014-02-09T15:00:00.000Z"}
+                        />
+                        <Unknown
+                                allowClear={false}
+                                format="HH"
+                                name="startHour"
+                                onChange={[Function]}
+                                value={"2014-02-09T16:00:00.000Z"}
+                        />
+                </FormItem>
+                <FormItem
+                        hasFeedback={false}
+                        label="End Date Time"
+                >
+                        <PickerWrapper
+                                allowClear={false}
+                                locale={Object {}}
+                                onChange={[Function]}
+                                onOk={[Function]}
+                                onOpenChange={[Function]}
+                                open={false}
+                                popupStyle={Object {}}
+                                transitionName="slide-up"
+                                value={"2014-02-09T15:00:00.000Z"}
+                        />
+                        <Unknown
+                                allowClear={false}
+                                disabledHours={[Function]}
+                                format="HH"
+                                name="endHour"
+                                onChange={[Function]}
+                                value={"2014-02-09T18:00:00.000Z"}
+                        />
+                </FormItem>
+        </Form>
+</Spin>,
       "confirmLoading": false,
-      "footer": Array [
+      "footer": <Unknown>
         <Button
-          block={false}
-          form="task-form"
-          ghost={false}
-          htmlType="submit"
-          loading={false}
->
-          확인
-</Button>,
+                block={false}
+                disabled={false}
+                form="task-form"
+                ghost={false}
+                htmlType="submit"
+                loading={false}
+        >
+                확인
+        </Button>
         <Button
-          block={false}
-          ghost={false}
-          htmlType="button"
-          loading={false}
-          onClick={[Function]}
->
-          취소
-</Button>,
+                block={false}
+                disabled={false}
+                ghost={false}
+                htmlType="button"
+                loading={false}
+                onClick={[Function]}
+        >
+                취소
+        </Button>
         <Button
-          block={false}
-          ghost={false}
-          htmlType="button"
-          loading={false}
-          onClick={[Function]}
->
-          삭제
-</Button>,
-      ],
+                block={false}
+                disabled={false}
+                ghost={false}
+                htmlType="button"
+                loading={false}
+                onClick={[Function]}
+        >
+                삭제
+        </Button>
+</Unknown>,
       "maskTransitionName": "fade",
       "okButtonDisabled": false,
       "okType": "primary",
@@ -988,272 +1212,6 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": Array [
-          <FormItem
-            hasFeedback={false}
-            label="Task Name"
->
-            <Input
-                        defaultValue="귤 까기01"
-                        disabled={false}
-                        name="name"
-                        required={true}
-                        type="text"
-            />
-</FormItem>,
-          <FormItem
-            hasFeedback={false}
-            label="Start Date Time"
->
-            <PickerWrapper
-                        allowClear={false}
-                        locale={Object {}}
-                        name="date"
-                        onChange={[Function]}
-                        onOk={[Function]}
-                        onOpenChange={[Function]}
-                        popupStyle={Object {}}
-                        transitionName="slide-up"
-                        value={"2014-02-10T01:00:00.000Z"}
-            />
-            <Unknown
-                        allowClear={false}
-                        format="HH"
-                        name="startHour"
-                        onChange={[Function]}
-                        value={"2014-02-09T16:00:00.000Z"}
-            />
-</FormItem>,
-          <FormItem
-            hasFeedback={false}
-            label="End Date Time"
->
-            <PickerWrapper
-                        allowClear={false}
-                        locale={Object {}}
-                        onChange={[Function]}
-                        onOk={[Function]}
-                        onOpenChange={[Function]}
-                        open={false}
-                        popupStyle={Object {}}
-                        transitionName="slide-up"
-                        value={"2014-02-10T01:00:00.000Z"}
-            />
-            <Unknown
-                        allowClear={false}
-                        disabledHours={[Function]}
-                        format="HH"
-                        name="endHour"
-                        onChange={[Function]}
-                        value={1}
-            />
-</FormItem>,
-        ],
-        "colon": true,
-        "hideRequiredMark": false,
-        "id": "task-form",
-        "labelCol": Object {
-          "sm": Object {
-            "span": 8,
-          },
-          "xs": Object {
-            "span": 24,
-          },
-        },
-        "layout": "horizontal",
-        "onSubmit": [Function],
-        "wrapperCol": Object {
-          "sm": Object {
-            "span": 16,
-          },
-          "xs": Object {
-            "span": 24,
-          },
-        },
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <Input
-              defaultValue="귤 까기01"
-              disabled={false}
-              name="name"
-              required={true}
-              type="text"
-/>,
-            "hasFeedback": false,
-            "label": "Task Name",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "defaultValue": "귤 까기01",
-              "disabled": false,
-              "name": "name",
-              "required": true,
-              "type": "text",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <PickerWrapper
-                allowClear={false}
-                locale={Object {}}
-                name="date"
-                onChange={[Function]}
-                onOk={[Function]}
-                onOpenChange={[Function]}
-                popupStyle={Object {}}
-                transitionName="slide-up"
-                value={"2014-02-10T01:00:00.000Z"}
-/>,
-              <Unknown
-                allowClear={false}
-                format="HH"
-                name="startHour"
-                onChange={[Function]}
-                value={"2014-02-09T16:00:00.000Z"}
-/>,
-            ],
-            "hasFeedback": false,
-            "label": "Start Date Time",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "allowClear": false,
-                "locale": Object {},
-                "name": "date",
-                "onChange": [Function],
-                "onOk": [Function],
-                "onOpenChange": [Function],
-                "popupStyle": Object {},
-                "transitionName": "slide-up",
-                "value": "2014-02-10T01:00:00.000Z",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "allowClear": false,
-                "format": "HH",
-                "name": "startHour",
-                "onChange": [Function],
-                "value": "2014-02-09T16:00:00.000Z",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <PickerWrapper
-                allowClear={false}
-                locale={Object {}}
-                onChange={[Function]}
-                onOk={[Function]}
-                onOpenChange={[Function]}
-                open={false}
-                popupStyle={Object {}}
-                transitionName="slide-up"
-                value={"2014-02-10T01:00:00.000Z"}
-/>,
-              <Unknown
-                allowClear={false}
-                disabledHours={[Function]}
-                format="HH"
-                name="endHour"
-                onChange={[Function]}
-                value={1}
-/>,
-            ],
-            "hasFeedback": false,
-            "label": "End Date Time",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "allowClear": false,
-                "locale": Object {},
-                "onChange": [Function],
-                "onOk": [Function],
-                "onOpenChange": [Function],
-                "open": false,
-                "popupStyle": Object {},
-                "transitionName": "slide-up",
-                "value": "2014-02-10T01:00:00.000Z",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "allowClear": false,
-                "disabledHours": [Function],
-                "format": "HH",
-                "name": "endHour",
-                "onChange": [Function],
-                "value": 1,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "cancelButtonDisabled": false,
         "children": <Form
           colon={true}
           hideRequiredMark={false}
@@ -1306,7 +1264,7 @@ ShallowWrapper {
                               onOpenChange={[Function]}
                               popupStyle={Object {}}
                               transitionName="slide-up"
-                              value={"2014-02-10T01:00:00.000Z"}
+                              value={"2014-02-09T15:00:00.000Z"}
                     />
                     <Unknown
                               allowClear={false}
@@ -1329,7 +1287,7 @@ ShallowWrapper {
                               open={false}
                               popupStyle={Object {}}
                               transitionName="slide-up"
-                              value={"2014-02-10T01:00:00.000Z"}
+                              value={"2014-02-09T15:00:00.000Z"}
                     />
                     <Unknown
                               allowClear={false}
@@ -1337,48 +1295,13 @@ ShallowWrapper {
                               format="HH"
                               name="endHour"
                               onChange={[Function]}
-                              value={1}
+                              value={"2014-02-09T18:00:00.000Z"}
                     />
           </FormItem>
 </Form>,
-        "confirmLoading": false,
-        "footer": Array [
-          <Button
-            block={false}
-            form="task-form"
-            ghost={false}
-            htmlType="submit"
-            loading={false}
->
-            확인
-</Button>,
-          <Button
-            block={false}
-            ghost={false}
-            htmlType="button"
-            loading={false}
-            onClick={[Function]}
->
-            취소
-</Button>,
-          <Button
-            block={false}
-            ghost={false}
-            htmlType="button"
-            loading={false}
-            onClick={[Function]}
->
-            삭제
-</Button>,
-        ],
-        "maskTransitionName": "fade",
-        "okButtonDisabled": false,
-        "okType": "primary",
-        "onCancel": [Function],
-        "title": "일정 수정",
-        "transitionName": "zoom",
-        "visible": true,
-        "width": 520,
+        "size": "default",
+        "spinning": false,
+        "wrapperClassName": "",
       },
       "ref": null,
       "rendered": Object {
@@ -1412,7 +1335,7 @@ ShallowWrapper {
                             onOpenChange={[Function]}
                             popupStyle={Object {}}
                             transitionName="slide-up"
-                            value={"2014-02-10T01:00:00.000Z"}
+                            value={"2014-02-09T15:00:00.000Z"}
               />
               <Unknown
                             allowClear={false}
@@ -1435,7 +1358,7 @@ ShallowWrapper {
                             open={false}
                             popupStyle={Object {}}
                             transitionName="slide-up"
-                            value={"2014-02-10T01:00:00.000Z"}
+                            value={"2014-02-09T15:00:00.000Z"}
               />
               <Unknown
                             allowClear={false}
@@ -1443,7 +1366,7 @@ ShallowWrapper {
                             format="HH"
                             name="endHour"
                             onChange={[Function]}
-                            value={1}
+                            value={"2014-02-09T18:00:00.000Z"}
               />
 </FormItem>,
           ],
@@ -1519,7 +1442,7 @@ ShallowWrapper {
                   onOpenChange={[Function]}
                   popupStyle={Object {}}
                   transitionName="slide-up"
-                  value={"2014-02-10T01:00:00.000Z"}
+                  value={"2014-02-09T15:00:00.000Z"}
 />,
                 <Unknown
                   allowClear={false}
@@ -1547,7 +1470,7 @@ ShallowWrapper {
                   "onOpenChange": [Function],
                   "popupStyle": Object {},
                   "transitionName": "slide-up",
-                  "value": "2014-02-10T01:00:00.000Z",
+                  "value": "2014-02-09T15:00:00.000Z",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1586,7 +1509,7 @@ ShallowWrapper {
                   open={false}
                   popupStyle={Object {}}
                   transitionName="slide-up"
-                  value={"2014-02-10T01:00:00.000Z"}
+                  value={"2014-02-09T15:00:00.000Z"}
 />,
                 <Unknown
                   allowClear={false}
@@ -1594,7 +1517,7 @@ ShallowWrapper {
                   format="HH"
                   name="endHour"
                   onChange={[Function]}
-                  value={1}
+                  value={"2014-02-09T18:00:00.000Z"}
 />,
               ],
               "hasFeedback": false,
@@ -1615,7 +1538,7 @@ ShallowWrapper {
                   "open": false,
                   "popupStyle": Object {},
                   "transitionName": "slide-up",
-                  "value": "2014-02-10T01:00:00.000Z",
+                  "value": "2014-02-09T15:00:00.000Z",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1631,7 +1554,7 @@ ShallowWrapper {
                   "format": "HH",
                   "name": "endHour",
                   "onChange": [Function],
-                  "value": 1,
+                  "value": "2014-02-09T18:00:00.000Z",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1641,6 +1564,514 @@ ShallowWrapper {
             "type": [Function],
           },
         ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "cancelButtonDisabled": false,
+        "children": <Spin
+          size="default"
+          spinning={false}
+          wrapperClassName=""
+>
+          <Form
+                    colon={true}
+                    hideRequiredMark={false}
+                    id="task-form"
+                    labelCol={
+                              Object {
+                                        "sm": Object {
+                                          "span": 8,
+                                        },
+                                        "xs": Object {
+                                          "span": 24,
+                                        },
+                                      }
+                    }
+                    layout="horizontal"
+                    onSubmit={[Function]}
+                    wrapperCol={
+                              Object {
+                                        "sm": Object {
+                                          "span": 16,
+                                        },
+                                        "xs": Object {
+                                          "span": 24,
+                                        },
+                                      }
+                    }
+          >
+                    <FormItem
+                              hasFeedback={false}
+                              label="Task Name"
+                    >
+                              <Input
+                                        defaultValue="귤 까기01"
+                                        disabled={false}
+                                        name="name"
+                                        required={true}
+                                        type="text"
+                              />
+                    </FormItem>
+                    <FormItem
+                              hasFeedback={false}
+                              label="Start Date Time"
+                    >
+                              <PickerWrapper
+                                        allowClear={false}
+                                        locale={Object {}}
+                                        name="date"
+                                        onChange={[Function]}
+                                        onOk={[Function]}
+                                        onOpenChange={[Function]}
+                                        popupStyle={Object {}}
+                                        transitionName="slide-up"
+                                        value={"2014-02-09T15:00:00.000Z"}
+                              />
+                              <Unknown
+                                        allowClear={false}
+                                        format="HH"
+                                        name="startHour"
+                                        onChange={[Function]}
+                                        value={"2014-02-09T16:00:00.000Z"}
+                              />
+                    </FormItem>
+                    <FormItem
+                              hasFeedback={false}
+                              label="End Date Time"
+                    >
+                              <PickerWrapper
+                                        allowClear={false}
+                                        locale={Object {}}
+                                        onChange={[Function]}
+                                        onOk={[Function]}
+                                        onOpenChange={[Function]}
+                                        open={false}
+                                        popupStyle={Object {}}
+                                        transitionName="slide-up"
+                                        value={"2014-02-09T15:00:00.000Z"}
+                              />
+                              <Unknown
+                                        allowClear={false}
+                                        disabledHours={[Function]}
+                                        format="HH"
+                                        name="endHour"
+                                        onChange={[Function]}
+                                        value={"2014-02-09T18:00:00.000Z"}
+                              />
+                    </FormItem>
+          </Form>
+</Spin>,
+        "confirmLoading": false,
+        "footer": <Unknown>
+          <Button
+                    block={false}
+                    disabled={false}
+                    form="task-form"
+                    ghost={false}
+                    htmlType="submit"
+                    loading={false}
+          >
+                    확인
+          </Button>
+          <Button
+                    block={false}
+                    disabled={false}
+                    ghost={false}
+                    htmlType="button"
+                    loading={false}
+                    onClick={[Function]}
+          >
+                    취소
+          </Button>
+          <Button
+                    block={false}
+                    disabled={false}
+                    ghost={false}
+                    htmlType="button"
+                    loading={false}
+                    onClick={[Function]}
+          >
+                    삭제
+          </Button>
+</Unknown>,
+        "maskTransitionName": "fade",
+        "okButtonDisabled": false,
+        "okType": "primary",
+        "onCancel": [Function],
+        "title": "일정 수정",
+        "transitionName": "zoom",
+        "visible": true,
+        "width": 520,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Form
+            colon={true}
+            hideRequiredMark={false}
+            id="task-form"
+            labelCol={
+                        Object {
+                                    "sm": Object {
+                                      "span": 8,
+                                    },
+                                    "xs": Object {
+                                      "span": 24,
+                                    },
+                                  }
+            }
+            layout="horizontal"
+            onSubmit={[Function]}
+            wrapperCol={
+                        Object {
+                                    "sm": Object {
+                                      "span": 16,
+                                    },
+                                    "xs": Object {
+                                      "span": 24,
+                                    },
+                                  }
+            }
+>
+            <FormItem
+                        hasFeedback={false}
+                        label="Task Name"
+            >
+                        <Input
+                                    defaultValue="귤 까기01"
+                                    disabled={false}
+                                    name="name"
+                                    required={true}
+                                    type="text"
+                        />
+            </FormItem>
+            <FormItem
+                        hasFeedback={false}
+                        label="Start Date Time"
+            >
+                        <PickerWrapper
+                                    allowClear={false}
+                                    locale={Object {}}
+                                    name="date"
+                                    onChange={[Function]}
+                                    onOk={[Function]}
+                                    onOpenChange={[Function]}
+                                    popupStyle={Object {}}
+                                    transitionName="slide-up"
+                                    value={"2014-02-09T15:00:00.000Z"}
+                        />
+                        <Unknown
+                                    allowClear={false}
+                                    format="HH"
+                                    name="startHour"
+                                    onChange={[Function]}
+                                    value={"2014-02-09T16:00:00.000Z"}
+                        />
+            </FormItem>
+            <FormItem
+                        hasFeedback={false}
+                        label="End Date Time"
+            >
+                        <PickerWrapper
+                                    allowClear={false}
+                                    locale={Object {}}
+                                    onChange={[Function]}
+                                    onOk={[Function]}
+                                    onOpenChange={[Function]}
+                                    open={false}
+                                    popupStyle={Object {}}
+                                    transitionName="slide-up"
+                                    value={"2014-02-09T15:00:00.000Z"}
+                        />
+                        <Unknown
+                                    allowClear={false}
+                                    disabledHours={[Function]}
+                                    format="HH"
+                                    name="endHour"
+                                    onChange={[Function]}
+                                    value={"2014-02-09T18:00:00.000Z"}
+                        />
+            </FormItem>
+</Form>,
+          "size": "default",
+          "spinning": false,
+          "wrapperClassName": "",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <FormItem
+                hasFeedback={false}
+                label="Task Name"
+>
+                <Input
+                                defaultValue="귤 까기01"
+                                disabled={false}
+                                name="name"
+                                required={true}
+                                type="text"
+                />
+</FormItem>,
+              <FormItem
+                hasFeedback={false}
+                label="Start Date Time"
+>
+                <PickerWrapper
+                                allowClear={false}
+                                locale={Object {}}
+                                name="date"
+                                onChange={[Function]}
+                                onOk={[Function]}
+                                onOpenChange={[Function]}
+                                popupStyle={Object {}}
+                                transitionName="slide-up"
+                                value={"2014-02-09T15:00:00.000Z"}
+                />
+                <Unknown
+                                allowClear={false}
+                                format="HH"
+                                name="startHour"
+                                onChange={[Function]}
+                                value={"2014-02-09T16:00:00.000Z"}
+                />
+</FormItem>,
+              <FormItem
+                hasFeedback={false}
+                label="End Date Time"
+>
+                <PickerWrapper
+                                allowClear={false}
+                                locale={Object {}}
+                                onChange={[Function]}
+                                onOk={[Function]}
+                                onOpenChange={[Function]}
+                                open={false}
+                                popupStyle={Object {}}
+                                transitionName="slide-up"
+                                value={"2014-02-09T15:00:00.000Z"}
+                />
+                <Unknown
+                                allowClear={false}
+                                disabledHours={[Function]}
+                                format="HH"
+                                name="endHour"
+                                onChange={[Function]}
+                                value={"2014-02-09T18:00:00.000Z"}
+                />
+</FormItem>,
+            ],
+            "colon": true,
+            "hideRequiredMark": false,
+            "id": "task-form",
+            "labelCol": Object {
+              "sm": Object {
+                "span": 8,
+              },
+              "xs": Object {
+                "span": 24,
+              },
+            },
+            "layout": "horizontal",
+            "onSubmit": [Function],
+            "wrapperCol": Object {
+              "sm": Object {
+                "span": 16,
+              },
+              "xs": Object {
+                "span": 24,
+              },
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Input
+                  defaultValue="귤 까기01"
+                  disabled={false}
+                  name="name"
+                  required={true}
+                  type="text"
+/>,
+                "hasFeedback": false,
+                "label": "Task Name",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "defaultValue": "귤 까기01",
+                  "disabled": false,
+                  "name": "name",
+                  "required": true,
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <PickerWrapper
+                    allowClear={false}
+                    locale={Object {}}
+                    name="date"
+                    onChange={[Function]}
+                    onOk={[Function]}
+                    onOpenChange={[Function]}
+                    popupStyle={Object {}}
+                    transitionName="slide-up"
+                    value={"2014-02-09T15:00:00.000Z"}
+/>,
+                  <Unknown
+                    allowClear={false}
+                    format="HH"
+                    name="startHour"
+                    onChange={[Function]}
+                    value={"2014-02-09T16:00:00.000Z"}
+/>,
+                ],
+                "hasFeedback": false,
+                "label": "Start Date Time",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "allowClear": false,
+                    "locale": Object {},
+                    "name": "date",
+                    "onChange": [Function],
+                    "onOk": [Function],
+                    "onOpenChange": [Function],
+                    "popupStyle": Object {},
+                    "transitionName": "slide-up",
+                    "value": "2014-02-09T15:00:00.000Z",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "allowClear": false,
+                    "format": "HH",
+                    "name": "startHour",
+                    "onChange": [Function],
+                    "value": "2014-02-09T16:00:00.000Z",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <PickerWrapper
+                    allowClear={false}
+                    locale={Object {}}
+                    onChange={[Function]}
+                    onOk={[Function]}
+                    onOpenChange={[Function]}
+                    open={false}
+                    popupStyle={Object {}}
+                    transitionName="slide-up"
+                    value={"2014-02-09T15:00:00.000Z"}
+/>,
+                  <Unknown
+                    allowClear={false}
+                    disabledHours={[Function]}
+                    format="HH"
+                    name="endHour"
+                    onChange={[Function]}
+                    value={"2014-02-09T18:00:00.000Z"}
+/>,
+                ],
+                "hasFeedback": false,
+                "label": "End Date Time",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "allowClear": false,
+                    "locale": Object {},
+                    "onChange": [Function],
+                    "onOk": [Function],
+                    "onOpenChange": [Function],
+                    "open": false,
+                    "popupStyle": Object {},
+                    "transitionName": "slide-up",
+                    "value": "2014-02-09T15:00:00.000Z",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "allowClear": false,
+                    "disabledHours": [Function],
+                    "format": "HH",
+                    "name": "endHour",
+                    "onChange": [Function],
+                    "value": "2014-02-09T18:00:00.000Z",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
         "type": [Function],
       },
       "type": [Function],

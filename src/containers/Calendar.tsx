@@ -17,25 +17,67 @@ interface OwnProps {
     mode: CalendarMode,
     tasks: Task[],
     onSelect: (selectedMoment?: moment.Moment | Task) => void,
+    onUpdate: (task: Task) => void
 }
 
 type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
 
-export const Calendar: React.FC<Props> = ({currentMoment, mode, tasks, onSelect, ...divProps}) => {
+export const Calendar: React.FC<Props> = ({ currentMoment, mode, tasks, onSelect, onUpdate, ...divProps }) => {
+    const dragTarget = React.useRef<HTMLElement>();
 
     const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const target = e.target as HTMLElement;
-        if(target.dataset.taskid) {
-            e.preventDefault();
+        if (target.dataset.taskid) {
             onSelect(tasks.find(task => task.id === Number(target.dataset.taskid)));
-        }else if(target.dataset.datetime) {
-            e.preventDefault();
+        } else if (target.dataset.datetime) {
             onSelect(moment(target.dataset.datetime))
         }
     }
+    const handleDragStart = (e: React.DragEvent) => {
+        const taskId = (e.target as HTMLElement).dataset.taskid;
+        if(taskId){
+            e.dataTransfer.setData("taskId", taskId);
+        }
+    }
+    const handleDrop = (e: React.DragEvent) => {
+        const taskId = e.dataTransfer.getData('taskId');
+        const datetime = e.dataTransfer.getData('datetime') || (e.target as HTMLElement).dataset.datetime;
+        const dropTaskId = (e.target as HTMLElement).dataset.taskid;
+        const dropTask = tasks.find(t => t.id === Number(dropTaskId));
+        const currentTask = tasks.find(t => t.id === Number(taskId));
+        let date;
+        let hour;
+        if(datetime) {
+            date = moment(datetime).format('YYYY-MM-DD');
+            hour = moment(datetime).hour();
+        }else if(dropTask){
+            date = dropTask.date;
+        }
+        if (currentTask && date) {
+            const newTask = { ...currentTask, date };
+            if(mode === CalendarMode.Week && hour) {
+                newTask.endHour += hour - newTask.startHour;
+                newTask.startHour = hour;
+            }
+            onUpdate(newTask);
+        }
+        dragTarget.current = undefined;
+    };
+    const handerDragOver = (e: React.DragEvent) => {
+        const target = e.target as HTMLElement;
+        if(target.dataset.datetime){
+            e.dataTransfer.setData('datetime', target.dataset.datetime);
+        }
+        e.stopPropagation();
+        e.preventDefault();
+    }
 
     return (
-        <Container {...divProps} onClick={handleClick}>
+        <Container {...divProps}
+            onClick={handleClick}
+            onDragStart={handleDragStart}
+            onDragOver={handerDragOver}
+            onDrop={handleDrop}>
             {mode === CalendarMode.Month && (
                 <MonthCalendar
                     style={{ flex: 1 }}

@@ -5,7 +5,7 @@ import { Task } from '../../models/Task';
 import { DayColumn } from './DayColumn';
 import { range } from 'lodash';
 import { DayOfWeekHeader } from '../DayOfWeekHeader';
-import { getDaysInWeek, isMatchDate } from '../../utils/calendarUtil';
+import { countDaysInWeek, isMatchDate } from '../../utils/calendarUtil';
 
 const Container = styled.div`
     text-align: center;
@@ -39,7 +39,7 @@ type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
 export const WeeklyCalendar: React.FC<Props> = (props: Props) => {
     const { currentMoment, tasks, ...divProps } = props;
     const hours = currentMoment.clone().endOf('day').hour();
-    const daysInWeek = getDaysInWeek(currentMoment);
+    const daysInWeek = countDaysInWeek(currentMoment);
     const restWeek = currentMoment.clone().startOf('week');
     const dates = range(0, daysInWeek).map((i) => restWeek.clone().add(i, 'd'));
     const columns = dates.map(m => {

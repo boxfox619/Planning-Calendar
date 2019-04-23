@@ -9,7 +9,9 @@ import { TaskModal } from '../components/modal/TaskModal';
 import * as TaskAction from './../reducers/task/action';
 import * as moment from 'moment';
 import { Calendar } from './Calendar';
+import {notification } from 'antd';
 import styled from 'styled-components';
+import 'antd/lib/notification/style/css';
 
 const Container = styled.div`
   text-align: center;
@@ -42,7 +44,7 @@ const App: React.FC<Props> = ({ store, taskStore, ...action }) => {
   const [currentMoment, setCurrentMoment] = React.useState(moment());
   const [calendarMode, setCalendarMode] = React.useState(CalendarMode.Month);
   const [selectedTarget, setSelectedTarget] = React.useState();
-  const prevIsUpdating = React.useRef();
+  const prevIsUpdating = React.useRef<boolean>();
 
   const handleDismissModal = () => setSelectedTarget(null);
   const handleUpdateTask = (newTask: Task) => {
@@ -56,9 +58,19 @@ const App: React.FC<Props> = ({ store, taskStore, ...action }) => {
   }
 
   React.useEffect(() => {
+    if(taskStore.error){
+      notification.error({
+        message: taskStore.error.title,
+        description: taskStore.error.description,
+      });
+    }
+  }, [taskStore.error]);
+
+  React.useEffect(() => {
     if (prevIsUpdating && !isTaskUpdating && isTaskUpdated) {
       handleDismissModal();
     }
+    prevIsUpdating.current = isTaskUpdating;
   }, [isTaskUpdating, isTaskUpdated]);
 
   React.useEffect(() => {
@@ -80,6 +92,7 @@ const App: React.FC<Props> = ({ store, taskStore, ...action }) => {
           mode={calendarMode}
           tasks={tasks}
           onSelect={setSelectedTarget}
+          onUpdate={action.editTask}
         />
         {(selectedTarget) && (
           <TaskModal

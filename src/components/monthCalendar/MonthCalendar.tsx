@@ -1,12 +1,12 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { Task } from '../../models/Task';
 import * as moment from 'moment';
-import { getFirstDayOfMonth, getLastDayOfMonth, getPrevMonthDays, calMoment, isMatchDate, getDaysInWeek } from '../../utils/calendarUtil';
+import { getFirstDayOfMonth, getLastDayOfMonth, getPrevMonthDays, calMoment, isMatchDate, countDaysInWeek } from '../../utils/calendarUtil';
 import { range, chunk } from 'lodash';
 import { DayBox } from './DayBox';
 import { CalendarMode } from '../../models/CalendarMode';
 import { DayOfWeekHeader } from '../DayOfWeekHeader';
+import { Task } from 'src/models';
 
 const Container = styled.div`
     display: flex;
@@ -57,7 +57,7 @@ export const MonthCalendar: React.FC<Props> = (props: Props) => {
     const prevMonthOfDays = getPrevMonthDays(currentMoment) + 1;
     const currentMonthOfDays = currentMoment.daysInMonth();
     const startPrevMonthDay = prevMonthOfDays - firstDayOfMonth;
-    const daysInWeek = getDaysInWeek(currentMoment);
+    const daysInWeek = countDaysInWeek(currentMoment);
     const prevMonthDays = range(startPrevMonthDay, prevMonthOfDays).map(day => createDayBox(prevMoment.clone().date(day)));
     const currentMonthDays = range(1, currentMonthOfDays + 1).map(day => createDayBox(currentMoment.clone().date(day)));
     const nextMonthDays = range(1, daysInWeek - lastDayOfMonth).map(day => createDayBox(nextMoment.clone().date(day)));

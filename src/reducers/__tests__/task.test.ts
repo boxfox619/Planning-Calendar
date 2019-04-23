@@ -1,10 +1,11 @@
 import * as Action from '../task/action';
 import {reducer} from '../task';
-import { Task } from '../../models/Task';
+import { Task, ErrorMessage } from '../../models';
 
 describe('counter', () => {
   const task = new Task(1, 'name', '2019-12-12', 1, 2);
   const newTask = new Task(1, 'name2', '2019-12-13', 1, 3);
+  const errorMessage = new ErrorMessage('제목', '내용');
   const loadTaskReq = {year: 2019, month: 12};
     describe('actions', () => {
       it('should create actions', () => {
@@ -17,7 +18,7 @@ describe('counter', () => {
           { type: Action.EDIT, payload: newTask },
           { type: Action.DELETE, payload: task.id },
           { type: Action.UPDATE_STARTED },
-          { type: Action.UPDATE_FAILED },
+          { type: Action.UPDATE_FAILED, payload: errorMessage },
           { type: Action.CREATE_SUCCESSED, payload: newTask },
           { type: Action.EDIT_SUCCESSED, payload: newTask },
           { type: Action.DELETE_SUCCESSED, payload: task.id },
@@ -31,7 +32,7 @@ describe('counter', () => {
           Action.editTask(newTask),
           Action.deleteTask(task.id),
           Action.startedUpdateTask(),
-          Action.failedUpdateTask(),
+          Action.failedUpdateTask(errorMessage),
           Action.successedCreateTask(newTask),
           Action.successedEditTask(newTask),
           Action.successedDeleteTask(task.id)
@@ -72,9 +73,10 @@ describe('counter', () => {
       });
 
       it('should updating = false, updated = false', () => {
-        state = reducer(state, Action.failedUpdateTask());
+        state = reducer(state, Action.failedUpdateTask(errorMessage));
         expect(state).toHaveProperty('isTaskUpdating', false);
         expect(state).toHaveProperty('isTaskUpdated', false);
+        expect(state).toHaveProperty('error', errorMessage);
         expect(state).toHaveProperty('tasks', [task]);
       });
 

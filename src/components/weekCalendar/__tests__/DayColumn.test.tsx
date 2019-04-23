@@ -3,6 +3,7 @@ import * as Enzyme from 'enzyme';
 import { Task } from '../../../models/Task';
 import { DayColumn } from '../DayColumn';
 import * as moment from 'moment';
+import { TaskItem } from '../../TaskItem';
 
 describe('<DayColumn />', () => {
     const dateMoment = moment('2014-02-27T10:00:00.000Z');
@@ -30,7 +31,7 @@ describe('<DayColumn />', () => {
     })
     
     it('should Task render 5', () => {
-        expect(component.find('Task').length).toBe(5);
+        expect(component.find('TaskItem').length).toBe(5);
     });
 
 });
