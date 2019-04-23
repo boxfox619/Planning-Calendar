@@ -2,7 +2,6 @@ import * as React from 'react';
 import * as moment from 'moment';
 import styled from 'styled-components';
 import { Task } from '../../models/Task';
-import { compareMoment } from '../../utils/calendarUtil';
 import { Button } from 'antd';
 import 'antd/lib/button/style/css';
 
@@ -24,12 +23,12 @@ interface Props {
 
 export const DayBox: React.FC<Props> = (props: Props) => {
     const {dateMoment, tasks} = props;
-    const sortedTask = tasks.sort((task1: Task, task2: Task) => compareMoment(moment(task1.date), moment(task2.date)));
+    const sortedTask = tasks.sort((task1: Task, task2: Task) => (task1.startHour >= task2.startHour)? 1 : -1);
     return (
         <Day data-datetime={dateMoment.toISOString()}>
             {dateMoment.date()}
             <div>
-                {sortedTask.map(task => <TaskItem key={task.id} data-taskid={task.id}>{task.name}</TaskItem>)}
+                {sortedTask.map(task => <TaskItem key={task.id} data-taskId={task.id}>{task.name}</TaskItem>)}
             </div>
         </Day>
     )

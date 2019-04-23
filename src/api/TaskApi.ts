@@ -1,19 +1,34 @@
 import { Task } from '../models/Task';
+import axios from 'axios';
 
-export const loadTasks = async () => {
-    return await [
-        new Task(1, '귤 까기01', '2014-02-10T01:00:00.000Z', 1)
-    ]
+export const loadTasks = async (year: number, month: number) => {
+    const res = await axios.get<Task[]>(`/task?year=${year}&month=${month}`);
+    if(res.status !== 200){
+        throw new Error(res.statusText);
+    }
+    return res.data;
 }
 
 export const createTask = async (task: Task) => {
-    return await true;
+    const res = await axios.post<Task>(`/task`, task);
+    if (res.status !== 200) {
+        throw new Error(res.statusText);
+    }
+    return res.data;
 }
 
 export const updateTask = async (task: Task) => {
-    return await true;
+    const res = await axios.put<string>(`/task/${task.id}`, task);
+    if (res.status !== 201) {
+        throw new Error(res.statusText);
+    }
+    return res.data;
 }
 
 export const deleteTask = async (taskId: number) => {
-    return await true;
+    const res = await axios.delete(`/task/${taskId}`);
+    if (res.status !== 201) {
+        throw new Error(res.statusText);
+    }
+    return res.data;
 }

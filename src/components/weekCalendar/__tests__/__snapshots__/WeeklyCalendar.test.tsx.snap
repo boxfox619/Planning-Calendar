@@ -8,22 +8,25 @@ ShallowWrapper {
     tasks={
         Array [
             Task {
-              "date": "2014-02-10T10:00:00.000Z",
-              "durationTime": 1,
+              "date": "2014-02-10",
+              "endHour": 4,
               "id": 1,
               "name": "귤 까기10",
+              "startHour": 2,
             },
             Task {
-              "date": "2014-02-27T10:00:00.000Z",
-              "durationTime": 1,
+              "date": "2014-02-27",
+              "endHour": 3,
               "id": 2,
               "name": "귤 까기27",
+              "startHour": 5,
             },
             Task {
-              "date": "2014-02-28T10:00:00.000Z",
-              "durationTime": 1,
+              "date": "2014-02-28",
+              "endHour": 2,
               "id": 3,
               "name": "귤 까기28",
+              "startHour": 1,
             },
           ]
     }
@@ -321,10 +324,11 @@ ShallowWrapper {
                     tasks={
                               Array [
                                         Task {
-                                          "date": "2014-02-27T10:00:00.000Z",
-                                          "durationTime": 1,
+                                          "date": "2014-02-27",
+                                          "endHour": 3,
                                           "id": 2,
                                           "name": "귤 까기27",
+                                          "startHour": 5,
                                         },
                                       ]
                     }
@@ -334,10 +338,11 @@ ShallowWrapper {
                     tasks={
                               Array [
                                         Task {
-                                          "date": "2014-02-28T10:00:00.000Z",
-                                          "durationTime": 1,
+                                          "date": "2014-02-28",
+                                          "endHour": 2,
                                           "id": 3,
                                           "name": "귤 까기28",
+                                          "startHour": 1,
                                         },
                                       ]
                     }
@@ -756,10 +761,11 @@ ShallowWrapper {
                 tasks={
                                 Array [
                                                 Task {
-                                                  "date": "2014-02-27T10:00:00.000Z",
-                                                  "durationTime": 1,
+                                                  "date": "2014-02-27",
+                                                  "endHour": 3,
                                                   "id": 2,
                                                   "name": "귤 까기27",
+                                                  "startHour": 5,
                                                 },
                                               ]
                 }
@@ -769,10 +775,11 @@ ShallowWrapper {
                 tasks={
                                 Array [
                                                 Task {
-                                                  "date": "2014-02-28T10:00:00.000Z",
-                                                  "durationTime": 1,
+                                                  "date": "2014-02-28",
+                                                  "endHour": 2,
                                                   "id": 3,
                                                   "name": "귤 까기28",
+                                                  "startHour": 1,
                                                 },
                                               ]
                 }
@@ -1567,10 +1574,11 @@ ShallowWrapper {
               "dateMoment": "2014-02-26T15:00:00.000Z",
               "tasks": Array [
                 Task {
-                  "date": "2014-02-27T10:00:00.000Z",
-                  "durationTime": 1,
+                  "date": "2014-02-27",
+                  "endHour": 3,
                   "id": 2,
                   "name": "귤 까기27",
+                  "startHour": 5,
                 },
               ],
             },
@@ -1586,10 +1594,11 @@ ShallowWrapper {
               "dateMoment": "2014-02-27T15:00:00.000Z",
               "tasks": Array [
                 Task {
-                  "date": "2014-02-28T10:00:00.000Z",
-                  "durationTime": 1,
+                  "date": "2014-02-28",
+                  "endHour": 2,
                   "id": 3,
                   "name": "귤 까기28",
+                  "startHour": 1,
                 },
               ],
             },
@@ -1942,10 +1951,11 @@ ShallowWrapper {
                         tasks={
                                     Array [
                                                 Task {
-                                                  "date": "2014-02-27T10:00:00.000Z",
-                                                  "durationTime": 1,
+                                                  "date": "2014-02-27",
+                                                  "endHour": 3,
                                                   "id": 2,
                                                   "name": "귤 까기27",
+                                                  "startHour": 5,
                                                 },
                                               ]
                         }
@@ -1955,10 +1965,11 @@ ShallowWrapper {
                         tasks={
                                     Array [
                                                 Task {
-                                                  "date": "2014-02-28T10:00:00.000Z",
-                                                  "durationTime": 1,
+                                                  "date": "2014-02-28",
+                                                  "endHour": 2,
                                                   "id": 3,
                                                   "name": "귤 까기28",
+                                                  "startHour": 1,
                                                 },
                                               ]
                         }
@@ -2377,10 +2388,11 @@ ShallowWrapper {
                   tasks={
                                     Array [
                                                       Task {
-                                                        "date": "2014-02-27T10:00:00.000Z",
-                                                        "durationTime": 1,
+                                                        "date": "2014-02-27",
+                                                        "endHour": 3,
                                                         "id": 2,
                                                         "name": "귤 까기27",
+                                                        "startHour": 5,
                                                       },
                                                     ]
                   }
@@ -2390,10 +2402,11 @@ ShallowWrapper {
                   tasks={
                                     Array [
                                                       Task {
-                                                        "date": "2014-02-28T10:00:00.000Z",
-                                                        "durationTime": 1,
+                                                        "date": "2014-02-28",
+                                                        "endHour": 2,
                                                         "id": 3,
                                                         "name": "귤 까기28",
+                                                        "startHour": 1,
                                                       },
                                                     ]
                   }
@@ -3188,10 +3201,11 @@ ShallowWrapper {
                 "dateMoment": "2014-02-26T15:00:00.000Z",
                 "tasks": Array [
                   Task {
-                    "date": "2014-02-27T10:00:00.000Z",
-                    "durationTime": 1,
+                    "date": "2014-02-27",
+                    "endHour": 3,
                     "id": 2,
                     "name": "귤 까기27",
+                    "startHour": 5,
                   },
                 ],
               },
@@ -3207,10 +3221,11 @@ ShallowWrapper {
                 "dateMoment": "2014-02-27T15:00:00.000Z",
                 "tasks": Array [
                   Task {
-                    "date": "2014-02-28T10:00:00.000Z",
-                    "durationTime": 1,
+                    "date": "2014-02-28",
+                    "endHour": 2,
                     "id": 3,
                     "name": "귤 까기28",
+                    "startHour": 1,
                   },
                 ],
               },

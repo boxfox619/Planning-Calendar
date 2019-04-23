@@ -45,13 +45,15 @@ export const DayColumn: React.FC<Props> = (props: Props) => {
             {range(0, hours + 1).map(time => (
                 <Cell key={`${time}-cell`} data-datetime={dateMoment.clone().hour(time).toISOString()} />)
             )}
-            {tasks.map(task => (
-                <TaskItem key={task.id}
-                    data-taskid={task.id}
-                    style={{ top: `${40 * moment(task.date).hour()}px`, height: `${40 * task.durationTime}px` }}>
-                    {task.name} {moment(task.date).hour()}
-                </TaskItem>
-            ))}
+            {tasks.map(task => {
+                const top = `${ 40 * task.startHour }px`;
+                const height = `${ 40 * (task.endHour - task.startHour) }px`;
+                return (<TaskItem key={task.id}
+                            data-taskid={task.id}
+                            style={{ top, height }}>
+                            {task.name}
+                        </TaskItem>)
+            })}
         </DayColumnContainer>
     )
 }
