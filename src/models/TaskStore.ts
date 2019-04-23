@@ -1,4 +1,4 @@
-import {Task} from '.';
+import {Task, ErrorMessage} from '.';
 export class TaskStore {
     constructor(
         public tasks: Task[] = [],
@@ -6,6 +6,6 @@ export class TaskStore {
         public isTaskLoaded: boolean = false,
         public isTaskUpdating: boolean = false,
         public isTaskUpdated: boolean = false,
-        public error: string = ''
+        public error?: ErrorMessage
     ) { }
 }

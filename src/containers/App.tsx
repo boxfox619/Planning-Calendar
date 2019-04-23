@@ -9,7 +9,9 @@ import { TaskModal } from '../components/modal/TaskModal';
 import * as TaskAction from './../reducers/task/action';
 import * as moment from 'moment';
 import { Calendar } from './Calendar';
+import {notification } from 'antd';
 import styled from 'styled-components';
+import 'antd/lib/notification/style/css';
 
 const Container = styled.div`
   text-align: center;
@@ -57,7 +59,10 @@ const App: React.FC<Props> = ({ store, taskStore, ...action }) => {
 
   React.useEffect(() => {
     if(taskStore.error){
-      alert(taskStore.error);
+      notification.error({
+        message: taskStore.error.title,
+        description: taskStore.error.description,
+      });
     }
   }, [taskStore.error]);
 
