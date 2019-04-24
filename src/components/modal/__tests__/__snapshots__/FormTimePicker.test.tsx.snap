@@ -36,6 +36,9 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
+        <Unknown>
+          오전
+</Unknown>,
         <input
           hidden={true}
           name="form-name"
@@ -112,6 +115,37 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "오전",
+        },
+        "ref": null,
+        "rendered": "오전",
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "rules": Array [
+              "
+    margin-left: 10px;
+",
+            ],
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -207,19 +241,21 @@ ShallowWrapper {
             "__ANT_BUTTON": true,
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "rules": Array [
                 "
-    width: 60px;
+    text-align: center;
+    width: 40px;
     margin-left: 6px;
+    padding: 0;
 ",
               ],
             },
             "displayName": "Styled(Button)",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": [Function],
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -239,6 +275,9 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
+          <Unknown>
+            오전
+</Unknown>,
           <input
             hidden={true}
             name="form-name"
@@ -315,6 +354,37 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "오전",
+          },
+          "ref": null,
+          "rendered": "오전",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": true,
+              "rules": Array [
+                "
+    margin-left: 10px;
+",
+              ],
+            },
+            "displayName": "styled.span",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -410,19 +480,21 @@ ShallowWrapper {
               "__ANT_BUTTON": true,
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
+                "componentId": "sc-htpNat",
                 "isStatic": true,
                 "rules": Array [
                   "
-    width: 60px;
+    text-align: center;
+    width: 40px;
     margin-left: 6px;
+    padding: 0;
 ",
                 ],
               },
               "displayName": "Styled(Button)",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
+              "styledComponentId": "sc-htpNat",
               "target": [Function],
               "toString": [Function],
               "warnTooManyClasses": [Function],
