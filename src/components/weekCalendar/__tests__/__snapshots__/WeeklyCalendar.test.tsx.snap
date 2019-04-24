@@ -4,7 +4,7 @@ exports[`<WeeklyCalendar /> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
-    currentMoment={"2014-02-27T10:00:00.000Z"}
+    currentMoment={"2014-02-27T00:00:00.000Z"}
     tasks={
         Array [
             Task {
@@ -304,23 +304,23 @@ ShallowWrapper {
                     </div>
           </Unknown>
           <Unknown
-                    dateMoment={"2014-02-22T15:00:00.000Z"}
+                    dateMoment={"2014-02-23T00:00:00.000Z"}
                     tasks={Array []}
           />
           <Unknown
-                    dateMoment={"2014-02-23T15:00:00.000Z"}
+                    dateMoment={"2014-02-24T00:00:00.000Z"}
                     tasks={Array []}
           />
           <Unknown
-                    dateMoment={"2014-02-24T15:00:00.000Z"}
+                    dateMoment={"2014-02-25T00:00:00.000Z"}
                     tasks={Array []}
           />
           <Unknown
-                    dateMoment={"2014-02-25T15:00:00.000Z"}
+                    dateMoment={"2014-02-26T00:00:00.000Z"}
                     tasks={Array []}
           />
           <Unknown
-                    dateMoment={"2014-02-26T15:00:00.000Z"}
+                    dateMoment={"2014-02-27T00:00:00.000Z"}
                     tasks={
                               Array [
                                         Task {
@@ -334,7 +334,7 @@ ShallowWrapper {
                     }
           />
           <Unknown
-                    dateMoment={"2014-02-27T15:00:00.000Z"}
+                    dateMoment={"2014-02-28T00:00:00.000Z"}
                     tasks={
                               Array [
                                         Task {
@@ -348,7 +348,7 @@ ShallowWrapper {
                     }
           />
           <Unknown
-                    dateMoment={"2014-02-28T15:00:00.000Z"}
+                    dateMoment={"2014-03-01T00:00:00.000Z"}
                     tasks={Array []}
           />
 </Unknown>,
@@ -741,23 +741,23 @@ ShallowWrapper {
 </Unknown>,
             Array [
               <Unknown
-                dateMoment={"2014-02-22T15:00:00.000Z"}
+                dateMoment={"2014-02-23T00:00:00.000Z"}
                 tasks={Array []}
 />,
               <Unknown
-                dateMoment={"2014-02-23T15:00:00.000Z"}
+                dateMoment={"2014-02-24T00:00:00.000Z"}
                 tasks={Array []}
 />,
               <Unknown
-                dateMoment={"2014-02-24T15:00:00.000Z"}
+                dateMoment={"2014-02-25T00:00:00.000Z"}
                 tasks={Array []}
 />,
               <Unknown
-                dateMoment={"2014-02-25T15:00:00.000Z"}
+                dateMoment={"2014-02-26T00:00:00.000Z"}
                 tasks={Array []}
 />,
               <Unknown
-                dateMoment={"2014-02-26T15:00:00.000Z"}
+                dateMoment={"2014-02-27T00:00:00.000Z"}
                 tasks={
                                 Array [
                                                 Task {
@@ -771,7 +771,7 @@ ShallowWrapper {
                 }
 />,
               <Unknown
-                dateMoment={"2014-02-27T15:00:00.000Z"}
+                dateMoment={"2014-02-28T00:00:00.000Z"}
                 tasks={
                                 Array [
                                                 Task {
@@ -785,7 +785,7 @@ ShallowWrapper {
                 }
 />,
               <Unknown
-                dateMoment={"2014-02-28T15:00:00.000Z"}
+                dateMoment={"2014-03-01T00:00:00.000Z"}
                 tasks={Array []}
 />,
             ],
@@ -1520,10 +1520,10 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": "Sun Feb 23 2014 00:00:00 GMT+0900",
+            "key": "Sun Feb 23 2014 00:00:00 GMT+0000",
             "nodeType": "function",
             "props": Object {
-              "dateMoment": "2014-02-22T15:00:00.000Z",
+              "dateMoment": "2014-02-23T00:00:00.000Z",
               "tasks": Array [],
             },
             "ref": null,
@@ -1532,10 +1532,10 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": "Mon Feb 24 2014 00:00:00 GMT+0900",
+            "key": "Mon Feb 24 2014 00:00:00 GMT+0000",
             "nodeType": "function",
             "props": Object {
-              "dateMoment": "2014-02-23T15:00:00.000Z",
+              "dateMoment": "2014-02-24T00:00:00.000Z",
               "tasks": Array [],
             },
             "ref": null,
@@ -1544,10 +1544,10 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": "Tue Feb 25 2014 00:00:00 GMT+0900",
+            "key": "Tue Feb 25 2014 00:00:00 GMT+0000",
             "nodeType": "function",
             "props": Object {
-              "dateMoment": "2014-02-24T15:00:00.000Z",
+              "dateMoment": "2014-02-25T00:00:00.000Z",
               "tasks": Array [],
             },
             "ref": null,
@@ -1556,10 +1556,10 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": "Wed Feb 26 2014 00:00:00 GMT+0900",
+            "key": "Wed Feb 26 2014 00:00:00 GMT+0000",
             "nodeType": "function",
             "props": Object {
-              "dateMoment": "2014-02-25T15:00:00.000Z",
+              "dateMoment": "2014-02-26T00:00:00.000Z",
               "tasks": Array [],
             },
             "ref": null,
@@ -1568,10 +1568,10 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": "Thu Feb 27 2014 00:00:00 GMT+0900",
+            "key": "Thu Feb 27 2014 00:00:00 GMT+0000",
             "nodeType": "function",
             "props": Object {
-              "dateMoment": "2014-02-26T15:00:00.000Z",
+              "dateMoment": "2014-02-27T00:00:00.000Z",
               "tasks": Array [
                 Task {
                   "date": "2014-02-27",
@@ -1588,10 +1588,10 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": "Fri Feb 28 2014 00:00:00 GMT+0900",
+            "key": "Fri Feb 28 2014 00:00:00 GMT+0000",
             "nodeType": "function",
             "props": Object {
-              "dateMoment": "2014-02-27T15:00:00.000Z",
+              "dateMoment": "2014-02-28T00:00:00.000Z",
               "tasks": Array [
                 Task {
                   "date": "2014-02-28",
@@ -1608,10 +1608,10 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": "Sat Mar 01 2014 00:00:00 GMT+0900",
+            "key": "Sat Mar 01 2014 00:00:00 GMT+0000",
             "nodeType": "function",
             "props": Object {
-              "dateMoment": "2014-02-28T15:00:00.000Z",
+              "dateMoment": "2014-03-01T00:00:00.000Z",
               "tasks": Array [],
             },
             "ref": null,
@@ -1931,23 +1931,23 @@ ShallowWrapper {
                         </div>
             </Unknown>
             <Unknown
-                        dateMoment={"2014-02-22T15:00:00.000Z"}
+                        dateMoment={"2014-02-23T00:00:00.000Z"}
                         tasks={Array []}
             />
             <Unknown
-                        dateMoment={"2014-02-23T15:00:00.000Z"}
+                        dateMoment={"2014-02-24T00:00:00.000Z"}
                         tasks={Array []}
             />
             <Unknown
-                        dateMoment={"2014-02-24T15:00:00.000Z"}
+                        dateMoment={"2014-02-25T00:00:00.000Z"}
                         tasks={Array []}
             />
             <Unknown
-                        dateMoment={"2014-02-25T15:00:00.000Z"}
+                        dateMoment={"2014-02-26T00:00:00.000Z"}
                         tasks={Array []}
             />
             <Unknown
-                        dateMoment={"2014-02-26T15:00:00.000Z"}
+                        dateMoment={"2014-02-27T00:00:00.000Z"}
                         tasks={
                                     Array [
                                                 Task {
@@ -1961,7 +1961,7 @@ ShallowWrapper {
                         }
             />
             <Unknown
-                        dateMoment={"2014-02-27T15:00:00.000Z"}
+                        dateMoment={"2014-02-28T00:00:00.000Z"}
                         tasks={
                                     Array [
                                                 Task {
@@ -1975,7 +1975,7 @@ ShallowWrapper {
                         }
             />
             <Unknown
-                        dateMoment={"2014-02-28T15:00:00.000Z"}
+                        dateMoment={"2014-03-01T00:00:00.000Z"}
                         tasks={Array []}
             />
 </Unknown>,
@@ -2368,23 +2368,23 @@ ShallowWrapper {
 </Unknown>,
               Array [
                 <Unknown
-                  dateMoment={"2014-02-22T15:00:00.000Z"}
+                  dateMoment={"2014-02-23T00:00:00.000Z"}
                   tasks={Array []}
 />,
                 <Unknown
-                  dateMoment={"2014-02-23T15:00:00.000Z"}
+                  dateMoment={"2014-02-24T00:00:00.000Z"}
                   tasks={Array []}
 />,
                 <Unknown
-                  dateMoment={"2014-02-24T15:00:00.000Z"}
+                  dateMoment={"2014-02-25T00:00:00.000Z"}
                   tasks={Array []}
 />,
                 <Unknown
-                  dateMoment={"2014-02-25T15:00:00.000Z"}
+                  dateMoment={"2014-02-26T00:00:00.000Z"}
                   tasks={Array []}
 />,
                 <Unknown
-                  dateMoment={"2014-02-26T15:00:00.000Z"}
+                  dateMoment={"2014-02-27T00:00:00.000Z"}
                   tasks={
                                     Array [
                                                       Task {
@@ -2398,7 +2398,7 @@ ShallowWrapper {
                   }
 />,
                 <Unknown
-                  dateMoment={"2014-02-27T15:00:00.000Z"}
+                  dateMoment={"2014-02-28T00:00:00.000Z"}
                   tasks={
                                     Array [
                                                       Task {
@@ -2412,7 +2412,7 @@ ShallowWrapper {
                   }
 />,
                 <Unknown
-                  dateMoment={"2014-02-28T15:00:00.000Z"}
+                  dateMoment={"2014-03-01T00:00:00.000Z"}
                   tasks={Array []}
 />,
               ],
@@ -3147,10 +3147,10 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": "Sun Feb 23 2014 00:00:00 GMT+0900",
+              "key": "Sun Feb 23 2014 00:00:00 GMT+0000",
               "nodeType": "function",
               "props": Object {
-                "dateMoment": "2014-02-22T15:00:00.000Z",
+                "dateMoment": "2014-02-23T00:00:00.000Z",
                 "tasks": Array [],
               },
               "ref": null,
@@ -3159,10 +3159,10 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": "Mon Feb 24 2014 00:00:00 GMT+0900",
+              "key": "Mon Feb 24 2014 00:00:00 GMT+0000",
               "nodeType": "function",
               "props": Object {
-                "dateMoment": "2014-02-23T15:00:00.000Z",
+                "dateMoment": "2014-02-24T00:00:00.000Z",
                 "tasks": Array [],
               },
               "ref": null,
@@ -3171,10 +3171,10 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": "Tue Feb 25 2014 00:00:00 GMT+0900",
+              "key": "Tue Feb 25 2014 00:00:00 GMT+0000",
               "nodeType": "function",
               "props": Object {
-                "dateMoment": "2014-02-24T15:00:00.000Z",
+                "dateMoment": "2014-02-25T00:00:00.000Z",
                 "tasks": Array [],
               },
               "ref": null,
@@ -3183,10 +3183,10 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": "Wed Feb 26 2014 00:00:00 GMT+0900",
+              "key": "Wed Feb 26 2014 00:00:00 GMT+0000",
               "nodeType": "function",
               "props": Object {
-                "dateMoment": "2014-02-25T15:00:00.000Z",
+                "dateMoment": "2014-02-26T00:00:00.000Z",
                 "tasks": Array [],
               },
               "ref": null,
@@ -3195,10 +3195,10 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": "Thu Feb 27 2014 00:00:00 GMT+0900",
+              "key": "Thu Feb 27 2014 00:00:00 GMT+0000",
               "nodeType": "function",
               "props": Object {
-                "dateMoment": "2014-02-26T15:00:00.000Z",
+                "dateMoment": "2014-02-27T00:00:00.000Z",
                 "tasks": Array [
                   Task {
                     "date": "2014-02-27",
@@ -3215,10 +3215,10 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": "Fri Feb 28 2014 00:00:00 GMT+0900",
+              "key": "Fri Feb 28 2014 00:00:00 GMT+0000",
               "nodeType": "function",
               "props": Object {
-                "dateMoment": "2014-02-27T15:00:00.000Z",
+                "dateMoment": "2014-02-28T00:00:00.000Z",
                 "tasks": Array [
                   Task {
                     "date": "2014-02-28",
@@ -3235,10 +3235,10 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": "Sat Mar 01 2014 00:00:00 GMT+0900",
+              "key": "Sat Mar 01 2014 00:00:00 GMT+0000",
               "nodeType": "function",
               "props": Object {
-                "dateMoment": "2014-02-28T15:00:00.000Z",
+                "dateMoment": "2014-03-01T00:00:00.000Z",
                 "tasks": Array [],
               },
               "ref": null,

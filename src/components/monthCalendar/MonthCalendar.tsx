@@ -46,7 +46,7 @@ export const MonthCalendar: React.FC<Props> = (props: Props) => {
     const {currentMoment, tasks, ...divProps} = props;
 
     const createDayBox = (dayMoment: moment.Moment) => {
-        const filteredTasks = tasks.filter(task => isMatchDate(moment(task.date), dayMoment));
+        const filteredTasks = tasks.filter(task => isMatchDate(moment.parseZone(task.date), dayMoment));
         return (<DayBox key={dayMoment.toString()} dateMoment={dayMoment} tasks={filteredTasks} />)
     };
 

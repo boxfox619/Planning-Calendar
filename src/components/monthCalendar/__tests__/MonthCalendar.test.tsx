@@ -6,7 +6,7 @@ import { Task } from '../../../models/Task';
 import { DayBox } from '../DayBox';
 
 describe('<MonthCalendar />', () => {
-    const testMoment = moment('2014-02-27T10:00:00.000Z');
+    const testMoment = moment.parseZone('2014-02-27T00:00:00Z');
     const tasks = [
         new Task(1, '귤 까기10', '2014-02-10', 1, 2),
         new Task(2, '귤 까기27', '2014-02-27', 2, 3),

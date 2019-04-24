@@ -5,7 +5,7 @@ import { TimePicker } from 'antd';
 import { FormTimePicker } from '../FormTimePicker';
 
 describe('<FormTimePicker />', () => {
-    const testMoment = moment('2014-02-27T10:00:00.000Z');
+    const testMoment = moment.parseZone('2014-02-27T00:00:00Z');
     let component = null;
 
     it('renders correctly', () => {

@@ -4,7 +4,7 @@ exports[`<CalendarController /> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
-    currentMoment={"2014-02-27T10:00:00.000Z"}
+    currentMoment={"2014-02-27T00:00:00.000Z"}
     mode="월"
     onChangeMode={[Function]}
     onChangeMoment={[Function]}

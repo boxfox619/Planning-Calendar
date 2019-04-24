@@ -3,10 +3,9 @@ import * as Enzyme from 'enzyme';
 import { TaskModal } from '../TaskModal';
 import * as moment from 'moment';
 import { Task } from '../../../models/Task';
-import { Button } from 'antd';
 
 describe('<TaskModal />', () => {
-    const testMoment = moment('2014-02-27T10:00:00.000Z');
+    const testMoment = moment.parseZone('2014-02-27T00:00:00Z');
     let component = null;
     const okMock = jest.fn();
     const cancelMock = jest.fn();

@@ -30,7 +30,7 @@ export const Calendar: React.FC<Props> = ({ currentMoment, mode, tasks, onSelect
         if (target.dataset.taskid) {
             onSelect(tasks.find(task => task.id === Number(target.dataset.taskid)));
         } else if (target.dataset.datetime) {
-            onSelect(moment(target.dataset.datetime))
+            onSelect(moment.parseZone(target.dataset.datetime))
         }
     }
     const handleDragStart = (e: React.DragEvent) => {
@@ -48,8 +48,8 @@ export const Calendar: React.FC<Props> = ({ currentMoment, mode, tasks, onSelect
         let date;
         let hour;
         if(datetime) {
-            date = moment(datetime).format('YYYY-MM-DD');
-            hour = moment(datetime).hour();
+            date = moment.parseZone(datetime).format('YYYY-MM-DD');
+            hour = moment.parseZone(datetime).hour();
         }else if(dropTask){
             date = dropTask.date;
         }

@@ -6,7 +6,7 @@ import { DayBox } from '../DayBox';
 import { TaskItem } from '../../TaskItem';
 
 describe('<DayBox />', () => {
-    const testMoment = moment('2014-02-27T10:00:00.000Z');
+    const testMoment = moment.parseZone('2014-02-27T00:00:00Z');
     const tasks = [
         new Task(1, '귤 까기01', '2014-02-27', 0, 1),
         new Task(1, '귤 까기24', '2014-02-27', 13, 15),

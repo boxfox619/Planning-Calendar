@@ -40,7 +40,7 @@ export const DayColumn: React.FC<Props> = (props: Props) => {
     return (
         <DayColumnContainer>
             {range(0, hours + 1).map(time => (
-                <Cell key={`${time}-cell`} data-datetime={dateMoment.clone().hour(time).toISOString()} />)
+                <Cell key={`${time}-cell`} data-datetime={dateMoment.clone().hour(time).format()} />)
             )}
             {tasks.map(task => {
                 const top = `${ 40 * task.startHour }px`;

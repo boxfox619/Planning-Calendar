@@ -8,7 +8,7 @@ ShallowWrapper {
     onCancel={[Function]}
     onDelete={[Function]}
     onOk={[Function]}
-    target={"2014-02-27T10:00:00.000Z"}
+    target={"2014-02-27T00:00:00.000Z"}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -82,14 +82,14 @@ ShallowWrapper {
                                 onOpenChange={[Function]}
                                 popupStyle={Object {}}
                                 transitionName="slide-up"
-                                value={"2014-02-27T10:00:00.000Z"}
+                                value={"2014-02-27T00:00:00.000Z"}
                         />
                         <Unknown
                                 allowClear={false}
                                 format="HH"
                                 name="startHour"
                                 onChange={[Function]}
-                                value={"2014-02-27T10:00:00.000Z"}
+                                value={"2014-02-27T00:00:00.000Z"}
                         />
                 </FormItem>
                 <FormItem
@@ -105,7 +105,7 @@ ShallowWrapper {
                                 open={false}
                                 popupStyle={Object {}}
                                 transitionName="slide-up"
-                                value={"2014-02-27T10:00:00.000Z"}
+                                value={"2014-02-27T00:00:00.000Z"}
                         />
                         <Unknown
                                 allowClear={false}
@@ -113,7 +113,7 @@ ShallowWrapper {
                                 format="HH"
                                 name="endHour"
                                 onChange={[Function]}
-                                value={"2014-02-27T11:00:00.000Z"}
+                                value={"2014-02-27T01:00:00.000Z"}
                         />
                 </FormItem>
         </Form>
@@ -208,14 +208,14 @@ ShallowWrapper {
                               onOpenChange={[Function]}
                               popupStyle={Object {}}
                               transitionName="slide-up"
-                              value={"2014-02-27T10:00:00.000Z"}
+                              value={"2014-02-27T00:00:00.000Z"}
                     />
                     <Unknown
                               allowClear={false}
                               format="HH"
                               name="startHour"
                               onChange={[Function]}
-                              value={"2014-02-27T10:00:00.000Z"}
+                              value={"2014-02-27T00:00:00.000Z"}
                     />
           </FormItem>
           <FormItem
@@ -231,7 +231,7 @@ ShallowWrapper {
                               open={false}
                               popupStyle={Object {}}
                               transitionName="slide-up"
-                              value={"2014-02-27T10:00:00.000Z"}
+                              value={"2014-02-27T00:00:00.000Z"}
                     />
                     <Unknown
                               allowClear={false}
@@ -239,7 +239,7 @@ ShallowWrapper {
                               format="HH"
                               name="endHour"
                               onChange={[Function]}
-                              value={"2014-02-27T11:00:00.000Z"}
+                              value={"2014-02-27T01:00:00.000Z"}
                     />
           </FormItem>
 </Form>,
@@ -279,14 +279,14 @@ ShallowWrapper {
                             onOpenChange={[Function]}
                             popupStyle={Object {}}
                             transitionName="slide-up"
-                            value={"2014-02-27T10:00:00.000Z"}
+                            value={"2014-02-27T00:00:00.000Z"}
               />
               <Unknown
                             allowClear={false}
                             format="HH"
                             name="startHour"
                             onChange={[Function]}
-                            value={"2014-02-27T10:00:00.000Z"}
+                            value={"2014-02-27T00:00:00.000Z"}
               />
 </FormItem>,
             <FormItem
@@ -302,7 +302,7 @@ ShallowWrapper {
                             open={false}
                             popupStyle={Object {}}
                             transitionName="slide-up"
-                            value={"2014-02-27T10:00:00.000Z"}
+                            value={"2014-02-27T00:00:00.000Z"}
               />
               <Unknown
                             allowClear={false}
@@ -310,7 +310,7 @@ ShallowWrapper {
                             format="HH"
                             name="endHour"
                             onChange={[Function]}
-                            value={"2014-02-27T11:00:00.000Z"}
+                            value={"2014-02-27T01:00:00.000Z"}
               />
 </FormItem>,
           ],
@@ -386,14 +386,14 @@ ShallowWrapper {
                   onOpenChange={[Function]}
                   popupStyle={Object {}}
                   transitionName="slide-up"
-                  value={"2014-02-27T10:00:00.000Z"}
+                  value={"2014-02-27T00:00:00.000Z"}
 />,
                 <Unknown
                   allowClear={false}
                   format="HH"
                   name="startHour"
                   onChange={[Function]}
-                  value={"2014-02-27T10:00:00.000Z"}
+                  value={"2014-02-27T00:00:00.000Z"}
 />,
               ],
               "hasFeedback": false,
@@ -414,7 +414,7 @@ ShallowWrapper {
                   "onOpenChange": [Function],
                   "popupStyle": Object {},
                   "transitionName": "slide-up",
-                  "value": "2014-02-27T10:00:00.000Z",
+                  "value": "2014-02-27T00:00:00.000Z",
                 },
                 "ref": null,
                 "rendered": null,
@@ -429,7 +429,7 @@ ShallowWrapper {
                   "format": "HH",
                   "name": "startHour",
                   "onChange": [Function],
-                  "value": "2014-02-27T10:00:00.000Z",
+                  "value": "2014-02-27T00:00:00.000Z",
                 },
                 "ref": null,
                 "rendered": null,
@@ -453,7 +453,7 @@ ShallowWrapper {
                   open={false}
                   popupStyle={Object {}}
                   transitionName="slide-up"
-                  value={"2014-02-27T10:00:00.000Z"}
+                  value={"2014-02-27T00:00:00.000Z"}
 />,
                 <Unknown
                   allowClear={false}
@@ -461,7 +461,7 @@ ShallowWrapper {
                   format="HH"
                   name="endHour"
                   onChange={[Function]}
-                  value={"2014-02-27T11:00:00.000Z"}
+                  value={"2014-02-27T01:00:00.000Z"}
 />,
               ],
               "hasFeedback": false,
@@ -482,7 +482,7 @@ ShallowWrapper {
                   "open": false,
                   "popupStyle": Object {},
                   "transitionName": "slide-up",
-                  "value": "2014-02-27T10:00:00.000Z",
+                  "value": "2014-02-27T00:00:00.000Z",
                 },
                 "ref": null,
                 "rendered": null,
@@ -498,7 +498,7 @@ ShallowWrapper {
                   "format": "HH",
                   "name": "endHour",
                   "onChange": [Function],
-                  "value": "2014-02-27T11:00:00.000Z",
+                  "value": "2014-02-27T01:00:00.000Z",
                 },
                 "ref": null,
                 "rendered": null,
@@ -578,14 +578,14 @@ ShallowWrapper {
                                         onOpenChange={[Function]}
                                         popupStyle={Object {}}
                                         transitionName="slide-up"
-                                        value={"2014-02-27T10:00:00.000Z"}
+                                        value={"2014-02-27T00:00:00.000Z"}
                               />
                               <Unknown
                                         allowClear={false}
                                         format="HH"
                                         name="startHour"
                                         onChange={[Function]}
-                                        value={"2014-02-27T10:00:00.000Z"}
+                                        value={"2014-02-27T00:00:00.000Z"}
                               />
                     </FormItem>
                     <FormItem
@@ -601,7 +601,7 @@ ShallowWrapper {
                                         open={false}
                                         popupStyle={Object {}}
                                         transitionName="slide-up"
-                                        value={"2014-02-27T10:00:00.000Z"}
+                                        value={"2014-02-27T00:00:00.000Z"}
                               />
                               <Unknown
                                         allowClear={false}
@@ -609,7 +609,7 @@ ShallowWrapper {
                                         format="HH"
                                         name="endHour"
                                         onChange={[Function]}
-                                        value={"2014-02-27T11:00:00.000Z"}
+                                        value={"2014-02-27T01:00:00.000Z"}
                               />
                     </FormItem>
           </Form>
@@ -704,14 +704,14 @@ ShallowWrapper {
                                     onOpenChange={[Function]}
                                     popupStyle={Object {}}
                                     transitionName="slide-up"
-                                    value={"2014-02-27T10:00:00.000Z"}
+                                    value={"2014-02-27T00:00:00.000Z"}
                         />
                         <Unknown
                                     allowClear={false}
                                     format="HH"
                                     name="startHour"
                                     onChange={[Function]}
-                                    value={"2014-02-27T10:00:00.000Z"}
+                                    value={"2014-02-27T00:00:00.000Z"}
                         />
             </FormItem>
             <FormItem
@@ -727,7 +727,7 @@ ShallowWrapper {
                                     open={false}
                                     popupStyle={Object {}}
                                     transitionName="slide-up"
-                                    value={"2014-02-27T10:00:00.000Z"}
+                                    value={"2014-02-27T00:00:00.000Z"}
                         />
                         <Unknown
                                     allowClear={false}
@@ -735,7 +735,7 @@ ShallowWrapper {
                                     format="HH"
                                     name="endHour"
                                     onChange={[Function]}
-                                    value={"2014-02-27T11:00:00.000Z"}
+                                    value={"2014-02-27T01:00:00.000Z"}
                         />
             </FormItem>
 </Form>,
@@ -775,14 +775,14 @@ ShallowWrapper {
                                 onOpenChange={[Function]}
                                 popupStyle={Object {}}
                                 transitionName="slide-up"
-                                value={"2014-02-27T10:00:00.000Z"}
+                                value={"2014-02-27T00:00:00.000Z"}
                 />
                 <Unknown
                                 allowClear={false}
                                 format="HH"
                                 name="startHour"
                                 onChange={[Function]}
-                                value={"2014-02-27T10:00:00.000Z"}
+                                value={"2014-02-27T00:00:00.000Z"}
                 />
 </FormItem>,
               <FormItem
@@ -798,7 +798,7 @@ ShallowWrapper {
                                 open={false}
                                 popupStyle={Object {}}
                                 transitionName="slide-up"
-                                value={"2014-02-27T10:00:00.000Z"}
+                                value={"2014-02-27T00:00:00.000Z"}
                 />
                 <Unknown
                                 allowClear={false}
@@ -806,7 +806,7 @@ ShallowWrapper {
                                 format="HH"
                                 name="endHour"
                                 onChange={[Function]}
-                                value={"2014-02-27T11:00:00.000Z"}
+                                value={"2014-02-27T01:00:00.000Z"}
                 />
 </FormItem>,
             ],
@@ -882,14 +882,14 @@ ShallowWrapper {
                     onOpenChange={[Function]}
                     popupStyle={Object {}}
                     transitionName="slide-up"
-                    value={"2014-02-27T10:00:00.000Z"}
+                    value={"2014-02-27T00:00:00.000Z"}
 />,
                   <Unknown
                     allowClear={false}
                     format="HH"
                     name="startHour"
                     onChange={[Function]}
-                    value={"2014-02-27T10:00:00.000Z"}
+                    value={"2014-02-27T00:00:00.000Z"}
 />,
                 ],
                 "hasFeedback": false,
@@ -910,7 +910,7 @@ ShallowWrapper {
                     "onOpenChange": [Function],
                     "popupStyle": Object {},
                     "transitionName": "slide-up",
-                    "value": "2014-02-27T10:00:00.000Z",
+                    "value": "2014-02-27T00:00:00.000Z",
                   },
                   "ref": null,
                   "rendered": null,
@@ -925,7 +925,7 @@ ShallowWrapper {
                     "format": "HH",
                     "name": "startHour",
                     "onChange": [Function],
-                    "value": "2014-02-27T10:00:00.000Z",
+                    "value": "2014-02-27T00:00:00.000Z",
                   },
                   "ref": null,
                   "rendered": null,
@@ -949,7 +949,7 @@ ShallowWrapper {
                     open={false}
                     popupStyle={Object {}}
                     transitionName="slide-up"
-                    value={"2014-02-27T10:00:00.000Z"}
+                    value={"2014-02-27T00:00:00.000Z"}
 />,
                   <Unknown
                     allowClear={false}
@@ -957,7 +957,7 @@ ShallowWrapper {
                     format="HH"
                     name="endHour"
                     onChange={[Function]}
-                    value={"2014-02-27T11:00:00.000Z"}
+                    value={"2014-02-27T01:00:00.000Z"}
 />,
                 ],
                 "hasFeedback": false,
@@ -978,7 +978,7 @@ ShallowWrapper {
                     "open": false,
                     "popupStyle": Object {},
                     "transitionName": "slide-up",
-                    "value": "2014-02-27T10:00:00.000Z",
+                    "value": "2014-02-27T00:00:00.000Z",
                   },
                   "ref": null,
                   "rendered": null,
@@ -994,7 +994,7 @@ ShallowWrapper {
                     "format": "HH",
                     "name": "endHour",
                     "onChange": [Function],
-                    "value": "2014-02-27T11:00:00.000Z",
+                    "value": "2014-02-27T01:00:00.000Z",
                   },
                   "ref": null,
                   "rendered": null,
@@ -1128,14 +1128,14 @@ ShallowWrapper {
                                 onOpenChange={[Function]}
                                 popupStyle={Object {}}
                                 transitionName="slide-up"
-                                value={"2014-02-09T15:00:00.000Z"}
+                                value={"2014-02-10T00:00:00.000Z"}
                         />
                         <Unknown
                                 allowClear={false}
                                 format="HH"
                                 name="startHour"
                                 onChange={[Function]}
-                                value={"2014-02-09T16:00:00.000Z"}
+                                value={"2014-02-10T01:00:00.000Z"}
                         />
                 </FormItem>
                 <FormItem
@@ -1151,7 +1151,7 @@ ShallowWrapper {
                                 open={false}
                                 popupStyle={Object {}}
                                 transitionName="slide-up"
-                                value={"2014-02-09T15:00:00.000Z"}
+                                value={"2014-02-10T00:00:00.000Z"}
                         />
                         <Unknown
                                 allowClear={false}
@@ -1159,7 +1159,7 @@ ShallowWrapper {
                                 format="HH"
                                 name="endHour"
                                 onChange={[Function]}
-                                value={"2014-02-09T18:00:00.000Z"}
+                                value={"2014-02-10T03:00:00.000Z"}
                         />
                 </FormItem>
         </Form>
@@ -1264,14 +1264,14 @@ ShallowWrapper {
                               onOpenChange={[Function]}
                               popupStyle={Object {}}
                               transitionName="slide-up"
-                              value={"2014-02-09T15:00:00.000Z"}
+                              value={"2014-02-10T00:00:00.000Z"}
                     />
                     <Unknown
                               allowClear={false}
                               format="HH"
                               name="startHour"
                               onChange={[Function]}
-                              value={"2014-02-09T16:00:00.000Z"}
+                              value={"2014-02-10T01:00:00.000Z"}
                     />
           </FormItem>
           <FormItem
@@ -1287,7 +1287,7 @@ ShallowWrapper {
                               open={false}
                               popupStyle={Object {}}
                               transitionName="slide-up"
-                              value={"2014-02-09T15:00:00.000Z"}
+                              value={"2014-02-10T00:00:00.000Z"}
                     />
                     <Unknown
                               allowClear={false}
@@ -1295,7 +1295,7 @@ ShallowWrapper {
                               format="HH"
                               name="endHour"
                               onChange={[Function]}
-                              value={"2014-02-09T18:00:00.000Z"}
+                              value={"2014-02-10T03:00:00.000Z"}
                     />
           </FormItem>
 </Form>,
@@ -1335,14 +1335,14 @@ ShallowWrapper {
                             onOpenChange={[Function]}
                             popupStyle={Object {}}
                             transitionName="slide-up"
-                            value={"2014-02-09T15:00:00.000Z"}
+                            value={"2014-02-10T00:00:00.000Z"}
               />
               <Unknown
                             allowClear={false}
                             format="HH"
                             name="startHour"
                             onChange={[Function]}
-                            value={"2014-02-09T16:00:00.000Z"}
+                            value={"2014-02-10T01:00:00.000Z"}
               />
 </FormItem>,
             <FormItem
@@ -1358,7 +1358,7 @@ ShallowWrapper {
                             open={false}
                             popupStyle={Object {}}
                             transitionName="slide-up"
-                            value={"2014-02-09T15:00:00.000Z"}
+                            value={"2014-02-10T00:00:00.000Z"}
               />
               <Unknown
                             allowClear={false}
@@ -1366,7 +1366,7 @@ ShallowWrapper {
                             format="HH"
                             name="endHour"
                             onChange={[Function]}
-                            value={"2014-02-09T18:00:00.000Z"}
+                            value={"2014-02-10T03:00:00.000Z"}
               />
 </FormItem>,
           ],
@@ -1442,14 +1442,14 @@ ShallowWrapper {
                   onOpenChange={[Function]}
                   popupStyle={Object {}}
                   transitionName="slide-up"
-                  value={"2014-02-09T15:00:00.000Z"}
+                  value={"2014-02-10T00:00:00.000Z"}
 />,
                 <Unknown
                   allowClear={false}
                   format="HH"
                   name="startHour"
                   onChange={[Function]}
-                  value={"2014-02-09T16:00:00.000Z"}
+                  value={"2014-02-10T01:00:00.000Z"}
 />,
               ],
               "hasFeedback": false,
@@ -1470,7 +1470,7 @@ ShallowWrapper {
                   "onOpenChange": [Function],
                   "popupStyle": Object {},
                   "transitionName": "slide-up",
-                  "value": "2014-02-09T15:00:00.000Z",
+                  "value": "2014-02-10T00:00:00.000Z",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1485,7 +1485,7 @@ ShallowWrapper {
                   "format": "HH",
                   "name": "startHour",
                   "onChange": [Function],
-                  "value": "2014-02-09T16:00:00.000Z",
+                  "value": "2014-02-10T01:00:00.000Z",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1509,7 +1509,7 @@ ShallowWrapper {
                   open={false}
                   popupStyle={Object {}}
                   transitionName="slide-up"
-                  value={"2014-02-09T15:00:00.000Z"}
+                  value={"2014-02-10T00:00:00.000Z"}
 />,
                 <Unknown
                   allowClear={false}
@@ -1517,7 +1517,7 @@ ShallowWrapper {
                   format="HH"
                   name="endHour"
                   onChange={[Function]}
-                  value={"2014-02-09T18:00:00.000Z"}
+                  value={"2014-02-10T03:00:00.000Z"}
 />,
               ],
               "hasFeedback": false,
@@ -1538,7 +1538,7 @@ ShallowWrapper {
                   "open": false,
                   "popupStyle": Object {},
                   "transitionName": "slide-up",
-                  "value": "2014-02-09T15:00:00.000Z",
+                  "value": "2014-02-10T00:00:00.000Z",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1554,7 +1554,7 @@ ShallowWrapper {
                   "format": "HH",
                   "name": "endHour",
                   "onChange": [Function],
-                  "value": "2014-02-09T18:00:00.000Z",
+                  "value": "2014-02-10T03:00:00.000Z",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1634,14 +1634,14 @@ ShallowWrapper {
                                         onOpenChange={[Function]}
                                         popupStyle={Object {}}
                                         transitionName="slide-up"
-                                        value={"2014-02-09T15:00:00.000Z"}
+                                        value={"2014-02-10T00:00:00.000Z"}
                               />
                               <Unknown
                                         allowClear={false}
                                         format="HH"
                                         name="startHour"
                                         onChange={[Function]}
-                                        value={"2014-02-09T16:00:00.000Z"}
+                                        value={"2014-02-10T01:00:00.000Z"}
                               />
                     </FormItem>
                     <FormItem
@@ -1657,7 +1657,7 @@ ShallowWrapper {
                                         open={false}
                                         popupStyle={Object {}}
                                         transitionName="slide-up"
-                                        value={"2014-02-09T15:00:00.000Z"}
+                                        value={"2014-02-10T00:00:00.000Z"}
                               />
                               <Unknown
                                         allowClear={false}
@@ -1665,7 +1665,7 @@ ShallowWrapper {
                                         format="HH"
                                         name="endHour"
                                         onChange={[Function]}
-                                        value={"2014-02-09T18:00:00.000Z"}
+                                        value={"2014-02-10T03:00:00.000Z"}
                               />
                     </FormItem>
           </Form>
@@ -1770,14 +1770,14 @@ ShallowWrapper {
                                     onOpenChange={[Function]}
                                     popupStyle={Object {}}
                                     transitionName="slide-up"
-                                    value={"2014-02-09T15:00:00.000Z"}
+                                    value={"2014-02-10T00:00:00.000Z"}
                         />
                         <Unknown
                                     allowClear={false}
                                     format="HH"
                                     name="startHour"
                                     onChange={[Function]}
-                                    value={"2014-02-09T16:00:00.000Z"}
+                                    value={"2014-02-10T01:00:00.000Z"}
                         />
             </FormItem>
             <FormItem
@@ -1793,7 +1793,7 @@ ShallowWrapper {
                                     open={false}
                                     popupStyle={Object {}}
                                     transitionName="slide-up"
-                                    value={"2014-02-09T15:00:00.000Z"}
+                                    value={"2014-02-10T00:00:00.000Z"}
                         />
                         <Unknown
                                     allowClear={false}
@@ -1801,7 +1801,7 @@ ShallowWrapper {
                                     format="HH"
                                     name="endHour"
                                     onChange={[Function]}
-                                    value={"2014-02-09T18:00:00.000Z"}
+                                    value={"2014-02-10T03:00:00.000Z"}
                         />
             </FormItem>
 </Form>,
@@ -1841,14 +1841,14 @@ ShallowWrapper {
                                 onOpenChange={[Function]}
                                 popupStyle={Object {}}
                                 transitionName="slide-up"
-                                value={"2014-02-09T15:00:00.000Z"}
+                                value={"2014-02-10T00:00:00.000Z"}
                 />
                 <Unknown
                                 allowClear={false}
                                 format="HH"
                                 name="startHour"
                                 onChange={[Function]}
-                                value={"2014-02-09T16:00:00.000Z"}
+                                value={"2014-02-10T01:00:00.000Z"}
                 />
 </FormItem>,
               <FormItem
@@ -1864,7 +1864,7 @@ ShallowWrapper {
                                 open={false}
                                 popupStyle={Object {}}
                                 transitionName="slide-up"
-                                value={"2014-02-09T15:00:00.000Z"}
+                                value={"2014-02-10T00:00:00.000Z"}
                 />
                 <Unknown
                                 allowClear={false}
@@ -1872,7 +1872,7 @@ ShallowWrapper {
                                 format="HH"
                                 name="endHour"
                                 onChange={[Function]}
-                                value={"2014-02-09T18:00:00.000Z"}
+                                value={"2014-02-10T03:00:00.000Z"}
                 />
 </FormItem>,
             ],
@@ -1948,14 +1948,14 @@ ShallowWrapper {
                     onOpenChange={[Function]}
                     popupStyle={Object {}}
                     transitionName="slide-up"
-                    value={"2014-02-09T15:00:00.000Z"}
+                    value={"2014-02-10T00:00:00.000Z"}
 />,
                   <Unknown
                     allowClear={false}
                     format="HH"
                     name="startHour"
                     onChange={[Function]}
-                    value={"2014-02-09T16:00:00.000Z"}
+                    value={"2014-02-10T01:00:00.000Z"}
 />,
                 ],
                 "hasFeedback": false,
@@ -1976,7 +1976,7 @@ ShallowWrapper {
                     "onOpenChange": [Function],
                     "popupStyle": Object {},
                     "transitionName": "slide-up",
-                    "value": "2014-02-09T15:00:00.000Z",
+                    "value": "2014-02-10T00:00:00.000Z",
                   },
                   "ref": null,
                   "rendered": null,
@@ -1991,7 +1991,7 @@ ShallowWrapper {
                     "format": "HH",
                     "name": "startHour",
                     "onChange": [Function],
-                    "value": "2014-02-09T16:00:00.000Z",
+                    "value": "2014-02-10T01:00:00.000Z",
                   },
                   "ref": null,
                   "rendered": null,
@@ -2015,7 +2015,7 @@ ShallowWrapper {
                     open={false}
                     popupStyle={Object {}}
                     transitionName="slide-up"
-                    value={"2014-02-09T15:00:00.000Z"}
+                    value={"2014-02-10T00:00:00.000Z"}
 />,
                   <Unknown
                     allowClear={false}
@@ -2023,7 +2023,7 @@ ShallowWrapper {
                     format="HH"
                     name="endHour"
                     onChange={[Function]}
-                    value={"2014-02-09T18:00:00.000Z"}
+                    value={"2014-02-10T03:00:00.000Z"}
 />,
                 ],
                 "hasFeedback": false,
@@ -2044,7 +2044,7 @@ ShallowWrapper {
                     "open": false,
                     "popupStyle": Object {},
                     "transitionName": "slide-up",
-                    "value": "2014-02-09T15:00:00.000Z",
+                    "value": "2014-02-10T00:00:00.000Z",
                   },
                   "ref": null,
                   "rendered": null,
@@ -2060,7 +2060,7 @@ ShallowWrapper {
                     "format": "HH",
                     "name": "endHour",
                     "onChange": [Function],
-                    "value": "2014-02-09T18:00:00.000Z",
+                    "value": "2014-02-10T03:00:00.000Z",
                   },
                   "ref": null,
                   "rendered": null,
