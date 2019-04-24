@@ -1,16 +1,16 @@
 import * as Action from '../task/action';
 import {reducer} from '../task';
-import { Task, ErrorMessage } from '../../models';
+import { Task, ErrorMessage, TaskLookupParam } from '../../models';
 
 describe('counter', () => {
   const task = new Task(1, 'name', '2019-12-12', 1, 2);
   const newTask = new Task(1, 'name2', '2019-12-13', 1, 3);
   const errorMessage = new ErrorMessage('제목', '내용');
-  const loadTaskReq = {year: 2019, month: 12};
+  const loadTaskReq = new TaskLookupParam(2019, 12);
     describe('actions', () => {
       it('should create actions', () => {
         const expectedActions =[
-          { type: Action.LOAD, payload: {year: 2019, month: 12} },
+          { type: Action.LOAD, payload: loadTaskReq },
           { type: Action.LOAD_STARTED },
           { type: Action.LOAD_FAILED },
           { type: Action.LOAD_SUCCESSED, payload: [task] },

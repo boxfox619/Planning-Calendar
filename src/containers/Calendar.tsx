@@ -55,7 +55,7 @@ export const Calendar: React.FC<Props> = ({ currentMoment, mode, tasks, onSelect
         }
         if (currentTask && date) {
             const newTask = { ...currentTask, date };
-            if(mode === CalendarMode.Week && hour) {
+            if(mode === CalendarMode.Week && hour !== undefined) {
                 newTask.endHour += hour - newTask.startHour;
                 newTask.startHour = hour;
             }

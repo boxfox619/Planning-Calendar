@@ -23,7 +23,7 @@ describe('<CalendarController />', () => {
     });
 
     it('should calls functions', () => {
-        const buttons = component.find('Button');
+        const buttons = component.find('Icon');
         buttons.at(0).simulate('click');
         buttons.at(1).simulate('click');
         expect(changeMoment.mock.calls.length).toBe(2);

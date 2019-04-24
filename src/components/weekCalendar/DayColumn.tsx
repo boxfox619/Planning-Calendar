@@ -22,11 +22,6 @@ const Cell = styled.div`
         background-color: ${BORDER_COLOR};
     }
 `
-const WeekTaskItem = styled(TaskItem)`
-    position: absolute;
-    left: 0;
-`
-WeekTaskItem.displayName = 'TaskItem';
 Cell.displayName = 'Cell';
 
 interface Props {
@@ -45,7 +40,7 @@ export const DayColumn: React.FC<Props> = (props: Props) => {
             {tasks.map(task => {
                 const top = `${ 40 * task.startHour }px`;
                 const height = `${ 40 * (task.endHour - task.startHour) }px`;
-                return (<WeekTaskItem key={task.id} taskId={task.id} style={{ top, height }} name={task.name}/>)
+                return (<TaskItem key={task.id} style={{ top, height, left: '0', position: 'absolute' }} task={task}/>)
             })}
         </DayColumnContainer>
     )

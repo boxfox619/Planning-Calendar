@@ -27,11 +27,11 @@ describe('<DayBox />', () => {
 
     it('should row exists 5', () => {
         expect(component.find(TaskItem).length).toBe(5);
-        expect(component.find(TaskItem).at(0).props().name).toBe('귤 까기01');
-        expect(component.find(TaskItem).at(1).props().name).toBe('귤 까기09');
-        expect(component.find(TaskItem).at(2).props().name).toBe('귤 까기10');
-        expect(component.find(TaskItem).at(3).props().name).toBe('귤 까기12');
-        expect(component.find(TaskItem).at(4).props().name).toBe('귤 까기24');
+        expect(component.find(TaskItem).at(0).props().task.name).toBe('귤 까기01');
+        expect(component.find(TaskItem).at(1).props().task.name).toBe('귤 까기09');
+        expect(component.find(TaskItem).at(2).props().task.name).toBe('귤 까기10');
+        expect(component.find(TaskItem).at(3).props().task.name).toBe('귤 까기12');
+        expect(component.find(TaskItem).at(4).props().task.name).toBe('귤 까기24');
     });
 
 });

@@ -48,25 +48,67 @@ ShallowWrapper {
       "children": Array [
         <Unknown />,
         <Unknown>
-          <div>
+          <div
+                    style={
+                              Object {
+                                        "color": "",
+                                      }
+                    }
+          >
                     23
           </div>
-          <div>
+          <div
+                    style={
+                              Object {
+                                        "color": "",
+                                      }
+                    }
+          >
                     24
           </div>
-          <div>
+          <div
+                    style={
+                              Object {
+                                        "color": "",
+                                      }
+                    }
+          >
                     25
           </div>
-          <div>
+          <div
+                    style={
+                              Object {
+                                        "color": "",
+                                      }
+                    }
+          >
                     26
           </div>
-          <div>
+          <div
+                    style={
+                              Object {
+                                        "color": "",
+                                      }
+                    }
+          >
                     27
           </div>
-          <div>
+          <div
+                    style={
+                              Object {
+                                        "color": "",
+                                      }
+                    }
+          >
                     28
           </div>
-          <div>
+          <div
+                    style={
+                              Object {
+                                        "color": "",
+                                      }
+                    }
+          >
                     1
           </div>
 </Unknown>,
@@ -371,25 +413,67 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": Array [
-            <div>
+            <div
+              style={
+                            Object {
+                                          "color": "",
+                                        }
+              }
+>
               23
 </div>,
-            <div>
+            <div
+              style={
+                            Object {
+                                          "color": "",
+                                        }
+              }
+>
               24
 </div>,
-            <div>
+            <div
+              style={
+                            Object {
+                                          "color": "",
+                                        }
+              }
+>
               25
 </div>,
-            <div>
+            <div
+              style={
+                            Object {
+                                          "color": "",
+                                        }
+              }
+>
               26
 </div>,
-            <div>
+            <div
+              style={
+                            Object {
+                                          "color": "",
+                                        }
+              }
+>
               27
 </div>,
-            <div>
+            <div
+              style={
+                            Object {
+                                          "color": "",
+                                        }
+              }
+>
               28
 </div>,
-            <div>
+            <div
+              style={
+                            Object {
+                                          "color": "",
+                                        }
+              }
+>
               1
 </div>,
           ],
@@ -402,6 +486,9 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": 23,
+              "style": Object {
+                "color": "",
+              },
             },
             "ref": null,
             "rendered": 23,
@@ -413,6 +500,9 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": 24,
+              "style": Object {
+                "color": "",
+              },
             },
             "ref": null,
             "rendered": 24,
@@ -424,6 +514,9 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": 25,
+              "style": Object {
+                "color": "",
+              },
             },
             "ref": null,
             "rendered": 25,
@@ -435,6 +528,9 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": 26,
+              "style": Object {
+                "color": "",
+              },
             },
             "ref": null,
             "rendered": 26,
@@ -446,6 +542,9 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": 27,
+              "style": Object {
+                "color": "",
+              },
             },
             "ref": null,
             "rendered": 27,
@@ -457,6 +556,9 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": 28,
+              "style": Object {
+                "color": "",
+              },
             },
             "ref": null,
             "rendered": 28,
@@ -468,6 +570,9 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": 1,
+              "style": Object {
+                "color": "",
+              },
             },
             "ref": null,
             "rendered": 1,
@@ -478,7 +583,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gzVnrw",
+            "componentId": "sc-bZQynM",
             "isStatic": true,
             "rules": Array [
               "
@@ -494,7 +599,7 @@ ShallowWrapper {
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gzVnrw",
+          "styledComponentId": "sc-bZQynM",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1498,7 +1603,7 @@ ShallowWrapper {
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-htoDjs",
+                "componentId": "sc-gzVnrw",
                 "isStatic": true,
                 "rules": Array [
                   "
@@ -1511,7 +1616,7 @@ ShallowWrapper {
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-htoDjs",
+              "styledComponentId": "sc-gzVnrw",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -1623,7 +1728,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bZQynM",
+            "componentId": "sc-EHOje",
             "isStatic": true,
             "rules": Array [
               "
@@ -1635,7 +1740,7 @@ ShallowWrapper {
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bZQynM",
+          "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1647,7 +1752,7 @@ ShallowWrapper {
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "sc-EHOje",
+        "componentId": "sc-ifAKCX",
         "isStatic": true,
         "rules": Array [
           "
@@ -1659,7 +1764,7 @@ ShallowWrapper {
       "displayName": "styled.div",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "sc-EHOje",
+      "styledComponentId": "sc-ifAKCX",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -1675,25 +1780,67 @@ ShallowWrapper {
         "children": Array [
           <Unknown />,
           <Unknown>
-            <div>
+            <div
+                        style={
+                                    Object {
+                                                "color": "",
+                                              }
+                        }
+            >
                         23
             </div>
-            <div>
+            <div
+                        style={
+                                    Object {
+                                                "color": "",
+                                              }
+                        }
+            >
                         24
             </div>
-            <div>
+            <div
+                        style={
+                                    Object {
+                                                "color": "",
+                                              }
+                        }
+            >
                         25
             </div>
-            <div>
+            <div
+                        style={
+                                    Object {
+                                                "color": "",
+                                              }
+                        }
+            >
                         26
             </div>
-            <div>
+            <div
+                        style={
+                                    Object {
+                                                "color": "",
+                                              }
+                        }
+            >
                         27
             </div>
-            <div>
+            <div
+                        style={
+                                    Object {
+                                                "color": "",
+                                              }
+                        }
+            >
                         28
             </div>
-            <div>
+            <div
+                        style={
+                                    Object {
+                                                "color": "",
+                                              }
+                        }
+            >
                         1
             </div>
 </Unknown>,
@@ -1998,25 +2145,67 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": Array [
-              <div>
+              <div
+                style={
+                                Object {
+                                                "color": "",
+                                              }
+                }
+>
                 23
 </div>,
-              <div>
+              <div
+                style={
+                                Object {
+                                                "color": "",
+                                              }
+                }
+>
                 24
 </div>,
-              <div>
+              <div
+                style={
+                                Object {
+                                                "color": "",
+                                              }
+                }
+>
                 25
 </div>,
-              <div>
+              <div
+                style={
+                                Object {
+                                                "color": "",
+                                              }
+                }
+>
                 26
 </div>,
-              <div>
+              <div
+                style={
+                                Object {
+                                                "color": "",
+                                              }
+                }
+>
                 27
 </div>,
-              <div>
+              <div
+                style={
+                                Object {
+                                                "color": "",
+                                              }
+                }
+>
                 28
 </div>,
-              <div>
+              <div
+                style={
+                                Object {
+                                                "color": "",
+                                              }
+                }
+>
                 1
 </div>,
             ],
@@ -2029,6 +2218,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": 23,
+                "style": Object {
+                  "color": "",
+                },
               },
               "ref": null,
               "rendered": 23,
@@ -2040,6 +2232,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": 24,
+                "style": Object {
+                  "color": "",
+                },
               },
               "ref": null,
               "rendered": 24,
@@ -2051,6 +2246,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": 25,
+                "style": Object {
+                  "color": "",
+                },
               },
               "ref": null,
               "rendered": 25,
@@ -2062,6 +2260,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": 26,
+                "style": Object {
+                  "color": "",
+                },
               },
               "ref": null,
               "rendered": 26,
@@ -2073,6 +2274,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": 27,
+                "style": Object {
+                  "color": "",
+                },
               },
               "ref": null,
               "rendered": 27,
@@ -2084,6 +2288,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": 28,
+                "style": Object {
+                  "color": "",
+                },
               },
               "ref": null,
               "rendered": 28,
@@ -2095,6 +2302,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": 1,
+                "style": Object {
+                  "color": "",
+                },
               },
               "ref": null,
               "rendered": 1,
@@ -2105,7 +2315,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-gzVnrw",
+              "componentId": "sc-bZQynM",
               "isStatic": true,
               "rules": Array [
                 "
@@ -2121,7 +2331,7 @@ ShallowWrapper {
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-gzVnrw",
+            "styledComponentId": "sc-bZQynM",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -3125,7 +3335,7 @@ ShallowWrapper {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-htoDjs",
+                  "componentId": "sc-gzVnrw",
                   "isStatic": true,
                   "rules": Array [
                     "
@@ -3138,7 +3348,7 @@ ShallowWrapper {
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-htoDjs",
+                "styledComponentId": "sc-gzVnrw",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -3250,7 +3460,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bZQynM",
+              "componentId": "sc-EHOje",
               "isStatic": true,
               "rules": Array [
                 "
@@ -3262,7 +3472,7 @@ ShallowWrapper {
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bZQynM",
+            "styledComponentId": "sc-EHOje",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -3274,7 +3484,7 @@ ShallowWrapper {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-EHOje",
+          "componentId": "sc-ifAKCX",
           "isStatic": true,
           "rules": Array [
             "
@@ -3286,7 +3496,7 @@ ShallowWrapper {
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-EHOje",
+        "styledComponentId": "sc-ifAKCX",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],

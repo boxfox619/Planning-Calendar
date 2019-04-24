@@ -4,21 +4,21 @@ import { concatMap, map, catchError, throttleTime, timeout, takeUntil } from 'rx
 import { ofType, combineEpics, StateObservable } from 'redux-observable';
 import * as TaskAction from './action';
 import * as TaskApi from '../../api/TaskApi';
-import { Task, ErrorMessage } from '../../models';
-import { TaskLookupRequest } from '../../models/request';
+import { Task, ErrorMessage, TaskLookupParam } from '../../models';
 import { StoreModel } from '../../models';
 
 const checkDuplicateTask = (tasks: Task[], task: Task) => {
     const checkRange = (t: Task, hour: number) => t.startHour < hour && t.endHour > hour;
-    return !!tasks.find(t => (checkRange(t, task.startHour) || checkRange(t, task.endHour) || checkRange(task, t.startHour) || checkRange(task, t.endHour)) && task.date === t.date);
+    const compareTask = (task1: Task, task2: Task) => checkRange(task1, task2.startHour) || checkRange(task1, task2.endHour);
+    return !!tasks.filter(t => t.id !== task.id ).find(t => (compareTask(t, task) || compareTask(task, t)) && task.date === t.date);
 }
-const duplicateError = (task: Task) => of(TaskAction.failedUpdateTask(new ErrorMessage(`해당 일시에 일정이 존재합니다`, `${task.date} ${task.startHour} ~ ${task.endHour}`)));
+const duplicateError = (task: Task) => of(TaskAction.failedUpdateTask(new ErrorMessage(`해당 일시에 일정이 존재합니다`, `${task.date} ${task.startHour}시 ~ ${task.endHour}시`)));
 
 const loadTaskEpic = (
     action: Observable<BaseAction>
 ): Observable<any> => action.pipe(
     ofType(TaskAction.LOAD),
-    concatMap(($action: Action<TaskLookupRequest>) => concat(
+    concatMap(($action: Action<TaskLookupParam>) => concat(
         of(TaskAction.startedLoadTasks()),
         from(TaskApi.loadTasks($action.payload.year, $action.payload.month)).pipe(
             timeout(15000),

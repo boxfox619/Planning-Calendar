@@ -3,15 +3,23 @@ import styled from 'styled-components';
 import { CalendarMode } from '../models/CalendarMode';
 import { Moment } from 'moment';
 import { weekOfMonth, calMoment } from '../utils/calendarUtil';
-import { Button } from 'antd';
+import { Icon } from 'antd';
 import { CalendarModeDropdown } from './CalendarModeDropdown';
 import 'antd/lib/button/style/css';
 
 const Container = styled.div`
+    position: relative;
     padding: 20px;
+    font-size: 1.5em;
 `
 const Label = styled.h3`
     display: inline;
+`
+const DropdownContainer = styled.div`
+    position: absolute;
+    right: 40px;
+    right: 40px;
+    top: 20px;
 `
 Label.displayName = 'Label';
 
@@ -37,10 +45,12 @@ export const CalendarController: React.FC<Props> = (props: Props) => {
 
     return (
         <Container {...divProps}>
-            <Button onClick={handlePrev} shape="circle" icon="left" />
-            <Button onClick={handleNext} shape="circle" icon="right" />
+            <Icon type="left" onClick={handlePrev} style={{marginRight: '10px'}}/>
             <Label>{label}</Label>
-            <CalendarModeDropdown onChangeMode={onChangeMode} currentMode={mode} />
+            <Icon type="right" onClick={handleNext} style={{marginLeft: '10px'}}/>
+            <DropdownContainer>
+                <CalendarModeDropdown onChangeMode={onChangeMode} currentMode={mode} />
+            </DropdownContainer>
         </Container>
     )
 }
