@@ -85,11 +85,14 @@ ShallowWrapper {
                                 value={"2014-02-27T00:00:00.000Z"}
                         />
                         <Unknown
-                                allowClear={false}
-                                format="HH"
+                                disableHours={
+                                        Array [
+                                                24,
+                                              ]
+                                }
                                 name="startHour"
                                 onChange={[Function]}
-                                value={"2014-02-27T00:00:00.000Z"}
+                                value={0}
                         />
                 </FormItem>
                 <FormItem
@@ -108,12 +111,14 @@ ShallowWrapper {
                                 value={"2014-02-27T00:00:00.000Z"}
                         />
                         <Unknown
-                                allowClear={false}
-                                disabledHours={[Function]}
-                                format="HH"
+                                disableHours={
+                                        Array [
+                                                0,
+                                              ]
+                                }
                                 name="endHour"
                                 onChange={[Function]}
-                                value={"2014-02-27T01:00:00.000Z"}
+                                value={1}
                         />
                 </FormItem>
         </Form>
@@ -211,11 +216,14 @@ ShallowWrapper {
                               value={"2014-02-27T00:00:00.000Z"}
                     />
                     <Unknown
-                              allowClear={false}
-                              format="HH"
+                              disableHours={
+                                        Array [
+                                                  24,
+                                                ]
+                              }
                               name="startHour"
                               onChange={[Function]}
-                              value={"2014-02-27T00:00:00.000Z"}
+                              value={0}
                     />
           </FormItem>
           <FormItem
@@ -234,12 +242,14 @@ ShallowWrapper {
                               value={"2014-02-27T00:00:00.000Z"}
                     />
                     <Unknown
-                              allowClear={false}
-                              disabledHours={[Function]}
-                              format="HH"
+                              disableHours={
+                                        Array [
+                                                  0,
+                                                ]
+                              }
                               name="endHour"
                               onChange={[Function]}
-                              value={"2014-02-27T01:00:00.000Z"}
+                              value={1}
                     />
           </FormItem>
 </Form>,
@@ -282,11 +292,14 @@ ShallowWrapper {
                             value={"2014-02-27T00:00:00.000Z"}
               />
               <Unknown
-                            allowClear={false}
-                            format="HH"
+                            disableHours={
+                                          Array [
+                                                        24,
+                                                      ]
+                            }
                             name="startHour"
                             onChange={[Function]}
-                            value={"2014-02-27T00:00:00.000Z"}
+                            value={0}
               />
 </FormItem>,
             <FormItem
@@ -305,12 +318,14 @@ ShallowWrapper {
                             value={"2014-02-27T00:00:00.000Z"}
               />
               <Unknown
-                            allowClear={false}
-                            disabledHours={[Function]}
-                            format="HH"
+                            disableHours={
+                                          Array [
+                                                        0,
+                                                      ]
+                            }
                             name="endHour"
                             onChange={[Function]}
-                            value={"2014-02-27T01:00:00.000Z"}
+                            value={1}
               />
 </FormItem>,
           ],
@@ -389,11 +404,14 @@ ShallowWrapper {
                   value={"2014-02-27T00:00:00.000Z"}
 />,
                 <Unknown
-                  allowClear={false}
-                  format="HH"
+                  disableHours={
+                                    Array [
+                                                      24,
+                                                    ]
+                  }
                   name="startHour"
                   onChange={[Function]}
-                  value={"2014-02-27T00:00:00.000Z"}
+                  value={0}
 />,
               ],
               "hasFeedback": false,
@@ -425,11 +443,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "allowClear": false,
-                  "format": "HH",
+                  "disableHours": Array [
+                    24,
+                  ],
                   "name": "startHour",
                   "onChange": [Function],
-                  "value": "2014-02-27T00:00:00.000Z",
+                  "value": 0,
                 },
                 "ref": null,
                 "rendered": null,
@@ -456,12 +475,14 @@ ShallowWrapper {
                   value={"2014-02-27T00:00:00.000Z"}
 />,
                 <Unknown
-                  allowClear={false}
-                  disabledHours={[Function]}
-                  format="HH"
+                  disableHours={
+                                    Array [
+                                                      0,
+                                                    ]
+                  }
                   name="endHour"
                   onChange={[Function]}
-                  value={"2014-02-27T01:00:00.000Z"}
+                  value={1}
 />,
               ],
               "hasFeedback": false,
@@ -493,12 +514,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "allowClear": false,
-                  "disabledHours": [Function],
-                  "format": "HH",
+                  "disableHours": Array [
+                    0,
+                  ],
                   "name": "endHour",
                   "onChange": [Function],
-                  "value": "2014-02-27T01:00:00.000Z",
+                  "value": 1,
                 },
                 "ref": null,
                 "rendered": null,
@@ -581,11 +602,14 @@ ShallowWrapper {
                                         value={"2014-02-27T00:00:00.000Z"}
                               />
                               <Unknown
-                                        allowClear={false}
-                                        format="HH"
+                                        disableHours={
+                                                  Array [
+                                                            24,
+                                                          ]
+                                        }
                                         name="startHour"
                                         onChange={[Function]}
-                                        value={"2014-02-27T00:00:00.000Z"}
+                                        value={0}
                               />
                     </FormItem>
                     <FormItem
@@ -604,12 +628,14 @@ ShallowWrapper {
                                         value={"2014-02-27T00:00:00.000Z"}
                               />
                               <Unknown
-                                        allowClear={false}
-                                        disabledHours={[Function]}
-                                        format="HH"
+                                        disableHours={
+                                                  Array [
+                                                            0,
+                                                          ]
+                                        }
                                         name="endHour"
                                         onChange={[Function]}
-                                        value={"2014-02-27T01:00:00.000Z"}
+                                        value={1}
                               />
                     </FormItem>
           </Form>
@@ -707,11 +733,14 @@ ShallowWrapper {
                                     value={"2014-02-27T00:00:00.000Z"}
                         />
                         <Unknown
-                                    allowClear={false}
-                                    format="HH"
+                                    disableHours={
+                                                Array [
+                                                            24,
+                                                          ]
+                                    }
                                     name="startHour"
                                     onChange={[Function]}
-                                    value={"2014-02-27T00:00:00.000Z"}
+                                    value={0}
                         />
             </FormItem>
             <FormItem
@@ -730,12 +759,14 @@ ShallowWrapper {
                                     value={"2014-02-27T00:00:00.000Z"}
                         />
                         <Unknown
-                                    allowClear={false}
-                                    disabledHours={[Function]}
-                                    format="HH"
+                                    disableHours={
+                                                Array [
+                                                            0,
+                                                          ]
+                                    }
                                     name="endHour"
                                     onChange={[Function]}
-                                    value={"2014-02-27T01:00:00.000Z"}
+                                    value={1}
                         />
             </FormItem>
 </Form>,
@@ -778,11 +809,14 @@ ShallowWrapper {
                                 value={"2014-02-27T00:00:00.000Z"}
                 />
                 <Unknown
-                                allowClear={false}
-                                format="HH"
+                                disableHours={
+                                                Array [
+                                                                24,
+                                                              ]
+                                }
                                 name="startHour"
                                 onChange={[Function]}
-                                value={"2014-02-27T00:00:00.000Z"}
+                                value={0}
                 />
 </FormItem>,
               <FormItem
@@ -801,12 +835,14 @@ ShallowWrapper {
                                 value={"2014-02-27T00:00:00.000Z"}
                 />
                 <Unknown
-                                allowClear={false}
-                                disabledHours={[Function]}
-                                format="HH"
+                                disableHours={
+                                                Array [
+                                                                0,
+                                                              ]
+                                }
                                 name="endHour"
                                 onChange={[Function]}
-                                value={"2014-02-27T01:00:00.000Z"}
+                                value={1}
                 />
 </FormItem>,
             ],
@@ -885,11 +921,14 @@ ShallowWrapper {
                     value={"2014-02-27T00:00:00.000Z"}
 />,
                   <Unknown
-                    allowClear={false}
-                    format="HH"
+                    disableHours={
+                                        Array [
+                                                            24,
+                                                          ]
+                    }
                     name="startHour"
                     onChange={[Function]}
-                    value={"2014-02-27T00:00:00.000Z"}
+                    value={0}
 />,
                 ],
                 "hasFeedback": false,
@@ -921,11 +960,12 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "allowClear": false,
-                    "format": "HH",
+                    "disableHours": Array [
+                      24,
+                    ],
                     "name": "startHour",
                     "onChange": [Function],
-                    "value": "2014-02-27T00:00:00.000Z",
+                    "value": 0,
                   },
                   "ref": null,
                   "rendered": null,
@@ -952,12 +992,14 @@ ShallowWrapper {
                     value={"2014-02-27T00:00:00.000Z"}
 />,
                   <Unknown
-                    allowClear={false}
-                    disabledHours={[Function]}
-                    format="HH"
+                    disableHours={
+                                        Array [
+                                                            0,
+                                                          ]
+                    }
                     name="endHour"
                     onChange={[Function]}
-                    value={"2014-02-27T01:00:00.000Z"}
+                    value={1}
 />,
                 ],
                 "hasFeedback": false,
@@ -989,12 +1031,12 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "allowClear": false,
-                    "disabledHours": [Function],
-                    "format": "HH",
+                    "disableHours": Array [
+                      0,
+                    ],
                     "name": "endHour",
                     "onChange": [Function],
-                    "value": "2014-02-27T01:00:00.000Z",
+                    "value": 1,
                   },
                   "ref": null,
                   "rendered": null,
@@ -1131,11 +1173,14 @@ ShallowWrapper {
                                 value={"2014-02-10T00:00:00.000Z"}
                         />
                         <Unknown
-                                allowClear={false}
-                                format="HH"
+                                disableHours={
+                                        Array [
+                                                24,
+                                              ]
+                                }
                                 name="startHour"
                                 onChange={[Function]}
-                                value={"2014-02-10T01:00:00.000Z"}
+                                value={1}
                         />
                 </FormItem>
                 <FormItem
@@ -1154,12 +1199,15 @@ ShallowWrapper {
                                 value={"2014-02-10T00:00:00.000Z"}
                         />
                         <Unknown
-                                allowClear={false}
-                                disabledHours={[Function]}
-                                format="HH"
+                                disableHours={
+                                        Array [
+                                                0,
+                                                1,
+                                              ]
+                                }
                                 name="endHour"
                                 onChange={[Function]}
-                                value={"2014-02-10T03:00:00.000Z"}
+                                value={3}
                         />
                 </FormItem>
         </Form>
@@ -1267,11 +1315,14 @@ ShallowWrapper {
                               value={"2014-02-10T00:00:00.000Z"}
                     />
                     <Unknown
-                              allowClear={false}
-                              format="HH"
+                              disableHours={
+                                        Array [
+                                                  24,
+                                                ]
+                              }
                               name="startHour"
                               onChange={[Function]}
-                              value={"2014-02-10T01:00:00.000Z"}
+                              value={1}
                     />
           </FormItem>
           <FormItem
@@ -1290,12 +1341,15 @@ ShallowWrapper {
                               value={"2014-02-10T00:00:00.000Z"}
                     />
                     <Unknown
-                              allowClear={false}
-                              disabledHours={[Function]}
-                              format="HH"
+                              disableHours={
+                                        Array [
+                                                  0,
+                                                  1,
+                                                ]
+                              }
                               name="endHour"
                               onChange={[Function]}
-                              value={"2014-02-10T03:00:00.000Z"}
+                              value={3}
                     />
           </FormItem>
 </Form>,
@@ -1338,11 +1392,14 @@ ShallowWrapper {
                             value={"2014-02-10T00:00:00.000Z"}
               />
               <Unknown
-                            allowClear={false}
-                            format="HH"
+                            disableHours={
+                                          Array [
+                                                        24,
+                                                      ]
+                            }
                             name="startHour"
                             onChange={[Function]}
-                            value={"2014-02-10T01:00:00.000Z"}
+                            value={1}
               />
 </FormItem>,
             <FormItem
@@ -1361,12 +1418,15 @@ ShallowWrapper {
                             value={"2014-02-10T00:00:00.000Z"}
               />
               <Unknown
-                            allowClear={false}
-                            disabledHours={[Function]}
-                            format="HH"
+                            disableHours={
+                                          Array [
+                                                        0,
+                                                        1,
+                                                      ]
+                            }
                             name="endHour"
                             onChange={[Function]}
-                            value={"2014-02-10T03:00:00.000Z"}
+                            value={3}
               />
 </FormItem>,
           ],
@@ -1445,11 +1505,14 @@ ShallowWrapper {
                   value={"2014-02-10T00:00:00.000Z"}
 />,
                 <Unknown
-                  allowClear={false}
-                  format="HH"
+                  disableHours={
+                                    Array [
+                                                      24,
+                                                    ]
+                  }
                   name="startHour"
                   onChange={[Function]}
-                  value={"2014-02-10T01:00:00.000Z"}
+                  value={1}
 />,
               ],
               "hasFeedback": false,
@@ -1481,11 +1544,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "allowClear": false,
-                  "format": "HH",
+                  "disableHours": Array [
+                    24,
+                  ],
                   "name": "startHour",
                   "onChange": [Function],
-                  "value": "2014-02-10T01:00:00.000Z",
+                  "value": 1,
                 },
                 "ref": null,
                 "rendered": null,
@@ -1512,12 +1576,15 @@ ShallowWrapper {
                   value={"2014-02-10T00:00:00.000Z"}
 />,
                 <Unknown
-                  allowClear={false}
-                  disabledHours={[Function]}
-                  format="HH"
+                  disableHours={
+                                    Array [
+                                                      0,
+                                                      1,
+                                                    ]
+                  }
                   name="endHour"
                   onChange={[Function]}
-                  value={"2014-02-10T03:00:00.000Z"}
+                  value={3}
 />,
               ],
               "hasFeedback": false,
@@ -1549,12 +1616,13 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "allowClear": false,
-                  "disabledHours": [Function],
-                  "format": "HH",
+                  "disableHours": Array [
+                    0,
+                    1,
+                  ],
                   "name": "endHour",
                   "onChange": [Function],
-                  "value": "2014-02-10T03:00:00.000Z",
+                  "value": 3,
                 },
                 "ref": null,
                 "rendered": null,
@@ -1637,11 +1705,14 @@ ShallowWrapper {
                                         value={"2014-02-10T00:00:00.000Z"}
                               />
                               <Unknown
-                                        allowClear={false}
-                                        format="HH"
+                                        disableHours={
+                                                  Array [
+                                                            24,
+                                                          ]
+                                        }
                                         name="startHour"
                                         onChange={[Function]}
-                                        value={"2014-02-10T01:00:00.000Z"}
+                                        value={1}
                               />
                     </FormItem>
                     <FormItem
@@ -1660,12 +1731,15 @@ ShallowWrapper {
                                         value={"2014-02-10T00:00:00.000Z"}
                               />
                               <Unknown
-                                        allowClear={false}
-                                        disabledHours={[Function]}
-                                        format="HH"
+                                        disableHours={
+                                                  Array [
+                                                            0,
+                                                            1,
+                                                          ]
+                                        }
                                         name="endHour"
                                         onChange={[Function]}
-                                        value={"2014-02-10T03:00:00.000Z"}
+                                        value={3}
                               />
                     </FormItem>
           </Form>
@@ -1773,11 +1847,14 @@ ShallowWrapper {
                                     value={"2014-02-10T00:00:00.000Z"}
                         />
                         <Unknown
-                                    allowClear={false}
-                                    format="HH"
+                                    disableHours={
+                                                Array [
+                                                            24,
+                                                          ]
+                                    }
                                     name="startHour"
                                     onChange={[Function]}
-                                    value={"2014-02-10T01:00:00.000Z"}
+                                    value={1}
                         />
             </FormItem>
             <FormItem
@@ -1796,12 +1873,15 @@ ShallowWrapper {
                                     value={"2014-02-10T00:00:00.000Z"}
                         />
                         <Unknown
-                                    allowClear={false}
-                                    disabledHours={[Function]}
-                                    format="HH"
+                                    disableHours={
+                                                Array [
+                                                            0,
+                                                            1,
+                                                          ]
+                                    }
                                     name="endHour"
                                     onChange={[Function]}
-                                    value={"2014-02-10T03:00:00.000Z"}
+                                    value={3}
                         />
             </FormItem>
 </Form>,
@@ -1844,11 +1924,14 @@ ShallowWrapper {
                                 value={"2014-02-10T00:00:00.000Z"}
                 />
                 <Unknown
-                                allowClear={false}
-                                format="HH"
+                                disableHours={
+                                                Array [
+                                                                24,
+                                                              ]
+                                }
                                 name="startHour"
                                 onChange={[Function]}
-                                value={"2014-02-10T01:00:00.000Z"}
+                                value={1}
                 />
 </FormItem>,
               <FormItem
@@ -1867,12 +1950,15 @@ ShallowWrapper {
                                 value={"2014-02-10T00:00:00.000Z"}
                 />
                 <Unknown
-                                allowClear={false}
-                                disabledHours={[Function]}
-                                format="HH"
+                                disableHours={
+                                                Array [
+                                                                0,
+                                                                1,
+                                                              ]
+                                }
                                 name="endHour"
                                 onChange={[Function]}
-                                value={"2014-02-10T03:00:00.000Z"}
+                                value={3}
                 />
 </FormItem>,
             ],
@@ -1951,11 +2037,14 @@ ShallowWrapper {
                     value={"2014-02-10T00:00:00.000Z"}
 />,
                   <Unknown
-                    allowClear={false}
-                    format="HH"
+                    disableHours={
+                                        Array [
+                                                            24,
+                                                          ]
+                    }
                     name="startHour"
                     onChange={[Function]}
-                    value={"2014-02-10T01:00:00.000Z"}
+                    value={1}
 />,
                 ],
                 "hasFeedback": false,
@@ -1987,11 +2076,12 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "allowClear": false,
-                    "format": "HH",
+                    "disableHours": Array [
+                      24,
+                    ],
                     "name": "startHour",
                     "onChange": [Function],
-                    "value": "2014-02-10T01:00:00.000Z",
+                    "value": 1,
                   },
                   "ref": null,
                   "rendered": null,
@@ -2018,12 +2108,15 @@ ShallowWrapper {
                     value={"2014-02-10T00:00:00.000Z"}
 />,
                   <Unknown
-                    allowClear={false}
-                    disabledHours={[Function]}
-                    format="HH"
+                    disableHours={
+                                        Array [
+                                                            0,
+                                                            1,
+                                                          ]
+                    }
                     name="endHour"
                     onChange={[Function]}
-                    value={"2014-02-10T03:00:00.000Z"}
+                    value={3}
 />,
                 ],
                 "hasFeedback": false,
@@ -2055,12 +2148,13 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "allowClear": false,
-                    "disabledHours": [Function],
-                    "format": "HH",
+                    "disableHours": Array [
+                      0,
+                      1,
+                    ],
                     "name": "endHour",
                     "onChange": [Function],
-                    "value": "2014-02-10T03:00:00.000Z",
+                    "value": 3,
                   },
                   "ref": null,
                   "rendered": null,

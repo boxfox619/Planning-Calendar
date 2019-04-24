@@ -9,8 +9,8 @@ import 'antd/lib/form/style/css';
 import 'antd/lib/date-picker/style/css';
 import 'antd/lib/button/style/css';
 import { Task } from '../../models';
-import { range } from 'lodash';
 import { FormTimePicker } from './FormTimePicker';
+import { range } from 'lodash';
 
 interface Props {
     target: Task | moment.Moment,
@@ -36,19 +36,19 @@ export const TaskModal: React.FC<Props> = (props: Props) => {
     const time = (moment.isMoment(target)) ? target : undefined;
     const task = (!time) ? target as Task : undefined; 
     const defaultDate = task ? moment.parseZone(task.date) : (time ? time : moment());
-    const defaultStartTime = defaultDate.clone().hour(task ? task.startHour : defaultDate.hour());
-    const defaultEndTime = task ? defaultStartTime.clone().hour(task.endHour) : defaultStartTime.clone().add(1, 'h');
+    const defaultStartHour = task ? task.startHour : defaultDate.hour();
+    const defaultEndHour = task ? task.endHour : defaultDate.clone().hour(defaultStartHour).add(1, 'h').hour();
     const [date, setDate] = React.useState(defaultDate);
-    const [startHour, setStartHour] = React.useState(defaultStartTime);
-    const [endHour, setEndHour] = React.useState(defaultEndTime);
-    const onChangeStartTime = (startMoment: moment.Moment) => {
-        if(startMoment.hour() >= endHour.hour()) {
-            setEndHour(startMoment.clone().add(1, 'h'));
+    const [startHour, setStartHour] = React.useState(defaultStartHour);
+    const [endHour, setEndHour] = React.useState(defaultEndHour);
+    const onChangeStartTime = (hour: number) => {
+        if (hour >= endHour) {
+            const newEndHour = date.clone().hour(hour).add(1, 'h').hour();
+            setEndHour(newEndHour === 0 ? 24 : newEndHour);
         }
-        setStartHour(startMoment);
+        setStartHour(hour);
     }
     const handleSubmit = (e: React.FormEvent) => onOk(getFormData<Task>(e));
-    const disabledHours = () => range(0, startHour.hour()+1);
     const handleDelete = () => task && onDelete(task.id);
     const footer = <>
             <Button key="back" htmlType="submit" form="task-form" disabled={isLoading}>확인</Button>
@@ -68,11 +68,11 @@ export const TaskModal: React.FC<Props> = (props: Props) => {
                     </Form.Item>
                     <Form.Item label="Start Date Time" >
                         <DatePicker allowClear={false} name="date" value={date} onChange={setDate} />
-                        <FormTimePicker name="startHour" allowClear={false} value={startHour} format={'HH'} onChange={onChangeStartTime} />
+                        <FormTimePicker name="startHour" value={startHour} disableHours={[24]} onChange={onChangeStartTime} />
                     </Form.Item>
                     <Form.Item label="End Date Time" >
                         <DatePicker allowClear={false} open={false} value={date}/>
-                        <FormTimePicker name="endHour" allowClear={false} value={endHour} format={'HH'} disabledHours={disabledHours} onChange={setEndHour} />
+                        <FormTimePicker name="endHour" value={endHour} disableHours={range(0, startHour + 1)} onChange={setEndHour} />
                     </Form.Item>
                 </Form>
             </Spin>

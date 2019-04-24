@@ -4,8 +4,22 @@ exports[`<FormTimePicker /> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
-    defaultValue={"2014-02-27T00:00:00.000Z"}
+    disableHours={
+        Array [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+          ]
+    }
     name="form-name"
+    value={10}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -27,30 +41,73 @@ ShallowWrapper {
           name="form-name"
           onChange={[Function]}
           type="string"
-          value=""
+          value={10}
 />,
-        <TimePicker
-          align={
-                    Object {
-                              "offset": Array [
-                                0,
-                                -2,
-                              ],
-                            }
+        <Dropdown
+          mouseEnterDelay={0.15}
+          mouseLeaveDelay={0.1}
+          overlay={
+                    <Unknown
+                              onClick={[Function]}
+                    >
+                              <MenuItem>
+                                        10
+                              </MenuItem>
+                              <MenuItem>
+                                        11
+                              </MenuItem>
+                              <MenuItem>
+                                        12
+                              </MenuItem>
+                              <MenuItem>
+                                        13
+                              </MenuItem>
+                              <MenuItem>
+                                        14
+                              </MenuItem>
+                              <MenuItem>
+                                        15
+                              </MenuItem>
+                              <MenuItem>
+                                        16
+                              </MenuItem>
+                              <MenuItem>
+                                        17
+                              </MenuItem>
+                              <MenuItem>
+                                        18
+                              </MenuItem>
+                              <MenuItem>
+                                        19
+                              </MenuItem>
+                              <MenuItem>
+                                        20
+                              </MenuItem>
+                              <MenuItem>
+                                        21
+                              </MenuItem>
+                              <MenuItem>
+                                        22
+                              </MenuItem>
+                              <MenuItem>
+                                        23
+                              </MenuItem>
+                              <MenuItem>
+                                        24
+                              </MenuItem>
+                    </Unknown>
           }
-          defaultValue={"2014-02-27T00:00:00.000Z"}
-          disabled={false}
-          disabledHours={undefined}
-          disabledMinutes={undefined}
-          disabledSeconds={undefined}
-          focusOnOpen={true}
-          hideDisabledOptions={false}
-          onChange={[Function]}
-          onOpenChange={[Function]}
-          open={false}
           placement="bottomLeft"
-          transitionName="slide-up"
-/>,
+          trigger={
+                    Array [
+                              "click",
+                            ]
+          }
+>
+          <Unknown>
+                    10
+          </Unknown>
+</Dropdown>,
       ],
     },
     "ref": null,
@@ -64,7 +121,7 @@ ShallowWrapper {
           "name": "form-name",
           "onChange": [Function],
           "type": "string",
-          "value": "",
+          "value": 10,
         },
         "ref": null,
         "rendered": null,
@@ -75,27 +132,101 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "align": Object {
-            "offset": Array [
-              0,
-              -2,
-            ],
-          },
-          "defaultValue": "2014-02-27T00:00:00.000Z",
-          "disabled": false,
-          "disabledHours": undefined,
-          "disabledMinutes": undefined,
-          "disabledSeconds": undefined,
-          "focusOnOpen": true,
-          "hideDisabledOptions": false,
-          "onChange": [Function],
-          "onOpenChange": [Function],
-          "open": false,
+          "children": <Unknown>
+            10
+</Unknown>,
+          "mouseEnterDelay": 0.15,
+          "mouseLeaveDelay": 0.1,
+          "overlay": <Unknown
+            onClick={[Function]}
+>
+            <MenuItem>
+                        10
+            </MenuItem>
+            <MenuItem>
+                        11
+            </MenuItem>
+            <MenuItem>
+                        12
+            </MenuItem>
+            <MenuItem>
+                        13
+            </MenuItem>
+            <MenuItem>
+                        14
+            </MenuItem>
+            <MenuItem>
+                        15
+            </MenuItem>
+            <MenuItem>
+                        16
+            </MenuItem>
+            <MenuItem>
+                        17
+            </MenuItem>
+            <MenuItem>
+                        18
+            </MenuItem>
+            <MenuItem>
+                        19
+            </MenuItem>
+            <MenuItem>
+                        20
+            </MenuItem>
+            <MenuItem>
+                        21
+            </MenuItem>
+            <MenuItem>
+                        22
+            </MenuItem>
+            <MenuItem>
+                        23
+            </MenuItem>
+            <MenuItem>
+                        24
+            </MenuItem>
+</Unknown>,
           "placement": "bottomLeft",
-          "transitionName": "slide-up",
+          "trigger": Array [
+            "click",
+          ],
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": 10,
+          },
+          "ref": null,
+          "rendered": 10,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "Group": [Function],
+            "__ANT_BUTTON": true,
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bwzfXH",
+              "isStatic": true,
+              "rules": Array [
+                "
+    width: 60px;
+    margin-left: 6px;
+",
+              ],
+            },
+            "displayName": "Styled(Button)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bwzfXH",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
         "type": [Function],
       },
     ],
@@ -113,30 +244,73 @@ ShallowWrapper {
             name="form-name"
             onChange={[Function]}
             type="string"
-            value=""
+            value={10}
 />,
-          <TimePicker
-            align={
-                        Object {
-                                    "offset": Array [
-                                      0,
-                                      -2,
-                                    ],
-                                  }
+          <Dropdown
+            mouseEnterDelay={0.15}
+            mouseLeaveDelay={0.1}
+            overlay={
+                        <Unknown
+                                    onClick={[Function]}
+                        >
+                                    <MenuItem>
+                                                10
+                                    </MenuItem>
+                                    <MenuItem>
+                                                11
+                                    </MenuItem>
+                                    <MenuItem>
+                                                12
+                                    </MenuItem>
+                                    <MenuItem>
+                                                13
+                                    </MenuItem>
+                                    <MenuItem>
+                                                14
+                                    </MenuItem>
+                                    <MenuItem>
+                                                15
+                                    </MenuItem>
+                                    <MenuItem>
+                                                16
+                                    </MenuItem>
+                                    <MenuItem>
+                                                17
+                                    </MenuItem>
+                                    <MenuItem>
+                                                18
+                                    </MenuItem>
+                                    <MenuItem>
+                                                19
+                                    </MenuItem>
+                                    <MenuItem>
+                                                20
+                                    </MenuItem>
+                                    <MenuItem>
+                                                21
+                                    </MenuItem>
+                                    <MenuItem>
+                                                22
+                                    </MenuItem>
+                                    <MenuItem>
+                                                23
+                                    </MenuItem>
+                                    <MenuItem>
+                                                24
+                                    </MenuItem>
+                        </Unknown>
             }
-            defaultValue={"2014-02-27T00:00:00.000Z"}
-            disabled={false}
-            disabledHours={undefined}
-            disabledMinutes={undefined}
-            disabledSeconds={undefined}
-            focusOnOpen={true}
-            hideDisabledOptions={false}
-            onChange={[Function]}
-            onOpenChange={[Function]}
-            open={false}
             placement="bottomLeft"
-            transitionName="slide-up"
-/>,
+            trigger={
+                        Array [
+                                    "click",
+                                  ]
+            }
+>
+            <Unknown>
+                        10
+            </Unknown>
+</Dropdown>,
         ],
       },
       "ref": null,
@@ -150,7 +324,7 @@ ShallowWrapper {
             "name": "form-name",
             "onChange": [Function],
             "type": "string",
-            "value": "",
+            "value": 10,
           },
           "ref": null,
           "rendered": null,
@@ -161,27 +335,101 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "align": Object {
-              "offset": Array [
-                0,
-                -2,
-              ],
-            },
-            "defaultValue": "2014-02-27T00:00:00.000Z",
-            "disabled": false,
-            "disabledHours": undefined,
-            "disabledMinutes": undefined,
-            "disabledSeconds": undefined,
-            "focusOnOpen": true,
-            "hideDisabledOptions": false,
-            "onChange": [Function],
-            "onOpenChange": [Function],
-            "open": false,
+            "children": <Unknown>
+              10
+</Unknown>,
+            "mouseEnterDelay": 0.15,
+            "mouseLeaveDelay": 0.1,
+            "overlay": <Unknown
+              onClick={[Function]}
+>
+              <MenuItem>
+                            10
+              </MenuItem>
+              <MenuItem>
+                            11
+              </MenuItem>
+              <MenuItem>
+                            12
+              </MenuItem>
+              <MenuItem>
+                            13
+              </MenuItem>
+              <MenuItem>
+                            14
+              </MenuItem>
+              <MenuItem>
+                            15
+              </MenuItem>
+              <MenuItem>
+                            16
+              </MenuItem>
+              <MenuItem>
+                            17
+              </MenuItem>
+              <MenuItem>
+                            18
+              </MenuItem>
+              <MenuItem>
+                            19
+              </MenuItem>
+              <MenuItem>
+                            20
+              </MenuItem>
+              <MenuItem>
+                            21
+              </MenuItem>
+              <MenuItem>
+                            22
+              </MenuItem>
+              <MenuItem>
+                            23
+              </MenuItem>
+              <MenuItem>
+                            24
+              </MenuItem>
+</Unknown>,
             "placement": "bottomLeft",
-            "transitionName": "slide-up",
+            "trigger": Array [
+              "click",
+            ],
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": 10,
+            },
+            "ref": null,
+            "rendered": 10,
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "Group": [Function],
+              "__ANT_BUTTON": true,
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bwzfXH",
+                "isStatic": true,
+                "rules": Array [
+                  "
+    width: 60px;
+    margin-left: 6px;
+",
+                ],
+              },
+              "displayName": "Styled(Button)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bwzfXH",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            },
+          },
           "type": [Function],
         },
       ],
