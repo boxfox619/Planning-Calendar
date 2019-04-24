@@ -2,6 +2,7 @@
   "name": "planning-calendar",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://boxfox619.github.io/Planning-Calendar/",
   "dependencies": {
     "@types/antd": "^1.0.0",
     "@types/axios": "^0.14.0",
@@ -31,7 +32,8 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "test:coverage": "npm test -- --coverage"
   },
   "devDependencies": {
     "@types/enzyme": "^3.9.1",
