@@ -23,7 +23,7 @@ export const DayBox: React.FC<Props> = (props: Props) => {
         <Day data-datetime={dateMoment.format()}>
             {dateMoment.date()}
             <div>
-                {sortedTask.map(task => ( <TaskItem key={task.id} taskId={task.id} name={task.name}/> ))}
+                {sortedTask.map(task => ( <TaskItem key={task.id} task={task}/> ))}
             </div>
         </Day>
     )

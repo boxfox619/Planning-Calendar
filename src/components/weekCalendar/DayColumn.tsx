@@ -45,7 +45,7 @@ export const DayColumn: React.FC<Props> = (props: Props) => {
             {tasks.map(task => {
                 const top = `${ 40 * task.startHour }px`;
                 const height = `${ 40 * (task.endHour - task.startHour) }px`;
-                return (<WeekTaskItem key={task.id} taskId={task.id} style={{ top, height }} name={task.name}/>)
+                return (<WeekTaskItem key={task.id} style={{ top, height }} task={task}/>)
             })}
         </DayColumnContainer>
     )

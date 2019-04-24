@@ -1,7 +1,9 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { Button } from 'antd';
+import { Button, Tooltip } from 'antd';
 import 'antd/lib/button/style/css';
+import 'antd/lib/tooltip/style/css';
+import { Task } from '../models';
 
 const TaskItemContainer = styled(Button)`
     width: 100%;
@@ -10,16 +12,18 @@ const TaskItemContainer = styled(Button)`
 `
 
 interface OwnProps {
-    taskId: number,
-    name: string
+    task: Task
 }
 
 type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
 
-export const TaskItem: React.FC<Props> = ({taskId, name, ...divProps}) => {
+export const TaskItem: React.FC<Props> = ({ task, ...divProps }) => {
+    const tooltip = `${task.date} ${task.startHour}시 ~ ${task.endHour}시`;
     return (
-        <TaskItemContainer {...divProps} data-taskid={taskId} draggable={true}>
-            {name}
-        </TaskItemContainer>
+        <Tooltip title={tooltip}>
+            <TaskItemContainer {...divProps} data-taskid={task.id} draggable={true}>
+                {task.name}
+            </TaskItemContainer>
+        </Tooltip>
     )
 }  

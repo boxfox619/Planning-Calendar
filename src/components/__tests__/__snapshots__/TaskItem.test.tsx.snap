@@ -4,8 +4,15 @@ exports[`<TaskItem /> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
-    name="일정 테스트"
-    taskId={123}
+    task={
+        Task {
+            "date": "2019-10-11",
+            "endHour": 3,
+            "id": 1,
+            "name": "이름",
+            "startHour": 2,
+          }
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -19,53 +26,34 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "class",
     "props": Object {
-      "children": "일정 테스트",
-      "data-taskid": 123,
-      "draggable": true,
+      "arrowPointAtCenter": false,
+      "autoAdjustOverflow": true,
+      "children": <Unknown
+        data-taskid={1}
+        draggable={true}
+>
+        이름
+</Unknown>,
+      "mouseEnterDelay": 0.1,
+      "mouseLeaveDelay": 0.1,
+      "placement": "top",
+      "title": "2019-10-11 2시 ~ 3시",
+      "transitionName": "zoom-big-fast",
     },
     "ref": null,
-    "rendered": "일정 테스트",
-    "type": Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "Group": [Function],
-      "__ANT_BUTTON": true,
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "sc-bdVaJa",
-        "isStatic": true,
-        "rules": Array [
-          "
-    width: 100%;
-    height: auto;
-    transition: none;
-",
-        ],
-      },
-      "displayName": "Styled(Button)",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "sc-bdVaJa",
-      "target": [Function],
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-      Symbol(Symbol.hasInstance): [Function],
-    },
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": "일정 테스트",
-        "data-taskid": 123,
+        "children": "이름",
+        "data-taskid": 1,
         "draggable": true,
       },
       "ref": null,
-      "rendered": "일정 테스트",
+      "rendered": "이름",
       "type": Object {
         "$$typeof": Symbol(react.forward_ref),
         "Group": [Function],
@@ -92,6 +80,69 @@ ShallowWrapper {
         "withComponent": [Function],
         Symbol(Symbol.hasInstance): [Function],
       },
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "arrowPointAtCenter": false,
+        "autoAdjustOverflow": true,
+        "children": <Unknown
+          data-taskid={1}
+          draggable={true}
+>
+          이름
+</Unknown>,
+        "mouseEnterDelay": 0.1,
+        "mouseLeaveDelay": 0.1,
+        "placement": "top",
+        "title": "2019-10-11 2시 ~ 3시",
+        "transitionName": "zoom-big-fast",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "이름",
+          "data-taskid": 1,
+          "draggable": true,
+        },
+        "ref": null,
+        "rendered": "이름",
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "Group": [Function],
+          "__ANT_BUTTON": true,
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "rules": Array [
+              "
+    width: 100%;
+    height: auto;
+    transition: none;
+",
+            ],
+          },
+          "displayName": "Styled(Button)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
