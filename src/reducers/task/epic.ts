@@ -4,8 +4,7 @@ import { concatMap, map, catchError, throttleTime, timeout, takeUntil } from 'rx
 import { ofType, combineEpics, StateObservable } from 'redux-observable';
 import * as TaskAction from './action';
 import * as TaskApi from '../../api/TaskApi';
-import { Task, ErrorMessage } from '../../models';
-import { TaskLookupRequest } from '../../models/request';
+import { Task, ErrorMessage, TaskLookupParam } from '../../models';
 import { StoreModel } from '../../models';
 
 const checkDuplicateTask = (tasks: Task[], task: Task) => {
@@ -18,7 +17,7 @@ const loadTaskEpic = (
     action: Observable<BaseAction>
 ): Observable<any> => action.pipe(
     ofType(TaskAction.LOAD),
-    concatMap(($action: Action<TaskLookupRequest>) => concat(
+    concatMap(($action: Action<TaskLookupParam>) => concat(
         of(TaskAction.startedLoadTasks()),
         from(TaskApi.loadTasks($action.payload.year, $action.payload.month)).pipe(
             timeout(15000),

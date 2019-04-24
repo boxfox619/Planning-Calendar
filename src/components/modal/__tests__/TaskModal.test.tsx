@@ -26,22 +26,22 @@ describe('<TaskModal />', () => {
 });
 
 describe('<TaskModal task={task}/>', () => {
-    let component = null;
+    let wrapper = null;
     const okMock = jest.fn();
     const cancelMock = jest.fn();
     const deleteMock = jest.fn();
     const task = new Task(1, '귤 까기01', '2014-02-10', 1, 3);
 
     it('renders correctly', () => {
-        component = Enzyme.shallow(<TaskModal target={task} onOk={okMock} onCancel={cancelMock} onDelete={deleteMock} isLoading={false}/>);
+        wrapper = Enzyme.shallow(<TaskModal target={task} onOk={okMock} onCancel={cancelMock} onDelete={deleteMock} isLoading={false}/>);
     });
 
     it('should match snapshot', () => {
-        expect(component).toMatchSnapshot();
+        expect(wrapper).toMatchSnapshot();
     });
 
     it('should modal props button', () => {
-        expect(component.find('Modal').props().footer).toBeDefined();
+        expect(wrapper.find('Modal').props().footer).toBeDefined();
     });
 
 });
