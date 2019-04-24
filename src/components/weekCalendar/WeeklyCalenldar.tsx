@@ -43,7 +43,7 @@ export const WeeklyCalendar: React.FC<Props> = (props: Props) => {
     const restWeek = currentMoment.clone().startOf('week');
     const dates = range(0, daysInWeek).map((i) => restWeek.clone().add(i, 'd'));
     const columns = dates.map(m => {
-        const filteredTasks = tasks.filter(task => isMatchDate(moment(task.date), m));
+        const filteredTasks = tasks.filter(task => isMatchDate(moment.parseZone(task.date), m));
         return (<DayColumn key={m.toString()} dateMoment={m} tasks={filteredTasks}/>);
     });
     return (

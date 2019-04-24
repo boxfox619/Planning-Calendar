@@ -20,7 +20,7 @@ export const DayBox: React.FC<Props> = (props: Props) => {
     const { dateMoment, tasks } = props;
     const sortedTask = tasks.sort((task1: Task, task2: Task) => (task1.startHour >= task2.startHour) ? 1 : -1);
     return (
-        <Day data-datetime={dateMoment.toISOString()}>
+        <Day data-datetime={dateMoment.format()}>
             {dateMoment.date()}
             <div>
                 {sortedTask.map(task => ( <TaskItem key={task.id} taskId={task.id} name={task.name}/> ))}

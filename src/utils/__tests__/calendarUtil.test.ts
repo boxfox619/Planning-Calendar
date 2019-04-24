@@ -4,7 +4,7 @@ import * as moment from 'moment';
 import { CalendarMode } from '../../models';
 
 describe('calendar util', () => {
-    const testMoment = moment('2014-02-27T10:00:00.000Z');
+    const testMoment = moment.parseZone('2014-02-27T00:00:00Z');
 
     it('week number of month : 4', () => {
         const weekOfMonth = calendarUtil.weekOfMonth(testMoment);
@@ -16,10 +16,10 @@ describe('calendar util', () => {
         const prevMonth = calendarUtil.calMoment(testMoment, CalendarMode.Month, -2);
         const nextWeek = calendarUtil.calMoment(testMoment, CalendarMode.Week, 1);
         const prevWeek = calendarUtil.calMoment(testMoment, CalendarMode.Week, -2);
-        expect(nextMonth.toISOString()).toBe('2014-03-27T10:00:00.000Z');
-        expect(prevMonth.toISOString()).toBe('2013-12-27T10:00:00.000Z');
-        expect(nextWeek.toISOString()).toBe('2014-03-06T10:00:00.000Z');
-        expect(prevWeek.toISOString()).toBe('2014-02-13T10:00:00.000Z');
+        expect(nextMonth.format()).toBe('2014-03-27T00:00:00Z');
+        expect(prevMonth.format()).toBe('2013-12-27T00:00:00Z');
+        expect(nextWeek.format()).toBe('2014-03-06T00:00:00Z');
+        expect(prevWeek.format()).toBe('2014-02-13T00:00:00Z');
     });
 
     it('to match day count of week : 7', () => {

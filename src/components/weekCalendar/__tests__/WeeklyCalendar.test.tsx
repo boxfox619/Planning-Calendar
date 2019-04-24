@@ -7,7 +7,7 @@ import { DayColumn } from '../DayColumn';
 import { countDaysInWeek } from '../../../utils/calendarUtil';
 
 describe('<WeeklyCalendar />', () => {
-    const testMoment = moment('2014-02-27T10:00:00.000Z');
+    const testMoment = moment.parseZone('2014-02-27T00:00:00Z');
     const daysInWeek = countDaysInWeek(testMoment);
     const tasks = [
         new Task(1, '귤 까기10', '2014-02-10', 2, 4),

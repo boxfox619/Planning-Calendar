@@ -35,7 +35,7 @@ export const TaskModal: React.FC<Props> = (props: Props) => {
     const { target, isLoading, onOk, onCancel, onDelete } = props;
     const time = (moment.isMoment(target)) ? target : undefined;
     const task = (!time) ? target as Task : undefined; 
-    const defaultDate = task ? moment(task.date) : (time ? time : moment());
+    const defaultDate = task ? moment.parseZone(task.date) : (time ? time : moment());
     const defaultStartTime = defaultDate.clone().hour(task ? task.startHour : defaultDate.hour());
     const defaultEndTime = task ? defaultStartTime.clone().hour(task.endHour) : defaultStartTime.clone().add(1, 'h');
     const [date, setDate] = React.useState(defaultDate);

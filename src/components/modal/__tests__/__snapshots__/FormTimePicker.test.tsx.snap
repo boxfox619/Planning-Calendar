@@ -4,7 +4,7 @@ exports[`<FormTimePicker /> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
-    defaultValue={"2014-02-27T10:00:00.000Z"}
+    defaultValue={"2014-02-27T00:00:00.000Z"}
     name="form-name"
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -38,7 +38,7 @@ ShallowWrapper {
                               ],
                             }
           }
-          defaultValue={"2014-02-27T10:00:00.000Z"}
+          defaultValue={"2014-02-27T00:00:00.000Z"}
           disabled={false}
           disabledHours={undefined}
           disabledMinutes={undefined}
@@ -81,7 +81,7 @@ ShallowWrapper {
               -2,
             ],
           },
-          "defaultValue": "2014-02-27T10:00:00.000Z",
+          "defaultValue": "2014-02-27T00:00:00.000Z",
           "disabled": false,
           "disabledHours": undefined,
           "disabledMinutes": undefined,
@@ -124,7 +124,7 @@ ShallowWrapper {
                                     ],
                                   }
             }
-            defaultValue={"2014-02-27T10:00:00.000Z"}
+            defaultValue={"2014-02-27T00:00:00.000Z"}
             disabled={false}
             disabledHours={undefined}
             disabledMinutes={undefined}
@@ -167,7 +167,7 @@ ShallowWrapper {
                 -2,
               ],
             },
-            "defaultValue": "2014-02-27T10:00:00.000Z",
+            "defaultValue": "2014-02-27T00:00:00.000Z",
             "disabled": false,
             "disabledHours": undefined,
             "disabledMinutes": undefined,

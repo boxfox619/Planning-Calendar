@@ -4,7 +4,7 @@ exports[`<DayBox /> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
-    dateMoment={"2014-02-27T10:00:00.000Z"}
+    dateMoment={"2014-02-27T00:00:00.000Z"}
     tasks={
         Array [
             Task {
@@ -84,7 +84,7 @@ ShallowWrapper {
           />
 </div>,
       ],
-      "data-datetime": "2014-02-27T10:00:00.000Z",
+      "data-datetime": "2014-02-27T00:00:00Z",
     },
     "ref": null,
     "rendered": Array [
@@ -237,7 +237,7 @@ ShallowWrapper {
             />
 </div>,
         ],
-        "data-datetime": "2014-02-27T10:00:00.000Z",
+        "data-datetime": "2014-02-27T00:00:00Z",
       },
       "ref": null,
       "rendered": Array [
