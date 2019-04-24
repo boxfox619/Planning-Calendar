@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { CalendarMode } from '../models/CalendarMode';
 import { Moment } from 'moment';
 import { weekOfMonth, calMoment } from '../utils/calendarUtil';
-import { Button } from 'antd';
+import { Icon } from 'antd';
 import { CalendarModeDropdown } from './CalendarModeDropdown';
 import 'antd/lib/button/style/css';
 
@@ -37,9 +37,9 @@ export const CalendarController: React.FC<Props> = (props: Props) => {
 
     return (
         <Container {...divProps}>
-            <Button onClick={handlePrev} shape="circle" icon="left" />
-            <Button onClick={handleNext} shape="circle" icon="right" />
+            <Icon type="left" onClick={handlePrev}/>
             <Label>{label}</Label>
+            <Icon type="right" onClick={handleNext}/>
             <CalendarModeDropdown onChangeMode={onChangeMode} currentMode={mode} />
         </Container>
     )

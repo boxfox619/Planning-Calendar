@@ -1,4 +1,14 @@
 * { padding: 0; margin: 0; border: 0; } 
+
+.ant:focus, .ant:hover {
+  color: #FFCD02 !important;
+  border-color: #FFCD02 !important;
+}
+
+.ant-dropdown-menu-item:hover {
+  background-color: #FFCD02 !important;
+}
+
 body {
   margin: 0;
   padding: 0;

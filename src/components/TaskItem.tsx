@@ -21,7 +21,7 @@ export const TaskItem: React.FC<Props> = ({ task, ...divProps }) => {
     const tooltip = `${task.date} ${task.startHour}시 ~ ${task.endHour}시`;
     return (
         <Tooltip title={tooltip}>
-            <TaskItemContainer {...divProps} data-taskid={task.id} draggable={true}>
+            <TaskItemContainer {...divProps} className="ant" data-taskid={task.id} draggable={true}>
                 {task.name}
             </TaskItemContainer>
         </Tooltip>

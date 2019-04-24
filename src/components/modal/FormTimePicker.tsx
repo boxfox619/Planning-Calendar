@@ -6,14 +6,20 @@ import 'antd/lib/menu/style/css';
 import { range } from 'lodash';
 import { ClickParam } from 'antd/lib/menu';
 
+const Label = styled.span`
+    margin-left: 10px;
+`
+
 const TimePickerMenu = styled(Menu)`
     max-height: 200px;
     overflow: scroll;
 `;
 
 const TimePickerButton = styled(Button)`
-    width: 60px;
+    text-align: center;
+    width: 40px;
     margin-left: 6px;
+    padding: 0;
 `
 
 interface Props {
@@ -42,6 +48,7 @@ export const FormTimePicker: React.FC<Props> = ({name, value = 0, onChange, disa
     React.useEffect(() => setTime(value), [value]);
     return (
         <>
+            <Label>{time > 12 ? '오후' : '오전'}</Label>
             <input name={name} type="string" hidden={true} value={time} onChange={handleTextChange} />
             <Dropdown overlay={menu} trigger={['click']}>
                 <TimePickerButton>
