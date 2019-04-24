@@ -60,7 +60,11 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        27,
+        <Unknown
+          active={undefined}
+>
+          27
+</Unknown>,
         <div>
           <Unknown
                     task={
@@ -123,7 +127,41 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      27,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "active": undefined,
+          "children": 27,
+        },
+        "ref": null,
+        "rendered": 27,
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": false,
+            "rules": Array [
+              "
+    display: inline-block;
+    ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -308,7 +346,11 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          27,
+          <Unknown
+            active={undefined}
+>
+            27
+</Unknown>,
           <div>
             <Unknown
                         task={
@@ -371,7 +413,41 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        27,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "active": undefined,
+            "children": 27,
+          },
+          "ref": null,
+          "rendered": 27,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-htpNat",
+              "isStatic": false,
+              "rules": Array [
+                "
+    display: inline-block;
+    ",
+                [Function],
+                "
+",
+              ],
+            },
+            "displayName": "styled.span",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-htpNat",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
         Object {
           "instance": null,
           "key": undefined,

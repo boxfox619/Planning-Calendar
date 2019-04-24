@@ -40,7 +40,7 @@ export const TaskModal: React.FC<Props> = (props: Props) => {
     const defaultEndHour = task ? task.endHour : defaultDate.clone().hour(defaultStartHour).add(1, 'h').hour();
     const [date, setDate] = React.useState(defaultDate);
     const [startHour, setStartHour] = React.useState(defaultStartHour);
-    const [endHour, setEndHour] = React.useState(defaultEndHour);
+    const [endHour, setEndHour] = React.useState(defaultEndHour === 0 ? 24 : defaultEndHour);
     const onChangeStartTime = (hour: number) => {
         if (hour >= endHour) {
             const newEndHour = date.clone().hour(hour).add(1, 'h').hour();

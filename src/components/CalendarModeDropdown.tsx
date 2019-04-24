@@ -21,7 +21,7 @@ export const CalendarModeDropdown: React.FC<Props> = (props: Props) => {
         </Menu>
     )
     return ( 
-        <Dropdown overlay={menu} className="ant">
+        <Dropdown overlay={menu}>
             <Button style={{ marginLeft: 8 }}>
                 <span>{props.currentMode}</span> <Icon type="down" />
             </Button>

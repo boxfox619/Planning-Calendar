@@ -67,6 +67,17 @@ ShallowWrapper {
     width: 100%;
     height: auto;
     transition: none;
+    transition: background-color 0.5s linear;
+    font-weight: bold;
+    &:focus, &:hover {
+        color: #fff !important;
+        background-color: ",
+            "#FFCD02",
+            " !important;
+        border-color: ",
+            "#FFCD02",
+            " !important;
+    }
 ",
           ],
         },
@@ -128,6 +139,17 @@ ShallowWrapper {
     width: 100%;
     height: auto;
     transition: none;
+    transition: background-color 0.5s linear;
+    font-weight: bold;
+    &:focus, &:hover {
+        color: #fff !important;
+        background-color: ",
+              "#FFCD02",
+              " !important;
+        border-color: ",
+              "#FFCD02",
+              " !important;
+    }
 ",
             ],
           },

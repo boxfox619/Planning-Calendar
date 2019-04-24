@@ -44,10 +44,12 @@ type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
 
 export const MonthCalendar: React.FC<Props> = (props: Props) => {
     const {currentMoment, tasks, ...divProps} = props;
+    const todayMoment = moment();
 
     const createDayBox = (dayMoment: moment.Moment) => {
         const filteredTasks = tasks.filter(task => isMatchDate(moment.parseZone(task.date), dayMoment));
-        return (<DayBox key={dayMoment.toString()} dateMoment={dayMoment} tasks={filteredTasks} />)
+        const isToday = isMatchDate(todayMoment, dayMoment);
+        return (<DayBox key={dayMoment.toString()} isToday={isToday} dateMoment={dayMoment} tasks={filteredTasks} />)
     };
 
     const prevMoment = calMoment(currentMoment, CalendarMode.Month, -1);

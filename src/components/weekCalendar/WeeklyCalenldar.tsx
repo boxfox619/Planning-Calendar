@@ -6,6 +6,7 @@ import { DayColumn } from './DayColumn';
 import { range } from 'lodash';
 import { DayOfWeekHeader } from '../DayOfWeekHeader';
 import { countDaysInWeek, isMatchDate } from '../../utils/calendarUtil';
+import { PRIMARY_COLOR } from '../../common/constants';
 
 const Container = styled.div`
     text-align: center;
@@ -38,6 +39,7 @@ type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
 
 export const WeeklyCalendar: React.FC<Props> = (props: Props) => {
     const { currentMoment, tasks, ...divProps } = props;
+    const todayMoment = moment();
     const hours = currentMoment.clone().endOf('day').hour();
     const daysInWeek = countDaysInWeek(currentMoment);
     const restWeek = currentMoment.clone().startOf('week');
@@ -49,7 +51,11 @@ export const WeeklyCalendar: React.FC<Props> = (props: Props) => {
     return (
         <Container {...divProps}>
             <DayOfWeekHeader />
-            <DateHeader>{dates.map(m => <div key={m.date()}>{m.date()}</div>)}</DateHeader>
+            <DateHeader>
+                {dates.map(m => (
+                    <div key={m.date()} style={{color: isMatchDate(todayMoment, m) ? PRIMARY_COLOR : ''}}>{m.date()}</div>
+                ))}
+            </DateHeader>
             <Context>
                 <TimeContainer>
                     {range(1, hours + 1).map(time => <div key={time} style={{height: '40px'}}>{time} 시</div>)}
