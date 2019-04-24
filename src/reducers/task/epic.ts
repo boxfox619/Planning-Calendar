@@ -23,7 +23,7 @@ const loadTaskEpic = (
         from(TaskApi.loadTasks($action.payload.year, $action.payload.month)).pipe(
             timeout(15000),
             map((tasks: Task[]) => TaskAction.successedLoadTasks(tasks)),
-            catchError((err: Error) => of(TaskAction.failedLoadTasks())),
+            catchError((err: Error) => of(TaskAction.failedLoadTasks(new ErrorMessage('문제가 발생했습니다', '')))),
             takeUntil(action.pipe(ofType(TaskAction.LOAD)))
             )
         )
@@ -45,7 +45,7 @@ const createTaskEpic = (
             from(TaskApi.createTask($action.payload)).pipe(
                 timeout(15000),
                 map((task: Task) => TaskAction.successedCreateTask(task)),
-                catchError(error => of(TaskAction.failedUpdateTask(error)))
+                catchError(error => of(TaskAction.failedUpdateTask(new ErrorMessage('문제가 발생했습니다', ''))))
             )
         )
     })
@@ -65,7 +65,7 @@ const updateTaskEpic = (
         from(TaskApi.updateTask($action.payload)).pipe(
             timeout(15000),
             map(() => TaskAction.successedEditTask($action.payload)),
-            catchError(error => of(TaskAction.failedUpdateTask(error)))
+            catchError(error => of(TaskAction.failedUpdateTask(new ErrorMessage('문제가 발생했습니다', ''))))
         )
     )}
     )
@@ -80,7 +80,7 @@ const deleteTaskEpic = (
         from(TaskApi.deleteTask($action.payload)).pipe(
             timeout(15000),
             map(() => TaskAction.successedDeleteTask($action.payload)),
-            catchError(error => of(TaskAction.failedUpdateTask(error)))
+            catchError(error => of(TaskAction.failedUpdateTask(new ErrorMessage('문제가 발생했습니다', ''))))
         )
     ))
 );
