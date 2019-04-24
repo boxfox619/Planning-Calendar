@@ -53,7 +53,7 @@ describe('counter', () => {
       });
   
       it('should loading = false, loaded = false', () => {
-        state = reducer(state, Action.failedLoadTasks());
+        state = reducer(state, Action.failedLoadTasks(errorMessage));
         expect(state).toHaveProperty('isTaskLoading', false);
         expect(state).toHaveProperty('isTaskLoaded', false);
       });
