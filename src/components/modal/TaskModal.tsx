@@ -63,14 +63,14 @@ export const TaskModal: React.FC<Props> = (props: Props) => {
             visible={true}>
             <Spin spinning={isLoading}>
                 <Form id="task-form" {...formItemLayout} onSubmit={handleSubmit}>
-                    <Form.Item label="Task Name" >
+                    <Form.Item label="작업 이름" >
                         <Input name="name" defaultValue={task ? task.name : ''} required={true} />
                     </Form.Item>
-                    <Form.Item label="Start Date Time" >
+                    <Form.Item label="시작 일시" >
                         <DatePicker allowClear={false} name="date" value={date} onChange={setDate} />
                         <FormTimePicker name="startHour" value={startHour} disableHours={[24]} onChange={onChangeStartTime} />
                     </Form.Item>
-                    <Form.Item label="End Date Time" >
+                    <Form.Item label="종료 일시" >
                         <DatePicker allowClear={false} open={false} value={date}/>
                         <FormTimePicker name="endHour" value={endHour} disableHours={range(0, startHour + 1)} onChange={setEndHour} />
                     </Form.Item>

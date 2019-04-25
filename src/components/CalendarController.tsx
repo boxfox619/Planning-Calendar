@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { CalendarMode } from '../models/CalendarMode';
-import { Moment } from 'moment';
+import * as moment from 'moment';
 import { weekOfMonth, calMoment } from '../utils/calendarUtil';
 import { Icon } from 'antd';
 import { CalendarModeDropdown } from './CalendarModeDropdown';
@@ -24,10 +24,10 @@ const DropdownContainer = styled.div`
 Label.displayName = 'Label';
 
 interface OwnProps {
-    currentMoment: Moment,
+    currentMoment: moment.Moment,
     mode: CalendarMode,
     onChangeMode: (mode: CalendarMode) => void,
-    onChangeMoment: (newMoment: Moment) => void,
+    onChangeMoment: (newMoment: moment.Moment) => void,
 }
 
 type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
@@ -42,11 +42,11 @@ export const CalendarController: React.FC<Props> = (props) => {
 
     const handleNext = () => onChangeMoment(calMoment(currentMoment, mode, 1));
     const handlePrev = () => onChangeMoment(calMoment(currentMoment, mode, -1));
-
+    const clearMoment = () => onChangeMoment(moment());
     return (
         <Container {...divProps}>
             <Icon type="left" onClick={handlePrev} style={{ marginRight: '10px' }} />
-            <Label>{label}</Label>
+            <Label onClick={clearMoment}>{label}</Label>
             <Icon type="right" onClick={handleNext} style={{ marginLeft: '10px' }} />
             <DropdownContainer>
                 <CalendarModeDropdown onChangeMode={onChangeMode} currentMode={mode} />

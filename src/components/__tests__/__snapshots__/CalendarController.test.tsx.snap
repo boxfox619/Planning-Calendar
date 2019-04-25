@@ -33,7 +33,9 @@ ShallowWrapper {
           }
           type="left"
 />,
-        <Unknown>
+        <Unknown
+          onClick={[Function]}
+>
           2014년 / 2월
 </Unknown>,
         <Icon
@@ -76,6 +78,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": "2014년 / 2월",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "2014년 / 2월",
@@ -205,7 +208,9 @@ ShallowWrapper {
             }
             type="left"
 />,
-          <Unknown>
+          <Unknown
+            onClick={[Function]}
+>
             2014년 / 2월
 </Unknown>,
           <Icon
@@ -248,6 +253,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": "2014년 / 2월",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "2014년 / 2월",
