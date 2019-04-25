@@ -4,7 +4,7 @@
 ## 프로젝트 실행 방법
 아래 명령어 또는 페이지 접속 [https://boxfox619.github.io/Planning-Calendar/](https://boxfox619.github.io/Planning-Calendar/)
 ```
-npm run start
+npm start
 ```
 #### 주의사항
 - 초기 접속시 github pages 에러로 인해 페이지가 안나오는 경우 발생 -> 새로고침 해주시면 됩니다.
@@ -54,6 +54,17 @@ npm run start
 ### API document
 [Swagger](https://app.swaggerhub.com/apis-docs/boxfox619/Planning-Calendar/1.0.0)
 
+### Database schema
+```
+create table task(
+ id SERIAL PRIMARY KEY,
+ name varchar NOT NULL,
+ day date NOT NULL,
+ startHour smallint NOT NULL,
+ endHour smallint NOT NULL
+);
+```
+
 ## Requirements
 - 사용자는 월별/주별로 등록된 일정을 확인할 수 있다.
 - 각 일정 추가 및 변경 시 다른 일정과의 데이터 검증을 하며 시간 중복 시 오류를 표시한다.
@@ -89,7 +100,7 @@ npm run start
  - 주간 캘린더
     - 선택된 주가 첫번째 주라면 월간 캘린더와 같이 이전달의 날짜렌더링
     - 선택된 주가 마지막 주리면 월간 캘린더와 같이 이전달의 날짜렌더링
-    - 0~24시까지 고정된 높이의 cell을 렌더링하고 일정 컴포넌트의 style중 height를 cell 높이 * (종료시간 - 시작시간), top을 cell 높이 * 시작시간으로 계산하여 렌더링
+    - 0~24시까지 고정된 높이의 cell을 렌더링하고 일정 컴포넌트의 style 속성 중 height를 cell 높이 * (종료시간 - 시작시간)로 top을 cell 높이 * 시작시간으로 계산하여 렌더링
  - drag-n-drop은 라이브러리 없이 구현
     - onDrop, onDragOver, onDragStart 이벤트와 draggable 속성을 통해 컴포넌트 드래깅
  - 코드 품질 관리, github pages 지속적 배포를 위해 travis, coveralls 사용
