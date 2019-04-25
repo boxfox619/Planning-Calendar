@@ -11,7 +11,7 @@ interface Props {
     onChangeMode: (mode: CalendarMode) => void
 }
 
-export const CalendarModeDropdown: React.FC<Props> = (props: Props) => {
+export const CalendarModeDropdown: React.FC<Props> = (props) => {
     const handleChangeMode = (e: ClickParam) => props.onChangeMode(CalendarMode[e.key]);
     const menu = (
         <Menu onClick={handleChangeMode}>
@@ -20,7 +20,7 @@ export const CalendarModeDropdown: React.FC<Props> = (props: Props) => {
             ))}
         </Menu>
     )
-    return ( 
+    return (
         <Dropdown overlay={menu}>
             <Button style={{ marginLeft: 8 }}>
                 <span>{props.currentMode}</span> <Icon type="down" />

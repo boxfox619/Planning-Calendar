@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 import { TaskModal } from '../components/modal/TaskModal';
 import * as TaskAction from './../reducers/task/action';
 import * as moment from 'moment';
-import { Calendar } from './Calendar';
+import { Calendar } from '../components/Calendar';
 import {notification } from 'antd';
 import styled from 'styled-components';
 import 'antd/lib/notification/style/css';

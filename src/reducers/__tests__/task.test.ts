@@ -12,7 +12,7 @@ describe('counter', () => {
         const expectedActions =[
           { type: Action.LOAD, payload: loadTaskReq },
           { type: Action.LOAD_STARTED },
-          { type: Action.LOAD_FAILED },
+          { type: Action.LOAD_FAILED, payload: errorMessage},
           { type: Action.LOAD_SUCCESSED, payload: [task] },
           { type: Action.CREATE, payload: newTask },
           { type: Action.EDIT, payload: newTask },
@@ -26,7 +26,7 @@ describe('counter', () => {
         const actions = [
           Action.loadTasks(loadTaskReq),
           Action.startedLoadTasks(),
-          Action.failedLoadTasks(),
+          Action.failedLoadTasks(errorMessage),
           Action.successedLoadTasks([task]),
           Action.createTask(newTask),
           Action.editTask(newTask),
@@ -53,7 +53,7 @@ describe('counter', () => {
       });
   
       it('should loading = false, loaded = false', () => {
-        state = reducer(state, Action.failedLoadTasks());
+        state = reducer(state, Action.failedLoadTasks(errorMessage));
         expect(state).toHaveProperty('isTaskLoading', false);
         expect(state).toHaveProperty('isTaskLoaded', false);
       });

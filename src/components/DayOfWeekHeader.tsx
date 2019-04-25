@@ -12,7 +12,7 @@ const Header = styled.div`
 `
 type Props = React.HTMLAttributes<HTMLDivElement>;
 
-export const DayOfWeekHeader: React.FC<Props> = (props: Props) => {
+export const DayOfWeekHeader: React.FC<Props> = (props) => {
     return (
         <Header {...props}>
             {WEEK_DAYS.map(name => (<div key={name}>{name}</div>))}

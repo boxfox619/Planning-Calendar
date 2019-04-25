@@ -4,7 +4,6 @@ import {GlobalStyle} from './common/globalStyle';
 import App from './containers/App';
 import {initApi} from './api';
 import {createReduxStore} from './common/store';
-import registerServiceWorker from './registerServiceWorker';
 
 initApi();
 const store = createReduxStore();
@@ -15,4 +14,3 @@ ReactDOM.render(
   </>,
   document.getElementById('root') as HTMLElement
 );
-registerServiceWorker();

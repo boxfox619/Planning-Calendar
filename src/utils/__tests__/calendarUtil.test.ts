@@ -1,4 +1,3 @@
-import { createReduxStore } from '../../common/store';
 import * as calendarUtil from '../calendarUtil';
 import * as moment from 'moment';
 import { CalendarMode } from '../../models';

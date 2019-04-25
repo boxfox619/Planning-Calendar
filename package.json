@@ -51,5 +51,13 @@
     "enzyme-adapter-react-16": "^1.12.1",
     "gh-pages": "^2.0.1",
     "typescript": "^3.4.4"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/index.tsx",
+      "!src/common/globalStyle.ts",
+      "!src/api/*.ts"
+    ]
   }
 }
