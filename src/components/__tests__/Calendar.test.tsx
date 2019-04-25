@@ -49,7 +49,7 @@ describe('<Calendar />', () => {
 
     it('should update task when drop', () => {
         expect(component.find('Container').length).toBe(1);
-        const mockEvent = { dataTransfer: { getData: (key: string) => key === 'taskId' ? task.id : testMoment.toISOString() }, target: { dataset: { taskid: task.id } } };
+        const mockEvent = { dataTransfer: { getData: (key: string) => key === 'taskId' ? task.id : testMoment.toISOString() }, target: { dataset: {  } } };
         component.find('Container').at(0).simulate('drop', mockEvent);
         expect(updateMock.mock.calls.length).toBe(1);
         expect(updateMock.mock.calls[0][0].date).toBe('2014-02-27');

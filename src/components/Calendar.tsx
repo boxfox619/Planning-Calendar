@@ -45,18 +45,24 @@ export const Calendar: React.FC<Props> = ({ currentMoment, mode, tasks, onSelect
         const dropTaskId = (e.target as HTMLElement).dataset.taskid;
         const dropTask = tasks.find(t => t.id === Number(dropTaskId));
         const currentTask = tasks.find(t => t.id === Number(taskId));
-        if (!currentTask) {
+        if (!currentTask || !(!!dropTask || !!datetime)) {
             return;
         }
-        const newTask = { ...currentTask };
-        if (datetime) {
-            const date = moment.parseZone(datetime).format('YYYY-MM-DD');
-            const hour = moment.parseZone(datetime).hour();
-            newTask.date = date;
-            newTask.endHour += hour - newTask.startHour;
-            newTask.startHour = hour;
-        } else if (dropTask) {
+        const newTask = { ...currentTask, startHour: Number(currentTask.startHour), endHour: Number(currentTask.endHour) };
+        if (!!dropTask) {
             newTask.date = dropTask.date;
+            onUpdate(newTask);
+            return;
+        }
+        newTask.date = moment.parseZone(datetime).format('YYYY-MM-DD');
+        if (mode === CalendarMode.Week) {
+            const hour = moment.parseZone(datetime).hour();
+            newTask.endHour = newTask.endHour + hour - newTask.startHour;
+            newTask.startHour = hour;
+        }
+        if(newTask.endHour > 24) {
+            newTask.startHour = newTask.startHour - (newTask.endHour - 24);
+            newTask.endHour = 24;
         }
         onUpdate(newTask);
     };
