@@ -65,6 +65,7 @@ export const Calendar: React.FC<Props> = ({ currentMoment, mode, tasks, onSelect
         if (target.dataset.datetime) {
             e.dataTransfer.setData('datetime', target.dataset.datetime);
         }
+        e.preventDefault();
     }
 
     return (

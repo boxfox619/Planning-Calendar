@@ -40,7 +40,7 @@ describe('<Calendar />', () => {
     it('should handle dragover', () => {
         expect(component.find('Container').length).toBe(1);
         const dataTransferMock = jest.fn();
-        const mockEvent = { dataTransfer: { setData: dataTransferMock }, target: { dataset: { datetime: testMoment.toISOString() } } };
+        const mockEvent = { dataTransfer: { setData: dataTransferMock }, target: { dataset: { datetime: testMoment.toISOString() } }, preventDefault: () => {} };
         component.find('Container').at(0).simulate('dragOver', mockEvent);
         expect(dataTransferMock.mock.calls.length).toBe(1);
         expect(dataTransferMock.mock.calls[0][0]).toBe('datetime');
