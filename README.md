@@ -15,15 +15,15 @@ npm start
 - React v16
 - Typescript
 
-### Product Structure
+### Project Structure
 ```
-├─api // network api
-├─common // 공통적으로 사용되는 모듈
-├─components // store state를 직접적으로 사용하지 않는 컴포넌트
-├─containers // store state를 직접적으로 사용하는 컨테이너
-├─models // interface, payload, model 이 정의된 디렉토리
-├─reducers // redux store, action, redux-observable의 epic 정의
-└─utils // 유틸리티 모듈
+├─api           // network api
+├─common        // 공통적으로 사용되는 모듈
+├─components    // store state를 직접적으로 사용하지 않는 컴포넌트
+├─containers    // store state를 직접적으로 사용하는 컨테이너
+├─models        // interface, payload, model 이 정의된 디렉토리
+├─reducers      // redux store, action, redux-observable의 epic 정의
+└─utils         // 유틸리티 모듈
 ```
 ### Dependencies
 | dependencies | version |
