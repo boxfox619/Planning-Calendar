@@ -7,7 +7,7 @@ import * as TaskApi from '../../api/TaskApi';
 import { Task, ErrorMessage, TaskLookupParam } from '../../models';
 import { StoreModel } from '../../models';
 
-const checkDuplicateTask = (tasks: Task[], task: Task) => {
+const checkValidTask = (tasks: Task[], task: Task) => {
     const checkRange = (t: Task, hour: number) => t.startHour < hour && t.endHour > hour;
     const compareTask = (task1: Task, task2: Task) => checkRange(task1, task2.startHour) || checkRange(task1, task2.endHour);
     return !!tasks.filter(t => t.id !== task.id ).find(t => (compareTask(t, task) || compareTask(task, t)) && task.date === t.date);
@@ -16,7 +16,7 @@ const duplicateError = (task: Task) => of(TaskAction.failedUpdateTask(new ErrorM
 
 const loadTaskEpic = (
     action: Observable<BaseAction>
-): Observable<any> => action.pipe(
+): Observable<Action<any>> => action.pipe(
     ofType(TaskAction.LOAD),
     concatMap(($action: Action<TaskLookupParam>) => concat(
         of(TaskAction.startedLoadTasks()),
@@ -33,11 +33,11 @@ const loadTaskEpic = (
 const createTaskEpic = (
     action: Observable<BaseAction>,
     store: StateObservable<StoreModel>
-): Observable<any> => action.pipe(
+): Observable<Action<any>> => action.pipe(
     ofType(TaskAction.CREATE),
     throttleTime(3000),
     concatMap(($action: Action<Task>) => {
-        if(checkDuplicateTask(store.value.task.tasks, $action.payload)){
+        if(checkValidTask(store.value.task.tasks, $action.payload)){
             return duplicateError($action.payload);
         }
         return concat(
@@ -54,10 +54,10 @@ const createTaskEpic = (
 const updateTaskEpic = (
     action: Observable<BaseAction>,
     store: StateObservable<StoreModel>
-): Observable<any> => action.pipe(
+): Observable<Action<any>> => action.pipe(
     ofType(TaskAction.EDIT),
     concatMap(($action: Action<Task>) => {
-        if(checkDuplicateTask(store.value.task.tasks, $action.payload)){
+        if(checkValidTask(store.value.task.tasks, $action.payload)){
             return duplicateError($action.payload);
         }
         return concat(
@@ -73,7 +73,7 @@ const updateTaskEpic = (
 
 const deleteTaskEpic = (
     action: Observable<BaseAction>
-): Observable<any> => action.pipe(
+): Observable<Action<any>> => action.pipe(
     ofType(TaskAction.DELETE),
     concatMap(($action: Action<number>) => concat(
         of(TaskAction.startedUpdateTask()),
