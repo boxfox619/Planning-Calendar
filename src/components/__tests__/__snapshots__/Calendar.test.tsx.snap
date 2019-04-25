@@ -4,11 +4,21 @@ exports[`<Calendar /> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
-    currentMoment={"2014-02-27T00:00:00.000Z"}
+    currentMoment={"2014-02-27T01:00:00.000Z"}
     mode="월"
     onSelect={[Function]}
     onUpdate={[Function]}
-    tasks={Array []}
+    tasks={
+        Array [
+            Task {
+              "date": "2019-01-21",
+              "endHour": 12,
+              "id": 12,
+              "name": "이름",
+              "startHour": 3,
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -26,13 +36,23 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Unknown
-          currentMoment={"2014-02-27T00:00:00.000Z"}
+          currentMoment={"2014-02-27T01:00:00.000Z"}
           style={
                     Object {
                               "flex": 1,
                             }
           }
-          tasks={Array []}
+          tasks={
+                    Array [
+                              Task {
+                                "date": "2019-01-21",
+                                "endHour": 12,
+                                "id": 12,
+                                "name": "이름",
+                                "startHour": 3,
+                              },
+                            ]
+          }
 />,
         false,
       ],
@@ -48,11 +68,19 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "currentMoment": "2014-02-27T00:00:00.000Z",
+          "currentMoment": "2014-02-27T01:00:00.000Z",
           "style": Object {
             "flex": 1,
           },
-          "tasks": Array [],
+          "tasks": Array [
+            Task {
+              "date": "2019-01-21",
+              "endHour": 12,
+              "id": 12,
+              "name": "이름",
+              "startHour": 3,
+            },
+          ],
         },
         "ref": null,
         "rendered": null,
@@ -74,7 +102,7 @@ ShallowWrapper {
 ",
         ],
       },
-      "displayName": "styled.div",
+      "displayName": "Container",
       "foldedComponentIds": Array [],
       "render": [Function],
       "styledComponentId": "sc-VigVT",
@@ -92,13 +120,23 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Unknown
-            currentMoment={"2014-02-27T00:00:00.000Z"}
+            currentMoment={"2014-02-27T01:00:00.000Z"}
             style={
                         Object {
                                     "flex": 1,
                                   }
             }
-            tasks={Array []}
+            tasks={
+                        Array [
+                                    Task {
+                                      "date": "2019-01-21",
+                                      "endHour": 12,
+                                      "id": 12,
+                                      "name": "이름",
+                                      "startHour": 3,
+                                    },
+                                  ]
+            }
 />,
           false,
         ],
@@ -114,11 +152,19 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "currentMoment": "2014-02-27T00:00:00.000Z",
+            "currentMoment": "2014-02-27T01:00:00.000Z",
             "style": Object {
               "flex": 1,
             },
-            "tasks": Array [],
+            "tasks": Array [
+              Task {
+                "date": "2019-01-21",
+                "endHour": 12,
+                "id": 12,
+                "name": "이름",
+                "startHour": 3,
+              },
+            ],
           },
           "ref": null,
           "rendered": null,
@@ -140,7 +186,7 @@ ShallowWrapper {
 ",
           ],
         },
-        "displayName": "styled.div",
+        "displayName": "Container",
         "foldedComponentIds": Array [],
         "render": [Function],
         "styledComponentId": "sc-VigVT",

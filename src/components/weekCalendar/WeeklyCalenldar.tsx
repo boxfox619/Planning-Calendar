@@ -37,7 +37,7 @@ interface OwnProps {
 
 type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
 
-export const WeeklyCalendar: React.FC<Props> = (props: Props) => {
+export const WeeklyCalendar: React.FC<Props> = (props) => {
     const { currentMoment, tasks, ...divProps } = props;
     const todayMoment = moment();
     const hours = currentMoment.clone().endOf('day').hour();

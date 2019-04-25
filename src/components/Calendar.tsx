@@ -11,6 +11,7 @@ const Container = styled.div`
     flex-flow: column;
     padding: 0 10px;
 `;
+Container.displayName = 'Container';
 
 interface OwnProps {
     currentMoment: moment.Moment,
@@ -23,7 +24,6 @@ interface OwnProps {
 type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
 
 export const Calendar: React.FC<Props> = ({ currentMoment, mode, tasks, onSelect, onUpdate, ...divProps }) => {
-    const dragTarget = React.useRef<HTMLElement>();
 
     const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const target = e.target as HTMLElement;
@@ -35,7 +35,7 @@ export const Calendar: React.FC<Props> = ({ currentMoment, mode, tasks, onSelect
     }
     const handleDragStart = (e: React.DragEvent) => {
         const taskId = (e.target as HTMLElement).dataset.taskid;
-        if(taskId){
+        if (taskId) {
             e.dataTransfer.setData("taskId", taskId);
         }
     }
@@ -45,38 +45,33 @@ export const Calendar: React.FC<Props> = ({ currentMoment, mode, tasks, onSelect
         const dropTaskId = (e.target as HTMLElement).dataset.taskid;
         const dropTask = tasks.find(t => t.id === Number(dropTaskId));
         const currentTask = tasks.find(t => t.id === Number(taskId));
-        let date;
-        let hour;
-        if(datetime) {
-            date = moment.parseZone(datetime).format('YYYY-MM-DD');
-            hour = moment.parseZone(datetime).hour();
-        }else if(dropTask){
-            date = dropTask.date;
+        if (!currentTask) {
+            return;
         }
-        if (currentTask && date) {
-            const newTask = { ...currentTask, date };
-            if(mode === CalendarMode.Week && hour !== undefined) {
-                newTask.endHour += hour - newTask.startHour;
-                newTask.startHour = hour;
-            }
-            onUpdate(newTask);
+        const newTask = { ...currentTask };
+        if (datetime) {
+            const date = moment.parseZone(datetime).format('YYYY-MM-DD');
+            const hour = moment.parseZone(datetime).hour();
+            newTask.date = date;
+            newTask.endHour += hour - newTask.startHour;
+            newTask.startHour = hour;
+        } else if (dropTask) {
+            newTask.date = dropTask.date;
         }
-        dragTarget.current = undefined;
+        onUpdate(newTask);
     };
-    const handerDragOver = (e: React.DragEvent) => {
+    const handleDragOver = (e: React.DragEvent) => {
         const target = e.target as HTMLElement;
-        if(target.dataset.datetime){
+        if (target.dataset.datetime) {
             e.dataTransfer.setData('datetime', target.dataset.datetime);
         }
-        e.stopPropagation();
-        e.preventDefault();
     }
 
     return (
         <Container {...divProps}
             onClick={handleClick}
             onDragStart={handleDragStart}
-            onDragOver={handerDragOver}
+            onDragOver={handleDragOver}
             onDrop={handleDrop}>
             {mode === CalendarMode.Month && (
                 <MonthCalendar

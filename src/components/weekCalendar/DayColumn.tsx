@@ -29,7 +29,7 @@ interface Props {
     tasks: Task[]
 }
 
-export const DayColumn: React.FC<Props> = (props: Props) => {
+export const DayColumn: React.FC<Props> = (props) => {
     const { dateMoment, tasks } = props;
     const hours = dateMoment.clone().endOf('day').hour();
     return (

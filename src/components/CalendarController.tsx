@@ -32,7 +32,7 @@ interface OwnProps {
 
 type Props = OwnProps & React.HTMLAttributes<HTMLDivElement>;
 
-export const CalendarController: React.FC<Props> = (props: Props) => {
+export const CalendarController: React.FC<Props> = (props) => {
     const { currentMoment, mode, onChangeMode, onChangeMoment, ...divProps } = props;
 
     let label = `${currentMoment.year()}년 / ${currentMoment.month() + 1}월`;
@@ -45,9 +45,9 @@ export const CalendarController: React.FC<Props> = (props: Props) => {
 
     return (
         <Container {...divProps}>
-            <Icon type="left" onClick={handlePrev} style={{marginRight: '10px'}}/>
+            <Icon type="left" onClick={handlePrev} style={{ marginRight: '10px' }} />
             <Label>{label}</Label>
-            <Icon type="right" onClick={handleNext} style={{marginLeft: '10px'}}/>
+            <Icon type="right" onClick={handleNext} style={{ marginLeft: '10px' }} />
             <DropdownContainer>
                 <CalendarModeDropdown onChangeMode={onChangeMode} currentMode={mode} />
             </DropdownContainer>
