@@ -69,6 +69,9 @@ npm run start
 - README.md 파일에 문제해결 전략 및 프로젝트 빌드, 실행 방법 명시
 
 ## 컴포넌트 설계
+![Montly Calendar UI](https://user-images.githubusercontent.com/14067209/56738166-01dd7200-67a7-11e9-86f2-6a6b24c7d0cd.png)
+![웹 1920 – 3@2x](https://user-images.githubusercontent.com/14067209/56738134-f2f6bf80-67a6-11e9-885d-ac3b3a51efe2.png)
+![웹 1920 – 4](https://user-images.githubusercontent.com/14067209/56738135-f38f5600-67a6-11e9-8431-1934ea772786.png)
 
 ## 의존성 결정 
 - redux : 익숙하여 빠르게 개발가능, 레퍼런스 많음, State 관리 효과적
