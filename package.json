@@ -55,7 +55,9 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{ts,tsx}",
-      "!src/index.tsx"
+      "!src/index.tsx",
+      "!src/common/globalStyle.ts",
+      "!src/api/*.ts"
     ]
   }
 }
