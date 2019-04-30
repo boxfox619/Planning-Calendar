@@ -91,6 +91,7 @@ ShallowWrapper {
             "rules": Array [
               "
     display: inline;
+    cursor: pointer;
 ",
             ],
           },
@@ -266,6 +267,7 @@ ShallowWrapper {
               "rules": Array [
                 "
     display: inline;
+    cursor: pointer;
 ",
               ],
             },
