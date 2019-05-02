@@ -65,6 +65,7 @@ ShallowWrapper {
                                 defaultValue=""
                                 disabled={false}
                                 name="name"
+                                pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                                 required={true}
                                 type="text"
                         />
@@ -196,6 +197,7 @@ ShallowWrapper {
                               defaultValue=""
                               disabled={false}
                               name="name"
+                              pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                               required={true}
                               type="text"
                     />
@@ -272,6 +274,7 @@ ShallowWrapper {
                             defaultValue=""
                             disabled={false}
                             name="name"
+                            pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                             required={true}
                             type="text"
               />
@@ -362,6 +365,7 @@ ShallowWrapper {
                 defaultValue=""
                 disabled={false}
                 name="name"
+                pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                 required={true}
                 type="text"
 />,
@@ -377,6 +381,7 @@ ShallowWrapper {
                 "defaultValue": "",
                 "disabled": false,
                 "name": "name",
+                "pattern": "(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}",
                 "required": true,
                 "type": "text",
               },
@@ -582,6 +587,7 @@ ShallowWrapper {
                                         defaultValue=""
                                         disabled={false}
                                         name="name"
+                                        pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                                         required={true}
                                         type="text"
                               />
@@ -713,6 +719,7 @@ ShallowWrapper {
                                     defaultValue=""
                                     disabled={false}
                                     name="name"
+                                    pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                                     required={true}
                                     type="text"
                         />
@@ -789,6 +796,7 @@ ShallowWrapper {
                                 defaultValue=""
                                 disabled={false}
                                 name="name"
+                                pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                                 required={true}
                                 type="text"
                 />
@@ -879,6 +887,7 @@ ShallowWrapper {
                   defaultValue=""
                   disabled={false}
                   name="name"
+                  pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                   required={true}
                   type="text"
 />,
@@ -894,6 +903,7 @@ ShallowWrapper {
                   "defaultValue": "",
                   "disabled": false,
                   "name": "name",
+                  "pattern": "(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}",
                   "required": true,
                   "type": "text",
                 },
@@ -1153,6 +1163,7 @@ ShallowWrapper {
                                 defaultValue="귤 까기01"
                                 disabled={false}
                                 name="name"
+                                pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                                 required={true}
                                 type="text"
                         />
@@ -1295,6 +1306,7 @@ ShallowWrapper {
                               defaultValue="귤 까기01"
                               disabled={false}
                               name="name"
+                              pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                               required={true}
                               type="text"
                     />
@@ -1372,6 +1384,7 @@ ShallowWrapper {
                             defaultValue="귤 까기01"
                             disabled={false}
                             name="name"
+                            pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                             required={true}
                             type="text"
               />
@@ -1463,6 +1476,7 @@ ShallowWrapper {
                 defaultValue="귤 까기01"
                 disabled={false}
                 name="name"
+                pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                 required={true}
                 type="text"
 />,
@@ -1478,6 +1492,7 @@ ShallowWrapper {
                 "defaultValue": "귤 까기01",
                 "disabled": false,
                 "name": "name",
+                "pattern": "(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}",
                 "required": true,
                 "type": "text",
               },
@@ -1685,6 +1700,7 @@ ShallowWrapper {
                                         defaultValue="귤 까기01"
                                         disabled={false}
                                         name="name"
+                                        pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                                         required={true}
                                         type="text"
                               />
@@ -1827,6 +1843,7 @@ ShallowWrapper {
                                     defaultValue="귤 까기01"
                                     disabled={false}
                                     name="name"
+                                    pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                                     required={true}
                                     type="text"
                         />
@@ -1904,6 +1921,7 @@ ShallowWrapper {
                                 defaultValue="귤 까기01"
                                 disabled={false}
                                 name="name"
+                                pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                                 required={true}
                                 type="text"
                 />
@@ -1995,6 +2013,7 @@ ShallowWrapper {
                   defaultValue="귤 까기01"
                   disabled={false}
                   name="name"
+                  pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"
                   required={true}
                   type="text"
 />,
@@ -2010,6 +2029,7 @@ ShallowWrapper {
                   "defaultValue": "귤 까기01",
                   "disabled": false,
                   "name": "name",
+                  "pattern": "(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}",
                   "required": true,
                   "type": "text",
                 },

@@ -9,11 +9,12 @@ import 'antd/lib/button/style/css';
 const Day = styled.div`
     text-align: left;
     padding: 10px;
+    min-width: 0px;
 `
 const DayLabel = styled.span`
     display: inline-block;
     ${(props: {active: boolean}) => props.active && `
-        padding: 1px 4px;
+        padding: 0px 6px;
         background-color: ${PRIMARY_COLOR};
         color: #fff;
         border-radius: 100%;

@@ -64,7 +64,7 @@ export const TaskModal: React.FC<Props> = (props: Props) => {
             <Spin spinning={isLoading}>
                 <Form id="task-form" {...formItemLayout} onSubmit={handleSubmit}>
                     <Form.Item label="작업 이름" >
-                        <Input name="name" defaultValue={task ? task.name : ''} required={true} />
+                        <Input name="name" defaultValue={task ? task.name : ''} required={true} pattern="(?=.*[a-zA-Z0-9ㄱ-ㅎ]).{3,}"/>
                     </Form.Item>
                     <Form.Item label="시작 일시" >
                         <DatePicker allowClear={false} name="date" value={date} onChange={setDate} />
