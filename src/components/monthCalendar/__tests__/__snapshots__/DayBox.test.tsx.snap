@@ -326,6 +326,7 @@ ShallowWrapper {
           "
     text-align: left;
     padding: 10px;
+    min-width: 0px;
 ",
         ],
       },
@@ -612,6 +613,7 @@ ShallowWrapper {
             "
     text-align: left;
     padding: 10px;
+    min-width: 0px;
 ",
           ],
         },
