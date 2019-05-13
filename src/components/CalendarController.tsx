@@ -14,6 +14,7 @@ const Container = styled.div`
 `
 const Label = styled.h3`
     display: inline;
+    cursor: pointer;
 `
 const DropdownContainer = styled.div`
     position: absolute;
